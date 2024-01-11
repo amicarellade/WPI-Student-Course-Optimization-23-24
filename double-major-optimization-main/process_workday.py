@@ -1,5 +1,7 @@
 import pandas as pd
 
+#YAY IT WORKS!
+
 def courses_from_excel(df):
     df = df.fillna(0)
     course_list = []
