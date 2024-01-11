@@ -1,0 +1,136 @@
+
+<<<<<<<<<<<<< Credits >>>>>>>>>>>>>
+ 
+135.0 TOTAL
+-------------------------------
+135.0 REMAINING 
+    114.0 Academic Courses 
+    9.0 Free Electives 
+    9.0 MQP 
+    3.0 PE
+ 
+0.0 TAKEN
+    0 Applied
+    0 Excess
+
+
+<<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
+
+TOTAL RUN TIME: 1.9798072997946292
+----------------------------------------
+    Stage I solve: 1.6427264213562012
+    Stage II solve: 0.1954784393310547
+
+
+<<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
+[Brackets indicate courses that have yet to be taken] 
+ 
+General Education and Projects
+____________________________________
+
+ 
+MQP
+----------------------------
+    [MQP]
+    [MQP]
+    [MQP]
+
+Physical Education
+----------------------------
+    [PE]
+    [PE]
+    [PE]
+    [PE]
+
+Humanities
+----------------------------
+    [HU 3900 or 3910]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+
+IQP
+----------------------------
+    [IQP off campus]
+
+Social Science
+----------------------------
+    [GOV_2314, GOV_2315, GOV_2313]
+    [Social Science]
+
+Free Electives
+----------------------------
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+
+Not used
+----------------------------
+
+
+ 
+Data Science
+____________________________________
+
+ 
+Algorithms
+----------------------------
+    [CS 2223]
+
+Business Analysis 
+----------------------------
+    [BUS_2080 OR OIE_2081]
+
+Core
+----------------------------
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
+
+Computer Science
+----------------------------
+    [CS_1004 OR CS_1101 OR CS_1102]
+    [CS_2102 OR CS_2103 OR CS_2119]
+
+Disciplinary Electives
+----------------------------
+    [4000-Level CS Data Access and Management]
+    [4000-Level CS Data Mining & Machine Learning]
+    [4000-Level Math Disciplinary Electives]
+    [CS 3043]
+    [MIS_4084, OIE_4430]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+
+Entrepreneurship and Innovation
+----------------------------
+    [Entrepreneurship and Innovation]
+
+Linear Algebra
+----------------------------
+    [MA_2071 OR MA_2072]
+
+Mathematical Sciences
+----------------------------
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+
+Natural or Engineering Sciences
+----------------------------
+    [Natural and Engineering Sciences]
+    [Natural and Engineering Sciences]
+
+Applied Statistics
+----------------------------
+    [MA 2611]
+    [MA 2612]
+
+
+ 

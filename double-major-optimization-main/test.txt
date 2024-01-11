@@ -1,0 +1,169 @@
+
+<<<<<<<<<<<<< Credits >>>>>>>>>>>>>
+ 
+147.0 TOTAL
+-------------------------------
+144.0 REMAINING 
+    129.0 Academic Courses 
+    0.0 Free Electives 
+    12.0 MQP 
+    3.0 PE
+ 
+3.0 TAKEN
+    3.0 Applied
+    0.0 Excess
+
+
+<<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
+
+TOTAL RUN TIME: 0.35718809999525547
+----------------------------------------
+    Stage I solve: 0.1709742546081543
+    Stage II solve: 0.16707825660705566
+
+
+<<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
+[Brackets indicate courses that have yet to be taken] 
+ 
+General Education and Projects
+____________________________________
+
+ 
+Humanities
+----------------------------
+    WR 2001
+    [HU 3900 or 3910]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+
+IQP
+----------------------------
+    [IQP off campus]
+
+Social Science
+----------------------------
+    [ID 2050]
+    [Social Science]
+
+Free Electives
+----------------------------
+
+Not used
+----------------------------
+
+
+ 
+Operations and Industrial Engineering
+____________________________________
+
+ 
+OIE Core
+----------------------------
+    [BUS 3020]
+    [CS 2119, 2102, 2103]
+    [OIE 2081]
+    [OIE 2850]
+    [OIE 3405, 4430]
+    [OIE 3410]
+    [OIE 3420]
+    [OIE 3460]
+    [OIE 3510]
+
+Calculus Sequence
+----------------------------
+    [Calc IV]
+    [MA 1021]
+    [MA 1022]
+    [MA 1033]
+    [MA 2051]
+
+OIE Electives
+----------------------------
+    [MA 3631]
+    [OIE MATH]
+    [OIE MATH]
+
+Technical Electives
+----------------------------
+    [CS DEPT]
+    [ES DEPT]
+    [Numerical Methods]
+
+Math and Science Electives
+----------------------------
+    [MA 3831]
+    [MA 3832]
+
+Physics and Chemistry
+----------------------------
+    [CH DEPT]
+    [PH DEPT]
+    [PH DEPT]
+
+Statistics
+----------------------------
+    [MA 2611]
+    [MA 2631]
+
+
+ 
+Mathematical Sciences
+____________________________________
+
+ 
+Abstract Algebra
+----------------------------
+    [MA 3823, 3825]
+
+Computer and Data Science
+----------------------------
+    [CS 2119, 2102, 2103]
+    [CS DEPT]
+
+General Science
+----------------------------
+    [PH DEPT]
+    [PH DEPT]
+
+Intro and Elective Math Courses
+----------------------------
+    [Calc IV]
+    [MA 1021]
+    [MA 1022]
+    [MA 2051]
+    [MA 2611]
+    [MA DEPT]
+    [MA DEPT]
+    [MA DEPT]
+
+Numerical Methods
+----------------------------
+    [Numerical Methods]
+
+Real Analysis
+----------------------------
+    [MA 3831]
+    [MA 3832]
+
+Related Courses
+----------------------------
+    [BUS 3020]
+    [OIE 2081]
+
+Transition Courses
+----------------------------
+    [MA 1033]
+    [MA 2631]
+    [MA 3631]
+    [Math Transition Course]
+
+Upper Level Math
+----------------------------
+    [MA 3000+]
+    [OIE MATH]
+    [OIE MATH]
+
+
+ 
