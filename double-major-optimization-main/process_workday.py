@@ -6,7 +6,8 @@ def courses_from_excel(df):
     for index, row in df.iterrows():
         course = str(row["Remaining"])
         #print(course[4:7])
-        #tex
+        #text
+        #please work
         if any(char.isdigit() for char in course[:8]) or course[3:7].strip() == "IQP":
             #print("true!")
             continue
