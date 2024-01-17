@@ -2952,7 +2952,7 @@
                 "Bucket Contents": [
                     "ID_2050"
                 ],
-                "Bucket Description": "GOV_2314, GOV_2315, GOV_2313",
+                "Bucket Description": "ID_2050",
                 "Bucket Size": 1,
                 "Choice Weight": 1,
                 "Credits Each": 3.0,
@@ -3082,7 +3082,7 @@
                     "GOV_2315",
                     "GOV_2313"
                 ],
-                "Bucket Description": "ID 2050",
+                "Bucket Description": "GOV_2314, GOV_2315, GOV_2313",
                 "Bucket Size": 3,
                 "Choice Weight": 3,
                 "Credits Each": 3.0,

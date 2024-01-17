@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>WPI Course Schedule Optimizer</h1>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
 
         <label for="major">Select your major:</label>
         <select name="major" id="major">
@@ -25,7 +25,7 @@
         </select>
         <br>
 
-        <label for="courses">Enter your taken courses or upload your Academic Progress from Workday:</label>
+        <label for="courses">Enter your taken courses or upload your Academic Progress Excel sheet from Workday:</label>
         <input type="text" name="courses" id="courses">
         <br>
         <input type="file" name="file" accept=".xlsx, .xls">
