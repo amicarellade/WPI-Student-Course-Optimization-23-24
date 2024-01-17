@@ -3,11 +3,11 @@ import user_functions as usr
 file_upload_mode = False
 
 # program keys input: a list containing either "MATH_MAJOR", "OIE_MAJOR", or both
-program_keys = ['DS_DS_BSMS']
+program_keys = ['CS_MAJOR']
 
 # must be in the format DEPT_NUM, ex "OIE_2081"
 # program does not check for course validity, unrecognized courses assumed to be 3 credits
-courses_taken = []#, "MA_1022", "MA_1023", "PH_1110", "CH_1010", "ES_2001", "MA_2001", "MA_1010", "MA_1010", "GOV_2315", "CS_2022"]
+courses_taken = ["CS_1101", "CH_1010", "MA_2071"]#, "MA_1022", "MA_1023", "PH_1110", "CH_1010", "ES_2001", "MA_2001", "MA_1010", "MA_1010", "GOV_2315", "CS_2022"]
 #"CS_4432", "CS_4445", "MA_4603", "MA_4635", 'MA_2631', 'MA_3233', 'MA_3627', 'MA_3631'
 # output will be a txt, do not add .txt to the end
 # output name can be basically anything (probably don't use weird symbols....)

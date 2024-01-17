@@ -53,7 +53,7 @@ credMax: 3 y(1000L_CS) + 3 y(3000L_CS_DAM) + 3 y(4000L_BMP)
  + 3 y(ENTR_INV) + 3 y(FLG_CON) + 3 y(HI_CON) + 3 y(HUA_DPE) + 3 y(HUA_PROJ)
  + 3 y(ID_2050) + 3 y(INTRO_CS) + 9 y(IQP_OFF_CM) + 9 y(IQP_ON_CM)
  + 3 y(LIN_ALG) + 3 y(MATH) + 3 y(MA_ELECT) + 3 y(PY_CON) + 3 y(SOC_SCI_DPE)
- + 3 y(STAT) + 3 y(WR_CON) <= 99
+ + 3 y(STAT) + 3 y(WR_CON) <= 105
 reqMin(DS_ALGOS): 3 x(ALGO)(DS_ALGOS) >= 3
 reqMin(DS_BA): 3 x(BUS_ANALYSIS)(DS_BA) >= 3
 reqMin(DS_C): 3 x(DS_CORE)(DS_C) >= 9
@@ -83,17 +83,17 @@ reqMin(HUA_PROJ): 3 x(HUA_PROJ)(HUA_PROJ) >= 3
 reqMin(IQP): 9 x(IQP_OFF_CM)(IQP) + 9 x(IQP_ON_CM)(IQP) >= 9
 reqMin(SOC_SCI_REQ): 3 x(ALL_SOC_SCI)(SOC_SCI_REQ) + 3 x(ID_2050)(SOC_SCI_REQ)
  + 3 x(SOC_SCI_DPE)(SOC_SCI_REQ) >= 6
-setY1(1000L_CS): x(1000L_CS)(DS_CS) - y(1000L_CS) <= 0
+setY1(1000L_CS): x(1000L_CS)(DS_CS) - y(1000L_CS) <= 1
 setY1(3000L_CS_DAM): x(3000L_CS_DAM)(DS_CS) + x(3000L_CS_DAM)(DS_DE)
  - y(3000L_CS_DAM) <= 0
 setY1(4000L_BMP): x(4000L_BMP)(DS_DE) - y(4000L_BMP) <= 0
 setY1(4000L_CS_DAM): x(4000L_CS_DAM)(DS_CS) + x(4000L_CS_DAM)(DS_DE)
  - y(4000L_CS_DAM) <= 0
 setY1(4000L_CS_ELECT): x(4000L_CS_ELECT)(DS_CS) + x(4000L_CS_ELECT)(DS_DE)
- - y(4000L_CS_ELECT) <= 1
-setY1(4000L_ELECT): x(4000L_ELECT)(DS_DE) - y(4000L_ELECT) <= 1
+ - y(4000L_CS_ELECT) <= 0
+setY1(4000L_ELECT): x(4000L_ELECT)(DS_DE) - y(4000L_ELECT) <= 0
 setY1(4000L_MA_DE): x(4000L_MA_DE)(DS_DE) + x(4000L_MA_DE)(DS_MS)
- - y(4000L_MA_DE) <= 2
+ - y(4000L_MA_DE) <= 0
 setY1(500L_BMP): x(500L_BMP)(DS_DE) - y(500L_BMP) <= 0
 setY1(500L_CS_DAM): x(500L_CS_DAM)(DS_CS) + x(500L_CS_DAM)(DS_DE)
  - y(500L_CS_DAM) <= 0
@@ -111,10 +111,10 @@ setY1(BUS_ANALYSIS): x(BUS_ANALYSIS)(DS_BA) - y(BUS_ANALYSIS) <= 0
 setY1(BUS_DAM): x(BUS_DAM)(DS_DE) - y(BUS_DAM) <= 0
 setY1(BUS_DE): x(BUS_DE)(DS_DE) - y(BUS_DE) <= 0
 setY1(CS_ELECT): x(CS_ELECT)(DS_CS) + x(CS_ELECT)(DS_DE) - y(CS_ELECT) <= 0
-setY1(DAT_MIN): x(DAT_MIN)(DS_CS) + x(DAT_MIN)(DS_DE) - y(DAT_MIN) <= 1
+setY1(DAT_MIN): x(DAT_MIN)(DS_CS) + x(DAT_MIN)(DS_DE) - y(DAT_MIN) <= 0
 setY1(DIS_DPE): x(DIS_DPE)(DS_DE) - y(DIS_DPE) <= 0
 setY1(DS_CORE): x(DS_CORE)(DS_C) - y(DS_CORE) <= 0
-setY1(ENG_SCI): x(ENG_SCI)(DS_NES) - y(ENG_SCI) <= 0
+setY1(ENG_SCI): x(ENG_SCI)(DS_NES) - y(ENG_SCI) <= 1
 setY1(ENTR_INV): x(ENTR_INV)(DS_EI) - y(ENTR_INV) <= 0
 setY1(FLG_CON): x(FLG_CON)(HUA_CORE) - y(FLG_CON) <= 0
 setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
@@ -124,7 +124,7 @@ setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
 setY1(INTRO_CS): x(INTRO_CS)(DS_CS) - y(INTRO_CS) <= 0
 setY1(IQP_OFF_CM): x(IQP_OFF_CM)(IQP) - y(IQP_OFF_CM) <= 0
 setY1(IQP_ON_CM): x(IQP_ON_CM)(IQP) - y(IQP_ON_CM) <= 0
-setY1(LIN_ALG): x(LIN_ALG)(DS_LA) - y(LIN_ALG) <= 0
+setY1(LIN_ALG): x(LIN_ALG)(DS_LA) - y(LIN_ALG) <= 1
 setY1(MATH): x(MATH)(DS_MS) - y(MATH) <= 0
 setY1(MA_ELECT): x(MA_ELECT)(DS_DE) + x(MA_ELECT)(DS_MS) - y(MA_ELECT) <= 0
 setY1(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 0
@@ -174,12 +174,12 @@ Bounds
  0 <= x(SOC_SCI_DPE)(SOC_SCI_REQ) <= 3
  0 <= x(STAT)(DS_STATS) <= 2
  0 <= x(WR_CON)(HUA_CORE) <= 20
- 0 <= y(1000L_CS) <= 3
+ 0 <= y(1000L_CS) <= 2
  0 <= y(4000L_BMP) <= 2
  0 <= y(4000L_CS_DAM) <= 3
- 0 <= y(4000L_CS_ELECT) <= 4
- 0 <= y(4000L_ELECT) <= 2
- 0 <= y(4000L_MA_DE) <= 9
+ 0 <= y(4000L_CS_ELECT) <= 5
+ 0 <= y(4000L_ELECT) <= 3
+ 0 <= y(4000L_MA_DE) <= 11
  0 <= y(500L_BMP) <= 2
  0 <= y(500L_CS_ELECT) <= 11
  0 <= y(500L_ELECT) <= 3
@@ -190,8 +190,9 @@ Bounds
  0 <= y(BUS_ANALYSIS) <= 2
  0 <= y(BUS_DE) <= 3
  0 <= y(CS_ELECT) <= 5
+ 0 <= y(DAT_MIN) <= 2
  0 <= y(DS_CORE) <= 3
- 0 <= y(ENG_SCI) <= 150
+ 0 <= y(ENG_SCI) <= 149
  0 <= y(ENTR_INV) <= 6
  0 <= y(FLG_CON) <= 20
  0 <= y(HI_CON) <= 20
@@ -199,7 +200,6 @@ Bounds
  0 <= y(HUA_PROJ) <= 2
  0 <= y(INTRO_CS) <= 3
  0 <= y(IQP_OFF_CM) <= 5
- 0 <= y(LIN_ALG) <= 2
  0 <= y(MATH) <= 4
  0 <= y(MA_ELECT) <= 17
  0 <= y(PY_CON) <= 20
@@ -265,6 +265,7 @@ y(ART_CON)
 y(BUS_ANALYSIS)
 y(BUS_DE)
 y(CS_ELECT)
+y(DAT_MIN)
 y(DS_CORE)
 y(ENG_SCI)
 y(ENTR_INV)
@@ -274,7 +275,6 @@ y(HUA_DPE)
 y(HUA_PROJ)
 y(INTRO_CS)
 y(IQP_OFF_CM)
-y(LIN_ALG)
 y(MATH)
 y(MA_ELECT)
 y(PY_CON)
@@ -300,9 +300,9 @@ y(3000L_CS_DAM)
 y(500L_CS_DAM)
 y(ALGO)
 y(BUS_DAM)
-y(DAT_MIN)
 y(DIS_DPE)
 y(DPE)
 y(ID_2050)
 y(IQP_ON_CM)
+y(LIN_ALG)
 End
