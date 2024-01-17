@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.24269253900274634
+TOTAL RUN TIME: 0.06721222700434737
 ----------------------------------------
-    Stage I solve: 0.17180538177490234
-    Stage II solve: 0.017208099365234375
+    Stage I solve: 0.025127887725830078
+    Stage II solve: 0.02509903907775879
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,7 +44,7 @@ Physical Education
 
 Humanities
 ----------------------------
-    [Humanities Capstone]
+    [HU 3900 or 3910]
     [Humanities]
     [Humanities]
     [Humanities]
@@ -54,13 +54,11 @@ Humanities
 IQP
 ----------------------------
     [IQP off campus]
-    [IQP off campus]
-    [IQP off campus]
 
 Social Science
 ----------------------------
     [ID_2050]
-    [Social Sciences]
+    [Social Science]
 
 Free Electives
 ----------------------------
@@ -73,54 +71,66 @@ Not used
 
 
  
-Computer Science
+Data Science
 ____________________________________
 
  
-CS Core
+Algorithms
+----------------------------
+    [CS 2223]
+
+Business Analysis 
+----------------------------
+    [BUS_2080 OR OIE_2081]
+
+Core
+----------------------------
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
+
+Computer Science
 ----------------------------
     CS 1101
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [CS 2011]
-    [CS 2223]
-    [CS 3013]
+    [CS_2102 OR CS_2103 OR CS_2119]
+
+Disciplinary Electives
+----------------------------
+    [4000-Level CS Data Access and Management]
+    [4000-Level CS Data Mining & Machine Learning]
     [CS 3043]
-    [CS 3133]
-    [CS 3516]
-    [CS_2102 OR CS_2103]
-    [CS_2301 OR CS_2303]
-    [CS_3041, CS_3431, CS_3733]
+    [MIS_4084, OIE_4430]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
 
-General Math
+Entrepreneurship and Innovation
 ----------------------------
-    [Math Electives]
-    [Math Electives]
-    [Math Electives]
-    [Math Electives]
-    [Math Electives]
+    [Entrepreneurship and Innovation]
 
-General Science
+Linear Algebra
 ----------------------------
-    [BB_DEPT]
-    [BB_DEPT]
-    [BB_DEPT]
+    [MA_2071 OR MA_2072]
 
-Probability
+Mathematical Sciences
 ----------------------------
-    [MA_2621, MA_2631]
+    [4000-Level Math Disciplinary Electives]
+    [Math Disciplinary Electives]
 
-Science/Engineering Electives
+Natural or Engineering Sciences
 ----------------------------
-    [Engineering Electives]
-    [Engineering Electives]
+    [Natural and Engineering Sciences]
+    [Natural and Engineering Sciences]
 
-Statistics
+Applied Statistics
 ----------------------------
-    [MA_2611, MA_2612]
+    [MA 2611]
+    [MA 2612]
 
 
  
