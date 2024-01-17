@@ -3,23 +3,23 @@
  
 135.0 TOTAL
 -------------------------------
-126.0 REMAINING 
-    105.0 Academic Courses 
+129.0 REMAINING 
+    108.0 Academic Courses 
     9.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-9.0 TAKEN
-    9.0 Applied
+6.0 TAKEN
+    6.0 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.0664663850038778
+TOTAL RUN TIME: 0.09374430400202982
 ----------------------------------------
-    Stage I solve: 0.029299020767211914
-    Stage II solve: 0.021532297134399414
+    Stage I solve: 0.03322005271911621
+    Stage II solve: 0.03671097755432129
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,21 +44,23 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
+    [AR DEPT]
+    [Humanities Capstone]
+    [MUS DEPT]
+    [PY DEPT]
+    [RE DEPT]
+    [TH DEPT]
 
 IQP
 ----------------------------
     [IQP off campus]
+    [IQP off campus]
+    [IQP off campus]
 
 Social Science
 ----------------------------
-    [GOV_2314, GOV_2315, GOV_2313]
-    [Social Science]
+    [ID_2050]
+    [Social Sciences]
 
 Free Electives
 ----------------------------
@@ -71,66 +73,54 @@ Not used
 
 
  
-Data Science
+Computer Science
 ____________________________________
 
  
-Algorithms
-----------------------------
-    [CS 2223]
-
-Business Analysis 
-----------------------------
-    [BUS_2080 OR OIE_2081]
-
-Core
-----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
-
-Computer Science
+CS Core
 ----------------------------
     CS 1101
-    [CS_2102 OR CS_2103 OR CS_2119]
-
-Disciplinary Electives
-----------------------------
-    [4000-Level CS Data Access and Management]
-    [4000-Level CS Data Mining & Machine Learning]
+    CS 1102
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [CS 3013]
     [CS 3043]
-    [MIS_4084, OIE_4430]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
+    [CS 4233]
+    [CS_4120, CS_4123, CS_4533, CS_4536]
+    [Core CS classes]
+    [Core CS classes]
+    [Core CS classes]
+    [Core CS classes]
+    [Core CS classes]
+    [Core CS classes]
 
-Entrepreneurship and Innovation
+General Math
 ----------------------------
-    [Entrepreneurship and Innovation]
+    [Math Electives]
+    [Math Electives]
+    [Math Electives]
+    [Math Electives]
+    [Math Electives]
 
-Linear Algebra
+General Science
 ----------------------------
-    MA 2071
+    [BB_DEPT]
+    [BB_DEPT]
+    [BB_DEPT]
 
-Mathematical Sciences
+Probability
 ----------------------------
-    [4000-Level Math Disciplinary Electives]
-    [Math Disciplinary Electives]
+    [MA_2621, MA_2631]
 
-Natural or Engineering Sciences
+Science/Engineering Electives
 ----------------------------
-    CH 1010
-    [Natural and Engineering Sciences]
+    [Engineering Electives]
+    [Engineering Electives]
 
-Applied Statistics
+Statistics
 ----------------------------
-    [MA 2611]
-    [MA 2612]
+    [MA_2611, MA_2612]
 
 
  

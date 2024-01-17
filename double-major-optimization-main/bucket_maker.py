@@ -118,5 +118,5 @@ df.index.names = ["Req Keys"]
 df = df.reindex(columns = ['Bucket Key', 'Bucket Size', 'Choice Weight', 'Credits Each', 'Bucket Description', 'Bucket Contents', 'Req Keys'])
 
 with pd.ExcelWriter('Data/Sheets/Buckets.xlsx', engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
-    df.to_excel(writer, sheet_name='CS_MAJOR2')
+    df.to_excel(writer, sheet_name='CS_MAJOR3')
 print(df)

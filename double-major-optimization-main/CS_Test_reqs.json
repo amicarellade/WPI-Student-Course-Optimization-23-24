@@ -237,7 +237,7 @@
     "CS_MAJOR": {
         "Reqs": {
             "CS_CORE": {
-                "Credits": 36,
+                "Credits": 45,
                 "Req Description": "CS Core"
             },
             "CS_GEN_MATH": {
@@ -310,9 +310,6 @@
             },
             "CS_UPLVL_MIN": {
                 "Applicable Reqs": [
-                    "CS_SYS",
-                    "CS_THRY",
-                    "CS_DESIGN",
                     "CS_CORE"
                 ],
                 "Credits": 15.0,
