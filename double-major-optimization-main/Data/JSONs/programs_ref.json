@@ -185,7 +185,7 @@
                     "MUS_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 3,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -220,6 +220,20 @@
                     "CS_GEN_SCI",
                     "CS_SCI_ENG",
                     "CS_SCI_DPTH_SL_1"
+                ]
+            },
+            "CS_1000": {
+                "Bucket Contents": [
+                    "CS_1101",
+                    "CS_1102"
+                ],
+                "Bucket Description": "CS_1101 OR CS_1102",
+                "Bucket Size": 2,
+                "Choice Weight": 101,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_1000_REST"
                 ]
             },
             "CS_4000": {
@@ -342,24 +356,32 @@
                     "CS_UPLVL_MIN"
                 ]
             },
-            "CS_INTRO_OTHER_CORE": {
+            "CS_INTRO_OTHER": {
                 "Bucket Contents": [
-                    "CS_1101",
-                    "CS_1102",
                     "CS_2011",
-                    "CS_2102",
-                    "CS_2103",
                     "CS_2223",
-                    "CS_2301",
-                    "CS_2303",
                     "CS_3516"
                 ],
                 "Bucket Description": "Core CS classes",
-                "Bucket Size": 11,
+                "Bucket Size": 3,
                 "Choice Weight": 65,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE"
+                ]
+            },
+            "CS_OOP": {
+                "Bucket Contents": [
+                    "CS_2102",
+                    "CS_2103"
+                ],
+                "Bucket Description": "CS_2102 OR CS_2103",
+                "Bucket Size": 2,
+                "Choice Weight": 101,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_OBJ_OR_REST"
                 ]
             },
             "CS_OS": {
@@ -383,11 +405,25 @@
                 ],
                 "Bucket Description": "CS_3041, CS_3431, CS_3733",
                 "Bucket Size": 3,
-                "Choice Weight": 11,
+                "Choice Weight": 15,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE",
                     "CS_DESIGN"
+                ]
+            },
+            "CS_SYS": {
+                "Bucket Contents": [
+                    "CS_2301",
+                    "CS_2303"
+                ],
+                "Bucket Description": "CS_2301 OR CS_2303",
+                "Bucket Size": 2,
+                "Choice Weight": 85,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_SYS_REST"
                 ]
             },
             "DISCRETE_MA": {
@@ -430,7 +466,7 @@
                     "SP_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 4,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -512,7 +548,7 @@
                     "INTL_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 3,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -570,7 +606,7 @@
                     "IQP_OFF_CAMPUS"
                 ],
                 "Bucket Description": "IQP off campus",
-                "Bucket Size": 5,
+                "Bucket Size": 10,
                 "Choice Weight": 100,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -582,7 +618,7 @@
                     "IQP_ON_CAMPUS"
                 ],
                 "Bucket Description": "IQP on campus",
-                "Bucket Size": 1,
+                "Bucket Size": 3,
                 "Choice Weight": 25,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -710,7 +746,7 @@
                     "RE_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 2,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -787,7 +823,7 @@
                     "WR_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 2,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -801,7 +837,7 @@
             "Reqs": {
                 "CS_CORE": {
                     "Buckets": [
-                        "CS_INTRO_OTHER_CORE",
+                        "CS_INTRO_OTHER",
                         "DISCRETE_MA",
                         "CS_OS",
                         "SOC_IMPS",
@@ -815,7 +851,10 @@
                         "4000_LVL_DESIGN",
                         "GRAD_LVL_DESIGN",
                         "4000_LVL_SYSTEMS",
-                        "GRAD_LVL_SYSTEMS"
+                        "GRAD_LVL_SYSTEMS",
+                        "CS_1000",
+                        "CS_OOP",
+                        "CS_SYS"
                     ],
                     "Credits": 45,
                     "Req Description": "CS Core"
@@ -869,6 +908,18 @@
                 }
             },
             "Sreqs": {
+                "CS_1000_REST": {
+                    "Applicable Reqs": [
+                        "CS_CORE"
+                    ],
+                    "Buckets": [
+                        "CS_1000"
+                    ],
+                    "Credits": 3.0,
+                    "Sreq Description": "at most 1 intro CS class",
+                    "Sreq Type": "1b",
+                    "Sublists Count": 0
+                },
                 "CS_DESIGN": {
                     "Applicable Reqs": [
                         "CS_CORE"
@@ -881,6 +932,18 @@
                     "Credits": 3.0,
                     "Sreq Description": "Design super req",
                     "Sreq Type": "1a",
+                    "Sublists Count": 0
+                },
+                "CS_OBJ_OR_REST": {
+                    "Applicable Reqs": [
+                        "CS_CORE"
+                    ],
+                    "Buckets": [
+                        "CS_OOP"
+                    ],
+                    "Credits": 3.0,
+                    "Sreq Description": "at most 1 object oriented programming 2000 class",
+                    "Sreq Type": "1b",
                     "Sublists Count": 0
                 },
                 "CS_SCI_DPTH": {
@@ -933,6 +996,18 @@
                     "Credits": 3.0,
                     "Sreq Description": "Systems super req ",
                     "Sreq Type": "1a",
+                    "Sublists Count": 0
+                },
+                "CS_SYS_REST": {
+                    "Applicable Reqs": [
+                        "CS_CORE"
+                    ],
+                    "Buckets": [
+                        "CS_SYS"
+                    ],
+                    "Credits": 3.0,
+                    "Sreq Description": "at most 1 2000 systems class",
+                    "Sreq Type": "1b",
                     "Sublists Count": 0
                 },
                 "CS_THRY": {

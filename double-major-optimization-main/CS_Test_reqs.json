@@ -262,6 +262,15 @@
             }
         },
         "Sreqs": {
+            "CS_1000_REST": {
+                "Applicable Reqs": [
+                    "CS_CORE"
+                ],
+                "Credits": 3.0,
+                "Sreq Description": "at most 1 intro CS class",
+                "Sreq Type": "1b",
+                "Sublists Count": 0
+            },
             "CS_DESIGN": {
                 "Applicable Reqs": [
                     "CS_CORE"
@@ -269,6 +278,15 @@
                 "Credits": 3.0,
                 "Sreq Description": "Design super req",
                 "Sreq Type": "1a",
+                "Sublists Count": 0
+            },
+            "CS_OBJ_OR_REST": {
+                "Applicable Reqs": [
+                    "CS_CORE"
+                ],
+                "Credits": 3.0,
+                "Sreq Description": "at most 1 object oriented programming 2000 class",
+                "Sreq Type": "1b",
                 "Sublists Count": 0
             },
             "CS_SCI_DPTH": {
@@ -297,6 +315,15 @@
                 "Credits": 3.0,
                 "Sreq Description": "Systems super req ",
                 "Sreq Type": "1a",
+                "Sublists Count": 0
+            },
+            "CS_SYS_REST": {
+                "Applicable Reqs": [
+                    "CS_CORE"
+                ],
+                "Credits": 3.0,
+                "Sreq Description": "at most 1 2000 systems class",
+                "Sreq Type": "1b",
                 "Sublists Count": 0
             },
             "CS_THRY": {

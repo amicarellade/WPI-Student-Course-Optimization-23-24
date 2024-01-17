@@ -4,8 +4,8 @@
 135.0 TOTAL
 -------------------------------
 129.0 REMAINING 
-    108.0 Academic Courses 
-    9.0 Free Electives 
+    111.0 Academic Courses 
+    6.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.09374430400202982
+TOTAL RUN TIME: 0.24269253900274634
 ----------------------------------------
-    Stage I solve: 0.03322005271911621
-    Stage II solve: 0.03671097755432129
+    Stage I solve: 0.17180538177490234
+    Stage II solve: 0.017208099365234375
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,12 +44,12 @@ Physical Education
 
 Humanities
 ----------------------------
-    [AR DEPT]
     [Humanities Capstone]
-    [MUS DEPT]
-    [PY DEPT]
-    [RE DEPT]
-    [TH DEPT]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
 
 IQP
 ----------------------------
@@ -64,7 +64,7 @@ Social Science
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
+    CS 1102
     [FREE ELECTIVE]
     [FREE ELECTIVE]
 
@@ -80,20 +80,20 @@ ____________________________________
 CS Core
 ----------------------------
     CS 1101
-    CS 1102
     [4000 CS Courses]
     [4000 CS Courses]
     [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [CS 2011]
+    [CS 2223]
     [CS 3013]
     [CS 3043]
-    [CS 4233]
-    [CS_4120, CS_4123, CS_4533, CS_4536]
-    [Core CS classes]
-    [Core CS classes]
-    [Core CS classes]
-    [Core CS classes]
-    [Core CS classes]
-    [Core CS classes]
+    [CS 3133]
+    [CS 3516]
+    [CS_2102 OR CS_2103]
+    [CS_2301 OR CS_2303]
+    [CS_3041, CS_3431, CS_3733]
 
 General Math
 ----------------------------
