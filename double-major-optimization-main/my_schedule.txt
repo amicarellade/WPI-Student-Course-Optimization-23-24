@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-135.0 TOTAL
+160.5 TOTAL
 -------------------------------
-129.0 REMAINING 
-    111.0 Academic Courses 
-    6.0 Free Electives 
+12.0 REMAINING 
+    0.0 Academic Courses 
+    0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-6.0 TAKEN
-    6.0 Applied
-    0 Excess
+148.5 TAKEN
+    123.0 Applied
+    25.5 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.06721222700434737
+TOTAL RUN TIME: 1.331153600011021
 ----------------------------------------
-    Stage I solve: 0.025127887725830078
-    Stage II solve: 0.02509903907775879
+    Stage I solve: 0.96274733543396
+    Stage II solve: 0.2622988224029541
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,30 +44,37 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
 
 IQP
 ----------------------------
-    [IQP off campus]
+    IQP OFF
 
 Social Science
 ----------------------------
-    [ID_2050]
-    [Social Science]
+    ECON 1120
+    ID_2050
 
 Free Electives
 ----------------------------
-    CS 1102
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
+    CS 3431
+    CS 4341
 
 Not used
 ----------------------------
+    DS 4635
+    CS 541
+    FIN 1250
+    DS 551
+    DS 598
+    BUS 3020
+    CS 547
+    CS 1000
 
 
  
@@ -77,60 +84,60 @@ ____________________________________
  
 Algorithms
 ----------------------------
-    [CS 2223]
+    CS 2223
 
 Business Analysis 
 ----------------------------
-    [BUS_2080 OR OIE_2081]
+    OIE 2081
 
 Core
 ----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
+    DS 1010
+    DS 2010
+    DS 3010
 
 Computer Science
 ----------------------------
     CS 1101
-    [CS_2102 OR CS_2103 OR CS_2119]
+    CS 2103
 
 Disciplinary Electives
 ----------------------------
-    [4000-Level CS Data Access and Management]
-    [4000-Level CS Data Mining & Machine Learning]
-    [CS 3043]
-    [MIS_4084, OIE_4430]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
+    CS 3043
+    CS 4342
+    CS 4432
+    CS 586
+    MA 1023
+    MA 1024
+    MA 2051
+    MA 2201
+    MA 2621
+    MA 3631
+    MIS 4084
+    OIE 559
 
 Entrepreneurship and Innovation
 ----------------------------
-    [Entrepreneurship and Innovation]
+    BUS 1010
 
 Linear Algebra
 ----------------------------
-    [MA_2071 OR MA_2072]
+    MA 2071
 
 Mathematical Sciences
 ----------------------------
-    [4000-Level Math Disciplinary Electives]
-    [Math Disciplinary Electives]
+    MA 1021
+    MA 1022
 
 Natural or Engineering Sciences
 ----------------------------
-    [Natural and Engineering Sciences]
-    [Natural and Engineering Sciences]
+    ECE 2010
+    PH 1110
 
 Applied Statistics
 ----------------------------
-    [MA 2611]
-    [MA 2612]
+    MA 2611
+    MA 2612
 
 
  

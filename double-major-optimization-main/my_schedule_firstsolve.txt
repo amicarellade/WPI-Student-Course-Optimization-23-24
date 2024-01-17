@@ -3,23 +3,23 @@
  
 198.0 TOTAL
 -------------------------------
-198.0 REMAINING 
-    177.0 Academic Courses 
+189.0 REMAINING 
+    168.0 Academic Courses 
     9.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-0.0 TAKEN
-    0 Applied
+9.0 TAKEN
+    9.0 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.45008440999663435
+TOTAL RUN TIME: 1.049988800000051
 ----------------------------------------
-    Stage I solve: 0.2640368938446045
-    Stage II solve: 0.06992912292480469
+    Stage I solve: 0.6878583431243896
+    Stage II solve: 0.22240495681762695
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -47,13 +47,13 @@ Humanities
     [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
     [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
     [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
-    [AR DEPT, TH DEPT, MUS_DEPT]
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
     [HU_3900 OR HU_3910]
     [PY_2731, PY_2713, RE_2731]
 
 IQP
 ----------------------------
-    [IQP OFF CAMPUS]
+    IQP OFF
 
 Social Science
 ----------------------------
@@ -99,11 +99,11 @@ Disciplinary Electives
     [CS 4120]
     [CS 4342]
     [CS 4432]
-    [CS 561]
-    [CS_4802 OR BCB_4002]
     [CS_4803 OR BCB_4003]
+    [CS_585 OR DS_503]
     [DS_541 OR CS_541]
     [MA 4235]
+    [MA 4631]
     [MA_543 OR DS_502]
     [OIE 559]
 
@@ -113,7 +113,7 @@ Double Counting
     [CS 4341]
     [CS 4445]
     [CS 4518]
-    [MA 4631]
+    [CS_4802 OR BCB_4002]
     [MA 4632]
 
 Entrepreneurship and Innovation
@@ -133,7 +133,7 @@ Total MS Credits Req
 ----------------------------
     [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
     [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
-    [CS_585 OR DS_503]
+    [CS 561]
     [CS_586 OR DS_504]
     [MA 542]
     [MA 554]

@@ -3,23 +3,23 @@
  
 135.0 TOTAL
 -------------------------------
-117.0 REMAINING 
-    99.0 Academic Courses 
-    6.0 Free Electives 
+108.0 REMAINING 
+    93.0 Academic Courses 
+    3.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-18.0 TAKEN
-    18.0 Applied
+27.0 TAKEN
+    27.0 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.08413223500247113
+TOTAL RUN TIME: 0.34157429999993383
 ----------------------------------------
-    Stage I solve: 0.035284996032714844
-    Stage II solve: 0.025632143020629883
+    Stage I solve: 0.13244867324829102
+    Stage II solve: 0.15698766708374023
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -53,7 +53,7 @@ Humanities
 
 IQP
 ----------------------------
-    [IQP off campus]
+    IQP OFF
 
 Social Science
 ----------------------------
@@ -63,7 +63,7 @@ Social Science
 Free Electives
 ----------------------------
     CS 4518
-    [FREE ELECTIVE]
+    CS 4802
     [FREE ELECTIVE]
 
 Not used
@@ -99,11 +99,11 @@ Disciplinary Electives
     BCB 4004
     CS 4341
     CS 4445
-    MA 4631
     MA 4632
     [4000-Level CS Data Access and Management]
     [CS 3043]
     [MIS_4084, OIE_4430]
+    [Math Disciplinary Electives]
     [Math Disciplinary Electives]
     [Math Disciplinary Electives]
     [Math Disciplinary Electives]

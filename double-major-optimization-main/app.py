@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import user_functions as usr
 import pandas as pd
+import process_workday
 
 ui = Flask(__name__)
 
@@ -11,7 +12,7 @@ def index():
         major = request.form['major']
         second_major = request.form['second_major']
         courses = request.form['courses']
-
+        #return render_template('index.html', result=request.files['file'])
         if 'file' in request.files:
             # Process Excel file if uploaded
             file = request.files['file']
@@ -21,14 +22,17 @@ def index():
                 file.save(file_path)
 
                 # Read the Excel file using pandas
-                df = pd.read_excel(file_path)
+                columns = ["Requirement", "Status", "Remaining", "Registrations Used", "Academic Period", "Credits",
+                           "Grade"]
+                df = pd.read_excel(file_path, names=columns)
 
-                # Call your script function here with DataFrame 'df'
-                result = your_script.your_function_with_dataframe(major, second_major, df)
+                courses = process_workday.courses_from_excel(df)
+                solution = usr.run_model([str(major).upper()+"_MAJOR"], courses, write_output=True, output_name="test")
 
                 # Redirect to a new URL after form submission
-                return redirect(url_for('result', result=result))
-
+                return redirect(url_for('result', result=solution))
+        else:
+            return render_template('index.html', result=request.files)
         if major == "Select...":
             result = "Please select a primary major!"
 
@@ -50,7 +54,7 @@ def index():
 
     return render_template('index.html', result=result)
 
-@app.route('/result/<result>')
+@ui.route('/result/<result>')
 def result(result):
     return render_template('result.html', result=result)
 
