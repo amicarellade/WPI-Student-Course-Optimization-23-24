@@ -3,23 +3,23 @@
  
 135.0 TOTAL
 -------------------------------
-135.0 REMAINING 
-    114.0 Academic Courses 
-    9.0 Free Electives 
+60.0 REMAINING 
+    42.0 Academic Courses 
+    6.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-0.0 TAKEN
-    0 Applied
+75.0 TAKEN
+    75.0 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.27004713797941804
+TOTAL RUN TIME: 1.0379634000128135
 ----------------------------------------
-    Stage I solve: 0.21642112731933594
-    Stage II solve: 0.026596784591674805
+    Stage I solve: 0.757131814956665
+    Stage II solve: 0.1609361171722412
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,12 +44,12 @@ Physical Education
 
 Humanities
 ----------------------------
-    [Humanities Capstone]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
+    HU 3900
+    PY 2731
+    SP 1524
+    WR 1010
+    WR 253X
+    WR 3210
 
 IQP
 ----------------------------
@@ -59,12 +59,12 @@ IQP
 
 Social Science
 ----------------------------
+    ENV 130X
     [ID_2050]
-    [Social Sciences]
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
+    ES 1020
     [FREE ELECTIVE]
     [FREE ELECTIVE]
 
@@ -79,48 +79,60 @@ ____________________________________
  
 CS Core
 ----------------------------
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [CS 2011]
-    [CS 2223]
-    [CS 3013]
-    [CS 3043]
-    [CS 3133]
-    [CS 3516]
-    [CS_1101 OR CS_1102]
-    [CS_2102 OR CS_2103]
-    [CS_2301 OR CS_2303]
-    [CS_3041, CS_3431, CS_3733]
+    CS 2223
+
+Business Analysis 
+----------------------------
+    BUS 2080
+
+Core
+----------------------------
+    DS 1010
+    DS 2010
+    DS 3010
+
+Computer Science
+----------------------------
+    CS 1101
+    CS 2102
+
+Disciplinary Electives
+----------------------------
+    CS 2022
+    MA 1023
+    MA 1024
+    MA 2621
+    [4000-Level CS Data Access and Management]
+    [4000-Level CS Data Mining & Machine Learning]
+    [4000-Level Math Disciplinary Electives]
+    [MIS_4084, OIE_4430]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
+    [Math Disciplinary Electives]
 
 General Math
 ----------------------------
-    [Math Electives]
-    [Math Electives]
-    [Math Electives]
-    [Math Electives]
-    [Math Electives]
+    ETR 1100
 
 General Science
 ----------------------------
-    [GE_DEPT]
-    [GE_DEPT]
-    [GE_DEPT]
+    MA 2071
 
 Probability
 ----------------------------
-    [MA_2621, MA_2631]
+    MA 1021
+    MA 1022
 
 Science/Engineering Electives
 ----------------------------
-    [Engineering Electives]
-    [Engineering Electives]
+    PH 1110
+    [Natural and Engineering Sciences]
 
 Statistics
 ----------------------------
-    [MA_2611, MA_2612]
+    MA 2611
+    [MA 2612]
 
 
  

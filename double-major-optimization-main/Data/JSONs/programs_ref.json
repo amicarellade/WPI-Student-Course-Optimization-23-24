@@ -5945,8 +5945,8 @@
                     "MA_4635"
                 ],
                 "Bucket Description": "DS 4635",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Size": 2,
+                "Choice Weight": 2,
                 "Credits Each": 3,
                 "Req Keys": [
                     "MA_INTRO",
@@ -5962,8 +5962,8 @@
                     "DS_DEPT"
                 ],
                 "Bucket Description": "DS DEPT",
-                "Bucket Size": 3,
-                "Choice Weight": 4,
+                "Bucket Size": 20,
+                "Choice Weight": 20,
                 "Credits Each": 3,
                 "Req Keys": [
                     "MA_CS_DS",

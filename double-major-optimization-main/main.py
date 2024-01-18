@@ -3,13 +3,27 @@ import user_functions as usr
 #file_upload_mode = False
 
 # program keys input: a list containing either "MATH_MAJOR", "OIE_MAJOR", or both
-program_keys = ['ME_MAJOR']
+# program_keys = ['MATH_MAJOR', 'OIE_MAJOR']
+program_keys = ['DS_MAJOR']
 
 # must be in the format DEPT_NUM, ex "OIE_2081"
 # program does not check for course validity, unrecognized courses assumed to be 3 credits
-courses_taken = ["ES_3004"]
-    #
-     #            'CS_1101', 'MIS_4084', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']#, #"MA_1022", "MA_1023", "PH_1110", "CH_1010", "ES_2001", "MA_2001", "MA_1010", "MA_1010", "GOV_2315", "CS_2022"]
+#courses_taken = []
+courses_taken = ['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731',
+                 'FIN_1250', 'CS_3043', 'CS_4432', 'MA_1022', 'DS_1010', 'DS_2010',
+                 'MA_2612', 'HU_3910', 'BUS_3020', 'IQP_OFF_CAMPUS', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050',
+                 'CS_2103', 'MA_2201', 'CS_1000', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210',
+                 'CS_1101', 'OIE_559', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
+
+#grad courses in this one
+# ['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731',
+#                  'FIN_1250', 'DS_551', 'DS_598', 'CS_3043', 'OIE_559', 'CS_4432', 'CS_586', 'MA_1022', 'DS_1010', 'DS_2010',
+#                  'MA_2612', 'HU_3910', 'BUS_3020', 'IQP_OFF_CAMPUS', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050',
+#                  'CS_547', 'CS_2103', 'MA_2201', 'CS_1000', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210', 'CS_541',
+#                  'CS_1101', 'MIS_4084', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
+
+
+#, "MA_1022", "MA_1023", "PH_1110", "CH_1010", "ES_2001", "MA_2001", "MA_1010", "MA_1010", "GOV_2315", "CS_2022"]
 #"CS_4432", "CS_4445", "MA_4603", "MA_4635", 'MA_2631', 'MA_3233', 'MA_3627', 'MA_3631'
 # output will be a txt, do not add .txt to the end
 # output name can be basically anything (probably don't use weird symbols....)

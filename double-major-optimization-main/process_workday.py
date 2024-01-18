@@ -7,7 +7,9 @@ def courses_from_excel(df):
     on_campus = True
     iqp = False
     for index, row in df.iterrows():
-        course = str(row["Remaining"]).replace('/', '  ')[:9].replace("-", " ").strip()
+        if str(row["Registrations Used"]).find("(Dropped)") != -1:
+            continue
+        course = str(row["Registrations Used"]).replace('/', '  ')[:9].replace("-", " ").strip()
         #print(course[4:7])
         # check if column entry is actually a course (that isnt a project)
         if any(char.isdigit() for char in course[:6]) and "PE" not in course[:3] and "Requ" not in course:
@@ -25,7 +27,7 @@ def courses_from_excel(df):
     #print(course_list)
     return course_list
 
-columns = ["Requirement","Status","Remaining","Registrations Used","Academic Period","Credits","Grade"]
+columns = ["Requirement","Status","Registrations Used", "Remaining","Academic Period","Credits","Grade"]
 
 test = pd.read_excel("studentdata/View_My_Academic_Progress.xlsx", names=columns)
 print(courses_from_excel(test))
