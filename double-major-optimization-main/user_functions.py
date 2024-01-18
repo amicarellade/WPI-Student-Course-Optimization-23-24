@@ -5,7 +5,7 @@ import basic_data_funcs as bd
 import time as t
 
 
-def run_model(program_keys, courses_taken, programs_ref_path = "Default", config_path= "/Users/jenniferkimball/WPI-Student-Course-Optimization-23-24/double-major-optimization-main/config.json", write_output=False, output_name= "solve", write_LP=False):
+def run_model(program_keys, courses_taken, programs_ref_path = "Default", config_path= "config.json", write_output=False, output_name= "solve", write_LP=False):
 
     if "_MASTER" in program_keys[0]:
         import process_solution_masters as ps
@@ -28,7 +28,7 @@ def run_model(program_keys, courses_taken, programs_ref_path = "Default", config
     applied = ps.format_solution(vars_dict["X"], vars_dict["Y"], base_dict, program_keys, courses_taken_dict)
     results = applied["Results"]
     new_counts = applied["Credit Counts"]
-    print("NEW COUNTS: "+str(applied))
+    print("APPLIED: "+str(applied))
     counts_dict = ps.calc_credit_metrics(added_credits, credits_taken, new_counts["Credits Used"], program_keys)
     
     T_FINISH = t.perf_counter()

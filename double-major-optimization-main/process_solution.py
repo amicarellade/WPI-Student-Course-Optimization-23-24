@@ -38,6 +38,10 @@ def raw_y_sol(y_dict):
 
 
 def enum_solution_courses(y_dict, courses_taken_ref, buckets_ref):
+    print("***ENUM_SOLUTION_COURSES***")
+    print("Y DICT: "+str(y_dict))
+    print("COURSES TAKEN REF: "+str(courses_taken_ref))
+    print("BUCKET REF: "+str(buckets_ref))
     to_take = []
     solution_courses = {}
     for bucket, bucket_attrs in buckets_ref.items():
@@ -47,6 +51,7 @@ def enum_solution_courses(y_dict, courses_taken_ref, buckets_ref):
         capacity = bucket_attrs["Bucket Size"]
         courses_list = []
         if int(capacity) == total_courses:
+            print("TRUE! BUCKET: "+str(bucket)+" CAPACITY: "+str(capacity))
             for each_course in bucket_attrs["Bucket Contents"]:
                 courses_list.append(each_course)
                 if each_course not in already_taken:
@@ -98,7 +103,6 @@ def calc_credit_metrics(stageI_obj, credits_taken, orig_credits_used, majors):
     min_needed = max(orig_credits_used + mqp_credits + pe_credits, 135)
     anticip_total = stageI_obj + credits_taken + mqp_credits + pe_credits
 
-
     not_used_credits = max(anticip_total - min_needed, 0)
     free_credits = max(min_needed - anticip_total, 0)
 
@@ -108,6 +112,13 @@ def calc_credit_metrics(stageI_obj, credits_taken, orig_credits_used, majors):
 
 
     taken_and_to_take = credits_taken + num_left
+
+    print("STAGE I OBJ: "+str(stageI_obj))
+    print("CREDITS TAKEN: "+str(credits_taken))
+    print("ORIG CREDITS USED: "+str(orig_credits_used))
+    print("MIN NEEDED: " + str(min_needed))
+    print("ANTICIP TOTAL: "+str(anticip_total))
+
 
     counts_dict = {"Taken and Used": taken_and_used, "Stage I obj": stageI_obj, "PE": float(pe_credits), 
     "MQP": float(mqp_credits), "Free credits": float(free_credits), "Not used": not_used_credits, 

@@ -1,7 +1,7 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-160.5 TOTAL
+139.5 TOTAL
 -------------------------------
 12.0 REMAINING 
     0.0 Academic Courses 
@@ -9,17 +9,17 @@
     9.0 MQP 
     3.0 PE
  
-148.5 TAKEN
+127.5 TAKEN
     123.0 Applied
-    25.5 Excess
+    4.5 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.331153600011021
+TOTAL RUN TIME: 0.374131599906832
 ----------------------------------------
-    Stage I solve: 0.96274733543396
-    Stage II solve: 0.2622988224029541
+    Stage I solve: 0.16927671432495117
+    Stage II solve: 0.14715099334716797
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -63,17 +63,11 @@ Social Science
 Free Electives
 ----------------------------
     CS 3431
-    CS 4341
+    FIN 1250
+    BUS 3020
 
 Not used
 ----------------------------
-    DS 4635
-    CS 541
-    FIN 1250
-    DS 551
-    DS 598
-    BUS 3020
-    CS 547
     CS 1000
 
 
@@ -104,16 +98,16 @@ Computer Science
 Disciplinary Electives
 ----------------------------
     CS 3043
+    CS 4341
     CS 4342
     CS 4432
-    CS 586
+    DS 4635
     MA 1023
     MA 1024
     MA 2051
     MA 2201
     MA 2621
     MA 3631
-    MIS 4084
     OIE 559
 
 Entrepreneurship and Innovation
