@@ -5221,7 +5221,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 4,
                 "Choice Weight": 100,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -5233,7 +5233,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 1,
                 "Choice Weight": 25,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -6090,7 +6090,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 4,
                 "Choice Weight": 100,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -6102,7 +6102,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 1,
                 "Choice Weight": 25,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -7217,7 +7217,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 5,
                 "Choice Weight": 100,
-                "Credits Each": 3,
+                "Credits Each": 9,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -7229,7 +7229,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 5,
                 "Choice Weight": 25,
-                "Credits Each": 3,
+                "Credits Each": 9,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
