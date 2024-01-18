@@ -213,6 +213,7 @@ def get_course_name(bucket_key, buckets_ref, to_take):
         course_name = buckets_ref[bucket_key]["Bucket Description"]
     else:
         split_up = bucket_key.split("_")
+        print(split_up)
         course_name = split_up[0] + " " + split_up[1]
     if bucket_key in to_take:
         course_name = "[" + course_name + "]"

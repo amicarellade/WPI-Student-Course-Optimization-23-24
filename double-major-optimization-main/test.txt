@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-135.0 TOTAL
+178.5 TOTAL
 -------------------------------
-60.0 REMAINING 
-    42.0 Academic Courses 
-    6.0 Free Electives 
+36.0 REMAINING 
+    24.0 Academic Courses 
+    0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-75.0 TAKEN
-    75.0 Applied
-    0 Excess
+142.5 TAKEN
+    99.0 Applied
+    43.5 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.0379634000128135
+TOTAL RUN TIME: 0.4493680000305176
 ----------------------------------------
-    Stage I solve: 0.757131814956665
-    Stage II solve: 0.1609361171722412
+    Stage I solve: 0.2683243751525879
+    Stage II solve: 0.10792732238769531
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,93 +44,96 @@ Physical Education
 
 Humanities
 ----------------------------
-    HU 3900
-    PY 2731
-    SP 1524
-    WR 1010
-    WR 253X
-    WR 3210
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
 
 IQP
 ----------------------------
+    IQP OFF
+    [IQP off campus]
     [IQP off campus]
 
 Social Science
 ----------------------------
-    ENV 130X
-    [ID_2050]
+    ECON 1120
+    ID_2050
 
 Free Electives
 ----------------------------
-    ES 1020
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
+    DS 4635
+    MA 3631
+    MA 1022
 
 Not used
 ----------------------------
+    MA 1021
+    CS 3431
+    BUS 3020
+    DS 551
+    OIE 2081
+    DS 3010
+    DS 2010
+    OIE 559
+    MIS 584
+    DS 1010
+    FIN 1250
+    BUS 1010
+    DS 598
+    CS_1101 OR CS_1102
 
 
  
-Data Science
+Computer Science
 ____________________________________
 
  
-Algorithms
-----------------------------
-    CS 2223
-
-Business Analysis 
-----------------------------
-    BUS 2080
-
-Core
-----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
-
-Computer Science
+CS Core
 ----------------------------
     CS 1101
-    CS 2102
+    CS 2103
+    CS 2223
+    CS 3043
+    CS 4341
+    CS 4342
+    CS 4432
+    CS 541
+    CS 547
+    CS 586
+    MA 2201
+    [CS 3013]
+    [CS 3133]
+    [CS_3041, CS_3431, CS_3733]
 
-Disciplinary Electives
+General Math
 ----------------------------
-    CS 2022
     MA 1023
     MA 1024
-    MA 2621
-    [4000-Level CS Data Access and Management]
-    [4000-Level CS Data Mining & Machine Learning]
-    [4000-Level Math Disciplinary Electives]
-    [MIS_4084, OIE_4430]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-
-Entrepreneurship and Innovation
-----------------------------
-    ETR 1100
-
-Linear Algebra
-----------------------------
+    MA 2051
     MA 2071
+    MA 2611
 
-Mathematical Sciences
-----------------------------
-    MA 1021
-    MA 1022
-
-Natural or Engineering Sciences
+General Science
 ----------------------------
     PH 1110
-    [Natural and Engineering Sciences]
+    [GE_DEPT]
+    [GE_DEPT]
 
-Applied Statistics
+Probability
 ----------------------------
-    MA 2611
-    [MA 2612]
+    MA 2621
+
+Science/Engineering Electives
+----------------------------
+    ECE 2010
+    [Engineering Electives]
+
+Statistics
+----------------------------
+    MA 2612
 
 
  

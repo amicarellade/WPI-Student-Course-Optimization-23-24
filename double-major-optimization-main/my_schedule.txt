@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-135.0 TOTAL
+141.0 TOTAL
 -------------------------------
-126.0 REMAINING 
-    105.0 Academic Courses 
-    9.0 Free Electives 
+66.0 REMAINING 
+    54.0 Academic Courses 
+    0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-9.0 TAKEN
-    9 Applied
-    0 Excess
+75.0 TAKEN
+    69.0 Applied
+    6.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.06380636902758852
+TOTAL RUN TIME: 0.2333573999349028
 ----------------------------------------
-    Stage I solve: 0.021157026290893555
-    Stage II solve: 0.026491880416870117
+    Stage I solve: 0.0846548080444336
+    Stage II solve: 0.0624852180480957
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,12 +44,12 @@ Physical Education
 
 Humanities
 ----------------------------
-    EN 2000
+    HU 3900
+    PY 2731
+    SP 1524
     WR 1010
-    [Humanities Capstone]
-    [Humanities]
-    [Humanities]
-    [Humanities]
+    WR 253X
+    WR 3210
 
 IQP
 ----------------------------
@@ -59,80 +59,70 @@ IQP
 
 Social Science
 ----------------------------
+    ENV 130X
     [ID_2050]
-    [Social Sciences]
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
+    DS 3010
+    DS 1010
+    DS 2010
 
 Not used
 ----------------------------
+    ETR 1100
+    BUS 2080
 
 
  
-Mechanical Engineering
+Computer Science
 ____________________________________
 
  
-Basic Science - Chemistry and Physics
+CS Core
 ----------------------------
-    [Chemistry]
-    [Physics]
-    [Physics]
+    CS 1101
+    CS 2022
+    CS 2102
+    CS 2223
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [CS 2011]
+    [CS 3013]
+    [CS 3043]
+    [CS 3516]
+    [CS_2301 OR CS_2303]
+    [CS_3041, CS_3431, CS_3733]
+    [CS_4120, CS_4123, CS_4533, CS_4536]
 
-Electives
+General Math
 ----------------------------
-    [ES 3001]
+    MA 1021
+    MA 1022
+    MA 1023
+    MA 1024
+    MA 2071
+
+General Science
+----------------------------
+    PH 1110
+    [BB_DEPT]
+    [BB_DEPT]
+
+Probability
+----------------------------
+    MA 2621
+
+Science/Engineering Electives
+----------------------------
+    ES 1020
     [Engineering Electives]
-    [Engineering Electives]
-    [Engineering Electives]
-    [Engineering Electives]
 
-Other Courses - ECE 
+Statistics
 ----------------------------
-    [ECE classes]
-
-Other Courses - Engineering Experimentation
-----------------------------
-    [ME_3901 OR ME_3902]
-
-Mathematics
-----------------------------
-    [MA 1021]
-    [MA 1022]
-    [MA 1023]
-    [MA 1024]
-    [MA 2051]
-    [MA 2071]
-
-Math and Basic Science
-----------------------------
-    [Math or Basic Science]
-    [Math or Basic Science]
-
-Other Courses - Materials Science
-----------------------------
-    [ES 2001]
-
-Mechanical Systems
-----------------------------
-    [ES 2501]
-    [ES 2502]
-    [ES 2503]
-    [ME_4320, ME_4322, RBE_4322, ME_4323, ME_4324]
-
-Other Courses - Programming
-----------------------------
-    [BME_1004, CS_1004, CS_1101, ME_2312, ME_4512]
-
-Thermofluid Systems
-----------------------------
-    ES 3004
-    [ES 3003]
-    [ME_4222 OR ME_4429]
+    MA 2611
 
 
  

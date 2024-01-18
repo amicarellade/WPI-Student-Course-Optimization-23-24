@@ -7,8 +7,11 @@ def courses_from_excel(df):
     on_campus = True
     iqp = False
     for index, row in df.iterrows():
+        column_name = "Registrations Used"
+
         if str(row["Registrations Used"]).find("(Dropped)") != -1:
             continue
+
         course = str(row["Registrations Used"]).replace('/', '  ')[:9].replace("-", " ").strip()
         #print(course[4:7])
         # check if column entry is actually a course (that isnt a project)
@@ -27,7 +30,9 @@ def courses_from_excel(df):
     #print(course_list)
     return course_list
 
-columns = ["Requirement","Status","Registrations Used", "Remaining","Academic Period","Credits","Grade"]
+columns = ["Requirement","Status", "Registrations Used", "Remaining", "Academic Period","Credits","Grade"]
 
-test = pd.read_excel("studentdata/View_My_Academic_Progress.xlsx", names=columns)
+test = pd.read_excel("studentdata/View_My_Academic_Progress.xlsx", header=9)
+print(test.head(10))
+print(test.columns)
 print(courses_from_excel(test))
