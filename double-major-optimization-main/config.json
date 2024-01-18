@@ -10,6 +10,7 @@
             "DS_MASTER_ONLY": ["DS_MASTER"],
             "DS_DS_BSMS_ONLY": ["DS_DS_BSMS", "ALL_MAJORS"],
         "CS_MAJOR_ONLY": ["CS_MAJOR", "ALL_MAJORS"],
+        "ME_MAJOR_ONLY": ["ME_MAJOR", "ALL_MAJORS"],
         "MATH_OIE_DOUBLE": ["MATH_MAJOR", "OIE_MAJOR", "ALL_MAJORS"]},
 
     "MAJOR_NAMES": 
@@ -19,6 +20,7 @@
             "DS_MASTER": "Data Science Masters",
             "DS_DS_BSMS": "Data Science Major with Data Science BSMS",
         "CS_MAJOR": "Computer Science",
+        "ME_MAJOR": "Mechanical Engineering",
         "ALL_MAJORS": "General Education and Projects"},
 
     "COURSE_SHEET_COLS": ["Key", "Name", "Credits", "Terms", "Category", "Xlists"],
@@ -30,7 +32,7 @@
         "SREQ_ATTRS" : ["Credits", "Applicable Reqs", "Sreq Description", "Sublists Count"]
     },
     "BUCKET_FIELDS": {
-        "BUCKET_SHEETS": ["MATH_MAJOR", "OIE_MAJOR", "MATH_OIE_DOUBLE", "DS_MAJOR", "DS_MASTER", "DS_DS_BSMS", "CS_MAJOR"],
+        "BUCKET_SHEETS": ["MATH_MAJOR", "OIE_MAJOR", "MATH_OIE_DOUBLE", "DS_MAJOR", "DS_MASTER", "DS_DS_BSMS", "CS_MAJOR", "ME_MAJOR"],
         "BUCKET_SHEET_COLS" : ["Bucket Key", "Bucket Size", "Req Keys", "Bucket Description", "Credits Each", "Choice Weight", "Bucket Contents"],
         "BUCKET_ATTRS" : ["Bucket Size", "Req Keys", "Bucket Description", "Credits Each", "Choice Weight", "Bucket Contents"],
         "BUCKET_LITERAL_EVAL" : ["Req Keys", "Bucket Contents"]
