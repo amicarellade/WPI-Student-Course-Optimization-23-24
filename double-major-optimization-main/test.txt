@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.0704012910136953
+TOTAL RUN TIME: 0.27004713797941804
 ----------------------------------------
-    Stage I solve: 0.028431177139282227
-    Stage II solve: 0.025303125381469727
+    Stage I solve: 0.21642112731933594
+    Stage II solve: 0.026596784591674805
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,7 +44,7 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
+    [Humanities Capstone]
     [Humanities]
     [Humanities]
     [Humanities]
@@ -54,11 +54,13 @@ Humanities
 IQP
 ----------------------------
     [IQP off campus]
+    [IQP off campus]
+    [IQP off campus]
 
 Social Science
 ----------------------------
     [ID_2050]
-    [Social Science]
+    [Social Sciences]
 
 Free Electives
 ----------------------------
@@ -71,66 +73,54 @@ Not used
 
 
  
-Data Science
+Computer Science
 ____________________________________
 
  
-Algorithms
+CS Core
 ----------------------------
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [4000 CS Courses]
+    [CS 2011]
     [CS 2223]
-
-Business Analysis 
-----------------------------
-    [BUS_2080 OR OIE_2081]
-
-Core
-----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
-
-Computer Science
-----------------------------
-    [CS_1004 OR CS_1101 OR CS_1102]
-    [CS_2102 OR CS_2103 OR CS_2119]
-
-Disciplinary Electives
-----------------------------
-    [4000-Level CS Data Access and Management]
-    [4000-Level CS Data Mining & Machine Learning]
-    [4000-Level Math Disciplinary Electives]
+    [CS 3013]
     [CS 3043]
-    [MIS_4084, OIE_4430]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
+    [CS 3133]
+    [CS 3516]
+    [CS_1101 OR CS_1102]
+    [CS_2102 OR CS_2103]
+    [CS_2301 OR CS_2303]
+    [CS_3041, CS_3431, CS_3733]
 
-Entrepreneurship and Innovation
+General Math
 ----------------------------
-    [Entrepreneurship and Innovation]
+    [Math Electives]
+    [Math Electives]
+    [Math Electives]
+    [Math Electives]
+    [Math Electives]
 
-Linear Algebra
+General Science
 ----------------------------
-    [MA_2071 OR MA_2072]
+    [GE_DEPT]
+    [GE_DEPT]
+    [GE_DEPT]
 
-Mathematical Sciences
+Probability
 ----------------------------
-    [Math Disciplinary Electives]
-    [Math Disciplinary Electives]
+    [MA_2621, MA_2631]
 
-Natural or Engineering Sciences
+Science/Engineering Electives
 ----------------------------
-    [Natural and Engineering Sciences]
-    [Natural and Engineering Sciences]
+    [Engineering Electives]
+    [Engineering Electives]
 
-Applied Statistics
+Statistics
 ----------------------------
-    [MA 2611]
-    [MA 2612]
+    [MA_2611, MA_2612]
 
 
  
