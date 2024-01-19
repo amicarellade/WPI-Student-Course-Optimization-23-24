@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-141.0 TOTAL
+162.0 TOTAL
 -------------------------------
-66.0 REMAINING 
-    54.0 Academic Courses 
+12.0 REMAINING 
+    0.0 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-75.0 TAKEN
-    69.0 Applied
-    6.0 Excess
+150.0 TAKEN
+    132.0 Applied
+    18.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.2333573999349028
+TOTAL RUN TIME: 0.049502807029057294
 ----------------------------------------
-    Stage I solve: 0.0846548080444336
-    Stage II solve: 0.0624852180480957
+    Stage I solve: 0.019482135772705078
+    Stage II solve: 0.014681816101074219
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,85 +44,100 @@ Physical Education
 
 Humanities
 ----------------------------
-    HU 3900
-    PY 2731
-    SP 1524
-    WR 1010
-    WR 253X
-    WR 3210
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
 
 IQP
 ----------------------------
-    [IQP off campus]
-    [IQP off campus]
-    [IQP off campus]
+    IQP OFF
 
 Social Science
 ----------------------------
-    ENV 130X
-    [ID_2050]
+    ECON 1120
+    ID_2050
 
 Free Electives
 ----------------------------
-    DS 3010
-    DS 1010
-    DS 2010
 
 Not used
 ----------------------------
-    ETR 1100
-    BUS 2080
+    FIN 1250
+    DS 551
+    DS 598
+    BUS 3020
+    CS 547
+    CS 1000
 
 
  
-Computer Science
+Data Science
 ____________________________________
 
  
-CS Core
+Algorithms
+----------------------------
+    CS 2223
+
+Business Analysis 
+----------------------------
+    OIE 2081
+
+Core
+----------------------------
+    DS 1010
+    DS 2010
+    DS 3010
+
+Computer Science
 ----------------------------
     CS 1101
-    CS 2022
-    CS 2102
-    CS 2223
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [4000 CS Courses]
-    [CS 2011]
-    [CS 3013]
-    [CS 3043]
-    [CS 3516]
-    [CS_2301 OR CS_2303]
-    [CS_3041, CS_3431, CS_3733]
-    [CS_4120, CS_4123, CS_4533, CS_4536]
+    CS 2103
+    CS 3431
+    CS 4432
 
-General Math
+Disciplinary Electives
+----------------------------
+    CS 3043
+    CS 4341
+    CS 4342
+    CS 541
+    CS 586
+    DS 4635
+    MA 1023
+    MA 1024
+    MA 2051
+    MA 2201
+    MA 2621
+    MA 3631
+    MIS 584
+    OIE 559
+
+Entrepreneurship and Innovation
+----------------------------
+    BUS 1010
+
+Linear Algebra
+----------------------------
+    MA 2071
+
+Mathematical Sciences
 ----------------------------
     MA 1021
     MA 1022
-    MA 1023
-    MA 1024
-    MA 2071
 
-General Science
+Natural or Engineering Sciences
 ----------------------------
+    ECE 2010
     PH 1110
-    [BB_DEPT]
-    [BB_DEPT]
 
-Probability
-----------------------------
-    MA 2621
-
-Science/Engineering Electives
-----------------------------
-    ES 1020
-    [Engineering Electives]
-
-Statistics
+Applied Statistics
 ----------------------------
     MA 2611
+    MA 2612
 
 
  

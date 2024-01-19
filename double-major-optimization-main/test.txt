@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-136.5 TOTAL
+141.0 TOTAL
 -------------------------------
-18.0 REMAINING 
-    6.0 Academic Courses 
+12.0 REMAINING 
+    0.0 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-118.5 TAKEN
-    117.0 Applied
-    1.5 Excess
+129.0 TAKEN
+    123.0 Applied
+    6.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.1494438999798149
+TOTAL RUN TIME: 0.07844413799466565
 ----------------------------------------
-    Stage I solve: 0.8599438667297363
-    Stage II solve: 0.17836380004882812
+    Stage I solve: 0.044786930084228516
+    Stage II solve: 0.01845097541809082
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -54,8 +54,6 @@ Humanities
 IQP
 ----------------------------
     IQP ON
-    [IQP off campus]
-    [IQP off campus]
 
 Social Science
 ----------------------------
@@ -65,11 +63,11 @@ Social Science
 Free Electives
 ----------------------------
     CS 595
-    BUS 2020
-    FIN 2070
 
 Not used
 ----------------------------
+    FIN 2070
+    BUS 2020
 
 
  
@@ -94,6 +92,7 @@ CS Core
     CS 4513
     CS 4801
     CS 513
+    CS 542
 
 General Math
 ----------------------------

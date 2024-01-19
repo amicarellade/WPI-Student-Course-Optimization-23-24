@@ -608,7 +608,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 10,
                 "Choice Weight": 100,
-                "Credits Each": 3.0,
+                "Credits Each": 9,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -620,7 +620,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 3,
                 "Choice Weight": 25,
-                "Credits Each": 3.0,
+                "Credits Each": 9,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"

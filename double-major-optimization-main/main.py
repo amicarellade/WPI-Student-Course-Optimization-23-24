@@ -4,11 +4,13 @@ import user_functions as usr
 
 # program keys input: a list containing either "MATH_MAJOR", "OIE_MAJOR", or both
 # program_keys = ['MATH_MAJOR', 'OIE_MAJOR']
-program_keys = ['CS_MAJOR']
+program_keys = ['DS_MAJOR']
 
 # must be in the format DEPT_NUM, ex "OIE_2081"
 # program does not check for course validity, unrecognized courses assumed to be 3 credits
-courses_taken = ['MA_1021', 'DS_3010', 'ENV_130X', 'PH_1110', 'DS_1010', 'SP_1524', 'DS_2010', 'ETR_1100', 'BUS_2080', 'CS_2102', 'MA_1023', 'ES_1020', 'CS_2022', 'CS_2223', 'HU_3900', 'MA_2611', 'MA_1024', 'WR_1010', 'MA_2621', 'PY_2731', 'WR_253X', 'WR_3210', 'MA_1022', 'MA_2071', 'CS_1101']
+courses_taken = ['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731', 'FIN_1250', 'DS_551', 'DS_598','CS_3043', 'OIE_559', 'CS_4432', 'CS_586', 'MA_1022', 'DS_1010', 'DS_2010', 'MA_2612', 'HU_3910', 'BUS_3020', 'IQP_OFF_CAMPUS', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050','CS_547', 'CS_2103', 'MA_2201', 'CS_1000', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210', 'CS_541','CS_1101', 'MIS_584', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
+##['MA_1021', 'DS_3010', 'ENV_130X', 'PH_1110', 'DS_1010', 'SP_1524', 'DS_2010', 'ETR_1100', 'BUS_2080', 'CS_2102', 'MA_1023', 'ES_1020', 'CS_2022', 'CS_2223', 'HU_3900', 'MA_2611', 'MA_1024', 'WR_1010', 'MA_2621', 'PY_2731', 'WR_253X', 'WR_3210', 'MA_1022', 'MA_2071', 'CS_1101']
+##
 
 #no grad here!
 # courses_taken = ['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731',
@@ -18,11 +20,7 @@ courses_taken = ['MA_1021', 'DS_3010', 'ENV_130X', 'PH_1110', 'DS_1010', 'SP_152
 #                  'CS_1101', 'OIE_559', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
 
 #grad courses in this one
-# ['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731',
-#                  'FIN_1250', 'DS_551', 'DS_598', 'CS_3043', 'OIE_559', 'CS_4432', 'CS_586', 'MA_1022', 'DS_1010', 'DS_2010',
-#                  'MA_2612', 'HU_3910', 'BUS_3020', 'IQP_OFF_CAMPUS', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050',
-#                  'CS_547', 'CS_2103', 'MA_2201', 'CS_1000', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210', 'CS_541',
-#                  'CS_1101', 'MIS_4084', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
+ 
 
 
 #, "MA_1022", "MA_1023", "PH_1110", "CH_1010", "ES_2001", "MA_2001", "MA_1010", "MA_1010", "GOV_2315", "CS_2022"]

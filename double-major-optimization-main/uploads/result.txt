@@ -1,0 +1,70 @@
+{
+  "result": {
+    "ALL_MAJORS": {
+      "Free Electives": [
+        "CS 595"
+      ],
+      "Humanities": [
+        "HI 2329",
+        "HU 3900",
+        "PY 1731",
+        "PY 2718",
+        "PY 2731",
+        "PY 3711"
+      ],
+      "IQP": [
+        "IQP ON"
+      ],
+      "Not used": [
+        "FIN 2070",
+        "BUS 2020"
+      ],
+      "Social Science": [
+        "GOV 2313",
+        "PSY 1401"
+      ]
+    },
+    "CS_MAJOR": {
+      "CS Core": [
+        "CS 1101",
+        "CS 2011",
+        "CS 2102",
+        "CS 2223",
+        "CS 2303",
+        "CS 3013",
+        "CS 3043",
+        "CS 3133",
+        "CS 3516",
+        "CS 3733",
+        "CS 4401",
+        "CS 4445",
+        "CS 4513",
+        "CS 4801",
+        "CS 513",
+        "CS 542"
+      ],
+      "General Math": [
+        "MA 1021",
+        "MA 1022",
+        "MA 1023",
+        "MA 1024",
+        "MA 2051"
+      ],
+      "General Science": [
+        "BB 1002",
+        "BB 2050",
+        "PH 1110"
+      ],
+      "Probability": [
+        "MA 2621"
+      ],
+      "Science/Engineering Electives": [
+        "CH 1010",
+        "ES 2501"
+      ],
+      "Statistics": [
+        "MA 2611"
+      ]
+    }
+  }
+}
