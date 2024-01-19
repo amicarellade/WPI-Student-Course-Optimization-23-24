@@ -58,7 +58,7 @@ credMax: 3 y(4000_LVL_DESIGN) + 3 y(4000_LVL_SYSTEMS) + 3 y(4000_LVL_THEORY)
  + 3 y(HU_CAP) + 3 y(HU_SOC_IMPS) + 3 y(ID_2050) + 3 y(IQP_OFF) + 3 y(IQP_ON)
  + 4.5 y(MATH_GRAD) + 3 y(MATH_UG) + 3 y(NUM_METHODS) + 3 y(OTHER_SOC_IMPS)
  + 3 y(PH_DEPT) + 3 y(PROB) + 3 y(PY_CON) + 3 y(SOC_IMPS) + 3 y(SOC_IMP_GOVS)
- + 3 y(SOC_SCI) + 3 y(STATS) + 3 y(WR_CON) <= 24
+ + 3 y(SOC_SCI) + 3 y(STATS) + 3 y(WR_CON) <= 6
 reqMin(CS_CORE): 3 x(4000_LVL_DESIGN)(CS_CORE)
  + 3 x(4000_LVL_SYSTEMS)(CS_CORE) + 3 x(4000_LVL_THEORY)(CS_CORE)
  + 3 x(CS_1000)(CS_CORE) + 3 x(CS_4000)(CS_CORE) + 3 x(CS_FOUND)(CS_CORE)
@@ -88,24 +88,24 @@ reqMin(SOC_SCI_REQ): 3 x(ID_2050)(SOC_SCI_REQ)
  + 3 x(SOC_IMP_GOVS)(SOC_SCI_REQ) + 3 x(SOC_SCI)(SOC_SCI_REQ) >= 6
 setY1(4000_LVL_DESIGN): x(4000_LVL_DESIGN)(CS_CORE) - y(4000_LVL_DESIGN) <= 0
 setY1(4000_LVL_SYSTEMS): x(4000_LVL_SYSTEMS)(CS_CORE) - y(4000_LVL_SYSTEMS)
- <= 0
+ <= 1
 setY1(4000_LVL_THEORY): x(4000_LVL_THEORY)(CS_CORE) - y(4000_LVL_THEORY) <= 0
 setY1(ART_CON): x(ART_CON)(HUA_CORE) - y(ART_CON) <= 0
 setY1(BB_DEPT): x(BB_DEPT)(CS_GEN_SCI) + x(BB_DEPT)(CS_SCI_ENG) - y(BB_DEPT)
- <= 0
+ <= 2
 setY1(CH_DEPT): x(CH_DEPT)(CS_GEN_SCI) + x(CH_DEPT)(CS_SCI_ENG) - y(CH_DEPT)
- <= 0
+ <= 1
 setY1(CS_1000): x(CS_1000)(CS_CORE) - y(CS_1000) <= 1
 setY1(CS_4000): x(CS_4000)(CS_CORE) - y(CS_4000) <= 3
-setY1(CS_FOUND): x(CS_FOUND)(CS_CORE) - y(CS_FOUND) <= 0
-setY1(CS_GRAD): x(CS_GRAD)(CS_CORE) - y(CS_GRAD) <= 3
-setY1(CS_INTRO_OTHER): x(CS_INTRO_OTHER)(CS_CORE) - y(CS_INTRO_OTHER) <= 1
+setY1(CS_FOUND): x(CS_FOUND)(CS_CORE) - y(CS_FOUND) <= 1
+setY1(CS_GRAD): x(CS_GRAD)(CS_CORE) - y(CS_GRAD) <= 1
+setY1(CS_INTRO_OTHER): x(CS_INTRO_OTHER)(CS_CORE) - y(CS_INTRO_OTHER) <= 3
 setY1(CS_OOP): x(CS_OOP)(CS_CORE) - y(CS_OOP) <= 1
-setY1(CS_OS): x(CS_OS)(CS_CORE) - y(CS_OS) <= 0
-setY1(CS_SOFT_ENG): x(CS_SOFT_ENG)(CS_CORE) - y(CS_SOFT_ENG) <= 0
-setY1(CS_SYS): x(CS_SYS)(CS_CORE) - y(CS_SYS) <= 0
+setY1(CS_OS): x(CS_OS)(CS_CORE) - y(CS_OS) <= 1
+setY1(CS_SOFT_ENG): x(CS_SOFT_ENG)(CS_CORE) - y(CS_SOFT_ENG) <= 1
+setY1(CS_SYS): x(CS_SYS)(CS_CORE) - y(CS_SYS) <= 1
 setY1(DISCRETE_MA): x(DISCRETE_MA)(CS_CORE) + x(DISCRETE_MA)(CS_GEN_MATH)
- - y(DISCRETE_MA) <= 1
+ - y(DISCRETE_MA) <= 0
 setY1(ENG_ELECT): x(ENG_ELECT)(CS_SCI_ENG) - y(ENG_ELECT) <= 1
 setY1(FL_CON): x(FL_CON)(HUA_CORE) - y(FL_CON) <= 0
 setY1(GE_DEPT): x(GE_DEPT)(CS_GEN_SCI) + x(GE_DEPT)(CS_SCI_ENG) - y(GE_DEPT)
@@ -114,25 +114,25 @@ setY1(GRAD_LVL_DESIGN): x(GRAD_LVL_DESIGN)(CS_CORE) - y(GRAD_LVL_DESIGN) <= 0
 setY1(GRAD_LVL_SYSTEMS): x(GRAD_LVL_SYSTEMS)(CS_CORE) - y(GRAD_LVL_SYSTEMS)
  <= 0
 setY1(GRAD_LVL_THEORY): x(GRAD_LVL_THEORY)(CS_CORE) - y(GRAD_LVL_THEORY) <= 0
-setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
+setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 1
 setY1(HU_CAP): x(HU_CAP)(HUA_PROJ) - y(HU_CAP) <= 1
-setY1(HU_SOC_IMPS): x(HU_SOC_IMPS)(HUA_CORE) - y(HU_SOC_IMPS) <= 0
-setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 1
-setY1(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 1
-setY1(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 0
+setY1(HU_SOC_IMPS): x(HU_SOC_IMPS)(HUA_CORE) - y(HU_SOC_IMPS) <= 1
+setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
+setY1(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 0
+setY1(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 1
 setY1(MATH_GRAD): x(MATH_GRAD)(CS_GEN_MATH) - y(MATH_GRAD) <= 0
-setY1(MATH_UG): x(MATH_UG)(CS_GEN_MATH) - y(MATH_UG) <= 8
+setY1(MATH_UG): x(MATH_UG)(CS_GEN_MATH) - y(MATH_UG) <= 5
 setY1(NUM_METHODS): x(NUM_METHODS)(CS_CORE) + x(NUM_METHODS)(CS_GEN_MATH)
  - y(NUM_METHODS) <= 0
 setY1(PH_DEPT): x(PH_DEPT)(CS_GEN_SCI) + x(PH_DEPT)(CS_SCI_ENG) - y(PH_DEPT)
  <= 1
 setY1(PROB): x(PROB)(CS_GEN_MATH) + x(PROB)(CS_PROB) - y(PROB) <= 1
-setY1(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 1
+setY1(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 3
 setY1(SOC_IMPS): x(SOC_IMPS)(CS_CORE) - y(SOC_IMPS) <= 1
 setY1(SOC_IMP_GOVS): x(SOC_IMP_GOVS)(SOC_SCI_REQ) - y(SOC_IMP_GOVS) <= 0
-setY1(SOC_SCI): x(SOC_SCI)(SOC_SCI_REQ) - y(SOC_SCI) <= 1
-setY1(STATS): x(STATS)(CS_GEN_MATH) + x(STATS)(CS_STATS) - y(STATS) <= 2
-setY1(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 4
+setY1(SOC_SCI): x(SOC_SCI)(SOC_SCI_REQ) - y(SOC_SCI) <= 2
+setY1(STATS): x(STATS)(CS_GEN_MATH) + x(STATS)(CS_STATS) - y(STATS) <= 1
+setY1(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 0
 Bounds
  0 <= x(4000_LVL_SYSTEMS)(CS_CORE) <= 3
  0 <= x(4000_LVL_THEORY)(CS_CORE) <= 4
@@ -176,38 +176,38 @@ Bounds
  0 <= x(STATS)(CS_GEN_MATH) <= 2
  0 <= x(STATS)(CS_STATS) <= 2
  0 <= x(WR_CON)(HUA_CORE) <= 10
- 0 <= y(4000_LVL_SYSTEMS) <= 3
+ 0 <= y(4000_LVL_SYSTEMS) <= 2
  0 <= y(4000_LVL_THEORY) <= 4
  0 <= y(ART_CON) <= 10
- 0 <= y(BB_DEPT) <= 10
- 0 <= y(CH_DEPT) <= 10
+ 0 <= y(BB_DEPT) <= 8
+ 0 <= y(CH_DEPT) <= 9
  0 <= y(CS_4000) <= 23
- 0 <= y(CS_GRAD) <= 54
- 0 <= y(CS_INTRO_OTHER) <= 2
- 0 <= y(CS_SOFT_ENG) <= 3
- 0 <= y(CS_SYS) <= 2
+ y(CS_FOUND) = 0
+ 0 <= y(CS_GRAD) <= 56
+ y(CS_INTRO_OTHER) = 0
+ y(CS_OS) = 0
+ 0 <= y(CS_SOFT_ENG) <= 2
+ 0 <= y(DISCRETE_MA) <= 2
  0 <= y(ENG_ELECT) <= 19
  0 <= y(FL_CON) <= 10
  0 <= y(GE_DEPT) <= 10
  0 <= y(GRAD_LVL_DESIGN) <= 5
  0 <= y(GRAD_LVL_SYSTEMS) <= 3
  0 <= y(GRAD_LVL_THEORY) <= 6
- 0 <= y(HI_CON) <= 10
- 0 <= y(HU_SOC_IMPS) <= 3
- y(ID_2050) = 0
- 0 <= y(IQP_OFF) <= 9
- 0 <= y(IQP_ON) <= 3
+ 0 <= y(HI_CON) <= 9
+ 0 <= y(HU_SOC_IMPS) <= 2
+ 0 <= y(IQP_OFF) <= 10
+ 0 <= y(IQP_ON) <= 2
  0 <= y(MATH_GRAD) <= 6
- 0 <= y(MATH_UG) <= 21
+ 0 <= y(MATH_UG) <= 24
  0 <= y(NUM_METHODS) <= 2
  0 <= y(OTHER_SOC_IMPS) <= 3
  0 <= y(PH_DEPT) <= 9
- 0 <= y(PY_CON) <= 9
+ 0 <= y(PY_CON) <= 7
  y(SOC_IMPS) = 0
  0 <= y(SOC_IMP_GOVS) <= 2
- 0 <= y(SOC_SCI) <= 9
- y(STATS) = 0
- 0 <= y(WR_CON) <= 6
+ 0 <= y(SOC_SCI) <= 8
+ 0 <= y(WR_CON) <= 10
 Generals
 x(4000_LVL_SYSTEMS)(CS_CORE)
 x(4000_LVL_THEORY)(CS_CORE)
@@ -257,10 +257,12 @@ y(ART_CON)
 y(BB_DEPT)
 y(CH_DEPT)
 y(CS_4000)
+y(CS_FOUND)
 y(CS_GRAD)
 y(CS_INTRO_OTHER)
+y(CS_OS)
 y(CS_SOFT_ENG)
-y(CS_SYS)
+y(DISCRETE_MA)
 y(ENG_ELECT)
 y(FL_CON)
 y(GE_DEPT)
@@ -269,7 +271,6 @@ y(GRAD_LVL_SYSTEMS)
 y(GRAD_LVL_THEORY)
 y(HI_CON)
 y(HU_SOC_IMPS)
-y(ID_2050)
 y(IQP_OFF)
 y(IQP_ON)
 y(MATH_GRAD)
@@ -281,7 +282,6 @@ y(PY_CON)
 y(SOC_IMPS)
 y(SOC_IMP_GOVS)
 y(SOC_SCI)
-y(STATS)
 y(WR_CON)
 Binaries
 SR2(CS_SCI_DPTH_0)
@@ -300,10 +300,10 @@ x(ID_2050)(SOC_SCI_REQ)
 x(SOC_IMPS)(CS_CORE)
 y(4000_LVL_DESIGN)
 y(CS_1000)
-y(CS_FOUND)
 y(CS_OOP)
-y(CS_OS)
-y(DISCRETE_MA)
+y(CS_SYS)
 y(HU_CAP)
+y(ID_2050)
 y(PROB)
+y(STATS)
 End

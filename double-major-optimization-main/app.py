@@ -24,11 +24,13 @@ def index():
                 # Read the Excel file using pandas
                 columns = ["Requirement", "Status", "Remaining", "Registrations Used", "Academic Period", "Credits",
                            "Grade"]
-                df = pd.read_excel(file_path, header=1)
-                print("BRUHHHHHHHHHHHHHHHHHHHHHHhhh " + str(df.columns))
-                if "Registrations Used" not in df.columns:
-                    print("BROOOOOOOOOOOOOOOOOOO")
-                    df = pd.read_excel(file_path, header=9)  # names=columns,
+                for i in range(15):
+                    df = pd.read_excel(file_path, header=i)
+                    print("BRUHHHHHHHHHHHHHHHHHHHHHHhhh " + str(df.columns))
+                    if "Registrations Used" in df.columns:
+                        break
+                        # print("BROOOOOOOOOOOOOOOOOOO")
+                        # df = pd.read_excel(file_path, header=9)  # names=columns,
 
                 courses = process_workday.courses_from_excel(df)
                 print(courses)
