@@ -1,143 +1,46 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-162.0 TOTAL
+45.0 TOTAL
 -------------------------------
-12.0 REMAINING 
-    0.0 Academic Courses 
+40.5 REMAINING 
+    40.5 Academic Courses 
     0.0 Free Electives 
-    9.0 MQP 
-    3.0 PE
+    0.0 MQP 
+    0.0 PE
  
-150.0 TAKEN
-    132.0 Applied
-    18.0 Excess
+4.5 TAKEN
+    4.5 Applied
+    0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.049502807029057294
+TOTAL RUN TIME: 0.03155595005955547
 ----------------------------------------
-    Stage I solve: 0.019482135772705078
-    Stage II solve: 0.014681816101074219
+    Stage I solve: 0.01124882698059082
+    Stage II solve: 0.012427091598510742
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
 [Brackets indicate courses that have yet to be taken] 
  
-General Education and Projects
+Computer Science Masters (MSCS)
 ____________________________________
 
  
-MQP
+Total MS Credits Req
 ----------------------------
-    [MQP]
-    [MQP]
-    [MQP]
-
-Physical Education
-----------------------------
-    [PE]
-    [PE]
-    [PE]
-    [PE]
-
-Humanities
-----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
-
-IQP
-----------------------------
-    IQP OFF
-
-Social Science
-----------------------------
-    ECON 1120
-    ID_2050
-
-Free Electives
-----------------------------
-
-Not used
-----------------------------
-    FIN 1250
-    DS 551
-    DS 598
-    BUS 3020
-    CS 547
-    CS 1000
-
-
- 
-Data Science
-____________________________________
-
- 
-Algorithms
-----------------------------
-    CS 2223
-
-Business Analysis 
-----------------------------
-    OIE 2081
-
-Core
-----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
-
-Computer Science
-----------------------------
-    CS 1101
-    CS 2103
-    CS 3431
-    CS 4432
-
-Disciplinary Electives
-----------------------------
-    CS 3043
-    CS 4341
-    CS 4342
-    CS 541
-    CS 586
-    DS 4635
-    MA 1023
-    MA 1024
-    MA 2051
-    MA 2201
-    MA 2621
-    MA 3631
-    MIS 584
-    OIE 559
-
-Entrepreneurship and Innovation
-----------------------------
-    BUS 1010
-
-Linear Algebra
-----------------------------
-    MA 2071
-
-Mathematical Sciences
-----------------------------
-    MA 1021
-    MA 1022
-
-Natural or Engineering Sciences
-----------------------------
-    ECE 2010
-    PH 1110
-
-Applied Statistics
-----------------------------
-    MA 2611
-    MA 2612
+    CS 558
+    [Algorithms: CS_504, CS_584, CS_5084]
+    [Elective or Thesis]
+    [Elective or Thesis]
+    [Elective or Thesis]
+    [Electives]
+    [Electives]
+    [Electives]
+    [Electives]
+    [Theory: CS_503, CS_521, CS_559, CS_5003]
 
 
  

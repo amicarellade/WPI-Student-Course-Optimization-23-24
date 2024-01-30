@@ -4,11 +4,16 @@ import user_functions as usr
 
 # program keys input: a list containing either "MATH_MAJOR", "OIE_MAJOR", or both
 # program_keys = ['MATH_MAJOR', 'OIE_MAJOR']
-program_keys = ['DS_MAJOR']
+program_keys = ['CS_MASTER']
 
 # must be in the format DEPT_NUM, ex "OIE_2081"
 # program does not check for course validity, unrecognized courses assumed to be 3 credits
-courses_taken = ['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731', 'FIN_1250', 'DS_551', 'DS_598','CS_3043', 'OIE_559', 'CS_4432', 'CS_586', 'MA_1022', 'DS_1010', 'DS_2010', 'MA_2612', 'HU_3910', 'BUS_3020', 'IQP_OFF_CAMPUS', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050','CS_547', 'CS_2103', 'MA_2201', 'CS_1000', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210', 'CS_541','CS_1101', 'MIS_584', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
+courses_taken = ["CS_558"]
+#REMINDER TO FIX CS_558 PROBLEM AT SOME POINT (AND ACTUALLY DETERMINE IF IT IS A PROBLEM)
+
+##['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731', 'FIN_1250','CS_3043', 'CS_4432', 'MA_1022', 'DS_1010', 'DS_2010', 'MA_2612', 'HU_3910', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050', 'CS_2103', 'MA_2201', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210','CS_1101', 'MA_1021', 'CS_2223', 'DS_4635', 'ECON_1120', 'WR_1011', "CS_4342", "MIS_3720", "CS_539", "CS_542"]
+#["MA_1021", "MA_1022", "MA_1023", "MA_1024", "CS_1101", "CS_2102", "OIE_4430", "MIS_4084", "MKT_3650", "CS_3431", "MA_4635", "MA_2631", "MA_3631", "CS_3043", "CS_4804", "MA_2201"]
+##['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731', 'FIN_1250', 'DS_551', 'DS_598','CS_3043', 'OIE_559', 'CS_4432', 'CS_586', 'MA_1022', 'DS_1010', 'DS_2010', 'MA_2612', 'HU_3910', 'BUS_3020', 'IQP_OFF_CAMPUS', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050','CS_547', 'CS_2103', 'MA_2201', 'CS_1000', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210', 'CS_541','CS_1101', 'MIS_584', 'MA_1021', 'CS_2223', 'DS_4635', 'CS_4342', 'ECON_1120', 'WR_1011']
 ##['MA_1021', 'DS_3010', 'ENV_130X', 'PH_1110', 'DS_1010', 'SP_1524', 'DS_2010', 'ETR_1100', 'BUS_2080', 'CS_2102', 'MA_1023', 'ES_1020', 'CS_2022', 'CS_2223', 'HU_3900', 'MA_2611', 'MA_1024', 'WR_1010', 'MA_2621', 'PY_2731', 'WR_253X', 'WR_3210', 'MA_1022', 'MA_2071', 'CS_1101']
 ##
 

@@ -3,23 +3,23 @@
  
 141.0 TOTAL
 -------------------------------
-12.0 REMAINING 
-    0.0 Academic Courses 
+15.0 REMAINING 
+    3.0 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-129.0 TAKEN
+126.0 TAKEN
     123.0 Applied
-    6.0 Excess
+    3.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.07844413799466565
+TOTAL RUN TIME: 0.3149068179773167
 ----------------------------------------
-    Stage I solve: 0.044786930084228516
-    Stage II solve: 0.01845097541809082
+    Stage I solve: 0.2149960994720459
+    Stage II solve: 0.020432233810424805
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,82 +44,95 @@ Physical Education
 
 Humanities
 ----------------------------
-    HI 2329
-    HU 3900
-    PY 1731
-    PY 2718
-    PY 2731
-    PY 3711
+    EN 1000
+    SP 1523
+    SP 2521
+    SP 2522
+    SP 3521
+    SP 3522
+    SP 3532
+    [HU 3900 or 3910]
 
 IQP
 ----------------------------
-    IQP ON
+    IQP OFF
 
 Social Science
 ----------------------------
-    GOV 2313
-    PSY 1401
+    ECON 1110
+    GOV 2314
+    ID_2050
+    PSY 1400
 
 Free Electives
 ----------------------------
-    CS 595
 
 Not used
 ----------------------------
-    FIN 2070
-    BUS 2020
+    DS 501
 
 
  
-Computer Science
+Data Science
 ____________________________________
 
  
-CS Core
+Algorithms
+----------------------------
+    CS 2223
+
+Business Analysis 
+----------------------------
+    BUS 2080
+
+Core
+----------------------------
+    DS 1010
+    DS 2010
+    DS 3010
+
+Computer Science
 ----------------------------
     CS 1101
-    CS 2011
     CS 2102
-    CS 2223
-    CS 2303
-    CS 3013
+
+Disciplinary Electives
+----------------------------
     CS 3043
-    CS 3133
-    CS 3516
-    CS 3733
-    CS 4401
+    CS 3431
+    CS 4433
     CS 4445
-    CS 4513
-    CS 4801
-    CS 513
-    CS 542
+    CS 4804
+    DS 4635
+    MA 2621
+    MIS 3720
+    MIS 4084
+    MIS 4720
+    MKT 3650
+    OIE 3460
 
-General Math
+Entrepreneurship and Innovation
 ----------------------------
-    MA 1021
-    MA 1022
-    MA 1023
-    MA 1024
-    MA 2051
+    ETR 1100
 
-General Science
+Linear Algebra
 ----------------------------
-    BB 1002
-    BB 2050
+    MA 2071
+
+Mathematical Sciences
+----------------------------
+    MA 1020
+    MA 1120
+
+Natural or Engineering Sciences
+----------------------------
+    GE 2341
     PH 1110
 
-Probability
-----------------------------
-    MA 2621
-
-Science/Engineering Electives
-----------------------------
-    CH 1010
-    ES 2501
-
-Statistics
+Applied Statistics
 ----------------------------
     MA 2611
+    MA 2612
 
 
  

@@ -8,8 +8,8 @@ xls = pd.ExcelFile("Data/Sheets/Requirements.xlsx")
 reqs = pd.read_excel(xls, 'Reqs')
 sreqs = pd.read_excel(xls, 'Sreqs')
 
-programs = ["ECE_MAJOR"]
-masters = False
+programs = ["CS_MASTER"]
+masters = True
 course_code = None
 
 for p in programs:
@@ -118,5 +118,5 @@ df.index.names = ["Req Keys"]
 df = df.reindex(columns = ['Bucket Key', 'Bucket Size', 'Choice Weight', 'Credits Each', 'Bucket Description', 'Bucket Contents', 'Req Keys'])
 
 with pd.ExcelWriter('Data/Sheets/Buckets.xlsx', engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
-    df.to_excel(writer, sheet_name='ECE_MAJOR')
+    df.to_excel(writer, sheet_name='CS_MASTER')
 print(df)
