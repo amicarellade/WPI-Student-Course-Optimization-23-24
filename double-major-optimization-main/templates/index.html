@@ -12,8 +12,8 @@
             <option value="Select...">Select...</option>
             <option value="OIE">OIE</option>
             <option value="Math">Math</option>
-            <option value="DS">DS</option>
-            <option value="CS">CS</option>
+            <option value="DS">Data Science</option>
+            <option value="CS">Computer Science</option>
         </select>
         <br>
 
@@ -22,8 +22,8 @@
             <option value="None">None</option>
             <option value="OIE">OIE</option>
             <option value="Math">Math</option>
-            <option value="DS">DS</option>
-            <option value="CS">CS</option>
+            <option value="DS">Data Science</option>
+            <option value="CS">Computer Science</option>
         </select>
         <br>
 
@@ -32,6 +32,15 @@
         <br>
         <input type="file" name="file" accept=".xlsx, .xls">
         <br>
+        <p>Input courses as a comma-separated list with an underscore in between the department code and course number.</p>
+        <em>Ex: MA_1021, WR_1010, ...</em>
+        <p>Please omit your MQP and gym credits, but we will output them in your tracking sheet so you don't forget about them.</p>
+        <p>If you are uploading your Academic Progress, you can also manually input courses above to add to your Workday output 
+            (if you'd like to experiment with potential future courses).</p>
+        <label for="removed-courses">Similarly, if you'd like any courses removed from your Academic Progress, enter them here:</label>
+        <input type="text" name="removed-courses" id="removed-courses">
+        <br>
+        
 
         <input type="submit" value="Submit">
     </form>

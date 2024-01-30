@@ -1,5 +1,7 @@
 # import create_model as cm
 # import create_model_masters as cmm
+import math
+
 from pulp import *
 
 def run_model(program_keys, courses_taken_dict, base_dict, name_prefix, write_LP=True):
@@ -12,24 +14,28 @@ def run_model(program_keys, courses_taken_dict, base_dict, name_prefix, write_LP
         import create_model as cm
     model = LpProblem("SchedulingCourses", LpMinimize)
     vars_dict = cm.setup_x_y_vars(model, base_dict, program_keys, courses_taken_dict)
-    cm.add_requirement_constraints(model, vars_dict["X"], program_keys, base_dict)
+    cm.add_requirement_constraints(model, vars_dict["X"], vars_dict["Z"], program_keys, base_dict)
     track_SRs = cm.add_sreqs(model, vars_dict["X"], program_keys, base_dict)
-    
-    cm.set_objective(model, vars_dict["Y"], base_dict["Buckets"], 1)
+
+    # passing X dict for BSMS
+    cm.set_objective(model, vars_dict["X"], vars_dict["Y"], vars_dict["Z"], base_dict["Buckets"], 1)
+    #cm.set_objective(model, vars_dict["Y"], base_dict["Buckets"], 1)
     record_LP(model, write_LP, 1, name_prefix)
     model.writeLP("mymodel.lp")
     model.solve(PULP_CBC_CMD(msg=0))
     min_cred = model.objective.value()
     stage1_delta = model.solutionTime
 
-    cm.set_objective(model, vars_dict["Y"], base_dict["Buckets"], 2, max_credits = min_cred)
+    # passing X dict for BSMS
+    cm.set_objective(model, vars_dict["X"], vars_dict["Y"], vars_dict["Z"], base_dict["Buckets"], 2, max_credits = min_cred)
+    #cm.set_objective(model, vars_dict["Y"], base_dict["Buckets"], 2, max_credits = min_cred)
     record_LP(model, write_LP, 2, name_prefix)
     model.writeLP("mymodel2.lp")
     model.solve(PULP_CBC_CMD(msg=0))
     stage2_delta = model.solutionTime
 
     vars_dict["Solve Times"] = {"Stage I": stage1_delta, "Stage II": stage2_delta}
-    vars_dict["Objectives"] = {"Stage I": min_cred, "Stage II": model.objective.value()}
+    vars_dict["Objectives"] = {"Stage I": math.floor(min_cred), "Stage II": model.objective.value()}
 
     return vars_dict
 

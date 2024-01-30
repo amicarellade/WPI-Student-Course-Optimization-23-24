@@ -1,0 +1,84 @@
+{
+  "result": {
+    "ALL_MAJORS": {
+      "Free Electives": [
+        "CS 3431",
+        "CS 4341",
+        "DS 4635"
+      ],
+      "Humanities": [
+        "EN 2225",
+        "HU 3910",
+        "PY 1731",
+        "WR 1011",
+        "WR 1020",
+        "WR 2210"
+      ],
+      "IQP": [
+        "IQP OFF"
+      ],
+      "Not used": [
+        "CS 541",
+        "CS 586",
+        "CS 547",
+        "CS 1000",
+        "BUS 3020",
+        "DS 551",
+        "DS 598",
+        "FIN 1250"
+      ],
+      "Social Science": [
+        "ECON 1120",
+        "ID_2050"
+      ]
+    },
+    "DS_MAJOR": {
+      "Algorithms": [
+        "CS 2223"
+      ],
+      "Applied Statistics": [
+        "MA 2611",
+        "MA 2612"
+      ],
+      "Business Analysis ": [
+        "OIE 2081"
+      ],
+      "Computer Science": [
+        "CS 1101",
+        "CS 2103"
+      ],
+      "Core": [
+        "DS 1010",
+        "DS 2010",
+        "DS 3010"
+      ],
+      "Disciplinary Electives": [
+        "CS 3043",
+        "CS 4342",
+        "CS 4432",
+        "MA 1023",
+        "MA 1024",
+        "MA 2051",
+        "MA 2201",
+        "MA 2621",
+        "MA 3631",
+        "MIS 584",
+        "OIE 559"
+      ],
+      "Entrepreneurship and Innovation": [
+        "BUS 1010"
+      ],
+      "Linear Algebra": [
+        "MA 2071"
+      ],
+      "Mathematical Sciences": [
+        "MA 1021",
+        "MA 1022"
+      ],
+      "Natural or Engineering Sciences": [
+        "ECE 2010",
+        "PH 1110"
+      ]
+    }
+  }
+}

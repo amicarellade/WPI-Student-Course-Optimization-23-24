@@ -160,13 +160,16 @@ def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take):
                 not_used_list.append(new_course)
     
     if elect_credits_left > 0:
+        if elect_credits_left % 3 == 1.5:
+            elect_credits_left += 1.5
         courses_needed = math.floor(elect_credits_left / 3)
+
         for i in range(courses_needed):
             elect_courses_list.append("[FREE ELECTIVE]")
             to_take.append("FREE ELECTIVE")
-        if elect_credits_left % 3 == 1.5:
-            elect_courses_list.append("[1.5 CREDIT FREE ELECTIVE]")
-            to_take.append("1.5 CREDIT FREE ELECTIVE")
+        # if elect_credits_left % 3 == 1.5:
+        #     elect_courses_list.append("[1.5 CREDIT FREE ELECTIVE]")
+        #     to_take.append("1.5 CREDIT FREE ELECTIVE")
 
     result_dict["ALL_MAJORS"]["Free Electives"] = elect_courses_list
     result_dict["ALL_MAJORS"]["Not used"] = not_used_list

@@ -25,6 +25,7 @@ def run_model(program_keys, courses_taken, programs_ref_path = "Default", config
 
     vars_dict = sm.run_model(program_keys, courses_taken_dict, base_dict, output_name, write_LP= write_LP)
     added_credits = vars_dict["Objectives"]["Stage I"]
+    print("VARS DICT: " + str(vars_dict))
     applied = ps.format_solution(vars_dict["X"], vars_dict["Y"], base_dict, program_keys, courses_taken_dict)
     results = applied["Results"]
     new_counts = applied["Credit Counts"]

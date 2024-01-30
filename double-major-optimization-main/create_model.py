@@ -5,6 +5,7 @@ def setup_x_y_vars(model, base_dict, program_keys, taken_courses):
     applies_to_gen_ed = []
     x={}
     y={}
+    z={}
     for buck_key, buck_attrs in base_dict["Buckets"].items():
         buck_count = buck_attrs["Bucket Size"]
         num_taken = taken_courses[buck_key]["Taken"]
@@ -17,6 +18,11 @@ def setup_x_y_vars(model, base_dict, program_keys, taken_courses):
                 gen_rel_reqs.append(each_req)
                 x[(buck_key, each_req)] = LpVariable(lowBound = 0.0, upBound= buck_count, cat = 'Integer',name='x('+str(buck_key)+')('+str(each_req)+')')
 
+        for each_req in all_applic_reqs:
+            if each_req in base_dict["ALL_MAJORS"]["Reqs"].keys():
+                #gen_rel_reqs.append(each_req)
+                z[(each_req)] = LpVariable(lowBound = 0.0, cat = 'LpContinuous', name='z('+str(each_req)+')')
+
         prog_counter = 0
         for prog_key in program_keys:
             prog_counter += 1
@@ -28,25 +34,31 @@ def setup_x_y_vars(model, base_dict, program_keys, taken_courses):
                     relevant_reqs.append(each_req)
                     x[(buck_key, each_req)] = LpVariable(lowBound = 0.0, upBound= buck_count, cat = 'Integer',name='x('+str(buck_key)+')('+str(each_req)+')')
 
+            for each_req in buck_attrs["Req Keys"]:
+                if each_req in base_dict[prog_key]["Reqs"].keys():
+                    # relevant_reqs.append(each_req)
+                    z[(each_req)] = LpVariable(lowBound=0.0, cat='LpContinuous', name='z(' + str(each_req) + ')')
+
+            print("TAKEN COURSES WEEEEEEEEEE "+str(taken_courses))
             total_rel_reqs = relevant_reqs + gen_rel_reqs
             if len(total_rel_reqs) > 0:
                 model += lpSum(x[(buck_key, r)] for r in total_rel_reqs) <= y[buck_key] + taken_courses[buck_key]["Taken"], 'setY%s(%s)'%(str(prog_counter), buck_key)
 
-    vars_dict = {"X": x, "Y": y}
+    vars_dict = {"X": x, "Y": y, "Z":z}
     return vars_dict
 
-def add_requirement_constraints(model, x, program_keys, base_dict):
+def add_requirement_constraints(model, x, z, program_keys, base_dict):
     buckets_dict = base_dict["Buckets"]
     for prog_key in program_keys:
         for each_req in base_dict[prog_key]["Reqs"].keys():
             min_creds = base_dict[prog_key]["Reqs"][each_req]["Credits"]
             applic_buckets = base_dict[prog_key]["Reqs"][each_req]["Buckets"]
-            model += lpSum(buckets_dict[b]["Credits Each"] * x[b, each_req] for b in applic_buckets) >= min_creds, 'reqMin(%s)'%(each_req)
+            model += lpSum(buckets_dict[b]["Credits Each"] * x[b, each_req] for b in applic_buckets) - z[each_req] == min_creds, 'reqMin(%s)'%(each_req)
     
     for each_req in base_dict["ALL_MAJORS"]["Reqs"].keys():
         min_creds = base_dict["ALL_MAJORS"]["Reqs"][each_req]["Credits"]
         applic_buckets = base_dict["ALL_MAJORS"]["Reqs"][each_req]["Buckets"]
-        model += lpSum(buckets_dict[b]["Credits Each"] * x[b, each_req] for b in applic_buckets) >= min_creds, 'reqMin(%s)'%(each_req)
+        model += lpSum(buckets_dict[b]["Credits Each"] * x[b, each_req] for b in applic_buckets) - z[each_req] == min_creds, 'reqMin(%s)'%(each_req)
     
     return model
 
@@ -109,13 +121,19 @@ def sreqs_type2(model, x, sreq_key, sreq_attr, list_of_lobs, buckets_dict, track
 
     return track_SRs
 
+# def set_objective(model, y, buckets_dict, model_stage, max_credits=0):
+#     if model_stage == 1:
+#         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys())
 
-def set_objective(model, y, buckets_dict, model_stage, max_credits = 0):
+def set_objective(model, x, y, z, buckets_dict, model_stage, max_credits = 0):
     if model_stage == 1:
-        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys())
+        print("ZEEEEEEEEEEEEEEEEEEEEEEE: "+str(z))
+        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values())
+        #model += lpSum((1/410000000000)*val + buckets_dict[b]["Credits Each"] * (1/51) * y[b] for b in buckets_dict.keys() for val in x.values())
+
 
     elif model_stage == 2:
-        model += lpSum(-1 * buckets_dict[b]["Choice Weight"] * y[b] for b in buckets_dict.keys())
-        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) <= max_credits, 'credMax'
+        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) - lpSum(0.01 * zee for zee in z.values())
+        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values()) == max_credits, 'credMax'
 
     return model

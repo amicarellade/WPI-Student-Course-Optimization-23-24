@@ -1913,7 +1913,6 @@
                 "Choice Weight": 2,
                 "Credits Each": 4.5,
                 "Req Keys": [
-                    "DS_M_TOTAL_CREDITS",
                     "C_REST_G_AI_AET"
                 ]
             },
@@ -2675,8 +2674,7 @@
                         "M_GRAPH_UNCERT",
                         "M_EMP_HCC",
                         "M_CRYPT",
-                        "M_ADV_CRYPT",
-                        "M_AI_AET"
+                        "M_ADV_CRYPT"
                     ],
                     "Credits": 45,
                     "Req Description": "Total MS Credits Req"
@@ -5223,7 +5221,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 4,
                 "Choice Weight": 100,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -5235,7 +5233,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 1,
                 "Choice Weight": 25,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -6092,7 +6090,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 4,
                 "Choice Weight": 100,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -6104,7 +6102,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 1,
                 "Choice Weight": 25,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -7245,7 +7243,7 @@
                     "GE_DEPT",
                     "BB_DEPT"
                 ],
-                "Bucket Description": "Math or Basic Science ",
+                "Bucket Description": "Math or Basic Science",
                 "Bucket Size": 15,
                 "Choice Weight": 15,
                 "Credits Each": 3,
@@ -7506,7 +7504,7 @@
                         "MATH"
                     ],
                     "Credits": 18,
-                    "Req Description": "Mathematics "
+                    "Req Description": "Mathematics"
                 },
                 "ME_MABS": {
                     "Buckets": [
@@ -7530,7 +7528,7 @@
                         "MECH_SYS_4000"
                     ],
                     "Credits": 12,
-                    "Req Description": "Mechanical Systems "
+                    "Req Description": "Mechanical Systems"
                 },
                 "ME_PROG": {
                     "Buckets": [
