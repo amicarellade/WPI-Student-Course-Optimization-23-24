@@ -27,6 +27,18 @@ def run_model(program_keys, courses_taken, programs_ref_path = "Default", config
     added_credits = vars_dict["Objectives"]["Stage I"]
     print("VARS DICT: " + str(vars_dict))
     applied = ps.format_solution(vars_dict["X"], vars_dict["Y"], base_dict, program_keys, courses_taken_dict)
+
+    #NEW PRINT STATEMENT 
+    print("APPLIED")
+    print("!!!!!!!")
+    print("@@@@@@@")
+    print("#######")
+    print("$$$$$$")
+    print("&&&&&&&")
+    print(applied)
+    print("        ")
+    print("       ")
+
     results = applied["Results"]
     new_counts = applied["Credit Counts"]
     print("APPLIED: "+str(applied))

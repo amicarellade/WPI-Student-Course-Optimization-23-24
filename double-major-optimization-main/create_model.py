@@ -36,15 +36,13 @@ def setup_x_y_vars(model, base_dict, program_keys, taken_courses):
 
             for each_req in buck_attrs["Req Keys"]:
                 if each_req in base_dict[prog_key]["Reqs"].keys():
-                    # relevant_reqs.append(each_req)
-                    z[(each_req)] = LpVariable(lowBound=0.0, cat='LpContinuous', name='z(' + str(each_req) + ')')
+                    z[each_req] =  LpVariable(lowBound = 0.0, cat = 'LpContinuous', name='z('+str(each_req)+')')
 
-            print("TAKEN COURSES WEEEEEEEEEE "+str(taken_courses))
             total_rel_reqs = relevant_reqs + gen_rel_reqs
             if len(total_rel_reqs) > 0:
                 model += lpSum(x[(buck_key, r)] for r in total_rel_reqs) <= y[buck_key] + taken_courses[buck_key]["Taken"], 'setY%s(%s)'%(str(prog_counter), buck_key)
 
-    vars_dict = {"X": x, "Y": y, "Z":z}
+    vars_dict = {"X": x, "Y": y, "Z": z}
     return vars_dict
 
 def add_requirement_constraints(model, x, z, program_keys, base_dict):

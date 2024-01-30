@@ -608,7 +608,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 10,
                 "Choice Weight": 100,
-                "Credits Each": 9.0,
+                "Credits Each": 9,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -620,7 +620,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 3,
                 "Choice Weight": 25,
-                "Credits Each": 9.0,
+                "Credits Each": 9,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -1042,277 +1042,6 @@
                     "Credits": 15.0,
                     "Sreq Description": "At least five CS courses must be at the 4000+ level",
                     "Sreq Type": "1a",
-                    "Sublists Count": 0
-                }
-            }
-        }
-    },
-    "CS_MASTER_ONLY": {
-        "Buckets": {
-            "ALGO": {
-                "Bucket Contents": [
-                    "CS_504",
-                    "CS_584",
-                    "CS_5084"
-                ],
-                "Bucket Description": "Algorithms: CS_504, CS_584, CS_5084",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_MS_ALGO"
-                ]
-            },
-            "BREADTH": {
-                "Bucket Contents": [
-                    "BCB_502",
-                    "CS_582",
-                    "BCB_503",
-                    "CS_583",
-                    "CS_509",
-                    "CS_526",
-                    "RBE_526",
-                    "CS_534",
-                    "CS_536",
-                    "CS_538",
-                    "CS_539",
-                    "CS_540",
-                    "CS_542",
-                    "CS_543",
-                    "CS_544",
-                    "CS_545",
-                    "ECE_545",
-                    "CS_546",
-                    "CS_548",
-                    "CS_549",
-                    "RBE_549",
-                    "CS_557",
-                    "CS_561",
-                    "CS_562",
-                    "CS_563",
-                    "CS_564",
-                    "CS_571",
-                    "CS_573",
-                    "CS_578",
-                    "ECE_578",
-                    "CS_585",
-                    "DS_503",
-                    "CS_586",
-                    "DS_504",
-                    "CS_673",
-                    "ECE_673",
-                    "CS_541",
-                    "DS_541",
-                    "CS_547",
-                    "DS_547",
-                    "SEME_565",
-                    "CS_565",
-                    "SEME_566",
-                    "CS_566",
-                    "SEME_567",
-                    "CS_567",
-                    "SEME_568",
-                    "CS_568"
-                ],
-                "Bucket Description": "CS Breadth Electives",
-                "Bucket Size": 48,
-                "Choice Weight": 48,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_MS_BREADTH"
-                ]
-            },
-            "ELECT": {
-                "Bucket Contents": [
-                    "CS_514",
-                    "ECE_572",
-                    "CS_522",
-                    "MA_510",
-                    "CS_525",
-                    "CS_587",
-                    "ECE_588",
-                    "CS_588"
-                ],
-                "Bucket Description": "Electives",
-                "Bucket Size": 8,
-                "Choice Weight": 49,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS"
-                ]
-            },
-            "ELECT_THESIS": {
-                "Bucket Contents": [
-                    "CS_5007",
-                    "CS_5008",
-                    "CS_598"
-                ],
-                "Bucket Description": "Elective or Thesis",
-                "Bucket Size": 4,
-                "Choice Weight": 100,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_THESIS_DISP_CAP"
-                ]
-            },
-            "NET_BREADTH_DOUBLE": {
-                "Bucket Contents": [
-                    "CS_558"
-                ],
-                "Bucket Description": "Networks and Breadth: CS_558",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_MS_SYS_NETWORKS",
-                    "CS_MS_BREADTH"
-                ]
-            },
-            "SYS_NET": {
-                "Bucket Contents": [
-                    "CS_502",
-                    "CS_513",
-                    "CS_528",
-                    "CS_529",
-                    "CS_533",
-                    "ECE_581",
-                    "CS_535",
-                    "CS_577",
-                    "ECE_537"
-                ],
-                "Bucket Description": "Systems or Networks: CS_502, CS_513, CS_528, CS_529, CS_533, CS_588, ECE_581, CS_535, CS_577, ECE_537",
-                "Bucket Size": 9,
-                "Choice Weight": 9,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_MS_SYS_NETWORKS"
-                ]
-            },
-            "THESIS": {
-                "Bucket Contents": [
-                    "CS_599"
-                ],
-                "Bucket Description": "Thesis",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
-                "Credits Each": 13.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_THESIS_CAP"
-                ]
-            },
-            "THRY": {
-                "Bucket Contents": [
-                    "CS_503",
-                    "CS_521",
-                    "CS_559",
-                    "CS_5003"
-                ],
-                "Bucket Description": "Theory: CS_503, CS_521, CS_559, CS_5003",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_MS_TOTAL_CREDITS",
-                    "CS_MS_THEORY"
-                ]
-            }
-        },
-        "CS_MASTER": {
-            "Reqs": {
-                "CS_MS_TOTAL_CREDITS": {
-                    "Buckets": [
-                        "BREADTH",
-                        "SYS_NET",
-                        "THRY",
-                        "ALGO",
-                        "ELECT_THESIS",
-                        "ELECT",
-                        "NET_BREADTH_DOUBLE",
-                        "THESIS"
-                    ],
-                    "Credits": 45,
-                    "Req Description": "Total MS Credits Req"
-                }
-            },
-            "Sreqs": {
-                "CS_MS_ALGO": {
-                    "Applicable Reqs": [
-                        "CS_MS_TOTAL_CREDITS"
-                    ],
-                    "Buckets": [
-                        "ALGO"
-                    ],
-                    "Credits": 4.5,
-                    "Sreq Description": "algorithms",
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "CS_MS_BREADTH": {
-                    "Applicable Reqs": [
-                        "CS_MS_TOTAL_CREDITS"
-                    ],
-                    "Buckets": [
-                        "BREADTH",
-                        "NET_BREADTH_DOUBLE"
-                    ],
-                    "Credits": 4.5,
-                    "Sreq Description": "says courses in college teaching don't count (what is a course in college teaching? is it SEME (stem for educatiors?)",
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "CS_MS_SYS_NETWORKS": {
-                    "Applicable Reqs": [
-                        "CS_MS_TOTAL_CREDITS"
-                    ],
-                    "Buckets": [
-                        "SYS_NET",
-                        "NET_BREADTH_DOUBLE"
-                    ],
-                    "Credits": 4.5,
-                    "Sreq Description": "either systems or networks ",
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "CS_MS_THEORY": {
-                    "Applicable Reqs": [
-                        "CS_MS_TOTAL_CREDITS"
-                    ],
-                    "Buckets": [
-                        "THRY"
-                    ],
-                    "Credits": 4.5,
-                    "Sreq Description": "theory  ",
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "CS_THESIS_CAP": {
-                    "Applicable Reqs": [
-                        "CS_MS_TOTAL_CREDITS"
-                    ],
-                    "Buckets": [
-                        "THESIS"
-                    ],
-                    "Credits": 13.5,
-                    "Sreq Description": "4th breadth course ",
-                    "Sreq Type": "1b",
-                    "Sublists Count": 0
-                },
-                "CS_THESIS_DISP_CAP": {
-                    "Applicable Reqs": [
-                        "CS_MS_TOTAL_CREDITS"
-                    ],
-                    "Buckets": [
-                        "ELECT_THESIS"
-                    ],
-                    "Credits": 13.5,
-                    "Sreq Description": "trying to force output to display thesis",
-                    "Sreq Type": "1b",
                     "Sublists Count": 0
                 }
             }
@@ -2184,7 +1913,6 @@
                 "Choice Weight": 2,
                 "Credits Each": 4.5,
                 "Req Keys": [
-                    "DS_M_TOTAL_CREDITS",
                     "C_REST_G_AI_AET"
                 ]
             },
@@ -2946,8 +2674,7 @@
                         "M_GRAPH_UNCERT",
                         "M_EMP_HCC",
                         "M_CRYPT",
-                        "M_ADV_CRYPT",
-                        "M_AI_AET"
+                        "M_ADV_CRYPT"
                     ],
                     "Credits": 45,
                     "Req Description": "Total MS Credits Req"
@@ -5494,7 +5221,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 4,
                 "Choice Weight": 100,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -5506,7 +5233,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 1,
                 "Choice Weight": 25,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -6363,7 +6090,7 @@
                 "Bucket Description": "IQP off campus",
                 "Bucket Size": 4,
                 "Choice Weight": 100,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -6375,7 +6102,7 @@
                 "Bucket Description": "IQP on campus",
                 "Bucket Size": 1,
                 "Choice Weight": 25,
-                "Credits Each": 9,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -7516,7 +7243,7 @@
                     "GE_DEPT",
                     "BB_DEPT"
                 ],
-                "Bucket Description": "Math or Basic Science ",
+                "Bucket Description": "Math or Basic Science",
                 "Bucket Size": 15,
                 "Choice Weight": 15,
                 "Credits Each": 3,
@@ -7777,7 +7504,7 @@
                         "MATH"
                     ],
                     "Credits": 18,
-                    "Req Description": "Mathematics "
+                    "Req Description": "Mathematics"
                 },
                 "ME_MABS": {
                     "Buckets": [
@@ -7801,7 +7528,7 @@
                         "MECH_SYS_4000"
                     ],
                     "Credits": 12,
-                    "Req Description": "Mechanical Systems "
+                    "Req Description": "Mechanical Systems"
                 },
                 "ME_PROG": {
                     "Buckets": [
