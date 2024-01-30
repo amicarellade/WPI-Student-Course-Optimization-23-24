@@ -8,7 +8,7 @@ program_keys = ['CS_MASTER']
 
 # must be in the format DEPT_NUM, ex "OIE_2081"
 # program does not check for course validity, unrecognized courses assumed to be 3 credits
-courses_taken = ["CS_558"]
+courses_taken = ["CS_539", "CS_534", "CS_541"]
 #REMINDER TO FIX CS_558 PROBLEM AT SOME POINT (AND ACTUALLY DETERMINE IF IT IS A PROBLEM)
 
 ##['PH_1110', 'MA_1024', 'MA_2621', 'ECE_2010', 'OIE_2081', 'EN_2225', 'MA_3631', 'BUS_1010', 'PY_1731', 'FIN_1250','CS_3043', 'CS_4432', 'MA_1022', 'DS_1010', 'DS_2010', 'MA_2612', 'HU_3910', 'WR_1020', 'CS_3431', 'MA_2611', 'MA_2071', 'ID_2050', 'CS_2103', 'MA_2201', 'MA_2051', 'MA_1023', 'CS_4341', 'DS_3010', 'WR_2210','CS_1101', 'MA_1021', 'CS_2223', 'DS_4635', 'ECON_1120', 'WR_1011', "CS_4342", "MIS_3720", "CS_539", "CS_542"]

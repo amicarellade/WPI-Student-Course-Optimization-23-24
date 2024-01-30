@@ -3,23 +3,23 @@
  
 45.0 TOTAL
 -------------------------------
-40.5 REMAINING 
-    40.5 Academic Courses 
+31.5 REMAINING 
+    31.5 Academic Courses 
     0.0 Free Electives 
     0.0 MQP 
     0.0 PE
  
-4.5 TAKEN
-    4.5 Applied
+13.5 TAKEN
+    13.5 Applied
     0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.03155595005955547
+TOTAL RUN TIME: 0.07216036599129438
 ----------------------------------------
-    Stage I solve: 0.01124882698059082
-    Stage II solve: 0.012427091598510742
+    Stage I solve: 0.04117083549499512
+    Stage II solve: 0.016905784606933594
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -31,15 +31,15 @@ ____________________________________
  
 Total MS Credits Req
 ----------------------------
-    CS 558
+    CS 534
+    CS 539
+    CS 541
     [Algorithms: CS_504, CS_584, CS_5084]
     [Elective or Thesis]
     [Elective or Thesis]
     [Elective or Thesis]
     [Electives]
-    [Electives]
-    [Electives]
-    [Electives]
+    [Systems or Networks: CS_502, CS_513, CS_528, CS_529, CS_533, CS_588, ECE_581, CS_535, CS_577, ECE_537]
     [Theory: CS_503, CS_521, CS_559, CS_5003]
 
 
