@@ -3,23 +3,23 @@
  
 198.0 TOTAL
 -------------------------------
-189.0 REMAINING 
-    168.0 Academic Courses 
-    9.0 Free Electives 
+61.5 REMAINING 
+    49 Academic Courses 
+    0.5 Free Electives 
     9.0 MQP 
     3.0 PE
  
-9.0 TAKEN
-    9.0 Applied
+136.5 TAKEN
+    136.5 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.049988800000051
+TOTAL RUN TIME: 1.0444217999465764
 ----------------------------------------
-    Stage I solve: 0.6878583431243896
-    Stage II solve: 0.22240495681762695
+    Stage I solve: 0.7029609680175781
+    Stage II solve: 0.1249699592590332
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,12 +44,12 @@ Physical Education
 
 Humanities
 ----------------------------
-    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
-    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
-    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
-    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
-    [HU_3900 OR HU_3910]
-    [PY_2731, PY_2713, RE_2731]
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
 
 IQP
 ----------------------------
@@ -57,14 +57,14 @@ IQP
 
 Social Science
 ----------------------------
-    [ECON_DEPT, ENV_DEPT, GOV_DEPT, PSY_DEPT, SD_DEPT, SOC_DEPT, SS_DEPT, STS_DEPT, DEV_DEPT]
-    [ID 2050]
+    ECON 1120
+    ID 2050
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
+    FIN 1250
+    BUS 3020
+    CS 1000
 
 Not used
 ----------------------------
@@ -77,80 +77,81 @@ ____________________________________
  
 Algorithms
 ----------------------------
-    [CS 2223]
+    CS 2223
 
 Business Analysis 
 ----------------------------
-    [BUS_2080 OR OIE_2081]
+    OIE 2081
 
 Core
 ----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
+    DS 1010
+    DS 2010
+    DS 3010
 
 Computer Science
 ----------------------------
-    [CS_1004 OR CS_1101 OR CS_1102]
-    [CS_2102 OR CS_2103 OR CS_2119]
+    CS 1101
+    CS 2103
 
 Disciplinary Electives
 ----------------------------
-    [CS 4120]
-    [CS 4342]
-    [CS 4432]
-    [CS_4803 OR BCB_4003]
-    [CS_585 OR DS_503]
-    [DS_541 OR CS_541]
-    [MA 4235]
-    [MA 4631]
-    [MA_543 OR DS_502]
-    [OIE 559]
+    CS 3043
+    CS 3431
+    MA 1023
+    MA 1024
+    MA 2051
+    MA 2201
+    MA 2621
+    MA 3631
+    OIE 559
+    [CS_4032, MA_4213, MA_4214, MA_4222, MA_4237]
+    [MIS_587, MKT_568]
 
 Double Counting 
 ----------------------------
-    [BCB_4004 OR MA_4603]
-    [CS 4341]
-    [CS 4445]
-    [CS 4518]
-    [CS_4802 OR BCB_4002]
-    [MA 4632]
+    CS 4341
+    CS 4342
+    CS 4432
+    DS 4635
+    [CS 4120]
+    [MA 4235]
 
 Entrepreneurship and Innovation
 ----------------------------
-    [BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
+    BUS 1010
 
 Linear Algebra
 ----------------------------
-    [MA_2071 OR MA_2072]
+    MA 2071
 
 Mathematical Sciences
 ----------------------------
-    [DS 4635]
-    [MA 4635]
+    MA 1021
+    MA 1022
 
 Total MS Credits Req
 ----------------------------
-    [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
-    [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
-    [CS 561]
-    [CS_586 OR DS_504]
+    CS 541
+    DS 504
+    [CS_565 OR SEME_565]
+    [CS_582 OR BCB_502]
+    [CS_585 OR DS_503]
+    [ECE_578 OR CS_578]
+    [MA 541]
     [MA 542]
     [MA 554]
-    [MIS 571]
-    [MIS 584]
-    [MIS 587]
-    [MKT 568]
+    [MA_517 OR DS_517]
 
 Natural or Engineering Sciences
 ----------------------------
-    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
-    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
+    ECE 2010
+    PH 1110
 
 Applied Statistics
 ----------------------------
-    [MA 2611]
-    [MA 2612]
+    MA 2611
+    MA 2612
 
 
  

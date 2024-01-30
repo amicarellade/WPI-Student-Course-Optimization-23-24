@@ -1,13 +1,13 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-45.0 TOTAL
+148.5 TOTAL
 -------------------------------
 31.5 REMAINING 
     31.5 Academic Courses 
     0.0 Free Electives 
-    0.0 MQP 
-    0.0 PE
+    9.0 MQP 
+    3.0 PE
  
 13.5 TAKEN
     13.5 Applied
@@ -25,11 +25,48 @@ TOTAL RUN TIME: 0.07216036599129438
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
 [Brackets indicate courses that have yet to be taken] 
  
-Computer Science Masters (MSCS)
+General Education and Projects
 ____________________________________
 
  
-Total MS Credits Req
+MQP
+----------------------------
+    [MQP]
+    [MQP]
+    [MQP]
+
+Physical Education
+----------------------------
+    [PE]
+    [PE]
+    [PE]
+    [PE]
+
+Humanities
+----------------------------
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
+
+IQP
+----------------------------
+    IQP OFF
+
+Social Science
+----------------------------
+    ECON 1120
+    ID_2050
+
+Free Electives
+----------------------------
+    CS 4341
+    DS 4635
+    CS 541
+
+Not used
 ----------------------------
     CS 534
     CS 539
@@ -41,6 +78,68 @@ Total MS Credits Req
     [Electives]
     [Systems or Networks: CS_502, CS_513, CS_528, CS_529, CS_533, CS_588, ECE_581, CS_535, CS_577, ECE_537]
     [Theory: CS_503, CS_521, CS_559, CS_5003]
+
+
+ 
+Data Science
+____________________________________
+
+ 
+Algorithms
+----------------------------
+    CS 2223
+
+Business Analysis 
+----------------------------
+    OIE 2081
+
+Core
+----------------------------
+    DS 1010
+    DS 2010
+    DS 3010
+
+Computer Science
+----------------------------
+    CS 1101
+    CS 2103
+
+Disciplinary Electives
+----------------------------
+    CS 3043
+    CS 3431
+    CS 4342
+    CS 4432
+    DS 504
+    MA 1024
+    MA 2051
+    MA 2201
+    MA 2621
+    MA 3631
+    OIE 559
+
+Entrepreneurship and Innovation
+----------------------------
+    BUS 1010
+
+Linear Algebra
+----------------------------
+    MA 2071
+
+Mathematical Sciences
+----------------------------
+    MA 1021
+    MA 1022
+
+Natural or Engineering Sciences
+----------------------------
+    ECE 2010
+    PH 1110
+
+Applied Statistics
+----------------------------
+    MA 2611
+    MA 2612
 
 
  

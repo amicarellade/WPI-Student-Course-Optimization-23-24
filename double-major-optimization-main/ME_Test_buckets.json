@@ -477,7 +477,7 @@
             "Bucket Description": "IQP off campus",
             "Bucket Size": 10,
             "Choice Weight": 100,
-            "Credits Each": 3.0,
+            "Credits Each": 9.0,
             "Req Keys": [
                 "IQP"
             ]
@@ -489,7 +489,7 @@
             "Bucket Description": "IQP on campus",
             "Bucket Size": 3,
             "Choice Weight": 25,
-            "Credits Each": 3.0,
+            "Credits Each": 9.0,
             "Req Keys": [
                 "IQP",
                 "ON_OFF_CAMPUS"
@@ -1437,6 +1437,7 @@
             "Choice Weight": 2,
             "Credits Each": 4.5,
             "Req Keys": [
+                "DS_M_TOTAL_CREDITS",
                 "C_REST_G_AI_AET"
             ]
         },
@@ -3610,8 +3611,8 @@
                 "MA_4635"
             ],
             "Bucket Description": "DS 4635",
-            "Bucket Size": 1,
-            "Choice Weight": 1,
+            "Bucket Size": 2,
+            "Choice Weight": 2,
             "Credits Each": 3,
             "Req Keys": [
                 "MA_INTRO",
@@ -3627,8 +3628,8 @@
                 "DS_DEPT"
             ],
             "Bucket Description": "DS DEPT",
-            "Bucket Size": 3,
-            "Choice Weight": 4,
+            "Bucket Size": 20,
+            "Choice Weight": 20,
             "Credits Each": 3,
             "Req Keys": [
                 "MA_CS_DS",
@@ -4352,7 +4353,7 @@
             "Bucket Description": "IQP off campus",
             "Bucket Size": 5,
             "Choice Weight": 100,
-            "Credits Each": 3,
+            "Credits Each": 9,
             "Req Keys": [
                 "IQP"
             ]
@@ -4364,7 +4365,7 @@
             "Bucket Description": "IQP on campus",
             "Bucket Size": 5,
             "Choice Weight": 25,
-            "Credits Each": 3,
+            "Credits Each": 9,
             "Req Keys": [
                 "IQP",
                 "ON_OFF_CAMPUS"
@@ -4576,7 +4577,7 @@
             ],
             "Bucket Description": "ES_3001",
             "Bucket Size": 1,
-            "Choice Weight": 1,
+            "Choice Weight": 80,
             "Credits Each": 3,
             "Req Keys": [
                 "ME_E",
