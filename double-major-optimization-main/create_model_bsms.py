@@ -137,17 +137,17 @@ def sreqs_type2(model, x, sreq_key, sreq_attr, list_of_lobs, buckets_dict, track
     return track_SRs
 
 
-def set_objective(model, x, y, z, buckets_dict, model_stage, max_credits=0):
+def set_objective(model, y, z, buckets_dict, model_stage, max_credits=0):
     if model_stage == 1:
         #DOESNT WORK - x includes taken AND not taken, so it has no incentive to place a taken course there (as written).
-        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values()) - lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
-        # model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(
-        #     0.01 * zee for zee in z.values())
+        #model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values()) - lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
+        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(
+            0.01 * zee for zee in z.values())
 
     elif model_stage == 2:
         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) - lpSum(
-            0.01 * zee for zee in z.values()) + lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
+            0.01 * zee for zee in z.values()) #+ lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(
-            0.01 * zee for zee in z.values()) - lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks)) == max_credits, 'credMax'
+            0.01 * zee for zee in z.values()) == max_credits, 'credMax' #- lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks)) == max_credits, 'credMax'
 
     return model

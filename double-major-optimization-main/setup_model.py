@@ -12,13 +12,19 @@ def run_model(program_keys, courses_taken_dict, base_dict, name_prefix, write_LP
         import create_model_bsms as cm
     else:
         import create_model as cm
+
+    print("\n")
+    print("LIVIN ON A PRAYER")
+    print("BASE DICTIONARY: ")
+    print(base_dict)
+
     model = LpProblem("SchedulingCourses", LpMinimize)
     vars_dict = cm.setup_x_y_vars(model, base_dict, program_keys, courses_taken_dict)
     cm.add_requirement_constraints(model, vars_dict["X"], vars_dict["Z"], program_keys, base_dict)
     track_SRs = cm.add_sreqs(model, vars_dict["X"], program_keys, base_dict)
 
     # passing X dict for BSMS
-    cm.set_objective(model, vars_dict["X"], vars_dict["Y"], vars_dict["Z"], base_dict["Buckets"], 1)
+    cm.set_objective(model, vars_dict["Y"], vars_dict["Z"], base_dict["Buckets"], 1)
     #cm.set_objective(model, vars_dict["Y"], base_dict["Buckets"], 1)
     record_LP(model, write_LP, 1, name_prefix)
     model.writeLP("mymodel.lp")
@@ -27,7 +33,7 @@ def run_model(program_keys, courses_taken_dict, base_dict, name_prefix, write_LP
     stage1_delta = model.solutionTime
 
     # passing X dict for BSMS
-    cm.set_objective(model, vars_dict["X"], vars_dict["Y"], vars_dict["Z"], base_dict["Buckets"], 2, max_credits = min_cred)
+    cm.set_objective(model, vars_dict["Y"], vars_dict["Z"], base_dict["Buckets"], 2, max_credits = min_cred)
     #cm.set_objective(model, vars_dict["Y"], base_dict["Buckets"], 2, max_credits = min_cred)
     record_LP(model, write_LP, 2, name_prefix)
     model.writeLP("mymodel2.lp")

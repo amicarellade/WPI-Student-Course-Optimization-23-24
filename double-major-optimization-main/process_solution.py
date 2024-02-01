@@ -209,6 +209,12 @@ def apply_courses_helper(program_key, programs_to_count_toward, sol_courses, tra
         result_dict[req_name] += course_list
         result_dict[req_name].sort()
 
+       
+        print("GOODNESS GRACIOUS")
+        print("COOL BEANS")
+        print("printing RESULT_DICT")
+        print(result_dict)
+
     return result_dict
 
 def get_course_name(bucket_key, buckets_ref, to_take):

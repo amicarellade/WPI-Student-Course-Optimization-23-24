@@ -123,7 +123,7 @@ def sreqs_type2(model, x, sreq_key, sreq_attr, list_of_lobs, buckets_dict, track
 #     if model_stage == 1:
 #         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys())
 
-def set_objective(model, x, y, z, buckets_dict, model_stage, max_credits = 0):
+def set_objective(model, y, z, buckets_dict, model_stage, max_credits = 0):
     if model_stage == 1:
         print("ZEEEEEEEEEEEEEEEEEEEEEEE: "+str(z))
         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values())
