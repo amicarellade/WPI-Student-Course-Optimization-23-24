@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WPI Course Schedule Optimizer</title>
+    <title>WPI Course Schedule Optimization Tool</title>
 </head>
 <body>
-    <h1>WPI Course Schedule Optimizer</h1>
+    <h1>WPI Course Schedule Optimization Tool</h1>
+    <!-- TODO: fetch double major combos that we actually have based on your first major selection? sounds hard - we'd have to read your selection before you hit submit -->
     <form method="POST" enctype="multipart/form-data">
 
         <label for="major">Select your major:</label>
         <select name="major" id="major">
             <option value="Select...">Select...</option>
-            <option value="OIE">OIE</option>
-            <option value="Math">Math</option>
+            <option value="OIE">Operations and Industrial Engineering</option>
+            <option value="MATH">Math</option>
             <option value="DS">Data Science</option>
             <option value="CS">Computer Science</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="ECE">Electrical Engineering</option>
         </select>
         <br>
 
         <label for="second_major">Select your second major:</label>
         <select name="second_major" id="second_major">
             <option value="None">None</option>
-            <option value="OIE">OIE</option>
-            <option value="Math">Math</option>
+            <option value="OIE">Operations and Industrial Engineering</option>
+            <option value="MATH">Math</option>
+            <option value="DS">Data Science</option>
+            <option value="CS">Computer Science</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="ECE">Electrical Engineering</option>
+        </select>
+        <br>
+
+        <label for="masters">If you're pursuing a master's degree (either standalone or BS/MS), please indicate it here:</label>
+        <select name="masters" id="masters">
+            <option value="None">None</option>
             <option value="DS">Data Science</option>
             <option value="CS">Computer Science</option>
         </select>
+        <br>
         <br>
 
         <label for="courses">Enter your taken courses or upload your Academic Progress Excel sheet from Workday:</label>
@@ -34,7 +48,7 @@
         <br>
         <p>Input courses as a comma-separated list with an underscore in between the department code and course number.</p>
         <em>Ex: MA_1021, WR_1010, ...</em>
-        <p>Please omit your MQP and gym credits, but we will output them in your tracking sheet so you don't forget about them.</p>
+        <p>If you are manually inputting courses, please omit your MQP and gym credits, but we will output them in your tracking sheet so you don't forget about them.</p>
         <p>If you are uploading your Academic Progress, you can also manually input courses above to add to your Workday output 
             (if you'd like to experiment with potential future courses).</p>
         <label for="removed-courses">Similarly, if you'd like any courses removed from your Academic Progress, enter them here:</label>
@@ -46,7 +60,7 @@
     </form>
 
     {% if result %}
-    <h2>Result:</h2>
+    <h2>Instructions:</h2>
     <pre>{{ result }}</pre>
     {% endif %}
 </body>

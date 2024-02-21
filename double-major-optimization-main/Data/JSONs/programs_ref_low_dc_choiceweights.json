@@ -9,7 +9,7 @@
                         "WR_CON",
                         "HI_CON",
                         "PY_CON",
-                        "DPE_HU"
+                        "HU_SOC_IMPS"
                     ],
                     "Credits": 15,
                     "Req Description": "Humanities"
@@ -33,7 +33,7 @@
                     "Buckets": [
                         "ID_2050",
                         "SOC_SCI",
-                        "DPE_GOV"
+                        "SOC_IMP_GOVS"
                     ],
                     "Credits": 6,
                     "Req Description": "Social Science"
@@ -131,36 +131,61 @@
             }
         },
         "Buckets": {
-            "1000_MATH": {
+            "4000_LVL_DESIGN": {
                 "Bucket Contents": [
-                    "MA_1020",
-                    "MA_1021",
-                    "MA_1022",
-                    "MA_1023",
-                    "MA_1024",
-                    "MA_1033",
-                    "MA_1034",
-                    "MA_1120",
-                    "MA_1801",
-                    "MA_1971"
+                    "CS_4233"
                 ],
-                "Bucket Description": "1000 Level Math",
-                "Bucket Size": 10,
-                "Choice Weight": 50,
+                "Bucket Description": "CS_4233",
+                "Bucket Size": 1,
+                "Choice Weight": 7,
                 "Credits Each": 3.0,
                 "Req Keys": [
-                    "CS_GEN_MATH",
-                    "CS_MATH_1000L_REST"
+                    "CS_CORE",
+                    "CS_UPLVL_MIN",
+                    "CS_DESIGN"
+                ]
+            },
+            "4000_LVL_SYSTEMS": {
+                "Bucket Contents": [
+                    "CS_4513",
+                    "CS_4515",
+                    "CS_4516"
+                ],
+                "Bucket Description": "CS_4513, CS_4515, CS_4516",
+                "Bucket Size": 3,
+                "Choice Weight": 4,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_UPLVL_MIN",
+                    "CS_SYS"
+                ]
+            },
+            "4000_LVL_THEORY": {
+                "Bucket Contents": [
+                    "CS_4120",
+                    "CS_4123",
+                    "CS_4533",
+                    "CS_4536"
+                ],
+                "Bucket Description": "CS_4120, CS_4123, CS_4533, CS_4536",
+                "Bucket Size": 4,
+                "Choice Weight": 10,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_UPLVL_MIN",
+                    "CS_THRY"
                 ]
             },
             "ART_CON": {
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT"
+                    "MUS_DEPT"
                 ],
-                "Bucket Description": "AR_DEPT, TH_DEPT, MU_DEPT",
-                "Bucket Size": 20,
+                "Bucket Description": "Humanities",
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -169,59 +194,13 @@
                     "HUA_ART_MAX"
                 ]
             },
-            "BIO": {
+            "BB_DEPT": {
                 "Bucket Contents": [
-                    "BB_1001",
-                    "BB_1002",
-                    "BB_1003",
-                    "BCB_1003",
-                    "BB_1025",
-                    "BB_1035",
-                    "BB_1045",
-                    "BB_2002",
-                    "BB_2003",
-                    "BB_2030",
-                    "BB_2040",
-                    "BB_2050",
-                    "BB_2550",
-                    "BB_2902",
-                    "BB_2903",
-                    "BB_2904",
-                    "BB_2915",
-                    "BB_2917",
-                    "BB_2920",
-                    "BB_2950",
-                    "BB_3003",
-                    "BB_3010",
-                    "BCB_3010",
-                    "BB_3050",
-                    "BB_3080",
-                    "BB_3101",
-                    "BB_3102",
-                    "BB_3120",
-                    "BB_3140",
-                    "BB_3512",
-                    "BB_3513",
-                    "BB_3515",
-                    "BB_3517",
-                    "BB_3519",
-                    "BB_3521",
-                    "BB_3525",
-                    "BB_3526",
-                    "BB_3527",
-                    "BB_3530",
-                    "BB_3570",
-                    "BB_3620",
-                    "BB_3920",
-                    "BB_4150",
-                    "BB_4620",
-                    "BB_4801",
-                    "BCB_4001",
-                    "BB_4900"
+                    "BB_DEPT"
                 ],
-                "Bucket Description": "Biology",
-                "Bucket Size": 47,
-                "Choice Weight": 47,
+                "Bucket Description": "BB_DEPT",
+                "Bucket Size": 10,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_GEN_SCI",
@@ -229,61 +208,32 @@
                     "CS_SCI_DPTH_SL_2"
                 ]
             },
-            "BIO_CHEM_LAP": {
+            "CH_DEPT": {
                 "Bucket Contents": [
-                    "BB_4170",
-                    "CH_4170",
-                    "BB_4190",
-                    "CH_4190"
+                    "CH_DEPT"
                 ],
-                "Bucket Description": "BB_4170, CH_4170', BB_4190, CH_4190",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_GEN_SCI",
-                    "CS_SCI_ENG",
-                    "CS_SCI_DPTH_SL_1",
-                    "CS_SCI_DPTH_SL_2"
-                ]
-            },
-            "CHEM": {
-                "Bucket Contents": [
-                    "CH_1010",
-                    "CH_1020",
-                    "CH_1030",
-                    "CH_1040",
-                    "CH_2310",
-                    "CH_2320",
-                    "CH_2330",
-                    "CH_2360",
-                    "CH_2640",
-                    "CH_2650",
-                    "CH_2660",
-                    "CH_2670",
-                    "CH_3310",
-                    "CH_3410",
-                    "CH_3510",
-                    "CH_3530",
-                    "CH_3550",
-                    "CH_4110",
-                    "CH_4120",
-                    "CH_4130",
-                    "CH_4140",
-                    "CH_4150",
-                    "CH_4160",
-                    "CH_4330",
-                    "CH_4420",
-                    "CH_4520"
-                ],
-                "Bucket Description": "Chemistry",
-                "Bucket Size": 26,
-                "Choice Weight": 26,
+                "Bucket Description": "CH_DEPT",
+                "Bucket Size": 10,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_GEN_SCI",
                     "CS_SCI_ENG",
                     "CS_SCI_DPTH_SL_1"
+                ]
+            },
+            "CS_1000": {
+                "Bucket Contents": [
+                    "CS_1101",
+                    "CS_1102"
+                ],
+                "Bucket Description": "CS_1101 OR CS_1102",
+                "Bucket Size": 2,
+                "Choice Weight": 101,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_1000_REST"
                 ]
             },
             "CS_4000": {
@@ -292,6 +242,8 @@
                     "CS_4802",
                     "BCB_4003",
                     "CS_4803",
+                    "CS_4033",
+                    "MA_3457",
                     "CS_4099",
                     "CS_4100",
                     "IMGD_4100",
@@ -309,7 +261,34 @@
                     "CS_4518",
                     "CS_4731",
                     "CS_4732",
-                    "CS_4804",
+                    "CS_4801",
+                    "ECE_4802",
+                    "CS_4804"
+                ],
+                "Bucket Description": "4000 CS Courses",
+                "Bucket Size": 26,
+                "Choice Weight": 58,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_UPLVL_MIN"
+                ]
+            },
+            "CS_FOUND": {
+                "Bucket Contents": [
+                    "CS_3133"
+                ],
+                "Bucket Description": "CS_3133",
+                "Bucket Size": 1,
+                "Choice Weight": 11,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_THRY"
+                ]
+            },
+            "CS_GRAD": {
+                "Bucket Contents": [
                     "BCB_502",
                     "CS_582",
                     "BCB_503",
@@ -368,202 +347,27 @@
                     "CS_568",
                     "SEME_568"
                 ],
-                "Bucket Description": "CS 4000+ Level Electives",
-                "Bucket Size": 79,
-                "Choice Weight": 79,
-                "Credits Each": 3.0,
+                "Bucket Description": "Grad CS Courses",
+                "Bucket Size": 57,
+                "Choice Weight": 57,
+                "Credits Each": 4.5,
                 "Req Keys": [
                     "CS_CORE",
                     "CS_UPLVL_MIN"
                 ]
             },
-            "CS_4_DESIGN": {
-                "Bucket Contents": [
-                    "CS_4233"
-                ],
-                "Bucket Description": "CS 4000 Level Design - CS_4233",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_UPLVL_MIN",
-                    "CS_DESIGN"
-                ]
-            },
-            "CS_4_SYS": {
-                "Bucket Contents": [
-                    "CS_4513",
-                    "CS_4515",
-                    "CS_4516"
-                ],
-                "Bucket Description": "CS 4000 Level Systems - CS_4513, CS_4515, CS_4516",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_UPLVL_MIN",
-                    "CS_SYS"
-                ]
-            },
-            "CS_4_THRY": {
-                "Bucket Contents": [
-                    "CS_4120",
-                    "CS_4123",
-                    "CS_4533",
-                    "CS_4536"
-                ],
-                "Bucket Description": "CS 4000 Level Theory - CS_4120, CS_4123, CS_4533, CS_4536",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_UPLVL_MIN",
-                    "CS_THRY"
-                ]
-            },
-            "CS_CRYPT": {
-                "Bucket Contents": [
-                    "CS_4801",
-                    "ECE_4802"
-                ],
-                "Bucket Description": "Cryptography - CS_4801 OR ECE_4802",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_SCI_ENG",
-                    "CS_UPLVL_MIN"
-                ]
-            },
-            "CS_DESIGN": {
-                "Bucket Contents": [
-                    "CS_3041",
-                    "CS_3431",
-                    "CS_3733"
-                ],
-                "Bucket Description": "Design - CS_3041, CS_3431, CS_3733, CS_4233",
-                "Bucket Size": 3,
-                "Choice Weight": 99,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_DESIGN"
-                ]
-            },
-            "CS_DISC": {
-                "Bucket Contents": [
-                    "CS_2022",
-                    "MA_2201"
-                ],
-                "Bucket Description": "Discrete Math - CS_2022 OR MA_2201",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_GEN_MATH"
-                ]
-            },
-            "CS_ELECT": {
+            "CS_INTRO_OTHER": {
                 "Bucket Contents": [
                     "CS_2011",
                     "CS_2223",
                     "CS_3516"
                 ],
-                "Bucket Description": "CS Electives",
-                "Bucket Size": 20,
-                "Choice Weight": 100,
+                "Bucket Description": "Core CS classes",
+                "Bucket Size": 3,
+                "Choice Weight": 65,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE"
-                ]
-            },
-            "CS_G_DESIGN": {
-                "Bucket Contents": [
-                    "CS_509",
-                    "CS_542",
-                    "CS_546",
-                    "CS_561",
-                    "CS_562"
-                ],
-                "Bucket Description": "CS Grad Level Design - CS_509, CS_542, CS_546, CS_561, CS_562",
-                "Bucket Size": 5,
-                "Choice Weight": 5,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_UPLVL_MIN",
-                    "CS_DESIGN"
-                ]
-            },
-            "CS_G_SYS": {
-                "Bucket Contents": [
-                    "CS_502",
-                    "CS_533",
-                    "CS_535"
-                ],
-                "Bucket Description": "CS Grad Level Systems - CS_502, CS_533, CS_535",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_UPLVL_MIN",
-                    "CS_SYS"
-                ]
-            },
-            "CS_G_THRY": {
-                "Bucket Contents": [
-                    "CS_503",
-                    "CS_536",
-                    "CS_544",
-                    "CS_584",
-                    "CS_5003",
-                    "CS_5084"
-                ],
-                "Bucket Description": "CS Grad Level Theory - CS_503, CS_536, CS_544, CS_584, CS_5003, CS_5084",
-                "Bucket Size": 6,
-                "Choice Weight": 6,
-                "Credits Each": 4.5,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_UPLVL_MIN",
-                    "CS_THRY"
-                ]
-            },
-            "CS_INTRO": {
-                "Bucket Contents": [
-                    "CS_1101",
-                    "CS_1102"
-                ],
-                "Bucket Description": "Intro CS - CS_1101 OR CS_1102",
-                "Bucket Size": 2,
-                "Choice Weight": 101,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_1000_REST"
-                ]
-            },
-            "CS_NUM_MET": {
-                "Bucket Contents": [
-                    "CS_4032",
-                    "MA_3257",
-                    "CS_4033",
-                    "MA_3457"
-                ],
-                "Bucket Description": "Numerical Methods",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_GEN_MATH",
-                    "CS_UPLVL_MIN"
                 ]
             },
             "CS_OOP": {
@@ -571,7 +375,7 @@
                     "CS_2102",
                     "CS_2103"
                 ],
-                "Bucket Description": "Object-Oriented Programming - CS_2102 OR CS_2103",
+                "Bucket Description": "CS_2102 OR CS_2103",
                 "Bucket Size": 2,
                 "Choice Weight": 101,
                 "Credits Each": 3.0,
@@ -584,82 +388,74 @@
                 "Bucket Contents": [
                     "CS_3013"
                 ],
-                "Bucket Description": "Systems - CS_3013, CS_4513, CS_4515, CS_4516",
-                "Bucket Size": 4,
-                "Choice Weight": 99,
+                "Bucket Description": "CS_3013",
+                "Bucket Size": 1,
+                "Choice Weight": 11,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE",
                     "CS_SYS"
                 ]
             },
-            "CS_SOC_IMPS": {
+            "CS_SOFT_ENG": {
                 "Bucket Contents": [
-                    "CS_3043"
+                    "CS 3041",
+                    "CS 3431",
+                    "CS_3733"
                 ],
-                "Bucket Description": "CS_3043",
-                "Bucket Size": 1,
-                "Choice Weight": 110,
+                "Bucket Description": "CS_3041, CS_3431, CS_3733",
+                "Bucket Size": 3,
+                "Choice Weight": 15,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE",
-                    "CS_SOC_IMPS"
+                    "CS_DESIGN"
                 ]
             },
-            "CS_SYS_PROG": {
+            "CS_SYS": {
                 "Bucket Contents": [
                     "CS_2301",
                     "CS_2303"
                 ],
-                "Bucket Description": "Systems Programming",
+                "Bucket Description": "CS_2301 OR CS_2303",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 85,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE",
                     "CS_SYS_REST"
                 ]
             },
-            "CS_THRY": {
+            "DISCRETE_MA": {
                 "Bucket Contents": [
-                    "CS_3133"
+                    "CS_2022",
+                    "MA_2201"
                 ],
-                "Bucket Description": "Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536",
-                "Bucket Size": 5,
-                "Choice Weight": 99,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_CORE",
-                    "CS_THRY"
-                ]
-            },
-            "DPE_GOV": {
-                "Bucket Contents": [
-                    "GOV_2314",
-                    "ID_2314",
-                    "GOV_2315"
-                ],
-                "Bucket Description": "Data Privacy Social Science - GOV_2314, GOV_2315",
+                "Bucket Description": "CS_2022, MA_2201",
                 "Bucket Size": 2,
                 "Choice Weight": 2,
                 "Credits Each": 3.0,
                 "Req Keys": [
-                    "SOC_SCI_REQ",
-                    "CS_SOC_IMPS"
+                    "CS_CORE",
+                    "CS_GEN_MATH"
                 ]
             },
-            "DPE_HU": {
+            "ENG_ELECT": {
                 "Bucket Contents": [
-                    "PY_2731",
-                    "PY_2713",
-                    "RE_2731"
+                    "BME_DEPT",
+                    "CE_DEPT",
+                    "CHE_DEPT",
+                    "ECE_DEPT",
+                    "ES_DEPT",
+                    "ME_DEPT",
+                    "RBE_DEPT"
                 ],
-                "Bucket Description": "Data Privacy Humanitites - PY_2731, RE_2731, PY_2713",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
+                "Bucket Description": "Engineering Electives",
+                "Bucket Size": 20,
+                "Choice Weight": 15,
                 "Credits Each": 3.0,
                 "Req Keys": [
-                    "HUA_CORE"
+                    "CS_SCI_ENG"
                 ]
             },
             "FL_CON": {
@@ -669,27 +465,80 @@
                     "GN_DEPT",
                     "SP_DEPT"
                 ],
-                "Bucket Description": "AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT",
-                "Bucket Size": 20,
-                "Choice Weight": 19,
+                "Bucket Description": "Humanities",
+                "Bucket Size": 10,
+                "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "HUA_CORE",
                     "HUA_DEPTH_SL_1"
                 ]
             },
-            "GEO": {
+            "GE_DEPT": {
                 "Bucket Contents": [
-                    "GE_2341"
+                    "GE_DEPT"
                 ],
-                "Bucket Description": "Geology",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Description": "GE_DEPT",
+                "Bucket Size": 10,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_GEN_SCI",
                     "CS_SCI_ENG",
                     "CS_SCI_DPTH_SL_3"
+                ]
+            },
+            "GRAD_LVL_DESIGN": {
+                "Bucket Contents": [
+                    "CS_509",
+                    "CS_542",
+                    "CS_546",
+                    "CS_561",
+                    "CS_562"
+                ],
+                "Bucket Description": "CS_509, CS_542, CS_546, CS_561, CS_562",
+                "Bucket Size": 5,
+                "Choice Weight": 5,
+                "Credits Each": 4.5,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_UPLVL_MIN",
+                    "CS_DESIGN"
+                ]
+            },
+            "GRAD_LVL_SYSTEMS": {
+                "Bucket Contents": [
+                    "CS_502",
+                    "CS_533",
+                    "CS_535"
+                ],
+                "Bucket Description": "CS_502, CS_533, CS_535",
+                "Bucket Size": 3,
+                "Choice Weight": 3,
+                "Credits Each": 4.5,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_UPLVL_MIN",
+                    "CS_SYS"
+                ]
+            },
+            "GRAD_LVL_THEORY": {
+                "Bucket Contents": [
+                    "CS_503",
+                    "CS_536",
+                    "CS_544",
+                    "CS_584",
+                    "CS_5003",
+                    "CS_5084"
+                ],
+                "Bucket Description": "CS_503, CS_536, CS_544, CS_584, CS_5003, CS_5084]",
+                "Bucket Size": 6,
+                "Choice Weight": 6,
+                "Credits Each": 4.5,
+                "Req Keys": [
+                    "CS_CORE",
+                    "CS_UPLVL_MIN",
+                    "CS_THRY"
                 ]
             },
             "HI_CON": {
@@ -698,8 +547,8 @@
                     "HU_DEPT",
                     "INTL_DEPT"
                 ],
-                "Bucket Description": "HI_DEPT, HU_DEPT, INTL_DEPT",
-                "Bucket Size": 20,
+                "Bucket Description": "Humanities",
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -721,6 +570,20 @@
                     "HUA_PROJ"
                 ]
             },
+            "HU_SOC_IMPS": {
+                "Bucket Contents": [
+                    "PY_2731",
+                    "PY_2713",
+                    "RE_2731"
+                ],
+                "Bucket Description": "Humanities Social Imps",
+                "Bucket Size": 3,
+                "Choice Weight": 3,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "HUA_CORE"
+                ]
+            },
             "ID_2050": {
                 "Bucket Contents": [
                     "ID_2050"
@@ -734,19 +597,6 @@
                     "ON_OFF_CAMPUS"
                 ]
             },
-            "IMGD": {
-                "Bucket Contents": [
-                    "IMGD_2000",
-                    "IMGD_2001"
-                ],
-                "Bucket Description": "IMGD_2000, IMGD_2001",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3.0,
-                "Req Keys": [
-                    "CS_SOC_IMPS"
-                ]
-            },
             "IQP_OFF": {
                 "Bucket Contents": [
                     "IQP_A",
@@ -755,8 +605,8 @@
                     "IQP_D",
                     "IQP_OFF_CAMPUS"
                 ],
-                "Bucket Description": "IQP Off Campus",
-                "Bucket Size": 100,
+                "Bucket Description": "IQP off campus",
+                "Bucket Size": 10,
                 "Choice Weight": 100,
                 "Credits Each": 9.0,
                 "Req Keys": [
@@ -767,60 +617,17 @@
                 "Bucket Contents": [
                     "IQP_ON_CAMPUS"
                 ],
-                "Bucket Description": "IQP On Campus",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Description": "IQP on campus",
+                "Bucket Size": 3,
+                "Choice Weight": 25,
                 "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
                 ]
             },
-            "MATH_ELECT": {
+            "MATH_GRAD": {
                 "Bucket Contents": [
-                    "MA_2051",
-                    "MA_2071",
-                    "MA_2072",
-                    "MA_2073",
-                    "MA_2210",
-                    "MA_2211",
-                    "MA_2212",
-                    "MA_2251",
-                    "MA_2271",
-                    "MA_2273",
-                    "MA_2431",
-                    "MA_2610",
-                    "MA_3212",
-                    "MA_3213",
-                    "MA_3231",
-                    "MA_3233",
-                    "MA_3471",
-                    "MA_3475",
-                    "MA_3627",
-                    "MA_3631",
-                    "MA_3823",
-                    "MA_3825",
-                    "MA_3831",
-                    "MA_3832",
-                    "BCB_4004",
-                    "MA_4603",
-                    "DS_4635",
-                    "MA_4635",
-                    "MA_4213",
-                    "MA_4214",
-                    "MA_4216",
-                    "MA_4222",
-                    "MA_4235",
-                    "MA_4237",
-                    "MA_4291",
-                    "MA_4411",
-                    "MA_4451",
-                    "MA_4473",
-                    "MA_4631",
-                    "MA_4632",
-                    "MA_4891",
-                    "MA_4892",
-                    "MA_4895",
                     "DS_502",
                     "MA_543",
                     "MA_542",
@@ -829,60 +636,89 @@
                     "MA_541"
                 ],
                 "Bucket Description": "Math Electives",
-                "Bucket Size": 49,
-                "Choice Weight": 49,
+                "Bucket Size": 6,
+                "Choice Weight": 6,
+                "Credits Each": 4.5,
+                "Req Keys": [
+                    "CS_GEN_MATH"
+                ]
+            },
+            "MATH_UG": {
+                "Bucket Contents": [
+                    "MA_DEPT",
+                    "MA_1020",
+                    "MA_1021",
+                    "MA_1022",
+                    "MA_1120",
+                    "MA_4603",
+                    "DS_4635",
+                    "MA_4635",
+                    "MA_1023",
+                    "MA_1024",
+                    "MA_1033",
+                    "MA_1034",
+                    "MA_2051",
+                    "MA_2073",
+                    "MA_2210",
+                    "MA_2431",
+                    "MA_3231",
+                    "MA_3233",
+                    "MA_3627",
+                    "MA_3631",
+                    "MA_4213",
+                    "MA_4214",
+                    "MA_4222",
+                    "MA_4235",
+                    "MA_4237",
+                    "MA_4631",
+                    "MA_4632",
+                    "MA_2071",
+                    "MA_2072"
+                ],
+                "Bucket Description": "Math Electives",
+                "Bucket Size": 29,
+                "Choice Weight": 35,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_GEN_MATH"
                 ]
             },
-            "OO_REST": {
+            "NUM_METHODS": {
                 "Bucket Contents": [
-                    "CS_210X"
+                    "CS_4032",
+                    "MA_3257"
                 ],
-                "Bucket Description": "Object Oriented",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Description": "CS_4032 OR MA_3257",
+                "Bucket Size": 2,
+                "Choice Weight": 2,
                 "Credits Each": 3.0,
                 "Req Keys": [
-                    "CS_OBJ_OR_REST"
+                    "CS_CORE",
+                    "CS_GEN_MATH",
+                    "CS_UPLVL_MIN"
                 ]
             },
-            "PHY": {
+            "OTHER_SOC_IMPS": {
                 "Bucket Contents": [
-                    "PH_1110",
-                    "PH_1111",
-                    "PH_1120",
-                    "PH_1121",
-                    "PH_1130",
-                    "PH_1140",
-                    "PH_1150",
-                    "PH_2101",
-                    "PH_2201",
-                    "PH_2202",
-                    "PH_2301",
-                    "PH_2501",
-                    "PH_2502",
-                    "PH_2510",
-                    "PH_2520",
-                    "PH_2540",
-                    "PH_2550",
-                    "AE_2550",
-                    "PH_2601",
-                    "PH_2651",
-                    "PH_3206",
-                    "PH_3301",
-                    "PH_3401",
-                    "PH_3402",
-                    "PH_3501",
-                    "PH_3502",
-                    "PH_3503",
-                    "PH_3504",
-                    "PH_4201"
+                    "ID_2314",
+                    "IMGD_2000",
+                    "RBE_3100"
                 ],
-                "Bucket Description": "Physics",
-                "Bucket Size": 29,
-                "Choice Weight": 29,
+                "Bucket Description": "Other Social Imps Classes",
+                "Bucket Size": 3,
+                "Choice Weight": 3,
+                "Credits Each": 3.0,
+                "Req Keys": [
+                    "CS_SOC_IMPS"
+                ]
+            },
+            "PH_DEPT": {
+                "Bucket Contents": [
+                    "PH_DEPT"
+                ],
+                "Bucket Description": "PH_DEPT",
+                "Bucket Size": 10,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_GEN_SCI",
@@ -895,7 +731,7 @@
                     "MA_2621",
                     "MA_2631"
                 ],
-                "Bucket Description": "Probability - MA_2621 OR MA_2631",
+                "Bucket Description": "MA_2621, MA_2631",
                 "Bucket Size": 2,
                 "Choice Weight": 2,
                 "Credits Each": 3.0,
@@ -909,8 +745,8 @@
                     "PY_DEPT",
                     "RE_DEPT"
                 ],
-                "Bucket Description": "PY_DEPT, RE_DEPT",
-                "Bucket Size": 20,
+                "Bucket Description": "Humanities",
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -919,193 +755,31 @@
                     "HUA_PY_MAX"
                 ]
             },
-            "RBE_3100": {
+            "SOC_IMPS": {
                 "Bucket Contents": [
-                    "RBE_3100"
+                    "CS_3043"
                 ],
-                "Bucket Description": "Robotics Data Privacy - RBE_3100",
+                "Bucket Description": "CS_3043",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 100,
                 "Credits Each": 3.0,
                 "Req Keys": [
-                    "CS_SCI_ENG",
+                    "CS_CORE",
                     "CS_SOC_IMPS"
                 ]
             },
-            "SCI_ENG": {
+            "SOC_IMP_GOVS": {
                 "Bucket Contents": [
-                    "BME_2001",
-                    "BME_2210",
-                    "BME_2211",
-                    "BME_2502",
-                    "BME_2610",
-                    "BME_3012",
-                    "BME_3013",
-                    "BME_3014",
-                    "BME_3111",
-                    "BME_3112",
-                    "BME_3300",
-                    "BME_3503",
-                    "BME_3505",
-                    "BME_3506",
-                    "BME_3605",
-                    "BME_3610",
-                    "BME_3811",
-                    "BME_3813",
-                    "BME_4011",
-                    "ECE_4011",
-                    "BME_4023",
-                    "ECE_4023",
-                    "BME_4201",
-                    "BME_4300",
-                    "BME_4503",
-                    "BME_4504",
-                    "ME_4504",
-                    "BME_4606",
-                    "ME_4606",
-                    "BME_4701",
-                    "BME_4814",
-                    "ME_4814",
-                    "BME_4828",
-                    "BME_4831",
-                    "BME_1001",
-                    "BME_1004",
-                    "CE_2000",
-                    "CE_2001",
-                    "CE_2002",
-                    "CE_2020",
-                    "CE_3006",
-                    "CE_3008",
-                    "CE_3010",
-                    "CE_3020",
-                    "CE_3025",
-                    "CE_3026",
-                    "CE_3030",
-                    "CE_3031",
-                    "CE_3041",
-                    "CE_3044",
-                    "CE_3050",
-                    "CE_3051",
-                    "CE_3059",
-                    "CE_3060",
-                    "CE_3061",
-                    "CE_3062",
-                    "CE_3070",
-                    "CE_3074",
-                    "CE_4007",
-                    "CE_4060",
-                    "CE_4061",
-                    "CE_4063",
-                    "CHE_4063",
-                    "CE_4071",
-                    "CE_4600",
-                    "CE_4610",
-                    "CE_1030",
-                    "CHE_2011",
-                    "CHE_2012",
-                    "CHE_2013",
-                    "CHE_2014",
-                    "CHE_2301",
-                    "ME_2301",
-                    "CHE_3201",
-                    "CHE_3301",
-                    "CHE_3501",
-                    "CHE_3702",
-                    "CHE_3722",
-                    "CHE_4401",
-                    "CHE_4402",
-                    "CHE_4403",
-                    "CHE_4404",
-                    "CHE_4405",
-                    "CHE_4410",
-                    "CHE_1011",
-                    "ECE_2010",
-                    "ECE_2019",
-                    "ECE_2029",
-                    "ECE_2049",
-                    "ECE_2112",
-                    "ECE_2201",
-                    "ECE_2305",
-                    "ECE_2311",
-                    "ECE_2312",
-                    "ECE_2799",
-                    "ECE_3012",
-                    "ECE_3113",
-                    "ECE_3204",
-                    "ECE_3308",
-                    "ECE_3311",
-                    "ECE_3500",
-                    "ECE_3501",
-                    "ECE_3829",
-                    "ECE_3849",
-                    "ECE_4305",
-                    "ECE_4503",
-                    "ECE_4703",
-                    "ECE_4801",
-                    "ECE_4902",
-                    "ECE_4904",
-                    "ECE_1799",
-                    "ES_2001",
-                    "ES_2501",
-                    "ES_2502",
-                    "ES_2503",
-                    "ES_2800",
-                    "ES_3001",
-                    "ES_3002",
-                    "ES_3003",
-                    "ES_3004",
-                    "ES_3011",
-                    "ES_3323",
-                    "ES_3501",
-                    "ES_1020",
-                    "ES_1310",
-                    "ES_1500",
-                    "ME_2300",
-                    "ME_2312",
-                    "ME_2820",
-                    "ME_3310",
-                    "ME_3311",
-                    "ME_3320",
-                    "ME_3411",
-                    "ME_3501",
-                    "ME_3506",
-                    "ME_3801",
-                    "ME_3820",
-                    "ME_3901",
-                    "ME_3902",
-                    "ME_4320",
-                    "ME_4323",
-                    "ME_4324",
-                    "ME_4422",
-                    "ME_4429",
-                    "ME_4430",
-                    "ME_4505",
-                    "ME_4506",
-                    "ME_4512",
-                    "ME_4710",
-                    "ME_4813",
-                    "ME_4832",
-                    "ME_4840",
-                    "ME_4875",
-                    "MTE_575",
-                    "RBE_4322",
-                    "ME_4322",
-                    "ME_1520",
-                    "ME_1800",
-                    "RBE_2001",
-                    "RBE_2002",
-                    "RBE_3001",
-                    "RBE_3002",
-                    "RBE_4540",
-                    "RBE_4815",
-                    "RBE_1001"
+                    "GOV_2314",
+                    "GOV_2315"
                 ],
-                "Bucket Description": "Science and Engineering Electives",
-                "Bucket Size": 165,
-                "Choice Weight": 165,
+                "Bucket Description": "GOV_2314, GOV_2315",
+                "Bucket Size": 2,
+                "Choice Weight": 2,
                 "Credits Each": 3.0,
                 "Req Keys": [
-                    "CS_SCI_ENG"
+                    "SOC_SCI_REQ",
+                    "CS_SOC_IMPS"
                 ]
             },
             "SOC_SCI": {
@@ -1121,7 +795,7 @@
                     "DEV_DEPT",
                     "GOV_2313"
                 ],
-                "Bucket Description": "Social Science",
+                "Bucket Description": "Social Sciences",
                 "Bucket Size": 10,
                 "Choice Weight": 10,
                 "Credits Each": 3.0,
@@ -1134,7 +808,7 @@
                     "MA_2611",
                     "MA_2612"
                 ],
-                "Bucket Description": "Statistics - MA_2611, MA_2612",
+                "Bucket Description": "MA_2611, MA_2612",
                 "Bucket Size": 2,
                 "Choice Weight": 2,
                 "Credits Each": 3.0,
@@ -1148,8 +822,8 @@
                     "EN_DEPT",
                     "WR_DEPT"
                 ],
-                "Bucket Description": "EN_DEPT, WR_DEPT",
-                "Bucket Size": 20,
+                "Bucket Description": "Humanities",
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -1163,47 +837,46 @@
             "Reqs": {
                 "CS_CORE": {
                     "Buckets": [
-                        "CS_INTRO",
-                        "CS_ELECT",
-                        "CS_DISC",
-                        "CS_OOP",
-                        "CS_SYS_PROG",
+                        "CS_INTRO_OTHER",
+                        "DISCRETE_MA",
                         "CS_OS",
-                        "CS_DESIGN",
-                        "CS_SOC_IMPS",
-                        "CS_THRY",
+                        "SOC_IMPS",
+                        "CS_FOUND",
+                        "CS_SOFT_ENG",
                         "CS_4000",
-                        "CS_NUM_MET",
-                        "CS_4_THRY",
-                        "CS_G_THRY",
-                        "CS_4_DESIGN",
-                        "CS_G_DESIGN",
-                        "CS_4_SYS",
-                        "CS_G_SYS",
-                        "CS_CRYPT"
+                        "CS_GRAD",
+                        "NUM_METHODS",
+                        "4000_LVL_THEORY",
+                        "GRAD_LVL_THEORY",
+                        "4000_LVL_DESIGN",
+                        "GRAD_LVL_DESIGN",
+                        "4000_LVL_SYSTEMS",
+                        "GRAD_LVL_SYSTEMS",
+                        "CS_1000",
+                        "CS_OOP",
+                        "CS_SYS"
                     ],
                     "Credits": 45,
                     "Req Description": "CS Core"
                 },
                 "CS_GEN_MATH": {
                     "Buckets": [
-                        "CS_DISC",
-                        "CS_NUM_MET",
+                        "DISCRETE_MA",
+                        "NUM_METHODS",
                         "PROB",
                         "STATS",
-                        "1000_MATH",
-                        "MATH_ELECT"
+                        "MATH_UG",
+                        "MATH_GRAD"
                     ],
                     "Credits": 15,
                     "Req Description": "General Math"
                 },
                 "CS_GEN_SCI": {
                     "Buckets": [
-                        "BIO",
-                        "BIO_CHEM_LAP",
-                        "CHEM",
-                        "GEO",
-                        "PHY"
+                        "PH_DEPT",
+                        "CH_DEPT",
+                        "BB_DEPT",
+                        "GE_DEPT"
                     ],
                     "Credits": 9,
                     "Req Description": "General Science"
@@ -1217,14 +890,11 @@
                 },
                 "CS_SCI_ENG": {
                     "Buckets": [
-                        "CS_CRYPT",
-                        "BIO",
-                        "BIO_CHEM_LAP",
-                        "CHEM",
-                        "GEO",
-                        "PHY",
-                        "SCI_ENG",
-                        "RBE_3100"
+                        "PH_DEPT",
+                        "CH_DEPT",
+                        "BB_DEPT",
+                        "GE_DEPT",
+                        "ENG_ELECT"
                     ],
                     "Credits": 6,
                     "Req Description": "Science/Engineering Electives"
@@ -1243,7 +913,7 @@
                         "CS_CORE"
                     ],
                     "Buckets": [
-                        "CS_INTRO"
+                        "CS_1000"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "at most 1 intro CS class",
@@ -1255,25 +925,13 @@
                         "CS_CORE"
                     ],
                     "Buckets": [
-                        "CS_DESIGN",
-                        "CS_4_DESIGN",
-                        "CS_G_DESIGN"
+                        "CS_SOFT_ENG",
+                        "4000_LVL_DESIGN",
+                        "GRAD_LVL_DESIGN"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "Design super req",
                     "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "CS_MATH_1000L_REST": {
-                    "Applicable Reqs": [
-                        "CS_GEN_MATH"
-                    ],
-                    "Buckets": [
-                        "1000_MATH"
-                    ],
-                    "Credits": 12.0,
-                    "Sreq Description": "at most 4 1000 level math classes",
-                    "Sreq Type": "1b",
                     "Sublists Count": 0
                 },
                 "CS_OBJ_OR_REST": {
@@ -1281,8 +939,7 @@
                         "CS_CORE"
                     ],
                     "Buckets": [
-                        "CS_OOP",
-                        "OO_REST"
+                        "CS_OOP"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "at most 1 object oriented programming 2000 class",
@@ -1295,18 +952,16 @@
                     ],
                     "Buckets": [
                         [
-                            "BIO",
-                            "BIO_CHEM_LAP"
+                            "PH_DEPT"
                         ],
                         [
-                            "BIO_CHEM_LAP",
-                            "CHEM"
+                            "CH_DEPT"
                         ],
                         [
-                            "GEO"
+                            "BB_DEPT"
                         ],
                         [
-                            "PHY"
+                            "GE_DEPT"
                         ]
                     ],
                     "Credits": 6.0,
@@ -1320,10 +975,9 @@
                         "SOC_SCI_REQ"
                     ],
                     "Buckets": [
-                        "CS_SOC_IMPS",
-                        "RBE_3100",
-                        "DPE_GOV",
-                        "IMGD"
+                        "SOC_IMPS",
+                        "SOC_IMP_GOVS",
+                        "OTHER_SOC_IMPS"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "Social imps",
@@ -1336,8 +990,8 @@
                     ],
                     "Buckets": [
                         "CS_OS",
-                        "CS_4_SYS",
-                        "CS_G_SYS"
+                        "4000_LVL_SYSTEMS",
+                        "GRAD_LVL_SYSTEMS"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "Systems super req ",
@@ -1349,7 +1003,7 @@
                         "CS_CORE"
                     ],
                     "Buckets": [
-                        "CS_SYS_PROG"
+                        "CS_SYS"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "at most 1 2000 systems class",
@@ -1361,9 +1015,9 @@
                         "CS_CORE"
                     ],
                     "Buckets": [
-                        "CS_THRY",
-                        "CS_4_THRY",
-                        "CS_G_THRY"
+                        "CS_FOUND",
+                        "4000_LVL_THEORY",
+                        "GRAD_LVL_THEORY"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "Theory and Languages super req ",
@@ -1376,14 +1030,14 @@
                     ],
                     "Buckets": [
                         "CS_4000",
-                        "CS_NUM_MET",
-                        "CS_4_THRY",
-                        "CS_G_THRY",
-                        "CS_4_DESIGN",
-                        "CS_G_DESIGN",
-                        "CS_4_SYS",
-                        "CS_G_SYS",
-                        "CS_CRYPT"
+                        "CS_GRAD",
+                        "NUM_METHODS",
+                        "4000_LVL_THEORY",
+                        "GRAD_LVL_THEORY",
+                        "4000_LVL_DESIGN",
+                        "GRAD_LVL_DESIGN",
+                        "4000_LVL_SYSTEMS",
+                        "GRAD_LVL_SYSTEMS"
                     ],
                     "Credits": 15.0,
                     "Sreq Description": "At least five CS courses must be at the 4000+ level",
@@ -1817,7 +1471,7 @@
                 ],
                 "Bucket Description": "MIS_4084",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_4LDER",
@@ -1835,7 +1489,7 @@
                 ],
                 "Bucket Description": "CS_4032, MA_4213, MA_4214, MA_4222, MA_4237",
                 "Bucket Size": 5,
-                "Choice Weight": 5,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -1849,7 +1503,7 @@
                 ],
                 "Bucket Description": "OIE_4430",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "UGG_REST_PRES_ANALYTICS",
@@ -1864,7 +1518,7 @@
                 ],
                 "Bucket Description": "CS_2223",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_ALGOS"
@@ -1896,7 +1550,7 @@
                 ],
                 "Bucket Description": "CS_4120",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -1909,7 +1563,7 @@
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT"
+                    "MUS_DEPT"
                 ],
                 "Bucket Description": "AR DEPT, TH DEPT, MUS_DEPT",
                 "Bucket Size": 20,
@@ -1928,7 +1582,7 @@
                 ],
                 "Bucket Description": "CS_4433 OR DS_4433",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -1945,7 +1599,7 @@
                 ],
                 "Bucket Description": "MIS_4720, MIS_4741",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -1959,7 +1613,7 @@
                 ],
                 "Bucket Description": "BUS_2080 OR OIE_2081",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_BA"
@@ -1973,7 +1627,7 @@
                 ],
                 "Bucket Description": "MIS_3787, MKT_3650, OIE_3460",
                 "Bucket Size": 3,
-                "Choice Weight": 3,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE"
@@ -1988,7 +1642,7 @@
                 ],
                 "Bucket Description": "MA_1020, MA_1021, MA_1022, MA_1120",
                 "Bucket Size": 4,
-                "Choice Weight": 4,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_MS"
@@ -2002,7 +1656,7 @@
                 ],
                 "Bucket Description": "CS_4233, CS_4241, CS_4804",
                 "Bucket Size": 3,
-                "Choice Weight": 3,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2020,7 +1674,7 @@
                 ],
                 "Bucket Description": "CS_2301, CS_2303, CS_3041, CS_3133, CS_3733",
                 "Bucket Size": 5,
-                "Choice Weight": 5,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2033,7 +1687,7 @@
                 ],
                 "Bucket Description": "CS_3431",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2048,7 +1702,7 @@
                 ],
                 "Bucket Description": "RBE_3100",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DPE"
@@ -2062,7 +1716,7 @@
                 ],
                 "Bucket Description": "DS_1010 AND DS_2010 AND DS_3010",
                 "Bucket Size": 3,
-                "Choice Weight": 3,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_C"
@@ -2079,7 +1733,7 @@
                 ],
                 "Bucket Description": "BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010",
                 "Bucket Size": 6,
-                "Choice Weight": 6,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_EI"
@@ -2107,7 +1761,7 @@
                 ],
                 "Bucket Description": "CS_534",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2125,7 +1779,7 @@
                 ],
                 "Bucket Description": "CS_583 OR BCB_503",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2144,7 +1798,7 @@
                 ],
                 "Bucket Description": "CS_582 OR BCB_502",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2162,7 +1816,7 @@
                 ],
                 "Bucket Description": "CS_542",
                 "Bucket Size": 1,
-                "Choice Weight": 99,
+                "Choice Weight": 8,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2182,7 +1836,7 @@
                 ],
                 "Bucket Description": "CS_548",
                 "Bucket Size": 1,
-                "Choice Weight": 98,
+                "Choice Weight": 7,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2201,7 +1855,7 @@
                 ],
                 "Bucket Description": "CS_539",
                 "Bucket Size": 1,
-                "Choice Weight": 98,
+                "Choice Weight": 7,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2220,7 +1874,7 @@
                 ],
                 "Bucket Description": "CS_528",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2237,7 +1891,7 @@
                 ],
                 "Bucket Description": "OIE_559",
                 "Bucket Size": 1,
-                "Choice Weight": 96,
+                "Choice Weight": 5,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DOUBLE",
@@ -2254,7 +1908,7 @@
                 ],
                 "Bucket Description": "MA_540",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2271,7 +1925,7 @@
                 ],
                 "Bucket Description": "MA_541",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2306,7 +1960,7 @@
                 ],
                 "Bucket Description": "MA_543 OR DS_502",
                 "Bucket Size": 2,
-                "Choice Weight": 97,
+                "Choice Weight": 6,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2342,7 +1996,7 @@
                 ],
                 "Bucket Description": "HU_3900 OR HU_3910",
                 "Bucket Size": 2,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "HUA_PROJ"
@@ -2356,7 +2010,7 @@
                 ],
                 "Bucket Description": "PY_2731, PY_2713, RE_2731",
                 "Bucket Size": 3,
-                "Choice Weight": 3,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "HUA_CORE",
@@ -2369,7 +2023,7 @@
                 ],
                 "Bucket Description": "ID 2050",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "SOC_SCI_REQ",
@@ -2426,7 +2080,7 @@
                 ],
                 "Bucket Description": "MA_2071 OR MA_2072",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_LA"
@@ -2467,7 +2121,7 @@
                 ],
                 "Bucket Description": "MA_4235",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2482,7 +2136,7 @@
                 ],
                 "Bucket Description": "MIS_3720",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2496,7 +2150,7 @@
                 ],
                 "Bucket Description": "ECE_673 OR CS_673",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2509,7 +2163,7 @@
                 ],
                 "Bucket Description": "CS_561",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2527,7 +2181,7 @@
                 ],
                 "Bucket Description": "CS_568 OR SEME_568",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2541,7 +2195,7 @@
                 ],
                 "Bucket Description": "CS_5084 OR CS_584",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2554,7 +2208,7 @@
                 ],
                 "Bucket Description": "MIS_584",
                 "Bucket Size": 1,
-                "Choice Weight": 100,
+                "Choice Weight": 9,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2572,7 +2226,7 @@
                 ],
                 "Bucket Description": "CS_586 OR DS_504",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2591,7 +2245,7 @@
                 ],
                 "Bucket Description": "CS_585 OR DS_503",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2610,7 +2264,7 @@
                 ],
                 "Bucket Description": "MIS_587, MKT_568",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2627,7 +2281,7 @@
                 ],
                 "Bucket Description": "ECE_578 OR CS_578",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2641,7 +2295,7 @@
                 ],
                 "Bucket Description": "DS_541 OR CS_541",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2712,7 +2366,7 @@
                 ],
                 "Bucket Description": "CS_567 OR SEME_567",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2726,7 +2380,7 @@
                 ],
                 "Bucket Description": "CS_566 OR SEME_566",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2740,7 +2394,7 @@
                 ],
                 "Bucket Description": "CS_547 OR DS_547",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2754,7 +2408,7 @@
                 ],
                 "Bucket Description": "MA_542 OR MA_554",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2772,7 +2426,7 @@
                 ],
                 "Bucket Description": "MA_517 OR DS_517",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2785,7 +2439,7 @@
                 ],
                 "Bucket Description": "MIS_571",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_DE",
@@ -2802,7 +2456,7 @@
                 ],
                 "Bucket Description": "CS_565 OR SEME_565",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 4.5,
                 "Req Keys": [
                     "DS_M_TOTAL_CREDITS",
@@ -2853,7 +2507,7 @@
                 ],
                 "Bucket Description": "CS_3043",
                 "Bucket Size": 1,
-                "Choice Weight": 4,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2868,7 +2522,7 @@
                 ],
                 "Bucket Description": "GOV_2314, GOV_2315, GOV_2313",
                 "Bucket Size": 3,
-                "Choice Weight": 3,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "SOC_SCI_REQ",
@@ -2882,7 +2536,7 @@
                 ],
                 "Bucket Description": "MA_2611 AND MA_2612",
                 "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Choice Weight": 10,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_STATS"
@@ -2894,7 +2548,7 @@
                 ],
                 "Bucket Description": "CS_4341",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2911,7 +2565,7 @@
                 ],
                 "Bucket Description": "CS_4803 OR BCB_4003",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2929,7 +2583,7 @@
                 ],
                 "Bucket Description": "CS_4802 OR BCB_4002",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2946,7 +2600,7 @@
                 ],
                 "Bucket Description": "CS_4432",
                 "Bucket Size": 1,
-                "Choice Weight": 99,
+                "Choice Weight": 8,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2963,7 +2617,7 @@
                 ],
                 "Bucket Description": "CS_4445",
                 "Bucket Size": 1,
-                "Choice Weight": 98,
+                "Choice Weight": 7,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2980,7 +2634,7 @@
                 ],
                 "Bucket Description": "CS_4342",
                 "Bucket Size": 1,
-                "Choice Weight": 98,
+                "Choice Weight": 7,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -2997,7 +2651,7 @@
                 ],
                 "Bucket Description": "CS_4518",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DOUBLE",
@@ -3010,7 +2664,7 @@
                 ],
                 "Bucket Description": "MA_4631",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -3026,7 +2680,7 @@
                 ],
                 "Bucket Description": "MA_4632",
                 "Bucket Size": 1,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -3043,7 +2697,7 @@
                 ],
                 "Bucket Description": "BCB_4004 OR MA_4603",
                 "Bucket Size": 2,
-                "Choice Weight": 90,
+                "Choice Weight": 4,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -3061,7 +2715,7 @@
                 ],
                 "Bucket Description": "DS_4635 OR MA_4635",
                 "Bucket Size": 2,
-                "Choice Weight": 97,
+                "Choice Weight": 6,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -4391,7 +4045,7 @@
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT"
+                    "MUS_DEPT"
                 ],
                 "Bucket Description": "Humanities",
                 "Bucket Size": 20,
@@ -5484,1001 +5138,6 @@
             }
         }
     },
-    "ECE_MAJOR_ONLY": {
-        "ALL_MAJORS": {
-            "Reqs": {
-                "HUA_CORE": {
-                    "Buckets": [
-                        "ART_CON",
-                        "FL_CON",
-                        "WR_CON",
-                        "HI_CON",
-                        "PY_CON",
-                        "ETHICS_SS"
-                    ],
-                    "Credits": 15,
-                    "Req Description": "Humanities"
-                },
-                "HUA_PROJ": {
-                    "Buckets": [
-                        "HU_CAP"
-                    ],
-                    "Credits": 3,
-                    "Req Description": "Humanities"
-                },
-                "IQP": {
-                    "Buckets": [
-                        "IQP_OFF",
-                        "IQP_ON"
-                    ],
-                    "Credits": 9,
-                    "Req Description": "IQP"
-                },
-                "SOC_SCI_REQ": {
-                    "Buckets": [
-                        "ID_2050",
-                        "SOC_SCI"
-                    ],
-                    "Credits": 6,
-                    "Req Description": "Social Science"
-                }
-            },
-            "Sreqs": {
-                "HUA_ART_MAX": {
-                    "Applicable Reqs": [
-                        "HUA_CORE"
-                    ],
-                    "Buckets": [
-                        "ART_CON"
-                    ],
-                    "Credits": 12.0,
-                    "Sreq Description": "Breadth requirement",
-                    "Sreq Type": "1b",
-                    "Sublists Count": 0
-                },
-                "HUA_DEPTH": {
-                    "Applicable Reqs": [
-                        "HUA_CORE"
-                    ],
-                    "Buckets": [
-                        [
-                            "ART_CON"
-                        ],
-                        [
-                            "FL_CON"
-                        ],
-                        [
-                            "WR_CON"
-                        ],
-                        [
-                            "HI_CON"
-                        ],
-                        [
-                            "PY_CON"
-                        ]
-                    ],
-                    "Credits": 9.0,
-                    "Sreq Description": "Depth requirement",
-                    "Sreq Type": "2",
-                    "Sublists Count": 5
-                },
-                "HUA_HI_MAX": {
-                    "Applicable Reqs": [
-                        "HUA_CORE"
-                    ],
-                    "Buckets": [
-                        "HI_CON"
-                    ],
-                    "Credits": 12.0,
-                    "Sreq Description": "Breadth requirement",
-                    "Sreq Type": "1b",
-                    "Sublists Count": 0
-                },
-                "HUA_PY_MAX": {
-                    "Applicable Reqs": [
-                        "HUA_CORE"
-                    ],
-                    "Buckets": [
-                        "PY_CON"
-                    ],
-                    "Credits": 12.0,
-                    "Sreq Description": "Breadth requirement",
-                    "Sreq Type": "1b",
-                    "Sublists Count": 0
-                },
-                "HUA_WR_MAX": {
-                    "Applicable Reqs": [
-                        "HUA_CORE"
-                    ],
-                    "Buckets": [
-                        "WR_CON"
-                    ],
-                    "Credits": 12.0,
-                    "Sreq Description": "Breadth requirement",
-                    "Sreq Type": "1b",
-                    "Sublists Count": 0
-                },
-                "ON_OFF_CAMPUS": {
-                    "Applicable Reqs": [
-                        "IQP",
-                        "SOC_SCI_REQ"
-                    ],
-                    "Buckets": [
-                        "IQP_ON",
-                        "ID_2050"
-                    ],
-                    "Credits": 3.0,
-                    "Sreq Description": "Must take ID 2050 for off campus IQP",
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                }
-            }
-        },
-        "Buckets": {
-            "ART_CON": {
-                "Bucket Contents": [
-                    "AR_DEPT",
-                    "TH_DEPT",
-                    "MU_DEPT"
-                ],
-                "Bucket Description": "Humanities",
-                "Bucket Size": 20,
-                "Choice Weight": 20,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE",
-                    "HUA_DEPTH_SL_0",
-                    "HUA_ART_MAX"
-                ]
-            },
-            "CHEM_BIO": {
-                "Bucket Contents": [
-                    "BB_1001",
-                    "BB_1002",
-                    "BB_1003",
-                    "BCB_1003",
-                    "BB_1025",
-                    "BB_1035",
-                    "BB_1045",
-                    "BB_2002",
-                    "BB_2003",
-                    "BB_2030",
-                    "BB_2040",
-                    "BB_2050",
-                    "BB_2550",
-                    "BB_2902",
-                    "BB_2903",
-                    "BB_2904",
-                    "BB_2915",
-                    "BB_2917",
-                    "BB_2920",
-                    "BB_2950",
-                    "BB_3003",
-                    "BB_3010",
-                    "BCB_3010",
-                    "BB_3050",
-                    "BB_3080",
-                    "BB_3101",
-                    "BB_3102",
-                    "BB_3120",
-                    "BB_3140",
-                    "BB_3512",
-                    "BB_3513",
-                    "BB_3515",
-                    "BB_3517",
-                    "BB_3519",
-                    "BB_3521",
-                    "BB_3525",
-                    "BB_3526",
-                    "BB_3527",
-                    "BB_3530",
-                    "BB_3570",
-                    "BB_3620",
-                    "BB_3920",
-                    "BB_4150",
-                    "BB_4170",
-                    "CH_4170",
-                    "BB_4190",
-                    "CH_4190",
-                    "BB_4260",
-                    "BB_4801",
-                    "BCB_4001",
-                    "BB_4900",
-                    "CH_1010",
-                    "CH_1020",
-                    "CH_1030",
-                    "CH_1040",
-                    "CH_2310",
-                    "CH_2320",
-                    "CH_2330",
-                    "CH_2360",
-                    "CH_2640",
-                    "CH_2650",
-                    "CH_2660",
-                    "CH_2760",
-                    "CH_3310",
-                    "CH_3410",
-                    "CH_3510",
-                    "CH_3530",
-                    "CH_3550",
-                    "CH_4110",
-                    "CH_4120",
-                    "CH_4130",
-                    "CH_4140",
-                    "CH_4150",
-                    "CH_4160",
-                    "CH_4330",
-                    "CH_4420",
-                    "CH_4520"
-                ],
-                "Bucket Description": "Chem and Bio",
-                "Bucket Size": 77,
-                "Choice Weight": 80,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_CHEM_BIO",
-                    "ECE_MATH_SCI_ELECT"
-                ]
-            },
-            "COMP_ENG": {
-                "Bucket Contents": [
-                    "ECE_2029",
-                    "ECE_2049",
-                    "ECE_3829",
-                    "ECE_4801"
-                ],
-                "Bucket Description": "Computer Engineering - ECE_2029, ECE_2049, ECE_3829, ECE_4801",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_ELECTIVES",
-                    "ECE_ENG",
-                    "ECE_COMP_ENG"
-                ]
-            },
-            "CRYPTO": {
-                "Bucket Contents": [
-                    "CS_4801",
-                    "ECE_4802"
-                ],
-                "Bucket Description": "CS and ECE Electives",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_ELECTIVES",
-                    "ECE_CS",
-                    "ECE_ENG"
-                ]
-            },
-            "CS_ELECT": {
-                "Bucket Contents": [
-                    "BCB_4002",
-                    "CS_4802",
-                    "BCB_4003",
-                    "CS_4803",
-                    "CS_2102",
-                    "CS_2103",
-                    "CS_2119",
-                    "CS_2223",
-                    "CS_2301",
-                    "CS_2303",
-                    "CS_3013",
-                    "CS_3041",
-                    "CS_3133",
-                    "CS_3431",
-                    "CS_3516",
-                    "CS_3733",
-                    "CS_4099",
-                    "CS_4100",
-                    "IMGD_4100",
-                    "CS_4120",
-                    "CS_4123",
-                    "CS_4233",
-                    "CS_4241",
-                    "CS_4300",
-                    "IMGD_4300",
-                    "CS_4341",
-                    "CS_4342",
-                    "CS_4401",
-                    "CS_4404",
-                    "CS_4432",
-                    "CS_4433",
-                    "DS_4433",
-                    "CS_4445",
-                    "CS_4513",
-                    "CS_4515",
-                    "CS_4516",
-                    "CS_4518",
-                    "CS_4533",
-                    "CS_4536",
-                    "CS_4731",
-                    "CS_4732",
-                    "CS_4804"
-                ],
-                "Bucket Description": "Computer Science Electives",
-                "Bucket Size": 42,
-                "Choice Weight": 42,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_CS",
-                    "ECE_ENG"
-                ]
-            },
-            "DISC": {
-                "Bucket Contents": [
-                    "CS_2022",
-                    "MA_2201"
-                ],
-                "Bucket Description": "Math and Engineering Electives",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_MATH",
-                    "ECE_MATH_SCI_ELECT",
-                    "ECE_ENG"
-                ]
-            },
-            "ECE_ELECT": {
-                "Bucket Contents": [
-                    "BME_4011",
-                    "ECE_4011",
-                    "BME_4023",
-                    "ECE_4023",
-                    "ECE_2010",
-                    "ECE_2019",
-                    "ECE_2311",
-                    "ECE_2799",
-                    "ECE_3501",
-                    "ECE_3849"
-                ],
-                "Bucket Description": "ECE Electives ",
-                "Bucket Size": 10,
-                "Choice Weight": 27,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_ELECTIVES",
-                    "ECE_ENG"
-                ]
-            },
-            "ELE_ENG": {
-                "Bucket Contents": [
-                    "ECE_2112",
-                    "ECE_2201",
-                    "ECE_2305",
-                    "ECE_2312",
-                    "ECE_3012",
-                    "ECE_3113",
-                    "ECE_3204",
-                    "ECE_3308",
-                    "ECE_3311",
-                    "ECE_3500",
-                    "ECE_4305",
-                    "ECE_4503",
-                    "ECE_4703",
-                    "ECE_4902",
-                    "ECE_4904",
-                    "ES_3011"
-                ],
-                "Bucket Description": "Electrical Engineering",
-                "Bucket Size": 16,
-                "Choice Weight": 16,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_ELECTIVES",
-                    "ECE_ENG",
-                    "ECE_ELEC_ENG"
-                ]
-            },
-            "ENG_ELECT": {
-                "Bucket Contents": [
-                    "CS_2011",
-                    "CS_3043",
-                    "AE_2110",
-                    "AE_2310",
-                    "AE_2320",
-                    "AE_2410",
-                    "AE_3110",
-                    "AE_3120",
-                    "AE_3310",
-                    "AE_3420",
-                    "AE_3430",
-                    "AE_4210",
-                    "AE_4220",
-                    "AE_4310",
-                    "AE_4320",
-                    "AE_4410",
-                    "AE_4510",
-                    "AE_4520",
-                    "AREN_2002",
-                    "AREN_2004",
-                    "AREN_2023",
-                    "AREN_2025",
-                    "AREN_3002",
-                    "AREN_3003",
-                    "AREN_3005",
-                    "AREN_3006",
-                    "AREN_3020",
-                    "AREN_3022",
-                    "AREN_3024",
-                    "AREN_3025",
-                    "BME_2001",
-                    "BME_2210",
-                    "BME_2211",
-                    "BME_2502",
-                    "BME_2610",
-                    "BME_3012",
-                    "BME_3013",
-                    "BME_3014",
-                    "BME_3111",
-                    "BME_3112",
-                    "BME_3300",
-                    "BME_3503",
-                    "BME_3505",
-                    "BME_3506",
-                    "BME_3605",
-                    "BME_3610",
-                    "BME_3811",
-                    "BME_3813",
-                    "BME_4201",
-                    "BME_4300",
-                    "BME_4503",
-                    "BME_4701",
-                    "BME_4828",
-                    "BME_4831",
-                    "CE_2000",
-                    "CE_2001",
-                    "CE_2002",
-                    "CE_2020",
-                    "CE_3006",
-                    "CE_3008",
-                    "CE_3010",
-                    "CE_3020",
-                    "CE_3025",
-                    "CE_3026",
-                    "CE_3030",
-                    "CE_3031",
-                    "CE_3041",
-                    "CE_3044",
-                    "CE_3050",
-                    "CE_3051",
-                    "CE_3059",
-                    "CE_3060",
-                    "CE_3061",
-                    "CE_3062",
-                    "CE_3070",
-                    "CE_3074",
-                    "CE_4007",
-                    "CE_4060",
-                    "CE_4061",
-                    "CE_4071",
-                    "CE_4600",
-                    "CE_4610",
-                    "CE_4063",
-                    "CHE_4063",
-                    "CHE_2011",
-                    "CHE_2012",
-                    "CHE_2013",
-                    "CHE_2014",
-                    "CHE_3201",
-                    "CHE_3301",
-                    "CHE_3501",
-                    "CHE_3702",
-                    "CHE_3722",
-                    "CHE_4401",
-                    "CHE_4402",
-                    "CHE_4403",
-                    "CHE_4404",
-                    "CHE_4405",
-                    "CHE_4410",
-                    "ES_2001",
-                    "ES_2501",
-                    "ES_2502",
-                    "ES_2503",
-                    "ES_2800",
-                    "ES_3001",
-                    "ES_3002",
-                    "ES_3003",
-                    "ES_3004",
-                    "ES_3323",
-                    "ES_3501",
-                    "FP_3070",
-                    "FP_3080",
-                    "FP_4000",
-                    "FP_4001",
-                    "BME_4504",
-                    "ME_4504",
-                    "BME_4606",
-                    "ME_4606",
-                    "BME_4814",
-                    "ME_4814",
-                    "CHE_2301",
-                    "ME_2301",
-                    "ME_2300",
-                    "ME_2312",
-                    "ME_2820",
-                    "ME_3310",
-                    "ME_3311",
-                    "ME_3320",
-                    "ME_3411",
-                    "ME_3501",
-                    "ME_3506",
-                    "ME_3801",
-                    "ME_3820",
-                    "ME_3901",
-                    "ME_3902",
-                    "ME_4320",
-                    "ME_4323",
-                    "ME_4324",
-                    "ME_4422",
-                    "ME_4429",
-                    "ME_4430",
-                    "ME_4505",
-                    "ME_4506",
-                    "ME_4710",
-                    "ME_4813",
-                    "ME_4832",
-                    "ME_4840",
-                    "ME_4875",
-                    "MTE_575",
-                    "RBE_2001",
-                    "RBE_2002",
-                    "RBE_3001",
-                    "RBE_3002",
-                    "RBE_3100",
-                    "RBE_4322",
-                    "ME_4322",
-                    "RBE_4540",
-                    "RBE_4815"
-                ],
-                "Bucket Description": "Engineering Electives",
-                "Bucket Size": 158,
-                "Choice Weight": 158,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_ENG"
-                ]
-            },
-            "ETHICS_SS": {
-                "Bucket Contents": [
-                    "PY_2731",
-                    "PY_2713",
-                    "RE_2731"
-                ],
-                "Bucket Description": "Humanities",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE"
-                ]
-            },
-            "FL_CON": {
-                "Bucket Contents": [
-                    "AB_DEPT",
-                    "CN_DEPT",
-                    "GN_DEPT",
-                    "SP_DEPT"
-                ],
-                "Bucket Description": "Humanities",
-                "Bucket Size": 20,
-                "Choice Weight": 20,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE",
-                    "HUA_DEPTH_SL_1"
-                ]
-            },
-            "GEO": {
-                "Bucket Contents": [
-                    "GE_2341"
-                ],
-                "Bucket Description": "Math and Science Electives",
-                "Bucket Size": 10,
-                "Choice Weight": 100,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_MATH_SCI_ELECT"
-                ]
-            },
-            "HI_CON": {
-                "Bucket Contents": [
-                    "HI_DEPT",
-                    "HU_DEPT",
-                    "INTL_DEPT"
-                ],
-                "Bucket Description": "Humanities",
-                "Bucket Size": 20,
-                "Choice Weight": 20,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE",
-                    "HUA_DEPTH_SL_3",
-                    "HUA_HI_MAX"
-                ]
-            },
-            "HU_CAP": {
-                "Bucket Contents": [
-                    "HU_3900",
-                    "HU_3910"
-                ],
-                "Bucket Description": "Humanities Capstone",
-                "Bucket Size": 2,
-                "Choice Weight": 10,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_PROJ"
-                ]
-            },
-            "ID_2050": {
-                "Bucket Contents": [
-                    "ID_2050"
-                ],
-                "Bucket Description": "ID_2050",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "SOC_SCI_REQ",
-                    "ON_OFF_CAMPUS"
-                ]
-            },
-            "IQP_OFF": {
-                "Bucket Contents": [
-                    "IQP_A",
-                    "IQP_B",
-                    "IQP_C",
-                    "IQP_D",
-                    "IQP_OFF_CAMPUS"
-                ],
-                "Bucket Description": "IQP Off Campus",
-                "Bucket Size": 5,
-                "Choice Weight": 5,
-                "Credits Each": 9,
-                "Req Keys": [
-                    "IQP"
-                ]
-            },
-            "IQP_ON": {
-                "Bucket Contents": [
-                    "IQP_ON_CAMPUS"
-                ],
-                "Bucket Description": "IQP On Campus",
-                "Bucket Size": 1,
-                "Choice Weight": 100,
-                "Credits Each": 9,
-                "Req Keys": [
-                    "IQP",
-                    "ON_OFF_CAMPUS"
-                ]
-            },
-            "MATH_CORE": {
-                "Bucket Contents": [
-                    "MA_1021",
-                    "MA_1022",
-                    "MA_2051",
-                    "MA_2621"
-                ],
-                "Bucket Description": "Math Core",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_MATH",
-                    "ECE_MATH_SCI_ELECT",
-                    "ECE_MATH_CORE"
-                ]
-            },
-            "MATH_ELECT": {
-                "Bucket Contents": [
-                    "BCB_4004",
-                    "MA_4603",
-                    "DS_4635",
-                    "MA_4635",
-                    "MA_1020",
-                    "MA_1023",
-                    "MA_1024",
-                    "MA_1033",
-                    "MA_1034",
-                    "MA_1120",
-                    "MA_1801",
-                    "MA_1971",
-                    "MA_2071",
-                    "MA_2072",
-                    "MA_2073",
-                    "MA_2210",
-                    "MA_2211",
-                    "MA_2212",
-                    "MA_2251",
-                    "MA_2271",
-                    "MA_2273",
-                    "MA_2431",
-                    "MA_2610",
-                    "MA_2611",
-                    "MA_2612",
-                    "MA_2631",
-                    "MA_3212",
-                    "MA_3213",
-                    "MA_3231",
-                    "MA_3233",
-                    "MA_3471",
-                    "MA_3475",
-                    "MA_3627",
-                    "MA_3631",
-                    "MA_3823",
-                    "MA_3825",
-                    "MA_3831",
-                    "MA_3832",
-                    "MA_4213",
-                    "MA_4214",
-                    "MA_4216",
-                    "MA_4222",
-                    "MA_4235",
-                    "MA_4237",
-                    "MA_4291",
-                    "MA_4411",
-                    "MA_4451",
-                    "MA_4473",
-                    "MA_4631",
-                    "MA_4632",
-                    "MA_4891",
-                    "MA_4892",
-                    "MA_4895"
-                ],
-                "Bucket Description": "Math Electives",
-                "Bucket Size": 53,
-                "Choice Weight": 80,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_MATH",
-                    "ECE_MATH_SCI_ELECT"
-                ]
-            },
-            "NUM_METH": {
-                "Bucket Contents": [
-                    "CS_4032",
-                    "MA_3257",
-                    "CS_4033",
-                    "MA_3457"
-                ],
-                "Bucket Description": "Math and CS Engineering Electives",
-                "Bucket Size": 4,
-                "Choice Weight": 4,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_MATH",
-                    "ECE_MATH_SCI_ELECT",
-                    "ECE_CS",
-                    "ECE_ENG"
-                ]
-            },
-            "PHY": {
-                "Bucket Contents": [
-                    "PH_1110",
-                    "PH_1111",
-                    "PH_1120",
-                    "PH_1121",
-                    "PH_1130",
-                    "PH_1140",
-                    "PH_1150",
-                    "PH_2101",
-                    "PH_2201",
-                    "PH_2202",
-                    "PH_2301",
-                    "PH_2501",
-                    "PH_2502",
-                    "PH_2510",
-                    "PH_2520",
-                    "PH_2540",
-                    "PH_2601",
-                    "PH_2651",
-                    "PH_3206",
-                    "PH_3301",
-                    "PH_3401",
-                    "PH_3402",
-                    "PH_3501",
-                    "PH_3502",
-                    "PH_3503",
-                    "PH_3504",
-                    "PH_4201",
-                    "PH_511"
-                ],
-                "Bucket Description": "Physics",
-                "Bucket Size": 28,
-                "Choice Weight": 28,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_PHYSICS",
-                    "ECE_MATH_SCI_ELECT"
-                ]
-            },
-            "PH_2550": {
-                "Bucket Contents": [
-                    "PH_2550",
-                    "AE_2550"
-                ],
-                "Bucket Description": "Physics and Engineering",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ECE_PHYSICS",
-                    "ECE_MATH_SCI_ELECT",
-                    "ECE_ENG"
-                ]
-            },
-            "PY_CON": {
-                "Bucket Contents": [
-                    "PY_DEPT",
-                    "RE_DEPT"
-                ],
-                "Bucket Description": "Humanities",
-                "Bucket Size": 20,
-                "Choice Weight": 20,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE",
-                    "HUA_DEPTH_SL_4",
-                    "HUA_PY_MAX"
-                ]
-            },
-            "SOC_SCI": {
-                "Bucket Contents": [
-                    "ECON_DEPT",
-                    "ENV_DEPT",
-                    "GOV_DEPT",
-                    "PSY_DEPT",
-                    "SD_DEPT",
-                    "SOC_DEPT",
-                    "SS_DEPT",
-                    "STS_DEPT",
-                    "DEV_DEPT",
-                    "GOV_2314",
-                    "GOV_2315",
-                    "GOV_2313"
-                ],
-                "Bucket Description": "Social Science",
-                "Bucket Size": 12,
-                "Choice Weight": 12,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "SOC_SCI_REQ"
-                ]
-            },
-            "WR_CON": {
-                "Bucket Contents": [
-                    "EN_DEPT",
-                    "WR_DEPT"
-                ],
-                "Bucket Description": "Humanities",
-                "Bucket Size": 20,
-                "Choice Weight": 20,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE",
-                    "HUA_DEPTH_SL_2",
-                    "HUA_WR_MAX"
-                ]
-            }
-        },
-        "ECE_MAJOR": {
-            "Reqs": {
-                "ECE_CHEM_BIO": {
-                    "Buckets": [
-                        "CHEM_BIO"
-                    ],
-                    "Credits": 3,
-                    "Req Description": "Chem or Bio"
-                },
-                "ECE_CS": {
-                    "Buckets": [
-                        "NUM_METH",
-                        "CRYPTO",
-                        "CS_ELECT"
-                    ],
-                    "Credits": 3,
-                    "Req Description": "Computer Science"
-                },
-                "ECE_ELECTIVES": {
-                    "Buckets": [
-                        "ECE_ELECT",
-                        "CRYPTO",
-                        "COMP_ENG",
-                        "ELE_ENG"
-                    ],
-                    "Credits": 36,
-                    "Req Description": "ECE Electives"
-                },
-                "ECE_ENG": {
-                    "Buckets": [
-                        "DISC",
-                        "NUM_METH",
-                        "PH_2550",
-                        "ECE_ELECT",
-                        "CRYPTO",
-                        "COMP_ENG",
-                        "ELE_ENG",
-                        "CS_ELECT",
-                        "ENG_ELECT"
-                    ],
-                    "Credits": 6,
-                    "Req Description": "Engineering Electives "
-                },
-                "ECE_MATH": {
-                    "Buckets": [
-                        "MATH_ELECT",
-                        "DISC",
-                        "NUM_METH",
-                        "MATH_CORE"
-                    ],
-                    "Credits": 21,
-                    "Req Description": "Math"
-                },
-                "ECE_MATH_SCI_ELECT": {
-                    "Buckets": [
-                        "MATH_ELECT",
-                        "DISC",
-                        "NUM_METH",
-                        "MATH_CORE",
-                        "PHY",
-                        "PH_2550",
-                        "CHEM_BIO",
-                        "GEO"
-                    ],
-                    "Credits": 6,
-                    "Req Description": "Math or Basic Science Electives"
-                },
-                "ECE_PHYSICS": {
-                    "Buckets": [
-                        "PHY",
-                        "PH_2550"
-                    ],
-                    "Credits": 6,
-                    "Req Description": "Physics"
-                }
-            },
-            "Sreqs": {
-                "ECE_COMP_ENG": {
-                    "Applicable Reqs": [
-                        "ECE_ELECTIVES"
-                    ],
-                    "Buckets": [
-                        "COMP_ENG"
-                    ],
-                    "Credits": 6.0,
-                    "Sreq Description": NaN,
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "ECE_ELEC_ENG": {
-                    "Applicable Reqs": [
-                        "ECE_ELECTIVES"
-                    ],
-                    "Buckets": [
-                        "ELE_ENG"
-                    ],
-                    "Credits": 9.0,
-                    "Sreq Description": NaN,
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "ECE_MATH_CORE": {
-                    "Applicable Reqs": [
-                        "ECE_MATH"
-                    ],
-                    "Buckets": [
-                        "MATH_CORE"
-                    ],
-                    "Credits": 12.0,
-                    "Sreq Description": NaN,
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                }
-            }
-        }
-    },
     "MATH_MAJOR_ONLY": {
         "ALL_MAJORS": {
             "Reqs": {
@@ -6651,7 +5310,7 @@
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT",
+                    "MUS_DEPT",
                     "IMGD_341X"
                 ],
                 "Bucket Description": "Humanities",
@@ -7328,7 +5987,7 @@
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT",
+                    "MUS_DEPT",
                     "IMGD_341X"
                 ],
                 "Bucket Description": "Humanities",
@@ -8550,8 +7209,7 @@
                         "FL_CON",
                         "WR_CON",
                         "HI_CON",
-                        "PY_CON",
-                        "ETHICS_SS"
+                        "PY_CON"
                     ],
                     "Credits": 15,
                     "Req Description": "Humanities"
@@ -8676,10 +7334,10 @@
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT"
+                    "MUS_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 20,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -8693,17 +7351,16 @@
                     "CH_1010",
                     "CH_1020"
                 ],
-                "Bucket Description": "CH_1010, CH_1020",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Bucket Description": "Chemistry",
+                "Bucket Size": 6,
+                "Choice Weight": 6,
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_BSCAP",
-                    "ME_MABS",
                     "ME_CHEM"
                 ]
             },
-            "CH_THERMO": {
+            "CHEM_THERMO": {
                 "Bucket Contents": [
                     "CH_3510"
                 ],
@@ -8712,6 +7369,7 @@
                 "Choice Weight": 1,
                 "Credits Each": 3,
                 "Req Keys": [
+                    "ME_BSCAP",
                     "ME_MABS",
                     "ME_CHEM",
                     "ME_ES_3001_EQ"
@@ -8719,237 +7377,48 @@
             },
             "ECE": {
                 "Bucket Contents": [
-                    "BME_4011",
-                    "ECE_4011",
-                    "BME_4023",
-                    "ECE_4023",
-                    "CS_4801",
-                    "ECE_4802",
-                    "ECE_2010",
-                    "ECE_2019",
-                    "ECE_2029",
-                    "ECE_2049",
-                    "ECE_2112",
-                    "ECE_2201",
-                    "ECE_2305",
-                    "ECE_2311",
-                    "ECE_2312",
-                    "ECE_2799",
-                    "ECE_3012",
-                    "ECE_3113",
-                    "ECE_3204",
-                    "ECE_3308",
-                    "ECE_3311",
-                    "ECE_3500",
-                    "ECE_3501",
-                    "ECE_3829",
-                    "ECE_3849",
-                    "ECE_4305",
-                    "ECE_4503",
-                    "ECE_4703",
-                    "ECE_4801",
-                    "ECE_4902",
-                    "ECE_4904"
+                    "ECE_DEPT",
+                    "ECE_2010"
                 ],
-                "Bucket Description": "ECE_2010 or other 2000+ ECE",
-                "Bucket Size": 31,
-                "Choice Weight": 31,
+                "Bucket Description": "ECE classes",
+                "Bucket Size": 5,
+                "Choice Weight": 5,
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_ECE",
                     "ME_E"
                 ]
             },
+            "ECE_NOT": {
+                "Bucket Contents": [
+                    "ECE_1799"
+                ],
+                "Bucket Description": "HOW DID THIS SHOW UP",
+                "Bucket Size": 1,
+                "Choice Weight": 1,
+                "Credits Each": 3,
+                "Req Keys": [
+                    "ME_OTHER_ECE"
+                ]
+            },
             "ENG_ELECT": {
                 "Bucket Contents": [
-                    "AE_2110",
-                    "AE_2310",
-                    "AE_2320",
-                    "AE_2410",
-                    "AE_3110",
-                    "AE_3120",
-                    "AE_3310",
-                    "AE_3420",
-                    "AE_3430",
-                    "AE_4210",
-                    "AE_4220",
-                    "AE_4310",
-                    "AE_4320",
-                    "AE_4410",
-                    "AE_4510",
-                    "AE_4520",
-                    "AREN_2002",
-                    "AREN_2004",
-                    "AREN_2023",
-                    "AREN_2025",
-                    "AREN_3002",
-                    "AREN_3003",
-                    "AREN_3005",
-                    "AREN_3006",
-                    "AREN_3020",
-                    "AREN_3022",
-                    "AREN_3024",
-                    "AREN_3025",
-                    "BME_2001",
-                    "BME_2210",
-                    "BME_2211",
-                    "BME_2502",
-                    "BME_2610",
-                    "BME_3012",
-                    "BME_3013",
-                    "BME_3014",
-                    "BME_3111",
-                    "BME_3112",
-                    "BME_3300",
-                    "BME_3503",
-                    "BME_3505",
-                    "BME_3506",
-                    "BME_3605",
-                    "BME_3610",
-                    "BME_3811",
-                    "BME_3813",
-                    "BME_4201",
-                    "BME_4300",
-                    "BME_4503",
-                    "BME_4504",
-                    "ME_4504",
-                    "BME_4606",
-                    "ME_4606",
-                    "BME_4701",
-                    "BME_4814",
-                    "ME_4814",
-                    "BME_4828",
-                    "BME_4831",
-                    "CE_2000",
-                    "CE_2001",
-                    "CE_2002",
-                    "CE_2020",
-                    "CE_3006",
-                    "CE_3008",
-                    "CE_3010",
-                    "CE_3020",
-                    "CE_3025",
-                    "CE_3026",
-                    "CE_3030",
-                    "CE_3031",
-                    "CE_3041",
-                    "CE_3044",
-                    "CE_3050",
-                    "CE_3051",
-                    "CE_3059",
-                    "CE_3060",
-                    "CE_3061",
-                    "CE_3062",
-                    "CE_3070",
-                    "CE_3074",
-                    "CE_4007",
-                    "CE_4060",
-                    "CE_4061",
-                    "CE_4071",
-                    "CE_4600",
-                    "CE_4610",
-                    "CE_4063",
-                    "CHE_4063",
-                    "CHE_2011",
-                    "CHE_2012",
-                    "CHE_2013",
-                    "CHE_2014",
-                    "CHE_2301",
-                    "ME_2301",
-                    "CHE_3201",
-                    "CHE_3301",
-                    "CHE_3501",
-                    "CHE_3702",
-                    "CHE_3722",
-                    "CHE_4401",
-                    "CHE_4402",
-                    "CHE_4403",
-                    "CHE_4404",
-                    "CHE_4405",
-                    "CHE_4410",
-                    "ES_2800",
-                    "ES_3002",
-                    "ES_3011",
-                    "ES_3323",
-                    "ES_3501",
-                    "FP_3070",
-                    "FP_3080",
-                    "FP_4000",
-                    "FP_4001",
-                    "ME_2300",
-                    "ME_2820",
-                    "ME_3310",
-                    "ME_3311",
-                    "ME_3320",
-                    "ME_3411",
-                    "ME_3501",
-                    "ME_3506",
-                    "ME_3801",
-                    "ME_3820",
-                    "ME_4430",
-                    "ME_4505",
-                    "ME_4506",
-                    "ME_4710",
-                    "ME_4813",
-                    "ME_4832",
-                    "ME_4840",
-                    "ME_4875",
-                    "MTE_575",
-                    "RBE_2001",
-                    "RBE_2002",
-                    "RBE_3001",
-                    "RBE_3002",
-                    "RBE_3100",
-                    "RBE_4540",
-                    "RBE_4815"
+                    "ES_DEPT",
+                    "ME_DEPT",
+                    "AREN_DEPT",
+                    "CHE_DEPT",
+                    "RBE_DEPT",
+                    "CE_DEPT",
+                    "AE_DEPT",
+                    "OIE_DEPT",
+                    "FP_DEPT"
                 ],
                 "Bucket Description": "Engineering Electives",
-                "Bucket Size": 140,
-                "Choice Weight": 140,
+                "Bucket Size": 27,
+                "Choice Weight": 50,
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_E"
-                ]
-            },
-            "ENG_EXP": {
-                "Bucket Contents": [
-                    "ME_3901",
-                    "ME_3902"
-                ],
-                "Bucket Description": "ME_3901 OR ME_3902",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ME_EXP",
-                    "ME_E"
-                ]
-            },
-            "ES_3001": {
-                "Bucket Contents": [
-                    "ES_3001"
-                ],
-                "Bucket Description": "ES_3001",
-                "Bucket Size": 1,
-                "Choice Weight": 150,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ME_E",
-                    "ME_ES_3001_EQ"
-                ]
-            },
-            "ETHICS_SS": {
-                "Bucket Contents": [
-                    "PY_2731",
-                    "PY_2713",
-                    "RE_2731"
-                ],
-                "Bucket Description": "Humanities - Ethics",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "HUA_CORE"
                 ]
             },
             "FL_CON": {
@@ -8960,7 +7429,7 @@
                     "SP_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 20,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -8975,7 +7444,7 @@
                     "INTL_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 20,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -9003,7 +7472,7 @@
                 ],
                 "Bucket Description": "ID_2050",
                 "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Choice Weight": 50,
                 "Credits Each": 3,
                 "Req Keys": [
                     "SOC_SCI_REQ",
@@ -9018,7 +7487,7 @@
                     "IQP_D",
                     "IQP_OFF_CAMPUS"
                 ],
-                "Bucket Description": "IQP Off Campus",
+                "Bucket Description": "IQP off campus",
                 "Bucket Size": 5,
                 "Choice Weight": 100,
                 "Credits Each": 9,
@@ -9030,9 +7499,9 @@
                 "Bucket Contents": [
                     "IQP_ON_CAMPUS"
                 ],
-                "Bucket Description": "IQP On Campus",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Description": "IQP on campus",
+                "Bucket Size": 5,
+                "Choice Weight": 25,
                 "Credits Each": 9,
                 "Req Keys": [
                     "IQP",
@@ -9041,187 +7510,35 @@
             },
             "MABS": {
                 "Bucket Contents": [
-                    "BB_1001",
-                    "BB_1002",
-                    "BB_1003",
-                    "BCB_1003",
-                    "BB_1025",
-                    "BB_1035",
-                    "BB_1045",
-                    "BB_2002",
-                    "BB_2003",
-                    "BB_2030",
-                    "BB_2040",
-                    "BB_2050",
-                    "BB_2550",
-                    "BB_2902",
-                    "BB_2903",
-                    "BB_2904",
-                    "BB_2915",
-                    "BB_2917",
-                    "BB_2920",
-                    "BB_2950",
-                    "BB_3003",
-                    "BB_3010",
-                    "BCB_3010",
-                    "BB_3050",
-                    "BB_3080",
-                    "BB_3101",
-                    "BB_3102",
-                    "BB_3120",
-                    "BB_3140",
-                    "BB_3512",
-                    "BB_3513",
-                    "BB_3515",
-                    "BB_3517",
-                    "BB_3519",
-                    "BB_3521",
-                    "BB_3525",
-                    "BB_3526",
-                    "BB_3527",
-                    "BB_3530",
-                    "BB_3570",
-                    "BB_3620",
-                    "BB_3920",
-                    "BB_4150",
-                    "BB_4170",
-                    "CH_4170",
-                    "BB_4190",
-                    "CH_4190",
-                    "BB_4620",
-                    "BB_4801",
-                    "BCB_4001",
-                    "BB_4900",
-                    "CH_1030",
-                    "CH_1040",
-                    "CH_2310",
-                    "CH_2320",
-                    "CH_2330",
-                    "CH_2360",
-                    "CH_2640",
-                    "CH_2650",
-                    "CH_2660",
-                    "CH_2670",
-                    "CH_3310",
-                    "CH_3410",
-                    "CH_3530",
-                    "CH_3550",
-                    "CH_4110",
-                    "CH_4120",
-                    "CH_4130",
-                    "CH_4140",
-                    "CH_4150",
-                    "CH_4160",
-                    "CH_4330",
-                    "CH_4420",
-                    "CH_4520",
-                    "GE_2341",
-                    "PH_1111",
-                    "PH_1121",
-                    "PH_1130",
-                    "PH_1140",
-                    "PH_1150",
-                    "PH_2201",
-                    "PH_2202",
-                    "PH_2301",
-                    "PH_2501",
-                    "PH_2502",
-                    "PH_2510",
-                    "PH_2520",
-                    "PH_2540",
-                    "PH_2601",
-                    "PH_2651",
-                    "PH_3206",
-                    "PH_3301",
-                    "PH_3401",
-                    "PH_3402",
-                    "PH_3501",
-                    "PH_3502",
-                    "PH_3503",
-                    "PH_3504",
-                    "PH_4201",
-                    "MA_1020",
-                    "MA_1033",
-                    "MA_1034",
-                    "MA_1120",
-                    "MA_1801",
-                    "MA_1971",
-                    "CS_2022",
-                    "MA_2201",
-                    "MA_2072",
-                    "MA_2073",
-                    "MA_2210",
-                    "MA_2211",
-                    "MA_2212",
-                    "MA_2251",
-                    "MA_2271",
-                    "MA_2273",
-                    "MA_2431",
-                    "MA_2610",
-                    "MA_2611",
-                    "MA_2612",
-                    "MA_2621",
-                    "MA_2631",
-                    "CS_4032",
-                    "MA_3257",
-                    "CS_4033",
-                    "MA_3457",
-                    "MA_3212",
-                    "MA_3213",
-                    "MA_3231",
-                    "MA_3233",
-                    "MA_3471",
-                    "MA_3475",
-                    "MA_3627",
-                    "MA_3631",
-                    "MA_3823",
-                    "MA_3825",
-                    "MA_3831",
-                    "MA_3832",
-                    "BCB_4004",
-                    "MA_4603",
-                    "DS_4635",
-                    "MA_4635",
-                    "MA_4213",
-                    "MA_4214",
-                    "MA_4216",
-                    "MA_4222",
-                    "MA_4235",
-                    "MA_4237",
-                    "MA_4291",
-                    "MA_4411",
-                    "MA_4451",
-                    "MA_4473",
-                    "MA_4631",
-                    "MA_4632",
-                    "MA_4891",
-                    "MA_4892",
-                    "MA_4895"
+                    "MA_DEPT",
+                    "CH_DEPT",
+                    "PH_DEPT",
+                    "GE_DEPT",
+                    "BB_DEPT"
                 ],
-                "Bucket Description": "Math and Basic Science Electives",
-                "Bucket Size": 156,
-                "Choice Weight": 156,
+                "Bucket Description": "Math or Basic Science ",
+                "Bucket Size": 15,
+                "Choice Weight": 15,
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_MABS"
                 ]
             },
-            "MATH_CORE": {
+            "MATH": {
                 "Bucket Contents": [
                     "MA_1021",
                     "MA_1022",
                     "MA_1023",
                     "MA_1024",
-                    "MA_2051",
-                    "MA_2071"
+                    "MA_2071",
+                    "MA_2051"
                 ],
                 "Bucket Description": "Math Core",
                 "Bucket Size": 6,
                 "Choice Weight": 6,
                 "Credits Each": 3,
                 "Req Keys": [
-                    "ME_M",
-                    "ME_MABS"
+                    "ME_M"
                 ]
             },
             "MAT_SCI": {
@@ -9233,25 +7550,23 @@
                 "Choice Weight": 1,
                 "Credits Each": 3,
                 "Req Keys": [
-                    "ME_MAT_SCI",
-                    "ME_E"
+                    "ME_MAT_SCI"
                 ]
             },
             "MECH_SYS_4000": {
                 "Bucket Contents": [
                     "ME_4320",
+                    "ME_4322",
                     "ME_4323",
                     "ME_4324",
-                    "ME_4322",
                     "RBE_4322"
                 ],
-                "Bucket Description": "ME_4320, ME_4323, ME_4324, ME_4322, RBE_4322",
+                "Bucket Description": "ME_4320, ME_4322, RBE_4322, ME_4323, ME_4324",
                 "Bucket Size": 5,
                 "Choice Weight": 5,
                 "Credits Each": 3,
                 "Req Keys": [
-                    "ME_MS",
-                    "ME_E"
+                    "ME_MS"
                 ]
             },
             "MECH_SYS_CORE": {
@@ -9266,37 +7581,36 @@
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_MS",
-                    "ME_E",
                     "ME_MS_CORE"
+                ]
+            },
+            "ME_EXP": {
+                "Bucket Contents": [
+                    "ME_3901",
+                    "ME_3902"
+                ],
+                "Bucket Description": "ME_3901 OR ME_3902",
+                "Bucket Size": 2,
+                "Choice Weight": 2,
+                "Credits Each": 3,
+                "Req Keys": [
+                    "ME_EXP"
                 ]
             },
             "PHYS": {
                 "Bucket Contents": [
                     "PH_1110",
-                    "PH_1120"
+                    "PH_1120",
+                    "PH_1111",
+                    "PH_1121"
                 ],
-                "Bucket Description": "PH_1110, PH_1120",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
+                "Bucket Description": "Physics",
+                "Bucket Size": 6,
+                "Choice Weight": 6,
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_BSCAP",
-                    "ME_MABS",
                     "ME_PHY"
-                ]
-            },
-            "PHY_AERO": {
-                "Bucket Contents": [
-                    "PH_2550",
-                    "AE_2550"
-                ],
-                "Bucket Description": "Science and Engineering",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ME_MABS",
-                    "ME_E"
                 ]
             },
             "PH_THERMO": {
@@ -9308,37 +7622,25 @@
                 "Choice Weight": 1,
                 "Credits Each": 3,
                 "Req Keys": [
+                    "ME_BSCAP",
                     "ME_MABS",
-                    "ME_PHY",
-                    "ME_ES_3001_EQ"
+                    "ME_PHY"
                 ]
             },
             "PROG": {
                 "Bucket Contents": [
+                    "ME_2312",
+                    "ME_4512",
                     "BME_1004",
-                    "CS_1004",
-                    "CS_1101"
+                    "CS_1101",
+                    "CS_1004"
                 ],
-                "Bucket Description": "Programming - BME_1004, CS_1004, CS_1101, ME_2312, ME_4512",
-                "Bucket Size": 3,
-                "Choice Weight": 50,
+                "Bucket Description": "BME_1004, CS_1004, CS_1101, ME_2312, ME_4512",
+                "Bucket Size": 5,
+                "Choice Weight": 5,
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_PROG"
-                ]
-            },
-            "PROG_ENG": {
-                "Bucket Contents": [
-                    "ME_2312",
-                    "ME_4512"
-                ],
-                "Bucket Description": "Engineering Programming",
-                "Bucket Size": 2,
-                "Choice Weight": 2,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "ME_PROG",
-                    "ME_E"
                 ]
             },
             "PY_CON": {
@@ -9347,7 +7649,7 @@
                     "RE_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 20,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -9371,29 +7673,28 @@
                     "GOV_2315",
                     "GOV_2313"
                 ],
-                "Bucket Description": "Social Science",
-                "Bucket Size": 12,
-                "Choice Weight": 12,
+                "Bucket Description": "Social Sciences",
+                "Bucket Size": 24,
+                "Choice Weight": 24,
                 "Credits Each": 3,
                 "Req Keys": [
                     "SOC_SCI_REQ"
                 ]
             },
-            "THERMO_SYS_4000": {
+            "THERMO_4000": {
                 "Bucket Contents": [
                     "ME_4422",
                     "ME_4429"
                 ],
-                "Bucket Description": "ME_4222, ME_4429",
+                "Bucket Description": "ME_4222 OR ME_4429",
                 "Bucket Size": 2,
                 "Choice Weight": 2,
                 "Credits Each": 3,
                 "Req Keys": [
-                    "ME_TS",
-                    "ME_E"
+                    "ME_TS"
                 ]
             },
-            "THERMO_SYS_CORE": {
+            "THERMO_CORE": {
                 "Bucket Contents": [
                     "ES_3003",
                     "ES_3004"
@@ -9404,8 +7705,20 @@
                 "Credits Each": 3,
                 "Req Keys": [
                     "ME_TS",
-                    "ME_E",
                     "ME_TS_CORE"
+                ]
+            },
+            "THERMO_INTRO": {
+                "Bucket Contents": [
+                    "ES_3001"
+                ],
+                "Bucket Description": "ES_3001",
+                "Bucket Size": 1,
+                "Choice Weight": 80,
+                "Credits Each": 3,
+                "Req Keys": [
+                    "ME_E",
+                    "ME_ES_3001_EQ"
                 ]
             },
             "WR_CON": {
@@ -9414,7 +7727,7 @@
                     "WR_DEPT"
                 ],
                 "Bucket Description": "Humanities",
-                "Bucket Size": 20,
+                "Bucket Size": 10,
                 "Choice Weight": 20,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -9429,24 +7742,18 @@
                 "ME_BSCAP": {
                     "Buckets": [
                         "CHEM",
-                        "PHYS"
+                        "PHYS",
+                        "PH_THERMO",
+                        "CHEM_THERMO"
                     ],
                     "Credits": 9,
                     "Req Description": "Basic Science - Chemistry and Physics"
                 },
                 "ME_E": {
                     "Buckets": [
-                        "PHY_AERO",
-                        "MECH_SYS_CORE",
-                        "MECH_SYS_4000",
-                        "THERMO_SYS_CORE",
-                        "THERMO_SYS_4000",
-                        "MAT_SCI",
                         "ECE",
-                        "ENG_EXP",
-                        "PROG_ENG",
-                        "ENG_ELECT",
-                        "ES_3001"
+                        "THERMO_INTRO",
+                        "ENG_ELECT"
                     ],
                     "Credits": 15,
                     "Req Description": "Electives"
@@ -9460,27 +7767,23 @@
                 },
                 "ME_EXP": {
                     "Buckets": [
-                        "ENG_EXP"
+                        "ME_EXP"
                     ],
                     "Credits": 3,
                     "Req Description": "Other Courses - Engineering Experimentation"
                 },
                 "ME_M": {
                     "Buckets": [
-                        "MATH_CORE"
+                        "MATH"
                     ],
                     "Credits": 18,
                     "Req Description": "Mathematics "
                 },
                 "ME_MABS": {
                     "Buckets": [
-                        "CHEM",
-                        "PHYS",
-                        "MATH_CORE",
-                        "MABS",
-                        "CH_THERMO",
                         "PH_THERMO",
-                        "PHY_AERO"
+                        "CHEM_THERMO",
+                        "MABS"
                     ],
                     "Credits": 6,
                     "Req Description": "Math and Basic Science"
@@ -9502,16 +7805,15 @@
                 },
                 "ME_PROG": {
                     "Buckets": [
-                        "PROG",
-                        "PROG_ENG"
+                        "PROG"
                     ],
                     "Credits": 3,
                     "Req Description": "Other Courses - Programming"
                 },
                 "ME_TS": {
                     "Buckets": [
-                        "THERMO_SYS_CORE",
-                        "THERMO_SYS_4000"
+                        "THERMO_CORE",
+                        "THERMO_4000"
                     ],
                     "Credits": 9,
                     "Req Description": "Thermofluid Systems"
@@ -9524,7 +7826,7 @@
                     ],
                     "Buckets": [
                         "CHEM",
-                        "CH_THERMO"
+                        "CHEM_THERMO"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "at least one chem ",
@@ -9538,9 +7840,8 @@
                         "ME_MABS"
                     ],
                     "Buckets": [
-                        "CH_THERMO",
-                        "PH_THERMO",
-                        "ES_3001"
+                        "CHEM_THERMO",
+                        "THERMO_INTRO"
                     ],
                     "Credits": 3.0,
                     "Sreq Description": "need one of these three for intro to thermo",
@@ -9557,6 +7858,18 @@
                     "Credits": 9.0,
                     "Sreq Description": "mechanical systems core",
                     "Sreq Type": "1a",
+                    "Sublists Count": 0
+                },
+                "ME_OTHER_ECE": {
+                    "Applicable Reqs": [
+                        "ME_ECE"
+                    ],
+                    "Buckets": [
+                        "ECE_NOT"
+                    ],
+                    "Credits": 0.0,
+                    "Sreq Description": "Can't take ECE 1799 for the ECE req (ECE 2010 preferred) ",
+                    "Sreq Type": "1b",
                     "Sublists Count": 0
                 },
                 "ME_PHY": {
@@ -9577,7 +7890,7 @@
                         "ME_TS"
                     ],
                     "Buckets": [
-                        "THERMO_SYS_CORE"
+                        "THERMO_CORE"
                     ],
                     "Credits": 6.0,
                     "Sreq Description": "currently not including the ES 3001 replacements because they cause things to move categories (like GOV for social imps) ",
@@ -9743,7 +8056,7 @@
                 "Bucket Contents": [
                     "AR_DEPT",
                     "TH_DEPT",
-                    "MU_DEPT",
+                    "MUS_DEPT",
                     "IMGD_341X"
                 ],
                 "Bucket Description": "Humanities",

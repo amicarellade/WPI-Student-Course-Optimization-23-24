@@ -2,7 +2,7 @@ import json
 import math
 
 
-def format_solution(x, y, base_dict, program_keys, courses_taken_dict):
+def format_solution(x, y, base_dict, program_keys, courses_taken_dict, ISPs = None):
     # print(str(x)+'\n'+str(y)+'\n'+str(base_dict)+'\n'+str(program_keys)+'\n'+str(courses_taken_dict)+'\n')
     raw_y = raw_y_sol(y)
     raw_x = raw_x_sol(x)
@@ -14,7 +14,7 @@ def format_solution(x, y, base_dict, program_keys, courses_taken_dict):
     courses_set = after_enum["Solution Courses"]
     to_take = after_enum["To Take"]
     # print(courses_set, to_take)
-    applied = apply_to_programs(courses_set, raw_x, base_dict, program_keys, to_take)
+    applied = apply_to_programs(courses_set, raw_x, base_dict, program_keys, to_take, ISPs)
     return applied
 
 
@@ -131,7 +131,7 @@ def calc_credit_metrics(stageI_obj, credits_taken, orig_credits_used, majors):
     return counts_dict
 
 
-def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take):
+def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take, ISPs = None):
     result_dict = {}
     track_applied = make_track_applied(program_keys, sol_courses)
 
@@ -149,7 +149,12 @@ def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take):
 
     credits_used = count_credits_used(total_used_dict, base_dict["Buckets"])
     anticip_credits = 0  # 3 + 9 + 3 * (len(program_keys) - 1)
-    elect_credits = max(45 - (credits_used + anticip_credits), 0)
+    total_credit_adjustment = 0
+    if ISPs != None:
+        for isp in ISPs:
+            total_credit_adjustment += eval(isp['credits'])
+    # ***HERE - change to 132***
+    elect_credits = max((45 - total_credit_adjustment) - (credits_used + anticip_credits), 0)
 
     elect_credits_left = elect_credits
     elect_courses_list = []
@@ -171,7 +176,7 @@ def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take):
             to_take.append("FREE ELECTIVE")
 
     # result_dict["ALL_MAJORS"]["Free Electives"] = elect_courses_list
-    # result_dict["ALL_MAJORS"]["Not used"] = not_used_list
+    result_dict[each_program]["Not used"] = not_used_list
 
     credit_counts = {"Credits Used": credits_used}
     super_dict = {"Results": result_dict, "Credit Counts": credit_counts}

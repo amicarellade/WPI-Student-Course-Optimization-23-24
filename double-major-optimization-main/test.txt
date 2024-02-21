@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-162.0 TOTAL
+135 TOTAL
 -------------------------------
-12 REMAINING 
-    0 Academic Courses 
-    0.0 Free Electives 
+135 REMAINING 
+    105 Academic Courses 
+    18.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-150.0 TAKEN
-    123.0 Applied
-    27.0 Excess
+0.0 TAKEN
+    0 Applied
+    0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.8175657999236137
+TOTAL RUN TIME: 1.6087189000099897
 ----------------------------------------
-    Stage I solve: 1.181833267211914
-    Stage II solve: 0.14860057830810547
+    Stage I solve: 1.4488749504089355
+    Stage II solve: 0.09921526908874512
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,100 +44,72 @@ Physical Education
 
 Humanities
 ----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
+    [AR_DEPT, TH_DEPT, MU_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [Humanities Capstone]
 
 IQP
 ----------------------------
-    IQP OFF
+    [IQP Off Campus]
 
 Social Science
 ----------------------------
-    ECON 1120
-    ID_2050
+    [ID_2050]
+    [Social Science]
 
 Free Electives
 ----------------------------
-    CS 4341
-    DS 4635
-    MA 1022
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
-    MA 2201
-    MA 2621
-    WR 2001
-    CS 1000
-    FIN 1250
-    DS 598
-    DS 551
-    BUS 3020
-    CS 547
+    No Unused Courses
 
 
  
-Data Science
+Computer Science
 ____________________________________
 
  
-Algorithms
+CS Core
 ----------------------------
-    CS 2223
+    [CS 3043]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [Design - CS_3041, CS_3431, CS_3733, CS_4233]
+    [Object-Oriented Programming - CS_2102 OR CS_2103]
+    [Systems - CS_3013, CS_4513, CS_4515, CS_4516]
+    [Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536]
 
-Business Analysis 
+General Math
 ----------------------------
-    OIE 2081
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [Math Electives]
 
-Core
+General Science
 ----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
+    [Biology]
+    [Biology]
+    [Biology]
 
-Computer Science
+Probability
 ----------------------------
-    CS 1101
-    CS 2103
-
-Disciplinary Electives
-----------------------------
-    CS 3043
-    CS 3431
-    CS 4342
-    CS 4432
-    CS 541
-    CS 586
-    MA 1024
-    MA 2051
-    MIS 584
-    OIE 559
-
-Entrepreneurship and Innovation
-----------------------------
-    BUS 1010
-
-Linear Algebra
-----------------------------
-    MA 2071
-
-Mathematical Sciences
-----------------------------
-    MA 1023
-    MA 3631
-
-Natural or Engineering Sciences
-----------------------------
-    ECE 2010
-    PH 1110
-
-Applied Statistics
-----------------------------
-    MA 2611
-    MA 2612
+    [Probability - MA_2621 OR MA_2631]
 
 
  

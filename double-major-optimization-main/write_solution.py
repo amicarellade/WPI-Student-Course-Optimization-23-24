@@ -73,6 +73,10 @@ def write_output_file(file_name, solution, program_keys, run_times, counts_dict,
                 sol_f.write(req_name)
                 sol_f.write("\n")
                 sol_f.write("----------------------------\n")
+                if req_name == "Not used" and len(req_courses) == 0:
+                    sol_f.write("    ")
+                    sol_f.write("No Unused Courses")
+                    sol_f.write("\n")
                 for each_course in req_courses:
                     sol_f.write("    ")
                     sol_f.write(each_course)

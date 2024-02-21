@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-144.0 TOTAL
+135.0 TOTAL
 -------------------------------
-24 REMAINING 
-    12 Academic Courses 
+15.0 REMAINING 
+    3 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
 120.0 TAKEN
-    111.0 Applied
-    9.0 Excess
+    120.0 Applied
+    0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.0861503000196535
+TOTAL RUN TIME: 0.262229899992235
 ----------------------------------------
-    Stage I solve: 0.8279650211334229
-    Stage II solve: 0.15621042251586914
+    Stage I solve: 0.07814812660217285
+    Stage II solve: 0.06206464767456055
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -62,15 +62,13 @@ Social Science
 
 Free Electives
 ----------------------------
-    MA 1022
-    MA 1021
     FIN 1250
+    BUS 3020
+    CS 1000
 
 Not used
 ----------------------------
-    BUS 3020
-    CS 1000
-    CS 584
+    No Unused Courses
 
 
  
@@ -101,16 +99,16 @@ Disciplinary Electives
 ----------------------------
     CS 3043
     CS 3431
+    CS 4342
+    CS 4432
     MA 1023
     MA 1024
     MA 2051
     MA 2201
     MA 2621
     MA 3631
-    [4000-Level CS Data Mining & Machine Learning]
+    MIS 4084
     [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [MIS_4084, OIE_4430]
 
 Entrepreneurship and Innovation
 ----------------------------
@@ -122,8 +120,8 @@ Linear Algebra
 
 Mathematical Sciences
 ----------------------------
-    MA 2073
-    MA 2431
+    MA 1021
+    MA 1022
 
 Natural or Engineering Sciences
 ----------------------------
