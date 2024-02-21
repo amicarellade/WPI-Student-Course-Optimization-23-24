@@ -625,7 +625,7 @@
                     "CS_3133"
                 ],
                 "Bucket Description": "Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536",
-                "Bucket Size": 1,
+                "Bucket Size": 5,
                 "Choice Weight": 99,
                 "Credits Each": 3.0,
                 "Req Keys": [
