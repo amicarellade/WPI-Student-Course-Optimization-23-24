@@ -13,10 +13,6 @@ def run_model(program_keys, courses_taken_dict, base_dict, name_prefix, write_LP
     else:
         import create_model as cm
 
-    print("\n")
-    print("LIVIN ON A PRAYER")
-    print("BASE DICTIONARY: ")
-    print(base_dict)
 
     model = LpProblem("SchedulingCourses", LpMinimize)
     vars_dict = cm.setup_x_y_vars(model, base_dict, program_keys, courses_taken_dict)

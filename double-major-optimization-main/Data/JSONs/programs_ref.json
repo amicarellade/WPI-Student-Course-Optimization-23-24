@@ -584,9 +584,9 @@
                 "Bucket Contents": [
                     "CS_3013"
                 ],
-                "Bucket Description": "CS_3013",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Description": "Systems - CS_3013, CS_4513, CS_4515, CS_4516",
+                "Bucket Size": 4,
+                "Choice Weight": 99,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE",
@@ -4719,7 +4719,7 @@
                     "MA_3627",
                     "MA_3631"
                 ],
-                "Bucket Description": "Math Disciplinary Electives",
+                "Bucket Description": "Disciplinary Electives",
                 "Bucket Size": 17,
                 "Choice Weight": 17,
                 "Credits Each": 3.0,

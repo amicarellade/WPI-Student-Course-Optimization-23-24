@@ -171,7 +171,7 @@ def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take):
             to_take.append("FREE ELECTIVE")
 
     # result_dict["ALL_MAJORS"]["Free Electives"] = elect_courses_list
-    # result_dict["ALL_MAJORS"]["Not used"] = not_used_list
+    result_dict[each_program]["Not used"] = not_used_list
 
     credit_counts = {"Credits Used": credits_used}
     super_dict = {"Results": result_dict, "Credit Counts": credit_counts}

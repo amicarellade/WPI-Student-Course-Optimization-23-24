@@ -131,7 +131,7 @@ def set_objective(model, y, z, buckets_dict, model_stage, max_credits = 0):
 
 
     elif model_stage == 2:
-        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) - lpSum(0.01 * zee for zee in z.values())
+        model += lpSum(-1*buckets_dict[b]["Choice Weight"] * y[b] for b in buckets_dict.keys())
         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values()) == max_credits, 'credMax'
 
     return model

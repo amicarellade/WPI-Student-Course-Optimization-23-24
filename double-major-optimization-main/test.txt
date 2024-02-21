@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-162.0 TOTAL
+141.0 TOTAL
 -------------------------------
-12 REMAINING 
-    0 Academic Courses 
+15 REMAINING 
+    3 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-150.0 TAKEN
-    123.0 Applied
-    27.0 Excess
+126.0 TAKEN
+    120.0 Applied
+    6.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.8175657999236137
+TOTAL RUN TIME: 0.13241442205617204
 ----------------------------------------
-    Stage I solve: 1.181833267211914
-    Stage II solve: 0.14860057830810547
+    Stage I solve: 0.0660696029663086
+    Stage II solve: 0.02493906021118164
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,12 +44,12 @@ Physical Education
 
 Humanities
 ----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
+    SP 2521
+    SP 2522
+    SP 3521
+    SP 3522
+    SP 3532
+    [HU 3900 or 3910]
 
 IQP
 ----------------------------
@@ -57,26 +57,19 @@ IQP
 
 Social Science
 ----------------------------
-    ECON 1120
     ID_2050
+    PSY 1400
 
 Free Electives
 ----------------------------
-    CS 4341
-    DS 4635
-    MA 1022
+    ECON 1110
+    SP 1523
+    GOV 2314
 
 Not used
 ----------------------------
-    MA 2201
-    MA 2621
-    WR 2001
-    CS 1000
-    FIN 1250
-    DS 598
-    DS 551
-    BUS 3020
-    CS 547
+    EN 1000
+    DS 501
 
 
  
@@ -90,7 +83,7 @@ Algorithms
 
 Business Analysis 
 ----------------------------
-    OIE 2081
+    BUS 2080
 
 Core
 ----------------------------
@@ -101,24 +94,26 @@ Core
 Computer Science
 ----------------------------
     CS 1101
-    CS 2103
+    CS 2102
 
 Disciplinary Electives
 ----------------------------
     CS 3043
     CS 3431
-    CS 4342
-    CS 4432
-    CS 541
-    CS 586
-    MA 1024
-    MA 2051
-    MIS 584
-    OIE 559
+    CS 4433
+    CS 4445
+    CS 4804
+    DS 4635
+    MA 2621
+    MIS 3720
+    MIS 4084
+    MIS 4720
+    MKT 3650
+    OIE 3460
 
 Entrepreneurship and Innovation
 ----------------------------
-    BUS 1010
+    ETR 1100
 
 Linear Algebra
 ----------------------------
@@ -126,12 +121,12 @@ Linear Algebra
 
 Mathematical Sciences
 ----------------------------
-    MA 1023
-    MA 3631
+    MA 1020
+    MA 1120
 
 Natural or Engineering Sciences
 ----------------------------
-    ECE 2010
+    GE 2341
     PH 1110
 
 Applied Statistics

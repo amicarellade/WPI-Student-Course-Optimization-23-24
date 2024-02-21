@@ -1,135 +1,49 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-135.0 TOTAL
+45.0 TOTAL
 -------------------------------
-126.0 REMAINING 
-    105 Academic Courses 
-    9.0 Free Electives 
-    9.0 MQP 
-    3.0 PE
+45.0 REMAINING 
+    45 Academic Courses 
+    0.0 Free Electives 
+    0.0 MQP 
+    0.0 PE
  
-9.0 TAKEN
-    9.0 Applied
-    0 Excess
+0.0 TAKEN
+    0.0 Applied
+    0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.053393683047033846
+TOTAL RUN TIME: 0.03283484900020994
 ----------------------------------------
-    Stage I solve: 0.01990509033203125
-    Stage II solve: 0.01655292510986328
+    Stage I solve: 0.011863946914672852
+    Stage II solve: 0.012733221054077148
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
 [Brackets indicate courses that have yet to be taken] 
  
-General Education and Projects
+Computer Science Masters (MSCS)
 ____________________________________
 
  
-MQP
+Total MS Credits Req
 ----------------------------
-    [MQP]
-    [MQP]
-    [MQP]
-
-Physical Education
-----------------------------
-    [PE]
-    [PE]
-    [PE]
-    [PE]
-
-Humanities
-----------------------------
-    [HU 3900 or 3910]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-
-IQP
-----------------------------
-    [IQP ON]
-
-Social Science
-----------------------------
-    [GOV_2314, GOV_2315, GOV_2313]
-    [Social Science]
-
-Free Electives
-----------------------------
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
+    [Algorithms: CS_504, CS_584, CS_5084]
+    [CS Breadth Electives]
+    [Elective or Thesis]
+    [Elective or Thesis]
+    [Elective or Thesis]
+    [Electives]
+    [Electives]
+    [Electives]
+    [Systems or Networks: CS_502, CS_513, CS_528, CS_529, CS_533, CS_588, ECE_581, CS_535, CS_577, ECE_537]
+    [Theory: CS_503, CS_521, CS_559, CS_5003]
 
 Not used
 ----------------------------
-
-
- 
-Data Science
-____________________________________
-
- 
-Algorithms
-----------------------------
-    [CS 2223]
-
-Business Analysis 
-----------------------------
-    [BUS_2080 OR OIE_2081]
-
-Core
-----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
-
-Computer Science
-----------------------------
-    CS 1101
-    CS 2102
-
-Disciplinary Electives
-----------------------------
-    [4000-Level CS Data Access and Management]
-    [4000-Level CS Data Mining & Machine Learning]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [MIS 584]
-    [OIE 559]
-
-Entrepreneurship and Innovation
-----------------------------
-    [Entrepreneurship and Innovation]
-
-Linear Algebra
-----------------------------
-    [MA_2071 OR MA_2072]
-
-Mathematical Sciences
-----------------------------
-    MA 1021
-    [4000-Level Math Disciplinary Electives]
-
-Natural or Engineering Sciences
-----------------------------
-    [Natural and Engineering Sciences]
-    [Natural and Engineering Sciences]
-
-Applied Statistics
-----------------------------
-    [MA 2611]
-    [MA 2612]
 
 
  
