@@ -44,27 +44,27 @@ Physical Education
 
 Humanities
 ----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
+    [HU_3900 OR HU_3910]
+    [PY_2731, PY_2713, RE_2731]
+    [PY_2731, PY_2713, RE_2731]
 
 IQP
 ----------------------------
-    IQP OFF
+    [IQP ON]
 
 Social Science
 ----------------------------
-    ECON 1120
-    ID 2050
+    [GOV_2314, GOV_2315, GOV_2313]
+    [ID 2050]
 
 Free Electives
 ----------------------------
-    FIN 1250
-    BUS 3020
-    CS 1000
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
@@ -78,27 +78,29 @@ ____________________________________
  
 Algorithms
 ----------------------------
-    CS 2223
+    [CS 2223]
 
 Business Analysis 
 ----------------------------
-    OIE 2081
+    [BUS_2080 OR OIE_2081]
 
 Core
 ----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
 
 Computer Science
 ----------------------------
     CS 1101
-    CS 2103
+    CS 2102
 
 Disciplinary Electives
 ----------------------------
     CS 3043
     CS 3431
+    CS 3733
+    CS 4342
     MA 1023
     MA 1024
     MA 2051
@@ -121,7 +123,7 @@ Double Counting
 
 Entrepreneurship and Innovation
 ----------------------------
-    BUS 1010
+    [BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
 
 Linear Algebra
 ----------------------------
@@ -147,8 +149,8 @@ Total MS Credits Req
 
 Natural or Engineering Sciences
 ----------------------------
-    ECE 2010
-    PH 1110
+    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
+    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
 
 Applied Statistics
 ----------------------------

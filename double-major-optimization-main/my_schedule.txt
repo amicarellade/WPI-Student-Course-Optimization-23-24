@@ -1,139 +1,52 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-144.0 TOTAL
+45.0 TOTAL
 -------------------------------
-24 REMAINING 
-    12 Academic Courses 
+45.0 REMAINING 
+    45 Academic Courses 
     0.0 Free Electives 
-    9.0 MQP 
-    3.0 PE
+    0.0 MQP 
+    0.0 PE
  
-120.0 TAKEN
-    111.0 Applied
-    9.0 Excess
+0.0 TAKEN
+    0.0 Applied
+    0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.0861503000196535
+TOTAL RUN TIME: 0.03283484900020994
 ----------------------------------------
-    Stage I solve: 0.8279650211334229
-    Stage II solve: 0.15621042251586914
+    Stage I solve: 0.011863946914672852
+    Stage II solve: 0.012733221054077148
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
 [Brackets indicate courses that have yet to be taken] 
  
-General Education and Projects
+Computer Science Masters (MSCS)
 ____________________________________
 
  
-MQP
+Total MS Credits Req
 ----------------------------
-    [MQP]
-    [MQP]
-    [MQP]
-
-Physical Education
-----------------------------
-    [PE]
-    [PE]
-    [PE]
-    [PE]
-
-Humanities
-----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
-
-IQP
-----------------------------
-    IQP OFF
-
-Social Science
-----------------------------
-    ECON 1120
-    ID_2050
-
-Free Electives
-----------------------------
-    MA 1022
-    MA 1021
-    FIN 1250
+    [Algorithms: CS_504, CS_584, CS_5084]
+    [CS Breadth Electives]
+    [Elective or Thesis]
+    [Elective or Thesis]
+    [Elective or Thesis]
+    [Electives]
+    [Electives]
+    [Electives]
+    [Systems or Networks: CS_502, CS_513, CS_528, CS_529, CS_533, CS_588, ECE_581, CS_535, CS_577, ECE_537]
+    [Theory: CS_503, CS_521, CS_559, CS_5003]
 
 Not used
 ----------------------------
     BUS 3020
     CS 1000
     CS 584
-
-
- 
-Data Science
-____________________________________
-
- 
-Algorithms
-----------------------------
-    CS 2223
-
-Business Analysis 
-----------------------------
-    OIE 2081
-
-Core
-----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
-
-Computer Science
-----------------------------
-    CS 1101
-    CS 2103
-
-Disciplinary Electives
-----------------------------
-    CS 3043
-    CS 3431
-    MA 1023
-    MA 1024
-    MA 2051
-    MA 2201
-    MA 2621
-    MA 3631
-    [4000-Level CS Data Mining & Machine Learning]
-    [4000-Level Math Disciplinary Electives]
-    [4000-Level Math Disciplinary Electives]
-    [MIS_4084, OIE_4430]
-
-Entrepreneurship and Innovation
-----------------------------
-    BUS 1010
-
-Linear Algebra
-----------------------------
-    MA 2071
-
-Mathematical Sciences
-----------------------------
-    MA 2073
-    MA 2431
-
-Natural or Engineering Sciences
-----------------------------
-    ECE 2010
-    PH 1110
-
-Applied Statistics
-----------------------------
-    MA 2611
-    MA 2612
 
 
  

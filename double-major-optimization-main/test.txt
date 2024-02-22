@@ -4,8 +4,8 @@
 135 TOTAL
 -------------------------------
 135 REMAINING 
-    105 Academic Courses 
-    18.0 Free Electives 
+    114 Academic Courses 
+    9.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.6087189000099897
+TOTAL RUN TIME: 0.12381392100360245
 ----------------------------------------
-    Stage I solve: 1.4488749504089355
-    Stage II solve: 0.09921526908874512
+    Stage I solve: 0.07325005531311035
+    Stage II solve: 0.03047776222229004
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -64,6 +64,7 @@ Free Electives
 ----------------------------
     [FREE ELECTIVE]
     [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
@@ -87,8 +88,8 @@ CS Core
     [CS Electives]
     [CS Electives]
     [CS Electives]
-    [CS Electives]
     [Design - CS_3041, CS_3431, CS_3733, CS_4233]
+    [Intro CS - CS_1101 OR CS_1102]
     [Object-Oriented Programming - CS_2102 OR CS_2103]
     [Systems - CS_3013, CS_4513, CS_4515, CS_4516]
     [Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536]
@@ -110,6 +111,15 @@ General Science
 Probability
 ----------------------------
     [Probability - MA_2621 OR MA_2631]
+
+Science/Engineering Electives
+----------------------------
+    [Science and Engineering Electives]
+    [Science and Engineering Electives]
+
+Statistics
+----------------------------
+    [Statistics - MA_2611, MA_2612]
 
 
  

@@ -11,7 +11,7 @@ OBJ: - 50 y(1000_MATH) - 20 y(ART_CON) - 47 y(BIO) - 4 y(BIO_CHEM_LAP)
  - y(OO_REST) - 29 y(PHY) - 2 y(PROB) - 20 y(PY_CON) - y(RBE_3100)
  - 165 y(SCI_ENG) - 10 y(SOC_SCI) - 2 y(STATS) - 20 y(WR_CON)
 Subject To
-SR(CS_1000_REST): - 3 x(CS_INTRO)(CS_CORE) >= 0
+SR(CS_1000_REST): - 3 x(CS_INTRO)(CS_CORE) >= -3
 SR(CS_DESIGN): 3 x(CS_4_DESIGN)(CS_CORE) + 3 x(CS_DESIGN)(CS_CORE)
  + 4.5 x(CS_G_DESIGN)(CS_CORE) >= 3
 SR(CS_MATH_1000L_REST): - 3 x(1000_MATH)(CS_GEN_MATH) >= -12
@@ -57,8 +57,8 @@ credMax: 3 y(1000_MATH) + 3 y(ART_CON) + 3 y(BIO) + 3 y(BIO_CHEM_LAP)
  + 3 y(OO_REST) + 3 y(PHY) + 3 y(PROB) + 3 y(PY_CON) + 3 y(RBE_3100)
  + 3 y(SCI_ENG) + 3 y(SOC_SCI) + 3 y(STATS) + 3 y(WR_CON) + 0.01 z(CS_CORE)
  + 0.01 z(CS_GEN_MATH) + 0.01 z(CS_GEN_SCI) + 0.01 z(CS_PROB)
- + 0.01 z(HUA_CORE) + 0.01 z(HUA_PROJ) + 0.01 z(IQP) + 0.01 z(SOC_SCI_REQ)
- = 105
+ + 0.01 z(CS_SCI_ENG) + 0.01 z(CS_STATS) + 0.01 z(HUA_CORE) + 0.01 z(HUA_PROJ)
+ + 0.01 z(IQP) + 0.01 z(SOC_SCI_REQ) = 111
 reqMin(CS_CORE): 3 x(CS_4000)(CS_CORE) + 3 x(CS_4_DESIGN)(CS_CORE)
  + 3 x(CS_4_SYS)(CS_CORE) + 3 x(CS_4_THRY)(CS_CORE) + 3 x(CS_CRYPT)(CS_CORE)
  + 3 x(CS_DESIGN)(CS_CORE) + 3 x(CS_DISC)(CS_CORE) + 3 x(CS_ELECT)(CS_CORE)
@@ -74,6 +74,11 @@ reqMin(CS_GEN_SCI): 3 x(BIO)(CS_GEN_SCI) + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI)
  + 3 x(CHEM)(CS_GEN_SCI) + 3 x(GEO)(CS_GEN_SCI) + 3 x(PHY)(CS_GEN_SCI)
  - z(CS_GEN_SCI) = 9
 reqMin(CS_PROB): 3 x(PROB)(CS_PROB) - z(CS_PROB) = 3
+reqMin(CS_SCI_ENG): 3 x(BIO)(CS_SCI_ENG) + 3 x(BIO_CHEM_LAP)(CS_SCI_ENG)
+ + 3 x(CHEM)(CS_SCI_ENG) + 3 x(CS_CRYPT)(CS_SCI_ENG) + 3 x(GEO)(CS_SCI_ENG)
+ + 3 x(PHY)(CS_SCI_ENG) + 3 x(RBE_3100)(CS_SCI_ENG) + 3 x(SCI_ENG)(CS_SCI_ENG)
+ - z(CS_SCI_ENG) = 6
+reqMin(CS_STATS): 3 x(STATS)(CS_STATS) - z(CS_STATS) = 3
 reqMin(HUA_CORE): 3 x(ART_CON)(HUA_CORE) + 3 x(DPE_HU)(HUA_CORE)
  + 3 x(FL_CON)(HUA_CORE) + 3 x(HI_CON)(HUA_CORE) + 3 x(PY_CON)(HUA_CORE)
  + 3 x(WR_CON)(HUA_CORE) - z(HUA_CORE) = 15
@@ -83,14 +88,16 @@ reqMin(SOC_SCI_REQ): 3 x(DPE_GOV)(SOC_SCI_REQ) + 3 x(ID_2050)(SOC_SCI_REQ)
  + 3 x(SOC_SCI)(SOC_SCI_REQ) - z(SOC_SCI_REQ) = 6
 setY1(1000_MATH): x(1000_MATH)(CS_GEN_MATH) - y(1000_MATH) <= 0
 setY1(ART_CON): x(ART_CON)(HUA_CORE) - y(ART_CON) <= 0
-setY1(BIO): x(BIO)(CS_GEN_SCI) - y(BIO) <= 0
-setY1(BIO_CHEM_LAP): x(BIO_CHEM_LAP)(CS_GEN_SCI) - y(BIO_CHEM_LAP) <= 0
-setY1(CHEM): x(CHEM)(CS_GEN_SCI) - y(CHEM) <= 0
+setY1(BIO): x(BIO)(CS_GEN_SCI) + x(BIO)(CS_SCI_ENG) - y(BIO) <= 0
+setY1(BIO_CHEM_LAP): x(BIO_CHEM_LAP)(CS_GEN_SCI) + x(BIO_CHEM_LAP)(CS_SCI_ENG)
+ - y(BIO_CHEM_LAP) <= 0
+setY1(CHEM): x(CHEM)(CS_GEN_SCI) + x(CHEM)(CS_SCI_ENG) - y(CHEM) <= 0
 setY1(CS_4000): x(CS_4000)(CS_CORE) - y(CS_4000) <= 0
 setY1(CS_4_DESIGN): x(CS_4_DESIGN)(CS_CORE) - y(CS_4_DESIGN) <= 0
 setY1(CS_4_SYS): x(CS_4_SYS)(CS_CORE) - y(CS_4_SYS) <= 0
 setY1(CS_4_THRY): x(CS_4_THRY)(CS_CORE) - y(CS_4_THRY) <= 0
-setY1(CS_CRYPT): x(CS_CRYPT)(CS_CORE) - y(CS_CRYPT) <= 0
+setY1(CS_CRYPT): x(CS_CRYPT)(CS_CORE) + x(CS_CRYPT)(CS_SCI_ENG) - y(CS_CRYPT)
+ <= 0
 setY1(CS_DESIGN): x(CS_DESIGN)(CS_CORE) - y(CS_DESIGN) <= 0
 setY1(CS_DISC): x(CS_DISC)(CS_CORE) + x(CS_DISC)(CS_GEN_MATH) - y(CS_DISC)
  <= 0
@@ -109,29 +116,35 @@ setY1(CS_THRY): x(CS_THRY)(CS_CORE) - y(CS_THRY) <= 0
 setY1(DPE_GOV): x(DPE_GOV)(SOC_SCI_REQ) - y(DPE_GOV) <= 0
 setY1(DPE_HU): x(DPE_HU)(HUA_CORE) - y(DPE_HU) <= 0
 setY1(FL_CON): x(FL_CON)(HUA_CORE) - y(FL_CON) <= 0
-setY1(GEO): x(GEO)(CS_GEN_SCI) - y(GEO) <= 0
+setY1(GEO): x(GEO)(CS_GEN_SCI) + x(GEO)(CS_SCI_ENG) - y(GEO) <= 0
 setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
 setY1(HU_CAP): x(HU_CAP)(HUA_PROJ) - y(HU_CAP) <= 0
-setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
+setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 1
 setY1(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 0
 setY1(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 0
 setY1(MATH_ELECT): x(MATH_ELECT)(CS_GEN_MATH) - y(MATH_ELECT) <= 0
-setY1(PHY): x(PHY)(CS_GEN_SCI) - y(PHY) <= 0
+setY1(PHY): x(PHY)(CS_GEN_SCI) + x(PHY)(CS_SCI_ENG) - y(PHY) <= 0
 setY1(PROB): x(PROB)(CS_GEN_MATH) + x(PROB)(CS_PROB) - y(PROB) <= 0
 setY1(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 0
+setY1(RBE_3100): x(RBE_3100)(CS_SCI_ENG) - y(RBE_3100) <= 0
+setY1(SCI_ENG): x(SCI_ENG)(CS_SCI_ENG) - y(SCI_ENG) <= 0
 setY1(SOC_SCI): x(SOC_SCI)(SOC_SCI_REQ) - y(SOC_SCI) <= 0
-setY1(STATS): x(STATS)(CS_GEN_MATH) - y(STATS) <= 0
+setY1(STATS): x(STATS)(CS_GEN_MATH) + x(STATS)(CS_STATS) - y(STATS) <= 0
 setY1(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 0
 Bounds
  0 <= x(1000_MATH)(CS_GEN_MATH) <= 10
  0 <= x(ART_CON)(HUA_CORE) <= 20
  0 <= x(BIO)(CS_GEN_SCI) <= 47
+ 0 <= x(BIO)(CS_SCI_ENG) <= 47
  0 <= x(BIO_CHEM_LAP)(CS_GEN_SCI) <= 4
+ 0 <= x(BIO_CHEM_LAP)(CS_SCI_ENG) <= 4
  0 <= x(CHEM)(CS_GEN_SCI) <= 26
+ 0 <= x(CHEM)(CS_SCI_ENG) <= 26
  0 <= x(CS_4000)(CS_CORE) <= 79
  0 <= x(CS_4_SYS)(CS_CORE) <= 3
  0 <= x(CS_4_THRY)(CS_CORE) <= 4
  0 <= x(CS_CRYPT)(CS_CORE) <= 2
+ 0 <= x(CS_CRYPT)(CS_SCI_ENG) <= 2
  0 <= x(CS_DESIGN)(CS_CORE) <= 3
  0 <= x(CS_DISC)(CS_CORE) <= 2
  0 <= x(CS_DISC)(CS_GEN_MATH) <= 2
@@ -154,11 +167,14 @@ Bounds
  0 <= x(IQP_OFF)(IQP) <= 100
  0 <= x(MATH_ELECT)(CS_GEN_MATH) <= 49
  0 <= x(PHY)(CS_GEN_SCI) <= 29
+ 0 <= x(PHY)(CS_SCI_ENG) <= 29
  0 <= x(PROB)(CS_GEN_MATH) <= 2
  0 <= x(PROB)(CS_PROB) <= 2
  0 <= x(PY_CON)(HUA_CORE) <= 20
+ 0 <= x(SCI_ENG)(CS_SCI_ENG) <= 165
  0 <= x(SOC_SCI)(SOC_SCI_REQ) <= 10
  0 <= x(STATS)(CS_GEN_MATH) <= 2
+ 0 <= x(STATS)(CS_STATS) <= 2
  0 <= x(WR_CON)(HUA_CORE) <= 20
  0 <= y(1000_MATH) <= 10
  0 <= y(ART_CON) <= 20
@@ -186,6 +202,7 @@ Bounds
  0 <= y(FL_CON) <= 20
  0 <= y(HI_CON) <= 20
  0 <= y(HU_CAP) <= 2
+ y(ID_2050) = 0
  0 <= y(IMGD) <= 2
  0 <= y(IQP_OFF) <= 100
  0 <= y(MATH_ELECT) <= 49
@@ -200,6 +217,8 @@ Bounds
  0 <= z(CS_GEN_MATH)
  0 <= z(CS_GEN_SCI)
  0 <= z(CS_PROB)
+ 0 <= z(CS_SCI_ENG)
+ 0 <= z(CS_STATS)
  0 <= z(HUA_CORE)
  0 <= z(HUA_PROJ)
  0 <= z(IQP)
@@ -208,12 +227,16 @@ Generals
 x(1000_MATH)(CS_GEN_MATH)
 x(ART_CON)(HUA_CORE)
 x(BIO)(CS_GEN_SCI)
+x(BIO)(CS_SCI_ENG)
 x(BIO_CHEM_LAP)(CS_GEN_SCI)
+x(BIO_CHEM_LAP)(CS_SCI_ENG)
 x(CHEM)(CS_GEN_SCI)
+x(CHEM)(CS_SCI_ENG)
 x(CS_4000)(CS_CORE)
 x(CS_4_SYS)(CS_CORE)
 x(CS_4_THRY)(CS_CORE)
 x(CS_CRYPT)(CS_CORE)
+x(CS_CRYPT)(CS_SCI_ENG)
 x(CS_DESIGN)(CS_CORE)
 x(CS_DISC)(CS_CORE)
 x(CS_DISC)(CS_GEN_MATH)
@@ -236,11 +259,14 @@ x(HU_CAP)(HUA_PROJ)
 x(IQP_OFF)(IQP)
 x(MATH_ELECT)(CS_GEN_MATH)
 x(PHY)(CS_GEN_SCI)
+x(PHY)(CS_SCI_ENG)
 x(PROB)(CS_GEN_MATH)
 x(PROB)(CS_PROB)
 x(PY_CON)(HUA_CORE)
+x(SCI_ENG)(CS_SCI_ENG)
 x(SOC_SCI)(SOC_SCI_REQ)
 x(STATS)(CS_GEN_MATH)
+x(STATS)(CS_STATS)
 x(WR_CON)(HUA_CORE)
 y(1000_MATH)
 y(ART_CON)
@@ -268,6 +294,7 @@ y(DPE_HU)
 y(FL_CON)
 y(HI_CON)
 y(HU_CAP)
+y(ID_2050)
 y(IMGD)
 y(IQP_OFF)
 y(MATH_ELECT)
@@ -291,12 +318,13 @@ SR2(HUA_DEPTH_4)
 x(CS_4_DESIGN)(CS_CORE)
 x(CS_SOC_IMPS)(CS_CORE)
 x(GEO)(CS_GEN_SCI)
+x(GEO)(CS_SCI_ENG)
 x(ID_2050)(SOC_SCI_REQ)
 x(IQP_ON)(IQP)
+x(RBE_3100)(CS_SCI_ENG)
 y(CS_4_DESIGN)
 y(CS_SOC_IMPS)
 y(GEO)
-y(ID_2050)
 y(IQP_ON)
 y(OO_REST)
 y(RBE_3100)

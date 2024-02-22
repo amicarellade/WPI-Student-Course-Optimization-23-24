@@ -3,8 +3,8 @@
  
 144.0 TOTAL
 -------------------------------
-12 REMAINING 
-    0 Academic Courses 
+69 REMAINING 
+    57 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
@@ -44,21 +44,21 @@ Physical Education
 
 Humanities
 ----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
+    [HU 3900 or 3910]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
 
 IQP
 ----------------------------
-    IQP OFF
+    [IQP off campus]
 
 Social Science
 ----------------------------
-    ECON 1120
-    ID_2050
+    [ID_2050]
+    [Social Science]
 
 Free Electives
 ----------------------------
@@ -80,22 +80,22 @@ ____________________________________
  
 Algorithms
 ----------------------------
-    CS 2223
+    [CS 2223]
 
 Business Analysis 
 ----------------------------
-    OIE 2081
+    [BUS_2080 OR OIE_2081]
 
 Core
 ----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
 
 Computer Science
 ----------------------------
     CS 1101
-    CS 2103
+    CS 2102
 
 Disciplinary Electives
 ----------------------------
@@ -114,7 +114,7 @@ Disciplinary Electives
 
 Entrepreneurship and Innovation
 ----------------------------
-    BUS 1010
+    [Entrepreneurship and Innovation]
 
 Linear Algebra
 ----------------------------
@@ -127,8 +127,8 @@ Mathematical Sciences
 
 Natural or Engineering Sciences
 ----------------------------
-    ECE 2010
-    PH 1110
+    [Natural and Engineering Sciences]
+    [Natural and Engineering Sciences]
 
 Applied Statistics
 ----------------------------
