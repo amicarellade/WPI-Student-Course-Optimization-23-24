@@ -84,6 +84,10 @@ def index():
 
         #TODO: consolidate running the model into some function that gets called twice, instead of copy/pasting all this code
         # for if a file was uploaded or not
+        for course in courses:
+            if "_" not in course or " " in course:
+                result = "Taken course with an invalid format detected - please format course codes according to the example above."
+                return render_template('index.html', result=result)
 
         if 'file' in request.files and request.files['file'].filename != '':
             # Process Excel file if uploaded
@@ -157,6 +161,7 @@ def index():
                 return redirect(url_for('result', result_filename='test.txt'))
         # else:
         #     print("true!")
+
         elif masters == "None":
             if major == "Select...":
                 result = "Please select a primary major!"
