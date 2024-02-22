@@ -1,316 +1,292 @@
 \* SchedulingCourses *\
 Minimize
-OBJ: 3 y(1000L_CS) + 3 y(3000L_CS_DAM) + 3 y(4000L_BMP) + 3 y(4000L_CS_DAM)
- + 3 y(4000L_CS_ELECT) + 3 y(4000L_ELECT) + 3 y(4000L_MA_DE) + 4.5 y(500L_BMP)
- + 4.5 y(500L_CS_DAM) + 4.5 y(500L_CS_ELECT) + 4.5 y(500L_ELECT)
- + 4.5 y(500L_MA_DE) + 4.5 y(500_L_DAT_MIN) + 3 y(ALGO) + 3 y(ALL_SOC_SCI)
- + 3 y(ART_CON) + 3 y(BUS_ANALYSIS) + 3 y(BUS_DAM) + 3 y(BUS_DE)
- + 3 y(CS_ELECT) + 3 y(DAT_MIN) + 3 y(DIS_DPE) + 3 y(DPE) + 3 y(DS_CORE)
- + 3 y(ENG_SCI) + 3 y(ENTR_INV) + 3 y(FLG_CON) + 3 y(HI_CON) + 3 y(HUA_DPE)
- + 3 y(HUA_PROJ) + 3 y(ID_2050) + 3 y(INTRO_CS) + 9 y(IQP_OFF_CM)
- + 9 y(IQP_ON_CM) + 3 y(LIN_ALG) + 3 y(MATH) + 3 y(MA_ELECT) + 3 y(PY_CON)
- + 3 y(SOC_SCI_DPE) + 3 y(STAT) + 3 y(WR_CON) + 0.01 z(DS_ALGOS)
- + 0.01 z(DS_BA) + 0.01 z(DS_C) + 0.01 z(DS_CS) + 0.01 z(DS_DE)
- + 0.01 z(DS_EI) + 0.01 z(DS_LA) + 0.01 z(DS_MS) + 0.01 z(DS_NES)
- + 0.01 z(DS_STATS) + 0.01 z(HUA_CORE) + 0.01 z(HUA_PROJ) + 0.01 z(IQP)
- + 0.01 z(SOC_SCI_REQ)
+OBJ: 3 y(1000_MATH) + 3 y(ART_CON) + 3 y(BIO) + 3 y(BIO_CHEM_LAP) + 3 y(CHEM)
+ + 3 y(CS_4000) + 3 y(CS_4_DESIGN) + 3 y(CS_4_SYS) + 3 y(CS_4_THRY)
+ + 3 y(CS_CRYPT) + 3 y(CS_DESIGN) + 3 y(CS_DISC) + 3 y(CS_ELECT)
+ + 4.5 y(CS_G_DESIGN) + 4.5 y(CS_G_SYS) + 4.5 y(CS_G_THRY) + 3 y(CS_INTRO)
+ + 3 y(CS_NUM_MET) + 3 y(CS_OOP) + 3 y(CS_OS) + 3 y(CS_SOC_IMPS)
+ + 3 y(CS_SYS_PROG) + 3 y(CS_THRY) + 3 y(DPE_GOV) + 3 y(DPE_HU) + 3 y(FL_CON)
+ + 3 y(GEO) + 3 y(HI_CON) + 3 y(HU_CAP) + 3 y(ID_2050) + 3 y(IMGD)
+ + 9 y(IQP_OFF) + 9 y(IQP_ON) + 3 y(MATH_ELECT) + 3 y(OO_REST) + 3 y(PHY)
+ + 3 y(PROB) + 3 y(PY_CON) + 3 y(RBE_3100) + 3 y(SCI_ENG) + 3 y(SOC_SCI)
+ + 3 y(STATS) + 3 y(WR_CON) + 0.01 z(CS_CORE) + 0.01 z(CS_GEN_MATH)
+ + 0.01 z(CS_GEN_SCI) + 0.01 z(CS_PROB) + 0.01 z(HUA_CORE) + 0.01 z(HUA_PROJ)
+ + 0.01 z(IQP) + 0.01 z(SOC_SCI_REQ)
 Subject To
-SR(DS_4LDER): 3 x(4000L_BMP)(DS_DE) + 3 x(4000L_CS_DAM)(DS_CS)
- + 3 x(4000L_CS_DAM)(DS_DE) + 3 x(4000L_CS_ELECT)(DS_CS)
- + 3 x(4000L_CS_ELECT)(DS_DE) + 3 x(4000L_ELECT)(DS_DE)
- + 3 x(4000L_MA_DE)(DS_DE) + 3 x(4000L_MA_DE)(DS_MS) + 4.5 x(500L_BMP)(DS_DE)
- + 4.5 x(500L_CS_DAM)(DS_CS) + 4.5 x(500L_CS_DAM)(DS_DE)
- + 4.5 x(500L_CS_ELECT)(DS_CS) + 4.5 x(500L_CS_ELECT)(DS_DE)
- + 4.5 x(500L_ELECT)(DS_DE) + 4.5 x(500L_MA_DE)(DS_DE)
- + 4.5 x(500L_MA_DE)(DS_MS) + 4.5 x(500_L_DAT_MIN)(DS_CS)
- + 4.5 x(500_L_DAT_MIN)(DS_DE) + 3 x(DAT_MIN)(DS_CS) + 3 x(DAT_MIN)(DS_DE)
- >= 12
-SR(DS_BMP): 3 x(4000L_BMP)(DS_DE) + 4.5 x(500L_BMP)(DS_DE) >= 3
-SR(DS_CS_1000_L): - 3 x(1000L_CS)(DS_CS) >= -3
-SR(DS_DAM): 3 x(3000L_CS_DAM)(DS_CS) + 3 x(3000L_CS_DAM)(DS_DE)
- + 3 x(4000L_CS_DAM)(DS_CS) + 3 x(4000L_CS_DAM)(DS_DE)
- + 4.5 x(500L_CS_DAM)(DS_CS) + 4.5 x(500L_CS_DAM)(DS_DE) + 3 x(BUS_DAM)(DS_DE)
- >= 3
-SR(DS_DMML): 4.5 x(500_L_DAT_MIN)(DS_CS) + 4.5 x(500_L_DAT_MIN)(DS_DE)
- + 3 x(DAT_MIN)(DS_CS) + 3 x(DAT_MIN)(DS_DE) >= 3
-SR(DS_DPE): 3 x(DIS_DPE)(DS_DE) + 3 x(HUA_DPE)(HUA_CORE)
- + 3 x(SOC_SCI_DPE)(SOC_SCI_REQ) >= 3
+SR(CS_1000_REST): - 3 x(CS_INTRO)(CS_CORE) >= 0
+SR(CS_DESIGN): 3 x(CS_4_DESIGN)(CS_CORE) + 3 x(CS_DESIGN)(CS_CORE)
+ + 4.5 x(CS_G_DESIGN)(CS_CORE) >= 3
+SR(CS_MATH_1000L_REST): - 3 x(1000_MATH)(CS_GEN_MATH) >= -12
+SR(CS_OBJ_OR_REST): - 3 x(CS_OOP)(CS_CORE) >= -3
+SR(CS_SOC_IMPS): 3 x(CS_SOC_IMPS)(CS_CORE) + 3 x(DPE_GOV)(SOC_SCI_REQ) >= 3
+SR(CS_SYS): 3 x(CS_4_SYS)(CS_CORE) + 4.5 x(CS_G_SYS)(CS_CORE)
+ + 3 x(CS_OS)(CS_CORE) >= 3
+SR(CS_SYS_REST): - 3 x(CS_SYS_PROG)(CS_CORE) >= -3
+SR(CS_THRY): 3 x(CS_4_THRY)(CS_CORE) + 4.5 x(CS_G_THRY)(CS_CORE)
+ + 3 x(CS_THRY)(CS_CORE) >= 3
+SR(CS_UPLVL_MIN): 3 x(CS_4000)(CS_CORE) + 3 x(CS_4_DESIGN)(CS_CORE)
+ + 3 x(CS_4_SYS)(CS_CORE) + 3 x(CS_4_THRY)(CS_CORE) + 3 x(CS_CRYPT)(CS_CORE)
+ + 4.5 x(CS_G_DESIGN)(CS_CORE) + 4.5 x(CS_G_SYS)(CS_CORE)
+ + 4.5 x(CS_G_THRY)(CS_CORE) + 3 x(CS_NUM_MET)(CS_CORE) >= 15
 SR(HUA_ART_MAX): - 3 x(ART_CON)(HUA_CORE) >= -12
 SR(HUA_HI_MAX): - 3 x(HI_CON)(HUA_CORE) >= -12
 SR(HUA_PY_MAX): - 3 x(PY_CON)(HUA_CORE) >= -12
 SR(HUA_WR_MAX): - 3 x(WR_CON)(HUA_CORE) >= -12
-SR(ON_OFF_CAMPUS): 3 x(ID_2050)(SOC_SCI_REQ) + 9 x(IQP_ON_CM)(IQP) >= 3
+SR(ON_OFF_CAMPUS): 3 x(ID_2050)(SOC_SCI_REQ) + 9 x(IQP_ON)(IQP) >= 3
+SR2(CS_SCI_DPTH)(C0): - 6 SR2(CS_SCI_DPTH_0) + 3 x(BIO)(CS_GEN_SCI)
+ + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI) >= -0.1
+SR2(CS_SCI_DPTH)(C1): - 6 SR2(CS_SCI_DPTH_1) + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI)
+ + 3 x(CHEM)(CS_GEN_SCI) >= -0.1
+SR2(CS_SCI_DPTH)(C2): - 6 SR2(CS_SCI_DPTH_2) + 3 x(GEO)(CS_GEN_SCI) >= -0.1
+SR2(CS_SCI_DPTH)(C3): - 6 SR2(CS_SCI_DPTH_3) + 3 x(PHY)(CS_GEN_SCI) >= -0.1
 SR2(HUA_DEPTH)(C0): - 9 SR2(HUA_DEPTH_0) + 3 x(ART_CON)(HUA_CORE) >= -0.1
-SR2(HUA_DEPTH)(C1): - 9 SR2(HUA_DEPTH_1) + 3 x(FLG_CON)(HUA_CORE) >= -0.1
+SR2(HUA_DEPTH)(C1): - 9 SR2(HUA_DEPTH_1) + 3 x(FL_CON)(HUA_CORE) >= -0.1
 SR2(HUA_DEPTH)(C2): - 9 SR2(HUA_DEPTH_2) + 3 x(WR_CON)(HUA_CORE) >= -0.1
 SR2(HUA_DEPTH)(C3): - 9 SR2(HUA_DEPTH_3) + 3 x(HI_CON)(HUA_CORE) >= -0.1
 SR2(HUA_DEPTH)(C4): - 9 SR2(HUA_DEPTH_4) + 3 x(PY_CON)(HUA_CORE) >= -0.1
+SR2_total(CS_SCI_DPTH): SR2(CS_SCI_DPTH_0) + SR2(CS_SCI_DPTH_1)
+ + SR2(CS_SCI_DPTH_2) + SR2(CS_SCI_DPTH_3) >= 1
 SR2_total(HUA_DEPTH): SR2(HUA_DEPTH_0) + SR2(HUA_DEPTH_1) + SR2(HUA_DEPTH_2)
  + SR2(HUA_DEPTH_3) + SR2(HUA_DEPTH_4) >= 1
-reqMin(DS_ALGOS): 3 x(ALGO)(DS_ALGOS) - z(DS_ALGOS) = 3
-reqMin(DS_BA): 3 x(BUS_ANALYSIS)(DS_BA) - z(DS_BA) = 3
-reqMin(DS_C): 3 x(DS_CORE)(DS_C) - z(DS_C) = 9
-reqMin(DS_CS): 3 x(1000L_CS)(DS_CS) + 3 x(3000L_CS_DAM)(DS_CS)
- + 3 x(4000L_CS_DAM)(DS_CS) + 3 x(4000L_CS_ELECT)(DS_CS)
- + 4.5 x(500L_CS_DAM)(DS_CS) + 4.5 x(500L_CS_ELECT)(DS_CS)
- + 4.5 x(500_L_DAT_MIN)(DS_CS) + 3 x(CS_ELECT)(DS_CS) + 3 x(DAT_MIN)(DS_CS)
- + 3 x(INTRO_CS)(DS_CS) - z(DS_CS) = 6
-reqMin(DS_DE): 3 x(3000L_CS_DAM)(DS_DE) + 3 x(4000L_BMP)(DS_DE)
- + 3 x(4000L_CS_DAM)(DS_DE) + 3 x(4000L_CS_ELECT)(DS_DE)
- + 3 x(4000L_ELECT)(DS_DE) + 3 x(4000L_MA_DE)(DS_DE) + 4.5 x(500L_BMP)(DS_DE)
- + 4.5 x(500L_CS_DAM)(DS_DE) + 4.5 x(500L_CS_ELECT)(DS_DE)
- + 4.5 x(500L_ELECT)(DS_DE) + 4.5 x(500L_MA_DE)(DS_DE)
- + 4.5 x(500_L_DAT_MIN)(DS_DE) + 3 x(BUS_DAM)(DS_DE) + 3 x(BUS_DE)(DS_DE)
- + 3 x(CS_ELECT)(DS_DE) + 3 x(DAT_MIN)(DS_DE) + 3 x(DIS_DPE)(DS_DE)
- + 3 x(MA_ELECT)(DS_DE) - z(DS_DE) = 36
-reqMin(DS_EI): 3 x(ENTR_INV)(DS_EI) - z(DS_EI) = 3
-reqMin(DS_LA): 3 x(LIN_ALG)(DS_LA) - z(DS_LA) = 3
-reqMin(DS_MS): 3 x(4000L_MA_DE)(DS_MS) + 4.5 x(500L_MA_DE)(DS_MS)
- + 3 x(MATH)(DS_MS) + 3 x(MA_ELECT)(DS_MS) - z(DS_MS) = 6
-reqMin(DS_NES): 3 x(ENG_SCI)(DS_NES) - z(DS_NES) = 6
-reqMin(DS_STATS): 3 x(STAT)(DS_STATS) - z(DS_STATS) = 6
-reqMin(HUA_CORE): 3 x(ART_CON)(HUA_CORE) + 3 x(FLG_CON)(HUA_CORE)
- + 3 x(HI_CON)(HUA_CORE) + 3 x(HUA_DPE)(HUA_CORE) + 3 x(PY_CON)(HUA_CORE)
+reqMin(CS_CORE): 3 x(CS_4000)(CS_CORE) + 3 x(CS_4_DESIGN)(CS_CORE)
+ + 3 x(CS_4_SYS)(CS_CORE) + 3 x(CS_4_THRY)(CS_CORE) + 3 x(CS_CRYPT)(CS_CORE)
+ + 3 x(CS_DESIGN)(CS_CORE) + 3 x(CS_DISC)(CS_CORE) + 3 x(CS_ELECT)(CS_CORE)
+ + 4.5 x(CS_G_DESIGN)(CS_CORE) + 4.5 x(CS_G_SYS)(CS_CORE)
+ + 4.5 x(CS_G_THRY)(CS_CORE) + 3 x(CS_INTRO)(CS_CORE)
+ + 3 x(CS_NUM_MET)(CS_CORE) + 3 x(CS_OOP)(CS_CORE) + 3 x(CS_OS)(CS_CORE)
+ + 3 x(CS_SOC_IMPS)(CS_CORE) + 3 x(CS_SYS_PROG)(CS_CORE)
+ + 3 x(CS_THRY)(CS_CORE) - z(CS_CORE) = 45
+reqMin(CS_GEN_MATH): 3 x(1000_MATH)(CS_GEN_MATH) + 3 x(CS_DISC)(CS_GEN_MATH)
+ + 3 x(CS_NUM_MET)(CS_GEN_MATH) + 3 x(MATH_ELECT)(CS_GEN_MATH)
+ + 3 x(PROB)(CS_GEN_MATH) + 3 x(STATS)(CS_GEN_MATH) - z(CS_GEN_MATH) = 15
+reqMin(CS_GEN_SCI): 3 x(BIO)(CS_GEN_SCI) + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI)
+ + 3 x(CHEM)(CS_GEN_SCI) + 3 x(GEO)(CS_GEN_SCI) + 3 x(PHY)(CS_GEN_SCI)
+ - z(CS_GEN_SCI) = 9
+reqMin(CS_PROB): 3 x(PROB)(CS_PROB) - z(CS_PROB) = 3
+reqMin(HUA_CORE): 3 x(ART_CON)(HUA_CORE) + 3 x(DPE_HU)(HUA_CORE)
+ + 3 x(FL_CON)(HUA_CORE) + 3 x(HI_CON)(HUA_CORE) + 3 x(PY_CON)(HUA_CORE)
  + 3 x(WR_CON)(HUA_CORE) - z(HUA_CORE) = 15
-reqMin(HUA_PROJ): 3 x(HUA_PROJ)(HUA_PROJ) - z(HUA_PROJ) = 3
-reqMin(IQP): 9 x(IQP_OFF_CM)(IQP) + 9 x(IQP_ON_CM)(IQP) - z(IQP) = 9
-reqMin(SOC_SCI_REQ): 3 x(ALL_SOC_SCI)(SOC_SCI_REQ) + 3 x(ID_2050)(SOC_SCI_REQ)
- + 3 x(SOC_SCI_DPE)(SOC_SCI_REQ) - z(SOC_SCI_REQ) = 6
-setY1(1000L_CS): x(1000L_CS)(DS_CS) - y(1000L_CS) <= 1
-setY1(3000L_CS_DAM): x(3000L_CS_DAM)(DS_CS) + x(3000L_CS_DAM)(DS_DE)
- - y(3000L_CS_DAM) <= 1
-setY1(4000L_BMP): x(4000L_BMP)(DS_DE) - y(4000L_BMP) <= 1
-setY1(4000L_CS_DAM): x(4000L_CS_DAM)(DS_CS) + x(4000L_CS_DAM)(DS_DE)
- - y(4000L_CS_DAM) <= 1
-setY1(4000L_CS_ELECT): x(4000L_CS_ELECT)(DS_CS) + x(4000L_CS_ELECT)(DS_DE)
- - y(4000L_CS_ELECT) <= 1
-setY1(4000L_ELECT): x(4000L_ELECT)(DS_DE) - y(4000L_ELECT) <= 1
-setY1(4000L_MA_DE): x(4000L_MA_DE)(DS_DE) + x(4000L_MA_DE)(DS_MS)
- - y(4000L_MA_DE) <= 1
-setY1(500L_BMP): x(500L_BMP)(DS_DE) - y(500L_BMP) <= 0
-setY1(500L_CS_DAM): x(500L_CS_DAM)(DS_CS) + x(500L_CS_DAM)(DS_DE)
- - y(500L_CS_DAM) <= 0
-setY1(500L_CS_ELECT): x(500L_CS_ELECT)(DS_CS) + x(500L_CS_ELECT)(DS_DE)
- - y(500L_CS_ELECT) <= 0
-setY1(500L_ELECT): x(500L_ELECT)(DS_DE) - y(500L_ELECT) <= 0
-setY1(500L_MA_DE): x(500L_MA_DE)(DS_DE) + x(500L_MA_DE)(DS_MS) - y(500L_MA_DE)
- <= 0
-setY1(500_L_DAT_MIN): x(500_L_DAT_MIN)(DS_CS) + x(500_L_DAT_MIN)(DS_DE)
- - y(500_L_DAT_MIN) <= 0
-setY1(ALGO): x(ALGO)(DS_ALGOS) - y(ALGO) <= 1
-setY1(ALL_SOC_SCI): x(ALL_SOC_SCI)(SOC_SCI_REQ) - y(ALL_SOC_SCI) <= 2
+reqMin(HUA_PROJ): 3 x(HU_CAP)(HUA_PROJ) - z(HUA_PROJ) = 3
+reqMin(IQP): 9 x(IQP_OFF)(IQP) + 9 x(IQP_ON)(IQP) - z(IQP) = 9
+reqMin(SOC_SCI_REQ): 3 x(DPE_GOV)(SOC_SCI_REQ) + 3 x(ID_2050)(SOC_SCI_REQ)
+ + 3 x(SOC_SCI)(SOC_SCI_REQ) - z(SOC_SCI_REQ) = 6
+setY1(1000_MATH): x(1000_MATH)(CS_GEN_MATH) - y(1000_MATH) <= 0
 setY1(ART_CON): x(ART_CON)(HUA_CORE) - y(ART_CON) <= 0
-setY1(BUS_ANALYSIS): x(BUS_ANALYSIS)(DS_BA) - y(BUS_ANALYSIS) <= 1
-setY1(BUS_DAM): x(BUS_DAM)(DS_DE) - y(BUS_DAM) <= 1
-setY1(BUS_DE): x(BUS_DE)(DS_DE) - y(BUS_DE) <= 2
-setY1(CS_ELECT): x(CS_ELECT)(DS_CS) + x(CS_ELECT)(DS_DE) - y(CS_ELECT) <= 0
-setY1(DAT_MIN): x(DAT_MIN)(DS_CS) + x(DAT_MIN)(DS_DE) - y(DAT_MIN) <= 1
-setY1(DIS_DPE): x(DIS_DPE)(DS_DE) - y(DIS_DPE) <= 1
-setY1(DS_CORE): x(DS_CORE)(DS_C) - y(DS_CORE) <= 3
-setY1(ENG_SCI): x(ENG_SCI)(DS_NES) - y(ENG_SCI) <= 2
-setY1(ENTR_INV): x(ENTR_INV)(DS_EI) - y(ENTR_INV) <= 1
-setY1(FLG_CON): x(FLG_CON)(HUA_CORE) - y(FLG_CON) <= 6
+setY1(BIO): x(BIO)(CS_GEN_SCI) - y(BIO) <= 0
+setY1(BIO_CHEM_LAP): x(BIO_CHEM_LAP)(CS_GEN_SCI) - y(BIO_CHEM_LAP) <= 0
+setY1(CHEM): x(CHEM)(CS_GEN_SCI) - y(CHEM) <= 0
+setY1(CS_4000): x(CS_4000)(CS_CORE) - y(CS_4000) <= 0
+setY1(CS_4_DESIGN): x(CS_4_DESIGN)(CS_CORE) - y(CS_4_DESIGN) <= 0
+setY1(CS_4_SYS): x(CS_4_SYS)(CS_CORE) - y(CS_4_SYS) <= 0
+setY1(CS_4_THRY): x(CS_4_THRY)(CS_CORE) - y(CS_4_THRY) <= 0
+setY1(CS_CRYPT): x(CS_CRYPT)(CS_CORE) - y(CS_CRYPT) <= 0
+setY1(CS_DESIGN): x(CS_DESIGN)(CS_CORE) - y(CS_DESIGN) <= 0
+setY1(CS_DISC): x(CS_DISC)(CS_CORE) + x(CS_DISC)(CS_GEN_MATH) - y(CS_DISC)
+ <= 0
+setY1(CS_ELECT): x(CS_ELECT)(CS_CORE) - y(CS_ELECT) <= 0
+setY1(CS_G_DESIGN): x(CS_G_DESIGN)(CS_CORE) - y(CS_G_DESIGN) <= 0
+setY1(CS_G_SYS): x(CS_G_SYS)(CS_CORE) - y(CS_G_SYS) <= 0
+setY1(CS_G_THRY): x(CS_G_THRY)(CS_CORE) - y(CS_G_THRY) <= 0
+setY1(CS_INTRO): x(CS_INTRO)(CS_CORE) - y(CS_INTRO) <= 0
+setY1(CS_NUM_MET): x(CS_NUM_MET)(CS_CORE) + x(CS_NUM_MET)(CS_GEN_MATH)
+ - y(CS_NUM_MET) <= 0
+setY1(CS_OOP): x(CS_OOP)(CS_CORE) - y(CS_OOP) <= 0
+setY1(CS_OS): x(CS_OS)(CS_CORE) - y(CS_OS) <= 0
+setY1(CS_SOC_IMPS): x(CS_SOC_IMPS)(CS_CORE) - y(CS_SOC_IMPS) <= 0
+setY1(CS_SYS_PROG): x(CS_SYS_PROG)(CS_CORE) - y(CS_SYS_PROG) <= 0
+setY1(CS_THRY): x(CS_THRY)(CS_CORE) - y(CS_THRY) <= 0
+setY1(DPE_GOV): x(DPE_GOV)(SOC_SCI_REQ) - y(DPE_GOV) <= 0
+setY1(DPE_HU): x(DPE_HU)(HUA_CORE) - y(DPE_HU) <= 0
+setY1(FL_CON): x(FL_CON)(HUA_CORE) - y(FL_CON) <= 0
+setY1(GEO): x(GEO)(CS_GEN_SCI) - y(GEO) <= 0
 setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
-setY1(HUA_DPE): x(HUA_DPE)(HUA_CORE) - y(HUA_DPE) <= 0
-setY1(HUA_PROJ): x(HUA_PROJ)(HUA_PROJ) - y(HUA_PROJ) <= 0
-setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 1
-setY1(INTRO_CS): x(INTRO_CS)(DS_CS) - y(INTRO_CS) <= 1
-setY1(IQP_OFF_CM): x(IQP_OFF_CM)(IQP) - y(IQP_OFF_CM) <= 1
-setY1(IQP_ON_CM): x(IQP_ON_CM)(IQP) - y(IQP_ON_CM) <= 0
-setY1(LIN_ALG): x(LIN_ALG)(DS_LA) - y(LIN_ALG) <= 1
-setY1(MATH): x(MATH)(DS_MS) - y(MATH) <= 2
-setY1(MA_ELECT): x(MA_ELECT)(DS_DE) + x(MA_ELECT)(DS_MS) - y(MA_ELECT) <= 1
+setY1(HU_CAP): x(HU_CAP)(HUA_PROJ) - y(HU_CAP) <= 0
+setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
+setY1(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 0
+setY1(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 0
+setY1(MATH_ELECT): x(MATH_ELECT)(CS_GEN_MATH) - y(MATH_ELECT) <= 0
+setY1(PHY): x(PHY)(CS_GEN_SCI) - y(PHY) <= 0
+setY1(PROB): x(PROB)(CS_GEN_MATH) + x(PROB)(CS_PROB) - y(PROB) <= 0
 setY1(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 0
-setY1(SOC_SCI_DPE): x(SOC_SCI_DPE)(SOC_SCI_REQ) - y(SOC_SCI_DPE) <= 1
-setY1(STAT): x(STAT)(DS_STATS) - y(STAT) <= 2
-setY1(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 1
+setY1(SOC_SCI): x(SOC_SCI)(SOC_SCI_REQ) - y(SOC_SCI) <= 0
+setY1(STATS): x(STATS)(CS_GEN_MATH) - y(STATS) <= 0
+setY1(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 0
 Bounds
- 0 <= x(1000L_CS)(DS_CS) <= 3
- 0 <= x(4000L_BMP)(DS_DE) <= 2
- 0 <= x(4000L_CS_DAM)(DS_CS) <= 3
- 0 <= x(4000L_CS_DAM)(DS_DE) <= 3
- 0 <= x(4000L_CS_ELECT)(DS_CS) <= 5
- 0 <= x(4000L_CS_ELECT)(DS_DE) <= 5
- 0 <= x(4000L_ELECT)(DS_DE) <= 3
- 0 <= x(4000L_MA_DE)(DS_DE) <= 11
- 0 <= x(4000L_MA_DE)(DS_MS) <= 11
- 0 <= x(500L_BMP)(DS_DE) <= 2
- 0 <= x(500L_CS_ELECT)(DS_CS) <= 11
- 0 <= x(500L_CS_ELECT)(DS_DE) <= 11
- 0 <= x(500L_ELECT)(DS_DE) <= 3
- 0 <= x(500L_MA_DE)(DS_DE) <= 6
- 0 <= x(500L_MA_DE)(DS_MS) <= 6
- 0 <= x(500_L_DAT_MIN)(DS_CS) <= 2
- 0 <= x(500_L_DAT_MIN)(DS_DE) <= 2
- 0 <= x(ALL_SOC_SCI)(SOC_SCI_REQ) <= 60
+ 0 <= x(1000_MATH)(CS_GEN_MATH) <= 10
  0 <= x(ART_CON)(HUA_CORE) <= 20
- 0 <= x(BUS_ANALYSIS)(DS_BA) <= 2
- 0 <= x(BUS_DE)(DS_DE) <= 3
- 0 <= x(CS_ELECT)(DS_CS) <= 5
- 0 <= x(CS_ELECT)(DS_DE) <= 5
- 0 <= x(DAT_MIN)(DS_CS) <= 2
- 0 <= x(DAT_MIN)(DS_DE) <= 2
- 0 <= x(DS_CORE)(DS_C) <= 3
- 0 <= x(ENG_SCI)(DS_NES) <= 150
- 0 <= x(ENTR_INV)(DS_EI) <= 6
- 0 <= x(FLG_CON)(HUA_CORE) <= 20
+ 0 <= x(BIO)(CS_GEN_SCI) <= 47
+ 0 <= x(BIO_CHEM_LAP)(CS_GEN_SCI) <= 4
+ 0 <= x(CHEM)(CS_GEN_SCI) <= 26
+ 0 <= x(CS_4000)(CS_CORE) <= 79
+ 0 <= x(CS_4_SYS)(CS_CORE) <= 3
+ 0 <= x(CS_4_THRY)(CS_CORE) <= 4
+ 0 <= x(CS_CRYPT)(CS_CORE) <= 2
+ 0 <= x(CS_DESIGN)(CS_CORE) <= 3
+ 0 <= x(CS_DISC)(CS_CORE) <= 2
+ 0 <= x(CS_DISC)(CS_GEN_MATH) <= 2
+ 0 <= x(CS_ELECT)(CS_CORE) <= 20
+ 0 <= x(CS_G_DESIGN)(CS_CORE) <= 5
+ 0 <= x(CS_G_SYS)(CS_CORE) <= 3
+ 0 <= x(CS_G_THRY)(CS_CORE) <= 6
+ 0 <= x(CS_INTRO)(CS_CORE) <= 2
+ 0 <= x(CS_NUM_MET)(CS_CORE) <= 4
+ 0 <= x(CS_NUM_MET)(CS_GEN_MATH) <= 4
+ 0 <= x(CS_OOP)(CS_CORE) <= 2
+ 0 <= x(CS_OS)(CS_CORE) <= 4
+ 0 <= x(CS_SYS_PROG)(CS_CORE) <= 2
+ 0 <= x(CS_THRY)(CS_CORE) <= 5
+ 0 <= x(DPE_GOV)(SOC_SCI_REQ) <= 2
+ 0 <= x(DPE_HU)(HUA_CORE) <= 3
+ 0 <= x(FL_CON)(HUA_CORE) <= 20
  0 <= x(HI_CON)(HUA_CORE) <= 20
- 0 <= x(HUA_DPE)(HUA_CORE) <= 3
- 0 <= x(HUA_PROJ)(HUA_PROJ) <= 2
- 0 <= x(INTRO_CS)(DS_CS) <= 3
- 0 <= x(IQP_OFF_CM)(IQP) <= 5
- 0 <= x(LIN_ALG)(DS_LA) <= 2
- 0 <= x(MATH)(DS_MS) <= 4
- 0 <= x(MA_ELECT)(DS_DE) <= 17
- 0 <= x(MA_ELECT)(DS_MS) <= 17
+ 0 <= x(HU_CAP)(HUA_PROJ) <= 2
+ 0 <= x(IQP_OFF)(IQP) <= 100
+ 0 <= x(MATH_ELECT)(CS_GEN_MATH) <= 49
+ 0 <= x(PHY)(CS_GEN_SCI) <= 29
+ 0 <= x(PROB)(CS_GEN_MATH) <= 2
+ 0 <= x(PROB)(CS_PROB) <= 2
  0 <= x(PY_CON)(HUA_CORE) <= 20
- 0 <= x(SOC_SCI_DPE)(SOC_SCI_REQ) <= 3
- 0 <= x(STAT)(DS_STATS) <= 2
+ 0 <= x(SOC_SCI)(SOC_SCI_REQ) <= 10
+ 0 <= x(STATS)(CS_GEN_MATH) <= 2
  0 <= x(WR_CON)(HUA_CORE) <= 20
- 0 <= y(1000L_CS) <= 2
- y(3000L_CS_DAM) = 0
- 0 <= y(4000L_CS_DAM) <= 2
- 0 <= y(4000L_CS_ELECT) <= 4
- 0 <= y(4000L_ELECT) <= 2
- 0 <= y(4000L_MA_DE) <= 10
- 0 <= y(500L_BMP) <= 2
- 0 <= y(500L_CS_ELECT) <= 11
- 0 <= y(500L_ELECT) <= 3
- 0 <= y(500L_MA_DE) <= 6
- 0 <= y(500_L_DAT_MIN) <= 2
- y(ALGO) = 0
- 0 <= y(ALL_SOC_SCI) <= 58
+ 0 <= y(1000_MATH) <= 10
  0 <= y(ART_CON) <= 20
- y(BUS_DAM) = 0
- 0 <= y(CS_ELECT) <= 5
- y(DIS_DPE) = 0
- y(DS_CORE) = 0
- 0 <= y(ENG_SCI) <= 148
- 0 <= y(ENTR_INV) <= 5
- 0 <= y(FLG_CON) <= 14
+ 0 <= y(BIO) <= 47
+ 0 <= y(BIO_CHEM_LAP) <= 4
+ 0 <= y(CHEM) <= 26
+ 0 <= y(CS_4000) <= 79
+ 0 <= y(CS_4_SYS) <= 3
+ 0 <= y(CS_4_THRY) <= 4
+ 0 <= y(CS_CRYPT) <= 2
+ 0 <= y(CS_DESIGN) <= 3
+ 0 <= y(CS_DISC) <= 2
+ 0 <= y(CS_ELECT) <= 20
+ 0 <= y(CS_G_DESIGN) <= 5
+ 0 <= y(CS_G_SYS) <= 3
+ 0 <= y(CS_G_THRY) <= 6
+ 0 <= y(CS_INTRO) <= 2
+ 0 <= y(CS_NUM_MET) <= 4
+ 0 <= y(CS_OOP) <= 2
+ 0 <= y(CS_OS) <= 4
+ 0 <= y(CS_SYS_PROG) <= 2
+ 0 <= y(CS_THRY) <= 5
+ 0 <= y(DPE_GOV) <= 2
+ 0 <= y(DPE_HU) <= 3
+ 0 <= y(FL_CON) <= 20
  0 <= y(HI_CON) <= 20
- 0 <= y(HUA_DPE) <= 3
- 0 <= y(HUA_PROJ) <= 2
- y(ID_2050) = 0
- 0 <= y(INTRO_CS) <= 2
- 0 <= y(IQP_OFF_CM) <= 4
- 0 <= y(MATH) <= 2
- 0 <= y(MA_ELECT) <= 16
+ 0 <= y(HU_CAP) <= 2
+ 0 <= y(IMGD) <= 2
+ 0 <= y(IQP_OFF) <= 100
+ 0 <= y(MATH_ELECT) <= 49
+ 0 <= y(PHY) <= 29
+ 0 <= y(PROB) <= 2
  0 <= y(PY_CON) <= 20
- 0 <= y(SOC_SCI_DPE) <= 2
- y(STAT) = 0
- 0 <= y(WR_CON) <= 19
- 0 <= z(DS_ALGOS)
- 0 <= z(DS_BA)
- 0 <= z(DS_C)
- 0 <= z(DS_CS)
- 0 <= z(DS_DE)
- 0 <= z(DS_EI)
- 0 <= z(DS_LA)
- 0 <= z(DS_MS)
- 0 <= z(DS_NES)
- 0 <= z(DS_STATS)
+ 0 <= y(SCI_ENG) <= 165
+ 0 <= y(SOC_SCI) <= 10
+ 0 <= y(STATS) <= 2
+ 0 <= y(WR_CON) <= 20
+ 0 <= z(CS_CORE)
+ 0 <= z(CS_GEN_MATH)
+ 0 <= z(CS_GEN_SCI)
+ 0 <= z(CS_PROB)
  0 <= z(HUA_CORE)
  0 <= z(HUA_PROJ)
  0 <= z(IQP)
  0 <= z(SOC_SCI_REQ)
 Generals
-x(1000L_CS)(DS_CS)
-x(4000L_BMP)(DS_DE)
-x(4000L_CS_DAM)(DS_CS)
-x(4000L_CS_DAM)(DS_DE)
-x(4000L_CS_ELECT)(DS_CS)
-x(4000L_CS_ELECT)(DS_DE)
-x(4000L_ELECT)(DS_DE)
-x(4000L_MA_DE)(DS_DE)
-x(4000L_MA_DE)(DS_MS)
-x(500L_BMP)(DS_DE)
-x(500L_CS_ELECT)(DS_CS)
-x(500L_CS_ELECT)(DS_DE)
-x(500L_ELECT)(DS_DE)
-x(500L_MA_DE)(DS_DE)
-x(500L_MA_DE)(DS_MS)
-x(500_L_DAT_MIN)(DS_CS)
-x(500_L_DAT_MIN)(DS_DE)
-x(ALL_SOC_SCI)(SOC_SCI_REQ)
+x(1000_MATH)(CS_GEN_MATH)
 x(ART_CON)(HUA_CORE)
-x(BUS_ANALYSIS)(DS_BA)
-x(BUS_DE)(DS_DE)
-x(CS_ELECT)(DS_CS)
-x(CS_ELECT)(DS_DE)
-x(DAT_MIN)(DS_CS)
-x(DAT_MIN)(DS_DE)
-x(DS_CORE)(DS_C)
-x(ENG_SCI)(DS_NES)
-x(ENTR_INV)(DS_EI)
-x(FLG_CON)(HUA_CORE)
+x(BIO)(CS_GEN_SCI)
+x(BIO_CHEM_LAP)(CS_GEN_SCI)
+x(CHEM)(CS_GEN_SCI)
+x(CS_4000)(CS_CORE)
+x(CS_4_SYS)(CS_CORE)
+x(CS_4_THRY)(CS_CORE)
+x(CS_CRYPT)(CS_CORE)
+x(CS_DESIGN)(CS_CORE)
+x(CS_DISC)(CS_CORE)
+x(CS_DISC)(CS_GEN_MATH)
+x(CS_ELECT)(CS_CORE)
+x(CS_G_DESIGN)(CS_CORE)
+x(CS_G_SYS)(CS_CORE)
+x(CS_G_THRY)(CS_CORE)
+x(CS_INTRO)(CS_CORE)
+x(CS_NUM_MET)(CS_CORE)
+x(CS_NUM_MET)(CS_GEN_MATH)
+x(CS_OOP)(CS_CORE)
+x(CS_OS)(CS_CORE)
+x(CS_SYS_PROG)(CS_CORE)
+x(CS_THRY)(CS_CORE)
+x(DPE_GOV)(SOC_SCI_REQ)
+x(DPE_HU)(HUA_CORE)
+x(FL_CON)(HUA_CORE)
 x(HI_CON)(HUA_CORE)
-x(HUA_DPE)(HUA_CORE)
-x(HUA_PROJ)(HUA_PROJ)
-x(INTRO_CS)(DS_CS)
-x(IQP_OFF_CM)(IQP)
-x(LIN_ALG)(DS_LA)
-x(MATH)(DS_MS)
-x(MA_ELECT)(DS_DE)
-x(MA_ELECT)(DS_MS)
+x(HU_CAP)(HUA_PROJ)
+x(IQP_OFF)(IQP)
+x(MATH_ELECT)(CS_GEN_MATH)
+x(PHY)(CS_GEN_SCI)
+x(PROB)(CS_GEN_MATH)
+x(PROB)(CS_PROB)
 x(PY_CON)(HUA_CORE)
-x(SOC_SCI_DPE)(SOC_SCI_REQ)
-x(STAT)(DS_STATS)
+x(SOC_SCI)(SOC_SCI_REQ)
+x(STATS)(CS_GEN_MATH)
 x(WR_CON)(HUA_CORE)
-y(1000L_CS)
-y(3000L_CS_DAM)
-y(4000L_CS_DAM)
-y(4000L_CS_ELECT)
-y(4000L_ELECT)
-y(4000L_MA_DE)
-y(500L_BMP)
-y(500L_CS_ELECT)
-y(500L_ELECT)
-y(500L_MA_DE)
-y(500_L_DAT_MIN)
-y(ALGO)
-y(ALL_SOC_SCI)
+y(1000_MATH)
 y(ART_CON)
-y(BUS_DAM)
+y(BIO)
+y(BIO_CHEM_LAP)
+y(CHEM)
+y(CS_4000)
+y(CS_4_SYS)
+y(CS_4_THRY)
+y(CS_CRYPT)
+y(CS_DESIGN)
+y(CS_DISC)
 y(CS_ELECT)
-y(DIS_DPE)
-y(DS_CORE)
-y(ENG_SCI)
-y(ENTR_INV)
-y(FLG_CON)
+y(CS_G_DESIGN)
+y(CS_G_SYS)
+y(CS_G_THRY)
+y(CS_INTRO)
+y(CS_NUM_MET)
+y(CS_OOP)
+y(CS_OS)
+y(CS_SYS_PROG)
+y(CS_THRY)
+y(DPE_GOV)
+y(DPE_HU)
+y(FL_CON)
 y(HI_CON)
-y(HUA_DPE)
-y(HUA_PROJ)
-y(ID_2050)
-y(INTRO_CS)
-y(IQP_OFF_CM)
-y(MATH)
-y(MA_ELECT)
+y(HU_CAP)
+y(IMGD)
+y(IQP_OFF)
+y(MATH_ELECT)
+y(PHY)
+y(PROB)
 y(PY_CON)
-y(SOC_SCI_DPE)
-y(STAT)
+y(SCI_ENG)
+y(SOC_SCI)
+y(STATS)
 y(WR_CON)
 Binaries
+SR2(CS_SCI_DPTH_0)
+SR2(CS_SCI_DPTH_1)
+SR2(CS_SCI_DPTH_2)
+SR2(CS_SCI_DPTH_3)
 SR2(HUA_DEPTH_0)
 SR2(HUA_DEPTH_1)
 SR2(HUA_DEPTH_2)
 SR2(HUA_DEPTH_3)
 SR2(HUA_DEPTH_4)
-x(3000L_CS_DAM)(DS_CS)
-x(3000L_CS_DAM)(DS_DE)
-x(500L_CS_DAM)(DS_CS)
-x(500L_CS_DAM)(DS_DE)
-x(ALGO)(DS_ALGOS)
-x(BUS_DAM)(DS_DE)
-x(DIS_DPE)(DS_DE)
+x(CS_4_DESIGN)(CS_CORE)
+x(CS_SOC_IMPS)(CS_CORE)
+x(GEO)(CS_GEN_SCI)
 x(ID_2050)(SOC_SCI_REQ)
-x(IQP_ON_CM)(IQP)
-y(4000L_BMP)
-y(500L_CS_DAM)
-y(BUS_ANALYSIS)
-y(BUS_DE)
-y(DAT_MIN)
-y(DPE)
-y(IQP_ON_CM)
-y(LIN_ALG)
+x(IQP_ON)(IQP)
+y(CS_4_DESIGN)
+y(CS_SOC_IMPS)
+y(GEO)
+y(ID_2050)
+y(IQP_ON)
+y(OO_REST)
+y(RBE_3100)
 End

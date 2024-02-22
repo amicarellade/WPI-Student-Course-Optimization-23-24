@@ -3,23 +3,23 @@
  
 198.0 TOTAL
 -------------------------------
-138.0 REMAINING 
-    117 Academic Courses 
-    9.0 Free Electives 
+73.5 REMAINING 
+    61 Academic Courses 
+    0.5 Free Electives 
     9.0 MQP 
     3.0 PE
  
-60.0 TAKEN
-    60.0 Applied
+124.5 TAKEN
+    124.5 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.5461798339965753
+TOTAL RUN TIME: 0.8254401000449434
 ----------------------------------------
-    Stage I solve: 0.39056396484375
-    Stage II solve: 0.05404782295227051
+    Stage I solve: 0.4060478210449219
+    Stage II solve: 0.10938310623168945
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -68,6 +68,7 @@ Free Electives
 
 Not used
 ----------------------------
+    No Unused Courses
 
 
  
@@ -102,20 +103,23 @@ Disciplinary Electives
     CS 4342
     MA 1023
     MA 1024
-    MA 2073
-    MA 2631
+    MA 2051
+    MA 2201
+    MA 2621
+    MA 3631
     MIS 4084
-    OIE 4430
-    [CS_4433 OR DS_4433]
-    [MIS 3720]
+    [CS 4445]
+    [CS_4802 OR BCB_4002]
+    [MA 4632]
 
 Double Counting 
 ----------------------------
-    CS 4445
-    MA 4631
-    MA 4632
-    [MIS 571]
-    [MIS_587, MKT_568]
+    CS 4342
+    CS 4432
+    [CS 4341]
+    [CS 4518]
+    [DS_4635 OR MA_4635]
+    [MA 4631]
 
 Entrepreneurship and Innovation
 ----------------------------
@@ -132,16 +136,16 @@ Mathematical Sciences
 
 Total MS Credits Req
 ----------------------------
-    [CS_5084 OR CS_584]
-    [CS_547 OR DS_547]
-    [CS_565 OR SEME_565]
-    [CS_566 OR SEME_566]
-    [CS_567 OR SEME_567]
-    [CS_568 OR SEME_568]
+    CS 584
+    [CS 561]
+    [CS_583 OR BCB_503]
+    [CS_585 OR DS_503]
     [CS_586 OR DS_504]
-    [ECE_578 OR CS_578]
-    [ECE_673 OR CS_673]
     [MA_542 OR MA_554]
+    [MA_584 OR BCB_504]
+    [MIS 571]
+    [MIS 584]
+    [OIE 559]
 
 Natural or Engineering Sciences
 ----------------------------

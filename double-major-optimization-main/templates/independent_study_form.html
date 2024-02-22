@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Independent Study Form</title>
+</head>
+<body>
+    <h1>We've detected that you have some Independent Study Project (ISP) credits!</h1>
+    <h2>We'll ask you to fill out this form for each Independent Study you've taken. This information is a subset of
+    the information you've provided on WPI's ISP form when you applied for this credit.</h2>
+    <h2>Current Independent Study: {{ current_study }}</h2>
+    <form method="POST">
+        <!-- Free-text fields -->
+        <label for="substitution">Are you using this ISP to directly substitute for a course? If so, enter the course here:</label><br>
+        <input type="text" id="substitution" name="substitution"><br>
+
+        <label for="credits">How many credits is this Independent Study worth?</label><br>
+        <input type="number" id="credits" name="credits" min="0" step="1.5" required><br>
+
+         <!-- Dropdown menus -->
+        <label for="reqs">Please indicate which requirement you are fulfilling with this course, if any:</label><br>
+        <select id="reqs" name="reqs">
+            {% for req in reqs %}
+                <option value="{{ req }}">{{ req }}</option>
+            {% endfor %}
+        </select><br>
+
+        <!-- Checkbox group -->
+        <label for="sreqs">Please indicate which super-requirements you are fulfilling with this course, if any:</label><br>
+        {% for sreq in sreqs %}
+            <input type="checkbox" id="sreqs" name="sreqs" value="{{ sreq }}">
+            <label for="sreqs">{{ sreq }}</label><br>
+        {% endfor %}
+        <br>
+
+<!--        <label for="sreqs"></label><br>-->
+<!--        <select id="sreqs" name="sreqs">-->
+<!--            {% for sreq in sreqs %}-->
+<!--                <option value="{{ sreq }}">{{ sreq }}</option>-->
+<!--            {% endfor %}-->
+<!--        </select>-->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

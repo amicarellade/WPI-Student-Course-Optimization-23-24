@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-141.0 TOTAL
+135.0 TOTAL
 -------------------------------
-15 REMAINING 
+15.0 REMAINING 
     3 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-126.0 TAKEN
+120.0 TAKEN
     120.0 Applied
-    6.0 Excess
+    0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.13241442205617204
+TOTAL RUN TIME: 0.27640909992624074
 ----------------------------------------
-    Stage I solve: 0.0660696029663086
-    Stage II solve: 0.02493906021118164
+    Stage I solve: 0.06248784065246582
+    Stage II solve: 0.0624847412109375
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,90 +44,75 @@ Physical Education
 
 Humanities
 ----------------------------
-    SP 2521
-    SP 2522
-    SP 3521
-    SP 3522
-    SP 3532
-    [HU 3900 or 3910]
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
 
 IQP
 ----------------------------
-    [IQP Off Campus]
+    IQP OFF
 
 Social Science
 ----------------------------
+    ECON 1120
     ID_2050
-    PSY 1400
 
 Free Electives
 ----------------------------
-    ECON 1110
-    SP 1523
-    GOV 2314
+    FIN 1250
+    BUS 3020
+    CS 1000
 
 Not used
 ----------------------------
-    EN 1000
-    DS 501
+    No Unused Courses
 
 
  
-Computer Science
+Data Science
 ____________________________________
 
  
-CS Core
+Algorithms
 ----------------------------
-    [CS 3043]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS Electives]
-    [CS Electives]
-    [CS Electives]
-    [CS Electives]
-    [CS Electives]
-    [Design - CS_3041, CS_3431, CS_3733, CS_4233]
-    [Object-Oriented Programming - CS_2102 OR CS_2103]
-    [Systems - CS_3013, CS_4513, CS_4515, CS_4516]
-    [Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536]
+    CS 2223
 
-General Math
+Business Analysis 
 ----------------------------
-    BUS 2080
+    OIE 2081
 
-General Science
+Core
 ----------------------------
-    [Biology]
-    [Biology]
-    [Biology]
+    DS 1010
+    DS 2010
+    DS 3010
 
-Probability
+Computer Science
 ----------------------------
     CS 1101
-    CS 2102
+    CS 2103
 
 Disciplinary Electives
 ----------------------------
     CS 3043
     CS 3431
-    CS 4433
-    CS 4445
-    CS 4804
-    DS 4635
+    CS 4342
+    CS 4432
+    MA 1023
+    MA 1024
+    MA 2051
+    MA 2201
     MA 2621
-    MIS 3720
+    MA 3631
     MIS 4084
-    MIS 4720
-    MKT 3650
-    OIE 3460
+    [4000-Level Math Disciplinary Electives]
 
 Entrepreneurship and Innovation
 ----------------------------
-    ETR 1100
+    BUS 1010
 
 Linear Algebra
 ----------------------------
@@ -135,12 +120,12 @@ Linear Algebra
 
 Mathematical Sciences
 ----------------------------
-    MA 1020
-    MA 1120
+    MA 1021
+    MA 1022
 
 Natural or Engineering Sciences
 ----------------------------
-    GE 2341
+    ECE 2010
     PH 1110
 
 Applied Statistics

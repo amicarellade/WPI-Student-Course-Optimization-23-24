@@ -1,3 +1,5 @@
+import math
+
 from pulp import *
 
 
@@ -52,7 +54,7 @@ def setup_x_y_vars(model, base_dict, program_keys, taken_courses):
     return vars_dict
 
 
-def add_requirement_constraints(model, x, z, program_keys, base_dict):
+def add_requirement_constraints(model, x, z, program_keys, base_dict, taken_courses):
     buckets_dict = base_dict["Buckets"]
     for prog_key in program_keys:
         for each_req in base_dict[prog_key]["Reqs"].keys():
@@ -68,7 +70,9 @@ def add_requirement_constraints(model, x, z, program_keys, base_dict):
         model += lpSum(
             buckets_dict[b]["Credits Each"] * x[b, each_req] for b in applic_buckets) - z[each_req] == min_creds, 'reqMin(%s)' % (
                      each_req)
-
+    #model += lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
+    #print(taken_courses["1000_CS"]["Taken"])
+    model += lpSum(x[b, program_keys[0].split("_")[0]+"_DOUBLE"] * base_dict["Buckets"][b]["Credits Each"] * math.ceil(taken_courses[b]["Taken"]/(taken_courses[b]["Taken"]+1)) for b in base_dict["Buckets"] if program_keys[0].split("_")[0]+"_DOUBLE" in base_dict["Buckets"][b]["Req Keys"]) <= 18, 'MAXIMIZE DOUBLE COUNTS'
     return model
 
 
@@ -137,16 +141,19 @@ def sreqs_type2(model, x, sreq_key, sreq_attr, list_of_lobs, buckets_dict, track
     return track_SRs
 
 
-def set_objective(model, y, z, buckets_dict, model_stage, max_credits=0):
+def set_objective(model, x, y, z, buckets_dict, model_stage, program_keys, taken_courses, max_credits=0):
+    print("HERE IS THE BUCKETS DICT: "+str(buckets_dict))
+    #print("HERE ARE THE TAKEN COURSES: "+str(taken_courses))
     if model_stage == 1:
         #DOESNT WORK - x includes taken AND not taken, so it has no incentive to place a taken course there (as written).
         #model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01 * zee for zee in z.values()) - lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(
-            0.01 * zee for zee in z.values())
+            0.01 * zee for zee in z.values()) - lpSum(1e-5 * x[b, program_keys[0].split("_")[0]+"_DOUBLE"] * buckets_dict[b]["Credits Each"] * math.ceil(taken_courses[b]["Taken"]/(taken_courses[b]["Taken"]+1)) for b in buckets_dict.keys() if program_keys[0].split("_")[0]+"_DOUBLE" in buckets_dict[b]["Req Keys"])
+
 
     elif model_stage == 2:
-        model += lpSum(buckets_dict[b]["Choice Weight"] * y[b] for b in buckets_dict.keys())  #+ lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks))
+        model += lpSum(-1 * buckets_dict[b]["Choice Weight"] * y[b] for b in buckets_dict.keys())
         model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(
-            0.01 * zee for zee in z.values()) == max_credits, 'credMax' #- lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks)) == max_credits, 'credMax'
+            0.01 * zee for zee in z.values()) - lpSum(1e-5 * x[b, program_keys[0].split("_")[0]+"_DOUBLE"] * buckets_dict[b]["Credits Each"] * math.ceil(taken_courses[b]["Taken"]/(taken_courses[b]["Taken"]+1)) for b in buckets_dict.keys() if program_keys[0].split("_")[0]+"_DOUBLE" in buckets_dict[b]["Req Keys"]) == max_credits, 'credMax' #- lpSum(0.00001 * ecks for ecks in x.values() if "DS_DOUBLE" in str(ecks)) == max_credits, 'credMax'
 
     return model

@@ -44,6 +44,9 @@ Total MS Credits Req
 
 Not used
 ----------------------------
+    BUS 3020
+    CS 1000
+    CS 584
 
 
  
