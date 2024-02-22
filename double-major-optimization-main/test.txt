@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-141.0 TOTAL
+135 TOTAL
 -------------------------------
-15 REMAINING 
-    3 Academic Courses 
-    0.0 Free Electives 
+135 REMAINING 
+    114 Academic Courses 
+    9.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-126.0 TAKEN
-    120.0 Applied
-    6.0 Excess
+0.0 TAKEN
+    0 Applied
+    0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.13241442205617204
+TOTAL RUN TIME: 0.12381392100360245
 ----------------------------------------
-    Stage I solve: 0.0660696029663086
-    Stage II solve: 0.02493906021118164
+    Stage I solve: 0.07325005531311035
+    Stage II solve: 0.03047776222229004
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,12 +44,12 @@ Physical Education
 
 Humanities
 ----------------------------
-    SP 2521
-    SP 2522
-    SP 3521
-    SP 3522
-    SP 3532
-    [HU 3900 or 3910]
+    [AR_DEPT, TH_DEPT, MU_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [EN_DEPT, WR_DEPT]
+    [Humanities Capstone]
 
 IQP
 ----------------------------
@@ -57,19 +57,18 @@ IQP
 
 Social Science
 ----------------------------
-    ID_2050
-    PSY 1400
+    [ID_2050]
+    [Social Science]
 
 Free Electives
 ----------------------------
-    ECON 1110
-    SP 1523
-    GOV 2314
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
-    EN 1000
-    DS 501
+    No Unused Courses
 
 
  
@@ -89,15 +88,19 @@ CS Core
     [CS Electives]
     [CS Electives]
     [CS Electives]
-    [CS Electives]
     [Design - CS_3041, CS_3431, CS_3733, CS_4233]
+    [Intro CS - CS_1101 OR CS_1102]
     [Object-Oriented Programming - CS_2102 OR CS_2103]
     [Systems - CS_3013, CS_4513, CS_4515, CS_4516]
     [Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536]
 
 General Math
 ----------------------------
-    BUS 2080
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [Math Electives]
 
 General Science
 ----------------------------
@@ -107,46 +110,16 @@ General Science
 
 Probability
 ----------------------------
-    CS 1101
-    CS 2102
+    [Probability - MA_2621 OR MA_2631]
 
-Disciplinary Electives
+Science/Engineering Electives
 ----------------------------
-    CS 3043
-    CS 3431
-    CS 4433
-    CS 4445
-    CS 4804
-    DS 4635
-    MA 2621
-    MIS 3720
-    MIS 4084
-    MIS 4720
-    MKT 3650
-    OIE 3460
+    [Science and Engineering Electives]
+    [Science and Engineering Electives]
 
-Entrepreneurship and Innovation
+Statistics
 ----------------------------
-    ETR 1100
-
-Linear Algebra
-----------------------------
-    MA 2071
-
-Mathematical Sciences
-----------------------------
-    MA 1020
-    MA 1120
-
-Natural or Engineering Sciences
-----------------------------
-    GE 2341
-    PH 1110
-
-Applied Statistics
-----------------------------
-    MA 2611
-    MA 2612
+    [Statistics - MA_2611, MA_2612]
 
 
  
