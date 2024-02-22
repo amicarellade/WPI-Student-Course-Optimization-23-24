@@ -1,12 +1,12 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-135 TOTAL
+147 TOTAL
 -------------------------------
-135 REMAINING 
-    114 Academic Courses 
-    9.0 Free Electives 
-    9.0 MQP 
+147 REMAINING 
+    132 Academic Courses 
+    0.0 Free Electives 
+    12.0 MQP 
     3.0 PE
  
 0.0 TAKEN
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.12381392100360245
+TOTAL RUN TIME: 0.4266208999997616
 ----------------------------------------
-    Stage I solve: 0.07325005531311035
-    Stage II solve: 0.03047776222229004
+    Stage I solve: 0.25719618797302246
+    Stage II solve: 0.08321428298950195
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -34,6 +34,7 @@ MQP
     [MQP]
     [MQP]
     [MQP]
+    [MQP]
 
 Physical Education
 ----------------------------
@@ -44,27 +45,24 @@ Physical Education
 
 Humanities
 ----------------------------
-    [AR_DEPT, TH_DEPT, MU_DEPT]
-    [EN_DEPT, WR_DEPT]
-    [EN_DEPT, WR_DEPT]
-    [EN_DEPT, WR_DEPT]
-    [EN_DEPT, WR_DEPT]
-    [Humanities Capstone]
+    [HU 3900 or 3910]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
 
 IQP
 ----------------------------
-    [IQP Off Campus]
+    [IQP off campus]
 
 Social Science
 ----------------------------
-    [ID_2050]
+    [ID 2050]
     [Social Science]
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
 
 Not used
 ----------------------------
@@ -72,54 +70,115 @@ Not used
 
 
  
-Computer Science
+Operations and Industrial Engineering
 ____________________________________
 
  
-CS Core
+OIE Core
 ----------------------------
-    [CS 3043]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS 4000+ Level Electives]
-    [CS Electives]
-    [CS Electives]
-    [CS Electives]
-    [CS Electives]
-    [Design - CS_3041, CS_3431, CS_3733, CS_4233]
-    [Intro CS - CS_1101 OR CS_1102]
-    [Object-Oriented Programming - CS_2102 OR CS_2103]
-    [Systems - CS_3013, CS_4513, CS_4515, CS_4516]
-    [Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536]
+    [BUS 3020]
+    [CS 2119, 2102, 2103]
+    [OIE 2081]
+    [OIE 2850]
+    [OIE 3405, 4430]
+    [OIE 3410]
+    [OIE 3420]
+    [OIE 3460]
+    [OIE 3510]
 
-General Math
+Calculus Sequence
 ----------------------------
-    [1000 Level Math]
-    [1000 Level Math]
-    [1000 Level Math]
-    [1000 Level Math]
-    [Math Electives]
+    [Calc IV]
+    [MA 1021]
+    [MA 1022]
+    [MA 1033]
+    [MA 2051]
 
-General Science
+OIE Electives
 ----------------------------
-    [Biology]
-    [Biology]
-    [Biology]
+    [MA 3631]
+    [OIE MATH]
+    [OIE MATH]
 
-Probability
+Technical Electives
 ----------------------------
-    [Probability - MA_2621 OR MA_2631]
+    [CS DEPT]
+    [ES DEPT]
+    [Numerical Methods]
 
-Science/Engineering Electives
+Math and Science Electives
 ----------------------------
-    [Science and Engineering Electives]
-    [Science and Engineering Electives]
+    [MA 3831]
+    [MA 3832]
+
+Physics and Chemistry
+----------------------------
+    [CH DEPT]
+    [CH DEPT]
+    [PH DEPT]
 
 Statistics
 ----------------------------
-    [Statistics - MA_2611, MA_2612]
+    [MA 2611]
+    [MA 2631]
+
+
+ 
+Mathematical Sciences
+____________________________________
+
+ 
+Abstract Algebra
+----------------------------
+    [MA 3823, 3825]
+
+Computer and Data Science
+----------------------------
+    [CS 2119, 2102, 2103]
+    [CS DEPT]
+
+General Science
+----------------------------
+    [CH DEPT]
+    [CH DEPT]
+
+Intro and Elective Math Courses
+----------------------------
+    [Calc IV]
+    [MA 1021]
+    [MA 1022]
+    [MA 2051]
+    [MA 2611]
+    [MA DEPT]
+    [MA DEPT]
+    [MA DEPT]
+
+Numerical Methods
+----------------------------
+    [Numerical Methods]
+
+Real Analysis
+----------------------------
+    [MA 3831]
+    [MA 3832]
+
+Related Courses
+----------------------------
+    [BUS 3020]
+    [OIE 2081]
+
+Transition Courses
+----------------------------
+    [MA 1033]
+    [MA 2631]
+    [MA 3631]
+    [Math Transition Course]
+
+Upper Level Math
+----------------------------
+    [MA 3000+]
+    [OIE MATH]
+    [OIE MATH]
 
 
  
