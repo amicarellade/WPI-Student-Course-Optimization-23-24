@@ -1,7 +1,7 @@
 import json
 import math
 
-def format_solution(x, y, base_dict, program_keys, courses_taken_dict, ISPs = None):
+def format_solution(x, y, base_dict, program_keys, courses_taken_dict):
     #print(str(x)+'\n'+str(y)+'\n'+str(base_dict)+'\n'+str(program_keys)+'\n'+str(courses_taken_dict)+'\n')
     raw_y = raw_y_sol(y)
     raw_x = raw_x_sol(x)
@@ -13,7 +13,7 @@ def format_solution(x, y, base_dict, program_keys, courses_taken_dict, ISPs = No
     courses_set = after_enum["Solution Courses"]
     to_take = after_enum["To Take"]
     #print(courses_set, to_take)
-    applied = apply_to_programs(courses_set, raw_x, base_dict, program_keys, to_take, ISPs)
+    applied = apply_to_programs(courses_set, raw_x, base_dict, program_keys, to_take)
     return applied
 
 def raw_x_sol(x):
@@ -100,8 +100,8 @@ def calc_credit_metrics(stageI_obj, credits_taken, orig_credits_used, majors):
     mqp_credits = 9 + 3 * (num_majors - 1)
     pe_credits = 3
 
-    min_needed = max(orig_credits_used + mqp_credits + pe_credits, 135) #- 3
-    anticip_total = stageI_obj + credits_taken + mqp_credits + pe_credits #- 3
+    min_needed = max(orig_credits_used + mqp_credits + pe_credits, 135)
+    anticip_total = stageI_obj + credits_taken + mqp_credits + pe_credits
 
     not_used_credits = max(anticip_total - min_needed, 0)
     free_credits = max(min_needed - anticip_total, 0)
@@ -120,7 +120,7 @@ def calc_credit_metrics(stageI_obj, credits_taken, orig_credits_used, majors):
     print("ANTICIP TOTAL: "+str(anticip_total))
 
 
-    counts_dict = {"Taken and Used": taken_and_used, "Stage I obj": stageI_obj, "PE": float(pe_credits),
+    counts_dict = {"Taken and Used": taken_and_used, "Stage I obj": stageI_obj, "PE": float(pe_credits), 
     "MQP": float(mqp_credits), "Free credits": float(free_credits), "Not used": not_used_credits, 
     "Min total": float(min_needed), "Number Left": num_left, "Total taken": float(credits_taken),
     "Total": taken_and_to_take}
@@ -128,7 +128,7 @@ def calc_credit_metrics(stageI_obj, credits_taken, orig_credits_used, majors):
     return counts_dict
 
 
-def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take, ISPs = None):
+def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take):
     result_dict = {}
     track_applied = make_track_applied(program_keys, sol_courses)
     
@@ -144,12 +144,7 @@ def apply_to_programs(sol_courses, x_dict, base_dict, program_keys, to_take, ISP
 
     credits_used = count_credits_used(total_used_dict, base_dict["Buckets"])
     anticip_credits = 3 + 9 + 3 * (len(program_keys) - 1)
-    total_credit_adjustment = 0
-    if ISPs != None:
-        for isp in ISPs:
-            total_credit_adjustment += eval(isp['credits'])
-    #***HERE - change to 132***
-    elect_credits = max((135 - total_credit_adjustment) - (credits_used + anticip_credits), 0)
+    elect_credits = max(135 - (credits_used + anticip_credits), 0)
     
     elect_credits_left = elect_credits
     elect_courses_list = []

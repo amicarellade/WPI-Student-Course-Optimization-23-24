@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-144.0 TOTAL
+151.5 TOTAL
 -------------------------------
-69 REMAINING 
-    57 Academic Courses 
+12 REMAINING 
+    0 Academic Courses 
     0.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
-132.0 TAKEN
+139.5 TAKEN
     123.0 Applied
-    9.0 Excess
+    16.5 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.24242099991533905
+TOTAL RUN TIME: 1.0866383998654783
 ----------------------------------------
-    Stage I solve: 0.07810425758361816
-    Stage II solve: 0.07814860343933105
+    Stage I solve: 0.3621330261230469
+    Stage II solve: 0.26531004905700684
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,33 +44,35 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
+    EN 2225
+    HU 3910
+    PY 1731
+    WR 1011
+    WR 1020
+    WR 2210
 
 IQP
 ----------------------------
-    [IQP off campus]
+    IQP OFF
 
 Social Science
 ----------------------------
-    [ID_2050]
-    [Social Science]
+    ECON 1120
+    ID_2050
 
 Free Electives
 ----------------------------
+    CS 3431
+    CS 4341
     DS 4635
-    MA 4631
-    FIN 1250
 
 Not used
 ----------------------------
+    CS 541
+    MA 1023
+    FIN 1250
     BUS 3020
     CS 1000
-    CS 4518
 
 
  
@@ -80,41 +82,40 @@ ____________________________________
  
 Algorithms
 ----------------------------
-    [CS 2223]
+    CS 2223
 
 Business Analysis 
 ----------------------------
-    [BUS_2080 OR OIE_2081]
+    OIE 2081
 
 Core
 ----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
+    DS 1010
+    DS 2010
+    DS 3010
 
 Computer Science
 ----------------------------
     CS 1101
-    CS 2102
+    CS 2103
 
 Disciplinary Electives
 ----------------------------
     CS 3043
-    CS 3431
-    CS 4341
     CS 4342
     CS 4432
-    MA 1023
+    DS 4433
+    DS 504
     MA 1024
     MA 2051
     MA 2201
     MA 2621
     MA 3631
-    MIS 4084
+    OIE 559
 
 Entrepreneurship and Innovation
 ----------------------------
-    [Entrepreneurship and Innovation]
+    BUS 1010
 
 Linear Algebra
 ----------------------------
@@ -127,8 +128,8 @@ Mathematical Sciences
 
 Natural or Engineering Sciences
 ----------------------------
-    [Natural and Engineering Sciences]
-    [Natural and Engineering Sciences]
+    ECE 2010
+    PH 1110
 
 Applied Statistics
 ----------------------------
