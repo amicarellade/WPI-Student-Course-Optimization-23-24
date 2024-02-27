@@ -3,23 +3,23 @@
  
 198.0 TOTAL
 -------------------------------
-61.5 REMAINING 
-    49 Academic Courses 
+73.5 REMAINING 
+    61 Academic Courses 
     0.5 Free Electives 
     9.0 MQP 
     3.0 PE
  
-136.5 TAKEN
-    136.5 Applied
+124.5 TAKEN
+    124.5 Applied
     0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 1.0444217999465764
+TOTAL RUN TIME: 0.8254401000449434
 ----------------------------------------
-    Stage I solve: 0.7029609680175781
-    Stage II solve: 0.1249699592590332
+    Stage I solve: 0.4060478210449219
+    Stage II solve: 0.10938310623168945
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -44,30 +44,31 @@ Physical Education
 
 Humanities
 ----------------------------
-    EN 2225
-    HU 3910
-    PY 1731
-    WR 1011
-    WR 1020
-    WR 2210
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
+    [AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT]
+    [HU_3900 OR HU_3910]
+    [PY_2731, PY_2713, RE_2731]
+    [PY_2731, PY_2713, RE_2731]
 
 IQP
 ----------------------------
-    IQP OFF
+    [IQP ON]
 
 Social Science
 ----------------------------
-    ECON 1120
-    ID 2050
+    [GOV_2314, GOV_2315, GOV_2313]
+    [ID 2050]
 
 Free Electives
 ----------------------------
-    FIN 1250
-    BUS 3020
-    CS 1000
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
+    No Unused Courses
 
 
  
@@ -77,49 +78,52 @@ ____________________________________
  
 Algorithms
 ----------------------------
-    CS 2223
+    [CS 2223]
 
 Business Analysis 
 ----------------------------
-    OIE 2081
+    [BUS_2080 OR OIE_2081]
 
 Core
 ----------------------------
-    DS 1010
-    DS 2010
-    DS 3010
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
 
 Computer Science
 ----------------------------
     CS 1101
-    CS 2103
+    CS 2102
 
 Disciplinary Electives
 ----------------------------
     CS 3043
     CS 3431
+    CS 3733
+    CS 4342
     MA 1023
     MA 1024
     MA 2051
     MA 2201
     MA 2621
     MA 3631
-    OIE 559
-    [CS_4032, MA_4213, MA_4214, MA_4222, MA_4237]
-    [MIS_587, MKT_568]
+    MIS 4084
+    [CS 4445]
+    [CS_4802 OR BCB_4002]
+    [MA 4632]
 
 Double Counting 
 ----------------------------
-    CS 4341
     CS 4342
     CS 4432
-    DS 4635
-    [CS 4120]
-    [MA 4235]
+    [CS 4341]
+    [CS 4518]
+    [DS_4635 OR MA_4635]
+    [MA 4631]
 
 Entrepreneurship and Innovation
 ----------------------------
-    BUS 1010
+    [BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
 
 Linear Algebra
 ----------------------------
@@ -132,21 +136,21 @@ Mathematical Sciences
 
 Total MS Credits Req
 ----------------------------
-    CS 541
-    DS 504
-    [CS_565 OR SEME_565]
-    [CS_582 OR BCB_502]
+    CS 584
+    [CS 561]
+    [CS_583 OR BCB_503]
     [CS_585 OR DS_503]
-    [ECE_578 OR CS_578]
-    [MA 541]
-    [MA 542]
-    [MA 554]
-    [MA_517 OR DS_517]
+    [CS_586 OR DS_504]
+    [MA_542 OR MA_554]
+    [MA_584 OR BCB_504]
+    [MIS 571]
+    [MIS 584]
+    [OIE 559]
 
 Natural or Engineering Sciences
 ----------------------------
-    ECE 2010
-    PH 1110
+    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
+    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
 
 Applied Statistics
 ----------------------------

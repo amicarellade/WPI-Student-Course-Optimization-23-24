@@ -159,7 +159,7 @@
                     "TH_DEPT",
                     "MU_DEPT"
                 ],
-                "Bucket Description": "Humanities",
+                "Bucket Description": "AR_DEPT, TH_DEPT, MU_DEPT",
                 "Bucket Size": 20,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
@@ -584,9 +584,9 @@
                 "Bucket Contents": [
                     "CS_3013"
                 ],
-                "Bucket Description": "CS_3013",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
+                "Bucket Description": "Systems - CS_3013, CS_4513, CS_4515, CS_4516",
+                "Bucket Size": 4,
+                "Choice Weight": 99,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "CS_CORE",
@@ -625,7 +625,7 @@
                     "CS_3133"
                 ],
                 "Bucket Description": "Theory - CS_3133, CS_4120, CS_4123, CS_4533, CS_4536",
-                "Bucket Size": 1,
+                "Bucket Size": 5,
                 "Choice Weight": 99,
                 "Credits Each": 3.0,
                 "Req Keys": [
@@ -669,9 +669,9 @@
                     "GN_DEPT",
                     "SP_DEPT"
                 ],
-                "Bucket Description": "Humanities",
+                "Bucket Description": "AB_DEPT, CN_DEPT, GN_DEPT, SP_DEPT",
                 "Bucket Size": 20,
-                "Choice Weight": 20,
+                "Choice Weight": 19,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "HUA_CORE",
@@ -698,7 +698,7 @@
                     "HU_DEPT",
                     "INTL_DEPT"
                 ],
-                "Bucket Description": "Humanities",
+                "Bucket Description": "HI_DEPT, HU_DEPT, INTL_DEPT",
                 "Bucket Size": 20,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
@@ -758,7 +758,7 @@
                 "Bucket Description": "IQP Off Campus",
                 "Bucket Size": 100,
                 "Choice Weight": 100,
-                "Credits Each": 3.0,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP"
                 ]
@@ -770,7 +770,7 @@
                 "Bucket Description": "IQP On Campus",
                 "Bucket Size": 1,
                 "Choice Weight": 1,
-                "Credits Each": 3.0,
+                "Credits Each": 9.0,
                 "Req Keys": [
                     "IQP",
                     "ON_OFF_CAMPUS"
@@ -909,7 +909,7 @@
                     "PY_DEPT",
                     "RE_DEPT"
                 ],
-                "Bucket Description": "Humanities",
+                "Bucket Description": "PY_DEPT, RE_DEPT",
                 "Bucket Size": 20,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
@@ -1148,7 +1148,7 @@
                     "EN_DEPT",
                     "WR_DEPT"
                 ],
-                "Bucket Description": "Humanities",
+                "Bucket Description": "EN_DEPT, WR_DEPT",
                 "Bucket Size": 20,
                 "Choice Weight": 20,
                 "Credits Each": 3.0,
@@ -4719,7 +4719,7 @@
                     "MA_3627",
                     "MA_3631"
                 ],
-                "Bucket Description": "Math Disciplinary Electives",
+                "Bucket Description": "Disciplinary Electives",
                 "Bucket Size": 17,
                 "Choice Weight": 17,
                 "Credits Each": 3.0,
