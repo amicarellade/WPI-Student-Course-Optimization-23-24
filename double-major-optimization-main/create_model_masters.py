@@ -41,7 +41,7 @@ def setup_x_y_vars(model, base_dict, program_keys, taken_courses):
     return vars_dict
 
 
-def add_requirement_constraints(model, x, z, program_keys, base_dict, taken_courses):
+def add_requirement_constraints(model, x, z, program_keys, base_dict):
     buckets_dict = base_dict["Buckets"]
     for prog_key in program_keys:
         for each_req in base_dict[prog_key]["Reqs"].keys():
@@ -110,12 +110,12 @@ def sreqs_type2(model, x, sreq_key, sreq_attr, list_of_lobs, buckets_dict, track
     return track_SRs
 
 
-def set_objective(model, x, y, z, buckets_dict, model_stage, program_keys, taken_courses, max_credits=0):
+def set_objective(model, y, z, buckets_dict, model_stage, max_credits=0):
     if model_stage == 1:
          model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01*zee for zee in z.values())
 
     elif model_stage == 2:
-       model += lpSum(-1 * buckets_dict[b]["Choice Weight"] * y[b] for b in buckets_dict.keys())
+       model += lpSum(-1 * buckets_dict[b]["Choice Weight"] * y[b] for b in buckets_dict.keys()) - lpSum(0.01*zee for zee in z.values())
        model += lpSum(buckets_dict[b]["Credits Each"] * y[b] for b in buckets_dict.keys()) + lpSum(0.01*zee for zee in z.values()) <= max_credits, 'credMax'
 
     return model

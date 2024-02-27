@@ -36,4 +36,4 @@ def reload_buckets(name_prefix, reqs_ref, save_all_files= True, config_path="con
     bd.write_dict_to_json(programs_dict, name_prefix + "_programs.json")
 
 if __name__ == "__main__":
-    reload_all(name_prefix="CS_2_")
+    reload_all(name_prefix="CS_MS_Test7")
