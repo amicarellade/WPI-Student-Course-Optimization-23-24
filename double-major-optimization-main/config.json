@@ -13,6 +13,7 @@
         "CS_MASTER_ONLY": ["CS_MASTER"],
         "ME_MAJOR_ONLY": ["ME_MAJOR", "ALL_MAJORS"],
         "ECE_MAJOR_ONLY": ["ECE_MAJOR", "ALL_MAJORS"],
+        "RBE_MASTER_ONLY": ["RBE_MASTER"],
         "MATH_OIE_DOUBLE": ["MATH_MAJOR", "OIE_MAJOR", "ALL_MAJORS"]},
 
     "MAJOR_NAMES": 
@@ -25,7 +26,9 @@
         "CS_MASTER": "Computer Science Masters (MSCS)",
         "ME_MAJOR": "Mechanical Engineering",
         "ECE_MAJOR": "Electrical and Computer Engineering",
+        "RBE_MASTER": "Robotics Engineering Masters",
         "ALL_MAJORS": "General Education and Projects"},
+ 
 
     "COURSE_SHEET_COLS": ["Key", "Name", "Credits", "Terms", "Category", "Xlists"],
     "REQ_SREQ_FIELDS": {
@@ -36,7 +39,7 @@
         "SREQ_ATTRS" : ["Credits", "Applicable Reqs", "Sreq Description", "Sublists Count"]
     },
     "BUCKET_FIELDS": {
-        "BUCKET_SHEETS": ["MATH_MAJOR", "OIE_MAJOR", "MATH_OIE_DOUBLE", "DS_MAJOR", "DS_MASTER", "DS_DS_BSMS", "CS_MAJOR", "ME_MAJOR", "CS_MASTER", "ECE_MAJOR"],
+        "BUCKET_SHEETS": ["MATH_MAJOR", "OIE_MAJOR", "MATH_OIE_DOUBLE", "DS_MAJOR", "DS_MASTER", "DS_DS_BSMS", "CS_MAJOR", "ME_MAJOR", "CS_MASTER", "ECE_MAJOR", "RBE_MASTER"],
         "BUCKET_SHEET_COLS" : ["Bucket Key", "Bucket Size", "Req Keys", "Bucket Description", "Credits Each", "Choice Weight", "Bucket Contents"],
         "BUCKET_ATTRS" : ["Bucket Size", "Req Keys", "Bucket Description", "Credits Each", "Choice Weight", "Bucket Contents"],
         "BUCKET_LITERAL_EVAL" : ["Req Keys", "Bucket Contents"]
