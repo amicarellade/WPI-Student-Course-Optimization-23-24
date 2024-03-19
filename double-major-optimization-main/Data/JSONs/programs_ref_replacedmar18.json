@@ -8652,7 +8652,7 @@
                 ],
                 "Bucket Description": "CS_3043",
                 "Bucket Size": 1,
-                "Choice Weight": 4,
+                "Choice Weight": 110,
                 "Credits Each": 3.0,
                 "Req Keys": [
                     "DS_DE",
@@ -16409,8 +16409,7 @@
                 "SOC_SCI_REQ": {
                     "Buckets": [
                         "ID_2050",
-                        "SOC_SCI",
-                        "SOC_SCI_IMPS"
+                        "SOC_SCI"
                     ],
                     "Credits": 6.0,
                     "Req Description": "Social Science"
@@ -16646,7 +16645,7 @@
                     "AE_2310"
                 ],
                 "Bucket Description": "Controls - ES_3011, ES_3012, AE_2310, ME_3703",
-                "Bucket Size": 2,
+                "Bucket Size": 4,
                 "Choice Weight": 2,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -16660,7 +16659,7 @@
                     "ME_3703"
                 ],
                 "Bucket Description": "Controls - ES_3011, ES_3012, AE_2310, ME_3703",
-                "Bucket Size": 2,
+                "Bucket Size": 4,
                 "Choice Weight": 2,
                 "Credits Each": 3,
                 "Req Keys": [
@@ -16698,6 +16697,7 @@
                     "CS_2303",
                     "CS_3013",
                     "CS_3041",
+                    "CS_3043",
                     "CS_3133",
                     "CS_3431",
                     "CS_3516",
@@ -16736,8 +16736,8 @@
                     "CS_1004"
                 ],
                 "Bucket Description": "Computer Science",
-                "Bucket Size": 50,
-                "Choice Weight": 50,
+                "Bucket Size": 51,
+                "Choice Weight": 51,
                 "Credits Each": 3,
                 "Req Keys": [
                     "RBE_CS"
@@ -16754,18 +16754,6 @@
                 "Req Keys": [
                     "RBE_CS",
                     "RBE_OBJ_OR"
-                ]
-            },
-            "CS_3043": {
-                "Bucket Contents": [
-                    "CS_3043"
-                ],
-                "Bucket Description": "CS_3043",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "RBE_SOC_IMPS"
                 ]
             },
             "CS_3733": {
@@ -16959,6 +16947,7 @@
                     "ME_3902",
                     "ME_1520",
                     "ME_1800",
+                    "RBE_3100",
                     "AE_DEPT",
                     "AREN_DEPT",
                     "BME_DEPT",
@@ -16969,8 +16958,8 @@
                     "RBE_DEPT"
                 ],
                 "Bucket Description": "Engineering Elective",
-                "Bucket Size": 111,
-                "Choice Weight": 111,
+                "Bucket Size": 112,
+                "Choice Weight": 112,
                 "Credits Each": 3,
                 "Req Keys": [
                     "RBE_ENG_ELECT"
@@ -17070,7 +17059,7 @@
                 ],
                 "Bucket Description": "IQP Off Campus",
                 "Bucket Size": 5,
-                "Choice Weight": 100,
+                "Choice Weight": 50,
                 "Credits Each": 9,
                 "Req Keys": [
                     "IQP"
@@ -17161,19 +17150,6 @@
                     "RBE_ENG_ELECT"
                 ]
             },
-            "RBE_3100": {
-                "Bucket Contents": [
-                    "RBE_3100"
-                ],
-                "Bucket Description": "RBE_3100",
-                "Bucket Size": 1,
-                "Choice Weight": 1,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "RBE_ENG_ELECT",
-                    "RBE_SOC_IMPS"
-                ]
-            },
             "RBE_CORE": {
                 "Bucket Contents": [
                     "RBE_2001",
@@ -17236,10 +17212,6 @@
                     "BB_3620",
                     "BB_3920",
                     "BB_4150",
-                    "BB_4170",
-                    "CH_4170",
-                    "BB_4190",
-                    "CH_4190",
                     "BB_4620",
                     "BB_4801",
                     "BCB_4001",
@@ -17296,8 +17268,8 @@
                     "PH_4201"
                 ],
                 "Bucket Description": "Science - Biology, Chemistry, Geology, Physics",
-                "Bucket Size": 101,
-                "Choice Weight": 101,
+                "Bucket Size": 97,
+                "Choice Weight": 97,
                 "Credits Each": 3,
                 "Req Keys": [
                     "RBE_SCI"
@@ -17314,30 +17286,17 @@
                     "SS_DEPT",
                     "STS_DEPT",
                     "DEV_DEPT",
+                    "GOV_2314",
                     "GOV_2315",
-                    "GOV_2313"
+                    "GOV_2313",
+                    "ID_2314"
                 ],
                 "Bucket Description": "Social Science",
                 "Bucket Size": 20,
-                "Choice Weight": 20,
+                "Choice Weight": 13,
                 "Credits Each": 3,
                 "Req Keys": [
                     "SOC_SCI_REQ"
-                ]
-            },
-            "SOC_SCI_IMPS": {
-                "Bucket Contents": [
-                    "GOV_2314",
-                    "ID_2314",
-                    "GOV_2302"
-                ],
-                "Bucket Description": "Social Implications - GOV_2314, ID_2314, GOV_2302",
-                "Bucket Size": 3,
-                "Choice Weight": 3,
-                "Credits Each": 3,
-                "Req Keys": [
-                    "SOC_SCI_REQ",
-                    "RBE_SOC_IMPS"
                 ]
             },
             "WR_CON": {
@@ -17391,10 +17350,9 @@
                         "ES_2501",
                         "CONTROL",
                         "ENG_ELECT",
-                        "4000_ENG",
-                        "RBE_3100"
+                        "4000_ENG"
                     ],
-                    "Credits": 9.0,
+                    "Credits": 3.0,
                     "Req Description": "Engineering Science and Design Electives"
                 },
                 "RBE_ES_CONTROLS": {
@@ -17538,20 +17496,6 @@
                     ],
                     "Credits": 12.0,
                     "Sreq Description": "there's some weird \"or equivalent stuff going on here too\"",
-                    "Sreq Type": "1a",
-                    "Sublists Count": 0
-                },
-                "RBE_SOC_IMPS": {
-                    "Applicable Reqs": [
-                        "SOC_SCI_REQ"
-                    ],
-                    "Buckets": [
-                        "SOC_SCI_IMPS",
-                        "RBE_3100",
-                        "CS_3043"
-                    ],
-                    "Credits": 3.0,
-                    "Sreq Description": "This isn't the only way to do this - can take CS/RBE ones, but they require an extra slot",
                     "Sreq Type": "1a",
                     "Sublists Count": 0
                 },
