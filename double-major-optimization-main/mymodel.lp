@@ -109,7 +109,7 @@ setY1(FL_CON): x(FL_CON)(HUA_CORE) - y(FL_CON) <= 0
 setY1(GEO): x(GEO)(CS_GEN_SCI) + x(GEO)(CS_SCI_ENG) - y(GEO) <= 0
 setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
 setY1(HU_CAP): x(HU_CAP)(HUA_PROJ) - y(HU_CAP) <= 0
-setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 1
+setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
 setY1(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 0
 setY1(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 0
 setY1(MATH_ELECT): x(MATH_ELECT)(CS_GEN_MATH) - y(MATH_ELECT) <= 0
@@ -146,9 +146,7 @@ Bounds
  0 <= x(CS_NUM_MET)(CS_CORE) <= 4
  0 <= x(CS_NUM_MET)(CS_GEN_MATH) <= 4
  0 <= x(CS_OOP)(CS_CORE) <= 2
- 0 <= x(CS_OS)(CS_CORE) <= 4
  0 <= x(CS_SYS_PROG)(CS_CORE) <= 2
- 0 <= x(CS_THRY)(CS_CORE) <= 5
  0 <= x(DPE_GOV)(SOC_SCI_REQ) <= 2
  0 <= x(DPE_HU)(HUA_CORE) <= 3
  0 <= x(FL_CON)(HUA_CORE) <= 20
@@ -184,15 +182,12 @@ Bounds
  0 <= y(CS_INTRO) <= 2
  0 <= y(CS_NUM_MET) <= 4
  0 <= y(CS_OOP) <= 2
- 0 <= y(CS_OS) <= 4
  0 <= y(CS_SYS_PROG) <= 2
- 0 <= y(CS_THRY) <= 5
  0 <= y(DPE_GOV) <= 2
  0 <= y(DPE_HU) <= 3
  0 <= y(FL_CON) <= 20
  0 <= y(HI_CON) <= 20
  0 <= y(HU_CAP) <= 2
- y(ID_2050) = 0
  0 <= y(IMGD) <= 2
  0 <= y(IQP_OFF) <= 100
  0 <= y(MATH_ELECT) <= 49
@@ -238,9 +233,7 @@ x(CS_INTRO)(CS_CORE)
 x(CS_NUM_MET)(CS_CORE)
 x(CS_NUM_MET)(CS_GEN_MATH)
 x(CS_OOP)(CS_CORE)
-x(CS_OS)(CS_CORE)
 x(CS_SYS_PROG)(CS_CORE)
-x(CS_THRY)(CS_CORE)
 x(DPE_GOV)(SOC_SCI_REQ)
 x(DPE_HU)(HUA_CORE)
 x(FL_CON)(HUA_CORE)
@@ -276,15 +269,12 @@ y(CS_G_THRY)
 y(CS_INTRO)
 y(CS_NUM_MET)
 y(CS_OOP)
-y(CS_OS)
 y(CS_SYS_PROG)
-y(CS_THRY)
 y(DPE_GOV)
 y(DPE_HU)
 y(FL_CON)
 y(HI_CON)
 y(HU_CAP)
-y(ID_2050)
 y(IMGD)
 y(IQP_OFF)
 y(MATH_ELECT)
@@ -306,15 +296,20 @@ SR2(HUA_DEPTH_2)
 SR2(HUA_DEPTH_3)
 SR2(HUA_DEPTH_4)
 x(CS_4_DESIGN)(CS_CORE)
+x(CS_OS)(CS_CORE)
 x(CS_SOC_IMPS)(CS_CORE)
+x(CS_THRY)(CS_CORE)
 x(GEO)(CS_GEN_SCI)
 x(GEO)(CS_SCI_ENG)
 x(ID_2050)(SOC_SCI_REQ)
 x(IQP_ON)(IQP)
 x(RBE_3100)(CS_SCI_ENG)
 y(CS_4_DESIGN)
+y(CS_OS)
 y(CS_SOC_IMPS)
+y(CS_THRY)
 y(GEO)
+y(ID_2050)
 y(IQP_ON)
 y(OO_REST)
 y(RBE_3100)

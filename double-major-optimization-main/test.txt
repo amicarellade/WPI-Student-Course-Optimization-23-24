@@ -1,12 +1,12 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-147 TOTAL
+135 TOTAL
 -------------------------------
-147 REMAINING 
-    132 Academic Courses 
-    0.0 Free Electives 
-    12.0 MQP 
+135 REMAINING 
+    114 Academic Courses 
+    9.0 Free Electives 
+    9.0 MQP 
     3.0 PE
  
 0.0 TAKEN
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.4266208999997616
+TOTAL RUN TIME: 0.21091819999855943
 ----------------------------------------
-    Stage I solve: 0.25719618797302246
-    Stage II solve: 0.08321428298950195
+    Stage I solve: 0.08452892303466797
+    Stage II solve: 0.05287289619445801
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -34,7 +34,6 @@ MQP
     [MQP]
     [MQP]
     [MQP]
-    [MQP]
 
 Physical Education
 ----------------------------
@@ -45,7 +44,7 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
+    [Humanities Capstone]
     [Humanities]
     [Humanities]
     [Humanities]
@@ -54,15 +53,18 @@ Humanities
 
 IQP
 ----------------------------
-    [IQP off campus]
+    [IQP Off Campus]
 
 Social Science
 ----------------------------
-    [ID 2050]
+    [ID_2050]
     [Social Science]
 
 Free Electives
 ----------------------------
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
@@ -70,115 +72,54 @@ Not used
 
 
  
-Operations and Industrial Engineering
+Computer Science
 ____________________________________
 
  
-OIE Core
+CS Core
 ----------------------------
-    [BUS 3020]
-    [CS 2119, 2102, 2103]
-    [OIE 2081]
-    [OIE 2850]
-    [OIE 3405, 4430]
-    [OIE 3410]
-    [OIE 3420]
-    [OIE 3460]
-    [OIE 3510]
+    [CS 3043]
+    [CS 3133]
+    [CS 4000 Level Systems - CS_4513, CS_4515, CS_4516]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [Design - CS_3041, CS_3431, CS_3733, CS_4233]
+    [Intro CS - CS_1101 OR CS_1102]
+    [Object-Oriented Programming - CS_2102 OR CS_2103]
 
-Calculus Sequence
+General Math
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 1033]
-    [MA 2051]
-
-OIE Electives
-----------------------------
-    [MA 3631]
-    [OIE MATH]
-    [OIE MATH]
-
-Technical Electives
-----------------------------
-    [CS DEPT]
-    [ES DEPT]
-    [Numerical Methods]
-
-Math and Science Electives
-----------------------------
-    [MA 3831]
-    [MA 3832]
-
-Physics and Chemistry
-----------------------------
-    [CH DEPT]
-    [CH DEPT]
-    [PH DEPT]
-
-Statistics
-----------------------------
-    [MA 2611]
-    [MA 2631]
-
-
- 
-Mathematical Sciences
-____________________________________
-
- 
-Abstract Algebra
-----------------------------
-    [MA 3823, 3825]
-
-Computer and Data Science
-----------------------------
-    [CS 2119, 2102, 2103]
-    [CS DEPT]
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [Math Electives]
 
 General Science
 ----------------------------
-    [CH DEPT]
-    [CH DEPT]
+    [Biology]
+    [Biology]
+    [Biology]
 
-Intro and Elective Math Courses
+Probability
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 2051]
-    [MA 2611]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
+    [Probability - MA_2621 OR MA_2631]
 
-Numerical Methods
+Science/Engineering Electives
 ----------------------------
-    [Numerical Methods]
+    [Science and Engineering Electives]
+    [Science and Engineering Electives]
 
-Real Analysis
+Statistics
 ----------------------------
-    [MA 3831]
-    [MA 3832]
-
-Related Courses
-----------------------------
-    [BUS 3020]
-    [OIE 2081]
-
-Transition Courses
-----------------------------
-    [MA 1033]
-    [MA 2631]
-    [MA 3631]
-    [Math Transition Course]
-
-Upper Level Math
-----------------------------
-    [MA 3000+]
-    [OIE MATH]
-    [OIE MATH]
+    [Statistics - MA_2611, MA_2612]
 
 
  

@@ -232,4 +232,3 @@ def get_course_name(bucket_key, buckets_ref, to_take):
     if bucket_key in to_take:
         course_name = "[" + course_name + "]"
     return course_name
-
