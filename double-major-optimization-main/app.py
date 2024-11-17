@@ -109,12 +109,16 @@ def result(result_filename):
         result_content = result_file.read()
     
     # Extract the courses dictionary from the result data
-    courses_dict = (pt.parse_template(result_content))
+    results_dict = pt.parse_template(result_content)
+    print(results_dict)
+    results, courses = pt.divide_dict(results_dict)
+    print(courses)
 
     # Pass the courses_dict to the HTML template
     return render_template(
-        'result.html',
-        courses_dict=courses_dict
+        'table.html',
+        courses=courses,
+        results=results
     )
 
 def validate_major_selection(major, second_major, masters):

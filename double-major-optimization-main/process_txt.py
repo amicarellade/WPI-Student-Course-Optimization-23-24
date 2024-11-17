@@ -119,3 +119,52 @@ def parse_template(text):
 #         print(f"  {subsection}")
 #         for item in parsed_data[section][subsection]:
 #             print(f"    {item}")
+
+
+def divide_dict(input_dict):
+    # Keys to include in the first dictionary (Credits, Run Time)
+    keys_to_include = ['Credits', 'TOTAL', 'REMAINING', 'TAKEN', 'Applied', 'Excess', 'Run Time', 'TOTAL RUN TIME', 'Stage I solve', 'Stage II solve']
+    
+    dict_1 = {}
+    dict_2 = {}
+
+    # Iterate over the top-level keys in the input dictionary
+    for key, value in input_dict.items():
+        # If the key matches one of the 'keys_to_include', add to dict_1
+        if key.strip() in keys_to_include:
+            dict_1[key] = value
+        else:
+                dict_2 = input_dict[' Tracking Sheet ']
+
+    return dict_1, dict_2
+
+# # Example usage
+# input_dict = {
+#     'Algorithms': ['[CS 2223]'],
+#     'Business Analysis ': ['[BUS_2080 OR OIE_2081]'],
+#     'Core': ['[DS 1010]', '[DS 2010]', '[DS 3010]'],
+#     'Computer Science': ['[CS_1004, CS_1101, CS_1102]', '[CS_2102, CS_2103, CS_2119]'],
+#     'Disciplinary Electives': ['[4000-Level Disciplinary Electives]', '[4000-Level Disciplinary Electives]', '[Business Modeling and Prediction - MIS_4084, OIE_4430]',
+#                                '[Data Access and Management - CS_3431, MIS_3720, CS_4432, CS_4433/DS_4433]', '[Data Mining and Machine Learning - CS_4342, CS_4445]',
+#                                '[Disciplinary Electives]', '[Disciplinary Electives]', '[Disciplinary Electives]', '[Disciplinary Electives]', '[Disciplinary Electives]',
+#                                '[Disciplinary Electives]', '[Disciplinary Electives]'],
+#     'Entrepreneurship and Innovation': ['[Entrepreneurship and Innovation - BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]'],
+#     'Linear Algebra': ['[MA_2071 OR MA_2072]'],
+#     'Mathematical Sciences': ['[Disciplinary Electives]', '[Disciplinary Electives]'],
+#     'Natural or Engineering Sciences': ['[Natural and Engineering Sciences]', '[Natural and Engineering Sciences]'],
+#     'Applied Statistics': ['[MA 2611]', '[MA 2612]'],
+#     'Credits': '135',
+#     'TOTAL': '135',
+#     'REMAINING': '114',
+#     'TAKEN': '0',
+#     'Applied': '0',
+#     'Excess': '0',
+#     'Run Time': 'TOTAL RUN TIME: 0.3025236999965273',
+#     'TOTAL RUN TIME': '0.3025236999965273',
+#     'Stage I solve': '0.11654090881347656',
+#     'Stage II solve': '0.07163286209106445'
+# }
+
+# dict_1, dict_2 = divide_dict(input_dict)
+# print("Dict 1:", dict_1)
+# print("Dict 2:", dict_2)
