@@ -116,8 +116,9 @@ def result(result_filename):
 
     # Pass the courses_dict to the HTML template
     return render_template(
+        # You can change the template file to 'result.html', 'table.html', or 'piechart.html' if you want
         'table.html',
-        courses=courses,
+        courses=courses,    
         results=results
     )
 

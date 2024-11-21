@@ -71,10 +71,19 @@
     <!-- Pass the results data to JavaScript -->
     <script>
         // Parse the results dictionary from the backend (Flask) using Jinja2 syntax
+        function getRandomDifficulty() {
+            const difficulties = ['Easy', 'Moderate', 'Hard', 'Very Hard'];
+            return difficulties[Math.floor(Math.random() * difficulties.length)];
+        }
+
+        function getRandomHours() {
+            return Math.floor(Math.random() * 6) + 5; // Random hours between 5 and 10
+        }
+
         const results = {{ courses | tojson }};
         
         Object.keys(results).forEach((key, index) => {
-            const courseList = results[key];  // Access the array of courses from the results dictionary
+            const courseList = results[key];
             const accordionItem = document.createElement('div');
             accordionItem.className = 'accordion-item';
 
@@ -89,7 +98,17 @@
                 </h2>
                 <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="${headerId}" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        ${courseList.length > 0 ? courseList.map(course => `<div class="info-row">${course}</div>`).join('') : '<div class="info-row">No courses available</div>'}
+                        ${
+                            courseList.length > 0
+                                ? courseList.map(course => `
+                                    <div class="info-row">
+                                        Course: ${course} <br>
+                                        Difficulty: ${getRandomDifficulty()} <br>
+                                        Average Hours per Week: ${getRandomHours()} hrs
+                                    </div>
+                                `).join('')
+                                : '<div class="info-row">No courses available</div>'
+                        }
                     </div>
                 </div>
             `;

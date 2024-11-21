@@ -4,8 +4,8 @@
 135 TOTAL
 -------------------------------
 135 REMAINING 
-    108 Academic Courses 
-    15.0 Free Electives 
+    114 Academic Courses 
+    9.0 Free Electives 
     9.0 MQP 
     3.0 PE
  
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.251751100004185
+TOTAL RUN TIME: 0.39179840008728206
 ----------------------------------------
-    Stage I solve: 0.09365200996398926
-    Stage II solve: 0.07309889793395996
+    Stage I solve: 0.12689733505249023
+    Stage II solve: 0.10819125175476074
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -49,7 +49,7 @@ Humanities
     [Humanities]
     [Humanities]
     [Humanities]
-    [Humanities]
+    [PY_2731, PY_2713, RE_2731]
 
 IQP
 ----------------------------
@@ -57,13 +57,11 @@ IQP
 
 Social Science
 ----------------------------
-    [ID 2050]
+    [ID_2050]
     [Social Science]
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
     [FREE ELECTIVE]
     [FREE ELECTIVE]
     [FREE ELECTIVE]
@@ -74,61 +72,66 @@ Not used
 
 
  
-Mathematical Sciences
+Data Science
 ____________________________________
 
  
-Abstract Algebra
+Algorithms
 ----------------------------
-    [MA 3823, 3825]
+    [CS 2223]
 
-Computer and Data Science
+Business Analysis 
 ----------------------------
-    [CS DEPT, DS DEPT]
-    [CS DEPT, DS DEPT]
+    [BUS_2080 OR OIE_2081]
 
-General Science
+Core
 ----------------------------
-    [Science (PH, CH, ES, BB, GE)]
-    [Science (PH, CH, ES, BB, GE)]
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
 
-Intro and Elective Math Courses
+Computer Science
 ----------------------------
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
+    [CS_1004, CS_1101, CS_1102]
+    [CS_2102, CS_2103, CS_2119]
 
-Numerical Methods
+Disciplinary Electives
 ----------------------------
-    [Numerical Methods]
+    [4000-Level Disciplinary Electives]
+    [4000-Level Disciplinary Electives]
+    [Business Modeling and Prediction - MIS_4084, OIE_4430]
+    [Data Access and Management - CS_3431, MIS_3720, CS_4432, CS_4433/DS_4433]
+    [Data Mining and Machine Learning - CS_4342, CS_4445]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
 
-Real Analysis
+Entrepreneurship and Innovation
 ----------------------------
-    [MA 3831]
-    [MA 3832]
+    [Entrepreneurship and Innovation - BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
 
-Related Courses
+Linear Algebra
 ----------------------------
-    [Business School (any)]
-    [Business School (any)]
+    [MA_2071 OR MA_2072]
 
-Transition Courses
+Mathematical Sciences
 ----------------------------
-    [Transition Courses]
-    [Transition Courses]
-    [Transition Courses]
-    [Transition Courses]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
 
-Upper Level Math
+Natural or Engineering Sciences
 ----------------------------
-    [MA 3000+]
-    [MA 3000+]
-    [MA 3000+]
+    [Natural and Engineering Sciences]
+    [Natural and Engineering Sciences]
+
+Applied Statistics
+----------------------------
+    [MA 2611]
+    [MA 2612]
 
 
  
