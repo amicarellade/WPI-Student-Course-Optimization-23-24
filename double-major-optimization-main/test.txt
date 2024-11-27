@@ -1,12 +1,12 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-147 TOTAL
+198 TOTAL
 -------------------------------
-147 REMAINING 
-    132 Academic Courses 
-    0.0 Free Electives 
-    12.0 MQP 
+198 REMAINING 
+    177 Academic Courses 
+    9.0 Free Electives 
+    9.0 MQP 
     3.0 PE
  
 0.0 TAKEN
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.4266208999997616
+TOTAL RUN TIME: 0.39055625098990276
 ----------------------------------------
-    Stage I solve: 0.25719618797302246
-    Stage II solve: 0.08321428298950195
+    Stage I solve: 0.1834571361541748
+    Stage II solve: 0.08637619018554688
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -34,7 +34,6 @@ MQP
     [MQP]
     [MQP]
     [MQP]
-    [MQP]
 
 Physical Education
 ----------------------------
@@ -45,24 +44,27 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
-    [Humanities]
+    [AR DEPT, TH DEPT, MUS_DEPT]
+    [AR DEPT, TH DEPT, MUS_DEPT]
+    [AR DEPT, TH DEPT, MUS_DEPT]
+    [AR DEPT, TH DEPT, MUS_DEPT]
+    [HU_3900 OR HU_3910]
+    [PY_2731, PY_2713, RE_2731]
 
 IQP
 ----------------------------
-    [IQP off campus]
+    [IQP OFF CAMPUS]
 
 Social Science
 ----------------------------
+    [ECON_DEPT, ENV_DEPT, GOV_DEPT, PSY_DEPT, SD_DEPT, SOC_DEPT, SS_DEPT, STS_DEPT, DEV_DEPT]
     [ID 2050]
-    [Social Science]
 
 Free Electives
 ----------------------------
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
@@ -70,115 +72,86 @@ Not used
 
 
  
-Operations and Industrial Engineering
+Data Science Major with Data Science BSMS
 ____________________________________
 
  
-OIE Core
+Algorithms
 ----------------------------
-    [BUS 3020]
-    [CS 2119, 2102, 2103]
-    [OIE 2081]
-    [OIE 2850]
-    [OIE 3405, 4430]
-    [OIE 3410]
-    [OIE 3420]
-    [OIE 3460]
-    [OIE 3510]
+    [CS 2223]
 
-Calculus Sequence
+Business Analysis 
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 1033]
-    [MA 2051]
+    [BUS_2080 OR OIE_2081]
 
-OIE Electives
+Core
 ----------------------------
-    [MA 3631]
-    [OIE MATH]
-    [OIE MATH]
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
 
-Technical Electives
+Computer Science
 ----------------------------
-    [CS DEPT]
-    [ES DEPT]
-    [Numerical Methods]
+    [CS_1004 OR CS_1101 OR CS_1102]
+    [CS_2102 OR CS_2103 OR CS_2119]
 
-Math and Science Electives
+Disciplinary Electives
 ----------------------------
-    [MA 3831]
-    [MA 3832]
+    [CS 4120]
+    [CS 4341]
+    [CS 4432]
+    [CS_4802 OR BCB_4002]
+    [MA 4235]
+    [MA 4632]
+    [MA 542]
+    [MA 554]
+    [MIS 571]
+    [OIE 559]
 
-Physics and Chemistry
+Double Counting 
 ----------------------------
-    [CH DEPT]
-    [CH DEPT]
-    [PH DEPT]
+    [BCB_4004 OR MA_4603]
+    [CS 4342]
+    [CS 4445]
+    [CS 4518]
+    [CS_4803 OR BCB_4003]
+    [MA 4631]
 
-Statistics
+Entrepreneurship and Innovation
 ----------------------------
-    [MA 2611]
-    [MA 2631]
+    [BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
 
+Linear Algebra
+----------------------------
+    [MA_2071 OR MA_2072]
 
- 
 Mathematical Sciences
-____________________________________
-
- 
-Abstract Algebra
 ----------------------------
-    [MA 3823, 3825]
+    [DS 4635]
+    [MA 4635]
 
-Computer and Data Science
+Total MS Credits Req
 ----------------------------
-    [CS 2119, 2102, 2103]
-    [CS DEPT]
+    [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
+    [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
+    [CS 561]
+    [CS_585 OR DS_503]
+    [CS_586 OR DS_504]
+    [DS_541 OR CS_541]
+    [MA_543 OR DS_502]
+    [MIS 584]
+    [MIS 587]
+    [MKT 568]
 
-General Science
+Natural or Engineering Sciences
 ----------------------------
-    [CH DEPT]
-    [CH DEPT]
+    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
+    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
 
-Intro and Elective Math Courses
+Applied Statistics
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 2051]
     [MA 2611]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
-
-Numerical Methods
-----------------------------
-    [Numerical Methods]
-
-Real Analysis
-----------------------------
-    [MA 3831]
-    [MA 3832]
-
-Related Courses
-----------------------------
-    [BUS 3020]
-    [OIE 2081]
-
-Transition Courses
-----------------------------
-    [MA 1033]
-    [MA 2631]
-    [MA 3631]
-    [Math Transition Course]
-
-Upper Level Math
-----------------------------
-    [MA 3000+]
-    [OIE MATH]
-    [OIE MATH]
+    [MA 2612]
 
 
  
