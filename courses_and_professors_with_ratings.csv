@@ -1,0 +1,230 @@
+Course Number,Course Name,Professor,Rating,Would Take Again,Difficulty
+CS 1004,Introduction To Programming For Non-Majors   ,   Gillian Smith,4.3,84%,1.7
+CS 1101,Introduction To Program Design   ,   Matthew Ahrens,4.9,100%,2.3
+CS 2011,Introduction To Machine Organization And Assembly Language   ,   Taylor Andrews,2.5,34%,2.9
+CS 2022,Discrete Mathematics   ,   Herman Servatius,2.5,32%,3.9
+CS 2102,Object-Oriented Design Concepts   ,   Matthew Ahrens,4.9,100%,2.3
+CS 2119,Application Building With Object-Oriented Concepts   ,   Shubbhi Taneja,Professor not found at WPI,N/A,N/A
+CS 2223,Algorithms   ,   Michael Engling,4.7,95%,2.7
+CS 2223,Algorithms   ,   Yu-Shan Sun,Professor not found at WPI,N/A,N/A
+CS 2301,Systems Programming For Non-Majors   ,   Jennifer Mortensen,3.7,60%,3
+CS 2303,Systems Programming Concepts   ,   Jennifer Mortensen,3.7,60%,3
+CS 2303,Systems Programming Concepts   ,   Yu-Shan Sun,Professor not found at WPI,N/A,N/A
+CS 3013,Operating Systems   ,   Taylor Andrews,2.5,34%,2.9
+CS 3013,Operating Systems   ,   Shubbhi Taneja,Professor not found at WPI,N/A,N/A
+CS 3013,Operating Systems   ,   Mark Sheahan,Professor not found at WPI,N/A,N/A
+CS 3041,Human-Computer Interaction   ,   Erin Solovey,Professor not found at WPI,N/A,N/A
+CS 3041,Human-Computer Interaction   ,   Lane Harrison,4.7,84%,3.3
+CS 3043,Social Implications Of Information Processing   ,   Paul Delvy,0.0,N/A,0
+CS 3043,Social Implications Of Information Processing   ,   Micha Hofri,1.3,0%,4.6
+CS 3043,Social Implications Of Information Processing   ,   Keith Pray,2.9,25%,2.9
+CS 3043,Social Implications Of Information Processing   ,   Joshua Cuneo,2.7,40%,3.6
+CS 3043,Social Implications Of Information Processing   ,   Michael Engling,4.7,95%,2.7
+CS 3133,Foundations Of Computer Science   ,   Michael Engling,4.7,95%,2.7
+CS 3133,Foundations Of Computer Science   ,   Rose Bohrer,5.0,100%,2
+CS 3431,Database Systems I   ,   Rodica Neamtu,2.1,25%,3.8
+CS 3431,Database Systems I   ,   Sakire Arslan Ay,5.0,100%,2
+CS 3516,Computer Networks   ,   Xiaoyan Sun,Professor not found at WPI,N/A,N/A
+CS 3516,Computer Networks   ,   Shubbhi Taneja,Professor not found at WPI,N/A,N/A
+CS 3733,Software Engineering   ,   Wilson Wong,4.1,87%,4.1
+CS 3733,Software Engineering   ,   Sakire Arslan Ay,5.0,100%,2
+CS 4032,Numerical Methods For Linear And Nonlinear Systems   ,   Zhongqiang Zhang,3.0,31%,2.8
+CS 4032,Numerical Methods For Linear And Nonlinear Systems   ,   Andrea Arnold,4.0,100%,2.5
+CS 4123,Theory Of Computation   ,   Hanmeng Zhan,Professor not found at WPI,N/A,N/A
+CS 4233,Object-Oriented Analysis And Design   ,   Gary Pollice,3.7,23%,3.1
+CS 4241,Webware: Computational Technology For Network Information Systems   ,   Joshua Cuneo,2.7,40%,3.6
+CS 4341,Introduction To Artificial Intelligence   ,   Xiaozhong Liu,Professor not found at WPI,N/A,N/A
+CS 4342,Machine Learning   ,   Xiangnan Kong,2.9,50%,1.5
+CS 4401,Software Security Engineering   ,   Jun Dai,Professor not found at WPI,N/A,N/A
+CS 4432,Database Systems II   ,   Fabricio Murai,Professor not found at WPI,N/A,N/A
+CS 4433,Big Data Management and Analytics   ,   Elke Rundensteiner,3.1,20%,2.8
+CS 4513,Distributed Computing Systems   ,   Craig Wills,Professor not found at WPI,N/A,N/A
+CS 4516,Advanced Computer Networks   ,   Xiaoyan Sun,Professor not found at WPI,N/A,N/A
+CS 4731,Computer Graphics   ,   Joshua Cuneo,2.7,40%,3.6
+CS 4801,Introduction To Cryptography And Communication Security   ,   Koksal Mus,2.8,50%,3
+CS 4804,Data Visualization   ,   Lane Harrison,4.7,84%,3.3
+DS 1010,Data Science I: Introduction To Data Science   ,   Torumoy Ghoshal,4.0,100%,2
+DS 2010,Data Science II: Modeling And Data Analysis   ,   Fatemeh Emdad,3.3,63%,2.8
+DS 2010,Data Science II: Modeling And Data Analysis   ,   Oren Mangoubi,4.0,100%,4
+DS 3010,Data Science III: Computational Data Intelligence   ,   Kyumin Lee,5.0,100%,2.3
+DS 3010,Data Science III: Computational Data Intelligence   ,   Xiaozhong Liu,Professor not found at WPI,N/A,N/A
+DS 4433,Big Data Management and Analytics   ,   Elke Rundensteiner,3.1,20%,2.8
+DS 4635,Data Analytics And Statistical Learning   ,   Randy Paffenroth,5.0,100%,2.8
+MA 1021,Calculus I   ,   Jon Abraham,4.7,89%,2.6
+MA 1022,Calculus II   ,   Yonatan Ashenafi,1.0,0%,3.5
+MA 1022,Calculus II   ,   Michael Johnson,4.2,100%,2.8
+MA 1022,Calculus II   ,   Nicole Buczkowski,1.3,25%,2.8
+MA 1023,Calculus III (group 1)   ,   Ralihe Raul Villagran Olivas,3.0,50%,3.5
+MA 1023,Calculus III (group 4)   ,   Qiao Zhuang,3.6,70%,2.9
+MA 1023,Calculus III (group 3)   ,   Marcel Blais,4.7,97%,2.9
+MA 1023,Calculus III (group 6)   ,   Michael Smith,Professor not found at WPI,N/A,N/A
+MA 1024,Calculus IV (group 2)   ,   William Sanguinet,3.8,73%,3
+MA 1024,Calculus IV (group 1)   ,   John Goulet,4.8,93%,2.5
+MA 1024,Calculus IV   ,   Dana Ferranti,0.0,N/A,0
+MA 1024,Calculus IV (group 1)   ,   Qiao Zhuang,3.6,70%,2.9
+MA 1024,Calculus IV (group 6)   ,   Dalin Tang,2.8,47%,3
+MA 1024,Calculus IV (group 7)   ,   Vadim Yakovlev,3.1,47%,3
+MA 1024,Calculus IV (group 10)   ,   Binan Gu,3.8,75%,3.7
+MA 1024,Calculus IV (group 5)   ,   Joseph Fehribach,4.4,92%,2.7
+MA 1120,Calculus II W/ Prelim Topics   ,   Tatiana Doytchinova,4.1,72%,3
+MA 1801,Denksport   ,   Andrea Arnold,4.0,100%,2.5
+MA 1971,Bridge To Higher Mathematics   ,   Wagner Zsolt Adam,Professor not found at WPI,N/A,N/A
+MA 2051,Ordinary Differential Equations (group 1)   ,   Mayer Humi,3.4,40%,3.3
+MA 2051,Ordinary Differential Equations (group 2)   ,   Vadim Yakovlev,3.1,47%,3
+MA 2051,Ordinary Differential Equations (group 3)   ,   Nathan Uricchio,4.9,100%,2.8
+MA 2051,Ordinary Differential Equations (group 2)   ,   Burt Tilley,2.8,29%,4
+MA 2051,Ordinary Differential Equations (group 3)   ,   Francesca Bernardi,4.5,88%,3.1
+MA 2071,Matrices And Linear Algebra I (group 1)   ,   Dina Rassias,4.1,78%,3.1
+MA 2071,Matrices And Linear Algebra I (group 1)   ,   Tatiana Doytchinova,4.1,72%,3
+MA 2071,Matrices And Linear Algebra I (group 2)   ,   Andre Nachbin,1.8,25%,3.3
+MA 2071,Matrices And Linear Algebra I (group 3)   ,   Samuel Tripp,4.9,100%,3.1
+MA 2072,Accelerated Matrices And Linear Algebra I (group 1)   ,   William Martin,Professor not found at WPI,N/A,N/A
+MA 2073,Matrices And Linear Algebra II   ,   Qingshuo Song,3.4,65%,3
+MA 2201,Discrete Mathematics   ,   Herman Servatius,2.5,32%,3.9
+MA 2210,Mathematical Methods In Decision Making   ,   Qingshuo Song,3.4,65%,3
+MA 2251,Vector And Tensor Calculus   ,   Guanying Peng,3.0,50%,4
+MA 2273,Combinatorics   ,   Brigitte Servatius,1.8,32%,3.6
+MA 2611,Applied Statistics I (group 1)   ,   Tharindu De Alwis,4.7,100%,2.1
+MA 2611,Applied Statistics I (group 2)   ,   Adam Sales,4.7,67%,2.7
+MA 2611,Applied Statistics I (group 1)   ,   Carly Thorp,3.7,67%,2.5
+MA 2611,Applied Statistics I (group 2)   ,   Zheyang Wu,2.3,34%,2.5
+MA 2612,Applied Statistics II (group 1)   ,   Fangfang Wang,2.2,34%,3.7
+MA 2621,Probability For Applications (group 1)   ,   Buddika Peiris,2.7,44%,3.7
+MA 2621,Probability For Applications (group 2)   ,   Nadeesha Jayaweera,4.7,100%,1.2
+MA 2621,Probability For Applications   ,   Stephan Sturm,3.9,77%,4.1
+MA 2621,Probability For Applications   ,   Tharindu De Alwis,4.7,100%,2.1
+MA 2631,Probability Theory   ,   Gu Wang,4.0,72%,3.6
+MA 3212,Actuarial Mathematics I   ,   Jon Abraham,4.7,89%,2.6
+MA 322X,Actuarial Estimation  of Unpaid Claims   ,   Barry Posterro,3.6,37%,2.4
+MA 3257,Numerical Methods For Linear And Nonlinear Systems   ,   Zhongqiang Zhang,3.0,31%,2.8
+MA 3257,Numerical Methods For Linear And Nonlinear Systems   ,   Andrea Arnold,4.0,100%,2.5
+MA 3471,Advanced Ordinary Differential Equations   ,   Sam Walcott,Professor not found at WPI,N/A,N/A
+MA 3627,Introduction To The Design And Analysis Of Experiments   ,   Carly Thorp,3.7,67%,2.5
+MA 3825,Rings And Fields   ,   William Martin,Professor not found at WPI,N/A,N/A
+MA 3831,Principles Of Real Analysis I   ,   Christopher Larsen,2.8,40%,3.7
+MA 3832,Principles Of Real Analysis II   ,   Christopher Larsen,2.8,40%,3.7
+MA 4216,Actuarial Seminar   ,   Jon Abraham,4.7,89%,2.6
+MA 4235,Mathematical Optimization   ,   Gu Wang,4.0,72%,3.6
+MA 4291,Applied Complex Variables   ,   Burt Tilley,2.8,29%,4
+MA 4632,Probability And Mathematical Statistics II   ,   Buddika Peiris,2.7,44%,3.7
+MA 4635,Data Analytics And Statistical Learning   ,   Randy Paffenroth,5.0,100%,2.8
+MA 464X,Introduction to Time Series Analysis   ,   Fangfang Wang,2.2,34%,3.7
+MA 4891,ST: Topology   ,   Herman Servatius,2.5,32%,3.9
+CS 1004,Introduction To Programming For Non-Majors   ,   Taylor Andrews,2.5,34%,2.9
+CS 1101,Introduction To Program Design   ,   Matthew Ahrens,4.9,100%,2.3
+CS 1101,Introduction To Program Design   ,   Michael Engling,4.7,95%,2.7
+CS 1101,Introduction To Program Design   ,   Joshua Cuneo,2.7,40%,3.6
+CS 1102,Accelerated Introduction To Program Design   ,   Joseph Beck,3.3,58%,2.9
+CS 2011,Introduction To Machine Organization And Assembly Language   ,   Taylor Andrews,2.5,34%,2.9
+CS 2022,Discrete Mathematics   ,   Gabor Sarkozy,4.0,74%,2.8
+CS 2022,Discrete Mathematics   ,   Herman Servatius,2.5,32%,3.9
+CS 2102,Object-Oriented Design Concepts   ,   Matthew Ahrens,4.9,100%,2.3
+CS 2102,Object-Oriented Design Concepts   ,   Yu-Shan Sun,Professor not found at WPI,N/A,N/A
+CS 2103,Accelerated Object-Oriented Design Concepts   ,   Joshua Cuneo,2.7,40%,3.6
+CS 2223,Algorithms   ,   Yu-Shan Sun,Professor not found at WPI,N/A,N/A
+CS 2223,Algorithms   ,   Michael Engling,4.7,95%,2.7
+CS 2223,Algorithms   ,   Ed Solovey,Professor not found at WPI,N/A,N/A
+CS 2301,Systems Programming For Non-Majors   ,   Jennifer Mortensen,3.7,60%,3
+CS 2303,Systems Programming Concepts   ,   Jennifer Mortensen,3.7,60%,3
+CS 3013,Operating Systems   ,   Craig Wills,Professor not found at WPI,N/A,N/A
+CS 3013,Operating Systems   ,   Craig Shue,4.5,100%,3.3
+CS 3041,Human-Computer Interaction   ,   Matthew Ahrens,4.9,100%,2.3
+CS 3043,Social Implications Of Information Processing   ,   Keith Pray,2.9,25%,2.9
+CS 3043,Social Implications Of Information Processing   ,   Matthew Ahrens,4.9,100%,2.3
+CS 3043,Social Implications Of Information Processing   ,   Joshua Cuneo,2.7,40%,3.6
+CS 3043,Social Implications Of Information Processing   ,   Marcel LaFlamme,4.7,97%,2.9
+CS 3043,Social Implications Of Information Processing   ,   Joseph Beck,3.3,58%,2.9
+CS 3133,Foundations Of Computer Science   ,   Daniel Reichman,2.0,0%,4
+CS 3133,Foundations Of Computer Science   ,   Gabor Sarkozy,4.0,74%,2.8
+CS 3431,Database Systems I   ,   Wilson Wong,4.1,87%,4.1
+CS 3431,Database Systems I   ,   Shubbhi Taneja,Professor not found at WPI,N/A,N/A
+CS 3431,Database Systems I   ,   Rodica Neamtu,2.1,25%,3.8
+CS 3516,Computer Networks   ,   Yanhua Li,4.9,100%,3.3
+CS 3733,Software Engineering   ,   George Heineman,4.5,100%,3.4
+CS 4033,Numerical Methods For Calculus And Differential Equations   ,   Marcus Sarkis-Martins,Professor not found at WPI,N/A,N/A
+CS 4100,Artificial Intelligence For Interactive Media And Games   ,   Gillian Smith,4.3,84%,1.7
+CS 4120,Analysis Of Algorithms   ,   Daniel Reichman,2.0,0%,4
+CS 4233,Object-Oriented Analysis And Design   ,   Gary Pollice,3.7,23%,3.1
+CS 4241,Webware: Computational Technology For Network Information Systems   ,   Charles Roberts,Professor not found at WPI,N/A,N/A
+CS 4341,Introduction To Artificial Intelligence   ,   Carolina Ruiz,2.4,29%,4.5
+CS 4341,Introduction To Artificial Intelligence   ,   Chun-Kit Ngan,Professor not found at WPI,N/A,N/A
+CS 4341,Introduction To Artificial Intelligence   ,   Dmitry Korkin,Professor not found at WPI,N/A,N/A
+CS 4342,Machine Learning   ,   Ali Yousefi,3.7,72%,4.4
+CS 4445,Data Mining And Knowledge Discovery In Databases   ,   Xiangnan Kong,2.9,50%,1.5
+CS 4536,Programming Languages   ,   Rose Bohrer,5.0,100%,2
+CS 4803,Biological And Biomedical Database Mining   ,   Xiangnan Kong,2.9,50%,1.5
+DS 1010,Data Science I: Introduction To Data Science   ,   Daniel Treku,2.7,67%,2
+DS 2010,Data Science II: Modeling And Data Analysis   ,   Torumoy Ghoshal,4.0,100%,2
+DS 3010,Data Science III: Computational Data Intelligence   ,   Randy Paffenroth,5.0,100%,2.8
+MA 1020,Calculus I With Preliminary Topics   ,   Tatiana Doytchinova,4.1,72%,3
+MA 1021,Calculus I   ,   Jon Abraham,4.7,89%,2.6
+MA 1021,Calculus I   ,   Burt Tilley,2.8,29%,4
+MA 1021,Calculus I   ,   Michael Smith,Professor not found at WPI,N/A,N/A
+MA 1021,Calculus I   ,   Ernesto Cáceres,Professor not found at WPI,N/A,N/A
+MA 1021,Calculus I   ,   Tharindu De Alwis,4.7,100%,2.1
+MA 1021,Calculus I   ,   Tatiana Doytchinova,4.1,72%,3
+MA 1021,Calculus I   ,   William Sanguinet,3.8,73%,3
+MA 1022,Calculus II   ,   Qiao Zhuang,3.6,70%,2.9
+MA 1022,Calculus II   ,   Marcus Sarkis-Martins,Professor not found at WPI,N/A,N/A
+MA 1022,Calculus II   ,   Ralihe Raul Villagran Olivas,3.0,50%,3.5
+MA 1022,Calculus II   ,   Michael Smith,Professor not found at WPI,N/A,N/A
+MA 1022,Calculus II   ,   Nicole Buczkowski,1.3,25%,2.8
+MA 1022,Calculus II   ,   Michael Johnson,4.2,100%,2.8
+MA 1022,Calculus II   ,   Guanying Peng,3.0,50%,4
+MA 1022,Calculus II   ,   Jon Abraham,4.7,89%,2.6
+MA 1022,Calculus II   ,   Vadim Yakovlev,3.1,47%,3
+MA 1022,Calculus II   ,   Burt Tilley,2.8,29%,4
+MA 1023,Calculus III   ,   Dina Rassias,4.1,78%,3.1
+MA 1023,Calculus III   ,   John Goulet,4.8,93%,2.5
+MA 1023,Calculus III   ,   Binan Gu,3.8,75%,3.7
+MA 1023,Calculus III   ,   Samuel Tripp,4.9,100%,3.1
+MA 1023,Calculus III   ,   Marcel Blais,4.7,97%,2.9
+MA 1023,Calculus III   ,   Qiao Zhuang,3.6,70%,2.9
+MA 1023,Calculus III   ,   Michael Smith,Professor not found at WPI,N/A,N/A
+MA 1023,Calculus III   ,   Nicole Buczkowski,1.3,25%,2.8
+MA 1024,Calculus IV   ,   William Sanguinet,3.8,73%,3
+MA 1024,Calculus IV   ,   Yonatan Ashenafi,1.0,0%,3.5
+MA 1024,Calculus IV   ,   Joseph Fehribach,4.4,92%,2.7
+MA 1024,Calculus IV   ,   Marcus Sarkis-Martins,Professor not found at WPI,N/A,N/A
+MA 1024,Calculus IV   ,   Min Wu,Professor not found at WPI,N/A,N/A
+MA 1024,Calculus IV   ,   Nathan Uricchio,4.9,100%,2.8
+MA 1024,Calculus IV   ,   Zhongqiang Zhang,3.0,31%,2.8
+MA 1024,Calculus IV   ,   John Goulet,4.8,93%,2.5
+MA 1024,Calculus IV   ,   Dina Rassias,4.1,78%,3.1
+MA 1024,Calculus IV   ,   Qingshuo Song,3.4,65%,3
+MA 1033,Theoretical Calculus III   ,   Joseph Fehribach,4.4,92%,2.7
+MA 1034,Theoretical Calculus IV   ,   Joseph Fehribach,4.4,92%,2.7
+MA 1801,Denksport   ,   Francesca Bernardi,4.5,88%,3.1
+MA 1801,Denksport   ,   Guanying Peng,3.0,50%,4
+MA 2051,Ordinary Differential Equations   ,   Dalin Tang,2.8,47%,3
+MA 2051,Ordinary Differential Equations   ,   Nathan Uricchio,4.9,100%,2.8
+MA 2051,Ordinary Differential Equations   ,   Mayer Humi,3.4,40%,3.3
+MA 2071,Matrices And Linear Algebra I   ,   Barry Posterro,3.6,37%,2.4
+MA 2071,Matrices And Linear Algebra I   ,   Samuel Tripp,4.9,100%,3.1
+MA 2071,Matrices And Linear Algebra I   ,   Tatiana Doytchinova,4.1,72%,3
+MA 2201,Discrete Mathematics   ,   Gabor Sarkozy,4.0,74%,2.8
+MA 2201,Discrete Mathematics   ,   Herman Servatius,2.5,32%,3.9
+MA 2211,Theory Of Interest I   ,   Jon Abraham,4.7,89%,2.6
+MA 2212,Theory Of Interest II   ,   Barry Posterro,3.6,37%,2.4
+MA 2431,Mathematical Modeling With Ordinary Differential Equations   ,   Sam Walcott,Professor not found at WPI,N/A,N/A
+MA 2610,Applied Statistics For The Life Sciences   ,   Nadeesha Jayaweera,4.7,100%,1.2
+MA 2611,Applied Statistics I   ,   Carly Thorp,3.7,67%,2.5
+MA 2611,Applied Statistics I   ,   Zheyang Wu,2.3,34%,2.5
+MA 2611,Applied Statistics I   ,   Frank Zou,Professor not found at WPI,N/A,N/A
+MA 2612,Applied Statistics II   ,   Carly Thorp,3.7,67%,2.5
+MA 2621,Probability For Applications   ,   Buddika Peiris,2.7,44%,3.7
+MA 2621,Probability For Applications   ,   Nadeesha Jayaweera,4.7,100%,1.2
+MA 2621,Probability For Applications   ,   Gu Wang,4.0,72%,3.6
+MA 2631,Probability Theory   ,   Gu Wang,4.0,72%,3.6
+MA 3231,Linear Programming   ,   Marcel Blais,4.7,97%,2.9
+MA 3457,Numerical Methods For Calculus And Differential Equations   ,   Marcus Sarkis-Martins,Professor not found at WPI,N/A,N/A
+MA 3631,Mathematical Statistics   ,   Buddika Peiris,2.7,44%,3.7
+MA 3823,Group Theory   ,   Brigitte Servatius,1.8,32%,3.6
+MA 3831,Principles Of Real Analysis I   ,   Darko Volkov,3.6,70%,3.2
+MA 3832,Principles Of Real Analysis II   ,   Darko Volkov,3.6,70%,3.2
+MA 4213,Loss Models I - Risk Theory   ,   Barry Posterro,3.6,37%,2.4
+MA 4216,Actuarial Seminar   ,   Barry Posterro,3.6,37%,2.4
+MA 4237,Probabilistic Methods In Operations Research   ,   Stephan Sturm,3.9,77%,4.1
+MA 4451,Boundary Value Problems   ,   Mayer Humi,3.4,40%,3.3
+MA 4603,Statistical Methods In Genetics And Bioinformatics   ,   Zheyang Wu,2.3,34%,2.5
+MA 4631,Probability And Mathematical Statistics I   ,   Buddika Peiris,2.7,44%,3.7

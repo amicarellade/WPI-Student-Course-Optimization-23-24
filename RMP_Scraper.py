@@ -108,7 +108,8 @@ def get_professor_info(professor_name):
         }
 
 # Load the CSV and iterate through professors
-df = pd.read_csv("courses_and_professors.csv")  # Replace with your file path
+df = pd.read_excel("courses_professors23_24.xlsx", engine='openpyxl')  
+
 
 # Create columns for each field
 df["Rating"] = None
