@@ -86,7 +86,6 @@
             const courseList = results[key];
             const accordionItem = document.createElement('div');
             accordionItem.className = 'accordion-item';
-
             const headerId = `heading${index}`;
             const collapseId = `collapse${index}`;
 
@@ -100,21 +99,45 @@
                     <div class="accordion-body">
                         ${
                             courseList.length > 0
-                                ? courseList.map(course => `
-                                    <div class="info-row">
-                                        Course: ${course} <br>
-                                        Difficulty: ${getRandomDifficulty()} <br>
-                                        Average Hours per Week: ${getRandomHours()} hrs
-                                    </div>
-                                `).join('')
+                                ? courseList.map((course, courseIndex) => {
+                                    const uniqueId = `${index}-${courseIndex}`;
+                                    const difficulty = getRandomDifficulty();
+                                    const hours = getRandomHours();
+
+                                    return `
+                                        <div class="info-row">
+                                            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <span>Course: ${course}</span>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-${uniqueId}" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Show Details
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-${uniqueId}">
+                                                        <li><a class="dropdown-item" href="#" onclick="showDetails('${uniqueId}')">Show Details</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="details-${uniqueId}" style="display: none; margin-top: 10px; font-weight: normal;">
+                                                Average Difficulty: ${difficulty} <br>
+                                                Average Workload: ${hours} hrs/week
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')
                                 : '<div class="info-row">No courses available</div>'
                         }
                     </div>
                 </div>
             `;
 
-            document.getElementById('accordionExample').appendChild(accordionItem);  // Assuming this is the ID of your accordion container
+            document.getElementById('accordionExample').appendChild(accordionItem); // Assuming this is the ID of your accordion container
         });
+        // Function to show details
+        function showDetails(uniqueId) {
+            const detailsDiv = document.getElementById(`details-${uniqueId}`);
+            detailsDiv.style.display = detailsDiv.style.display === 'none' ? 'block' : 'none';
+        }
     </script>
     
     <!-- Bootstrap Bundle JS -->
