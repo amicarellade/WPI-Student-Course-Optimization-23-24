@@ -75,8 +75,7 @@
       </p>
       <h4>Workday</h4>
       <p>
-        OSCAR exists as a Tableu dashboard, therefore, when using inspect element, the webpage does not consider dropdowns, text, bars, or numbers as elements on the page. With that being said, to retrieve the information
-        we had to use an amalgamation of computer vision and web scraping techniques to first click, scroll, and take a screenshot. Once the screenshot was taken, X library was used to analyze and investigate the ordered pixels and what they truly represented. 
+        This Python script uses Selenium to automate web scraping to extract course and professor information from a Workday page. After downloading and setting up the Chrome driver, the script navigates to the specified Workday URLs, prompting the user to manually log in and select certain filters within the page before continuing. Once logged in, the script extracts course names and professor names by locating HTML elements with specific XPATH values (promptOption for courses and compositeSubHeaderOne for professors). The text content of these elements is appended to respective lists. The script continuously scrolls down the page to load additional elements until no new elements are detected, indicating that all data has been loaded. Finally, the script saves the extracted data into separate CSV files for courses and professors and handles any exceptions, ensuring the browser is properly closed in all cases.
       </p>
       <h4>RateMyProfessor</h4>
       <p>
@@ -87,13 +86,13 @@
       <ul>
         <li>
           <a
-            href="https://github.com/vagmi20/CS539-Group-Project---Predicting-Stock-Market-Trends"
+            href="https://github.com/amicarellade/WPI-Student-Course-Optimization-23-24"
             >Github for Project</a
           >
         </li>
         <li>
           <a
-            href="https://github.com/vagmi20/CS539-Group-Project---Predicting-Stock-Market-Trends/blob/main/README.md"
+            href=""
             >READ ME</a
           >
         </li>
@@ -108,6 +107,7 @@
       <p>
         Yappa yappa yappa
       </p>
+      <h2>References</h2>
     </div>
   </body>
 </html>
