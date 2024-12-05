@@ -79,8 +79,7 @@
       </p>
       <h4>RateMyProfessor</h4>
       <p>
-        OSCAR exists as a Tableu dashboard, therefore, when using inspect element, the webpage does not consider dropdowns, text, bars, or numbers as elements on the page. With that being said, to retrieve the information
-        we had to use an amalgamation of computer vision and web scraping techniques to first click, scroll, and take a screenshot. Once the screenshot was taken, X library was used to analyze and investigate the ordered pixels and what they truly represented. 
+        We scraped professor ratings and information from RateMyProfessors to enhance our course dataset using Selenium. The names of the professors to be scraped were sourced from the Workday dataset. For each professor, a unique search URL was dynamically constructed by encoding their name and appending it to the website’s search base URL. Relevant details like ratings, “would take again” percentages, and difficulty levels were extracted directly from the search results. This additional information was then concatenated with the Workday dataset and saved to a CSV file, creating a more comprehensive resource for analysis.
       </p>
       <h2>Running the Code</h2>
       <ul>
@@ -100,7 +99,8 @@
 
       <h2>Results</h2>
       <p>
-        We added 
+        We added multiple datasets and used computer vision to retrieve information online. With this we were able to
+        demonstrate to students the rating for the previous professor who taught the class. 
       </p>
       
       <h2>Conclusions and Future Work</h2>
