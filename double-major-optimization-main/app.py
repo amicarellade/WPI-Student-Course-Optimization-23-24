@@ -5,9 +5,13 @@ import process_txt as pt
 import process_workday
 import basic_data_funcs as bd
 import setup_model as sm
+import mapping_buckets as mb
 
 ui = Flask(__name__)
 ui.secret_key = 'your_secret_key_here'
+
+
+
 
 @ui.route('/', methods=['GET', 'POST'])
 def index():
@@ -28,9 +32,10 @@ def index():
 
         # Load program references and determine the program name
         programs_ref = bd.get_dict_from_json("Data/JSONs/programs_ref.json")
-        program_names, base_dict = determine_program(programs_ref, major, second_major, masters)
+        program_names, base_dict, prog_name = determine_program(programs_ref, major, second_major, masters)
         session['program_names'] = program_names
         session['base_dict'] = base_dict
+        session['prog_name'] = prog_name
 
         # Validate course codes
         if not validate_course_format(courses):
@@ -111,15 +116,26 @@ def result(result_filename):
     # Extract the courses dictionary from the result data
     results_dict = pt.parse_template(result_content)
     print(results_dict)
-    results, courses = pt.divide_dict(results_dict)
-    print(courses)
+    # results, courses = pt.divide_dict(results_dict)
+    # print(courses)
 
-    # Pass the courses_dict to the HTML template
+    prog_name = session.get('prog_name', '')
+    print(prog_name)
+
+    #how can I open program_ref.json for the corresponding prog_name
+    programs_ref = bd.get_dict_from_json("Data/JSONs/programs_ref.json")
+    program_ref = programs_ref[prog_name]
+    print(program_ref)
+
+    #merge courses buckets to courses
+    courses = mb.augment_courses_with_buckets(results_dict, program_ref)
+
+    # Pass the courses_dict and program_names to the HTML template
     return render_template(
         # You can change the template file to 'result.html', 'table.html', or 'piechart.html' if you want
-        'table.html',
-        courses=courses,    
-        results=results
+        'course_results.html',
+        # courses=courses,    
+        results=courses,
     )
 
 def validate_major_selection(major, second_major, masters):
@@ -148,7 +164,7 @@ def determine_program(programs_ref, major, second_major, masters):
     base_dict = programs_ref[prog_name].copy()
     base_dict.pop("ALL_MAJORS", None)
     base_dict.pop("Buckets", None)
-    return program_names, base_dict
+    return program_names, base_dict, prog_name
 
 
 def extract_reqs(base_dict, program_names):

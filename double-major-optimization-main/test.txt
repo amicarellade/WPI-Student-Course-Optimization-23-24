@@ -1,12 +1,12 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-135 TOTAL
+147 TOTAL
 -------------------------------
-135 REMAINING 
-    114 Academic Courses 
-    9.0 Free Electives 
-    9.0 MQP 
+147 REMAINING 
+    132 Academic Courses 
+    0.0 Free Electives 
+    12.0 MQP 
     3.0 PE
  
 0.0 TAKEN
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.9345669999893289
+TOTAL RUN TIME: 0.4398121999693103
 ----------------------------------------
-    Stage I solve: 0.7266006469726562
-    Stage II solve: 0.07305335998535156
+    Stage I solve: 0.09256696701049805
+    Stage II solve: 0.07653355598449707
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -31,6 +31,7 @@ ____________________________________
  
 MQP
 ----------------------------
+    [MQP]
     [MQP]
     [MQP]
     [MQP]
@@ -49,7 +50,7 @@ Humanities
     [Humanities]
     [Humanities]
     [Humanities]
-    [PY_2731, PY_2713, RE_2731]
+    [Humanities]
 
 IQP
 ----------------------------
@@ -57,14 +58,11 @@ IQP
 
 Social Science
 ----------------------------
-    [ID_2050]
+    [ID 2050]
     [Social Science]
 
 Free Electives
 ----------------------------
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
-    [FREE ELECTIVE]
 
 Not used
 ----------------------------
@@ -72,66 +70,115 @@ Not used
 
 
  
-Data Science
+Operations and Industrial Engineering
 ____________________________________
 
  
-Algorithms
+OIE Core
 ----------------------------
-    [CS 2223]
+    [BUS 3020]
+    [CS 2119, 2102, 2103]
+    [OIE 2081]
+    [OIE 2850]
+    [OIE 3405, 4430]
+    [OIE 3410]
+    [OIE 3420]
+    [OIE 3460]
+    [OIE 3510]
 
-Business Analysis 
+Calculus Sequence
 ----------------------------
-    [BUS_2080 OR OIE_2081]
+    [Calc IV]
+    [MA 1021]
+    [MA 1022]
+    [MA 1033]
+    [MA 2051]
 
-Core
+OIE Electives
 ----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
+    [MA 3631]
+    [OIE MATH]
+    [OIE MATH]
 
-Computer Science
+Technical Electives
 ----------------------------
-    [CS_1004, CS_1101, CS_1102]
-    [CS_2102, CS_2103, CS_2119]
+    [CS DEPT]
+    [ES DEPT]
+    [Numerical Methods]
 
-Disciplinary Electives
+Math and Science Electives
 ----------------------------
-    [4000-Level Disciplinary Electives]
-    [4000-Level Disciplinary Electives]
-    [Business Modeling and Prediction - MIS_4084, OIE_4430]
-    [Data Access and Management - CS_3431, MIS_3720, CS_4432, CS_4433/DS_4433]
-    [Data Mining and Machine Learning - CS_4342, CS_4445]
-    [Disciplinary Electives]
-    [Disciplinary Electives]
-    [Disciplinary Electives]
-    [Disciplinary Electives]
-    [Disciplinary Electives]
-    [Disciplinary Electives]
-    [Disciplinary Electives]
+    [MA 3831]
+    [MA 3832]
 
-Entrepreneurship and Innovation
+Physics and Chemistry
 ----------------------------
-    [Entrepreneurship and Innovation - BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
+    [CH DEPT]
+    [CH DEPT]
+    [PH DEPT]
 
-Linear Algebra
-----------------------------
-    [MA_2071 OR MA_2072]
-
-Mathematical Sciences
-----------------------------
-    [Disciplinary Electives]
-    [Disciplinary Electives]
-
-Natural or Engineering Sciences
-----------------------------
-    [Natural and Engineering Sciences]
-    [Natural and Engineering Sciences]
-
-Applied Statistics
+Statistics
 ----------------------------
     [MA 2611]
-    [MA 2612]
+    [MA 2631]
+
+
+ 
+Mathematical Sciences
+____________________________________
+
+ 
+Abstract Algebra
+----------------------------
+    [MA 3823, 3825]
+
+Computer and Data Science
+----------------------------
+    [CS 2119, 2102, 2103]
+    [CS DEPT]
+
+General Science
+----------------------------
+    [CH DEPT]
+    [CH DEPT]
+
+Intro and Elective Math Courses
+----------------------------
+    [Calc IV]
+    [MA 1021]
+    [MA 1022]
+    [MA 2051]
+    [MA 2611]
+    [MA DEPT]
+    [MA DEPT]
+    [MA DEPT]
+
+Numerical Methods
+----------------------------
+    [Numerical Methods]
+
+Real Analysis
+----------------------------
+    [MA 3831]
+    [MA 3832]
+
+Related Courses
+----------------------------
+    [BUS 3020]
+    [OIE 2081]
+
+Transition Courses
+----------------------------
+    [MA 1033]
+    [MA 2631]
+    [MA 3631]
+    [Math Transition Course]
+
+Upper Level Math
+----------------------------
+    [MA 3000+]
+    [OIE MATH]
+    [OIE MATH]
 
 
  
