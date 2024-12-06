@@ -1,12 +1,12 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-147 TOTAL
+135 TOTAL
 -------------------------------
-147 REMAINING 
-    132 Academic Courses 
-    0.0 Free Electives 
-    12.0 MQP 
+135 REMAINING 
+    108 Academic Courses 
+    15.0 Free Electives 
+    9.0 MQP 
     3.0 PE
  
 0.0 TAKEN
@@ -16,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.4398121999693103
+TOTAL RUN TIME: 0.21496381401084363
 ----------------------------------------
-    Stage I solve: 0.09256696701049805
-    Stage II solve: 0.07653355598449707
+    Stage I solve: 0.13351917266845703
+    Stage II solve: 0.022717952728271484
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -31,7 +31,6 @@ ____________________________________
  
 MQP
 ----------------------------
-    [MQP]
     [MQP]
     [MQP]
     [MQP]
@@ -63,64 +62,15 @@ Social Science
 
 Free Electives
 ----------------------------
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
     No Unused Courses
-
-
- 
-Operations and Industrial Engineering
-____________________________________
-
- 
-OIE Core
-----------------------------
-    [BUS 3020]
-    [CS 2119, 2102, 2103]
-    [OIE 2081]
-    [OIE 2850]
-    [OIE 3405, 4430]
-    [OIE 3410]
-    [OIE 3420]
-    [OIE 3460]
-    [OIE 3510]
-
-Calculus Sequence
-----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 1033]
-    [MA 2051]
-
-OIE Electives
-----------------------------
-    [MA 3631]
-    [OIE MATH]
-    [OIE MATH]
-
-Technical Electives
-----------------------------
-    [CS DEPT]
-    [ES DEPT]
-    [Numerical Methods]
-
-Math and Science Electives
-----------------------------
-    [MA 3831]
-    [MA 3832]
-
-Physics and Chemistry
-----------------------------
-    [CH DEPT]
-    [CH DEPT]
-    [PH DEPT]
-
-Statistics
-----------------------------
-    [MA 2611]
-    [MA 2631]
 
 
  
@@ -134,21 +84,21 @@ Abstract Algebra
 
 Computer and Data Science
 ----------------------------
-    [CS 2119, 2102, 2103]
-    [CS DEPT]
+    [CS DEPT, DS DEPT]
+    [CS DEPT, DS DEPT]
 
 General Science
 ----------------------------
-    [CH DEPT]
-    [CH DEPT]
+    [Science (PH, CH, ES, BB, GE)]
+    [Science (PH, CH, ES, BB, GE)]
 
 Intro and Elective Math Courses
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 2051]
-    [MA 2611]
+    [MA DEPT]
+    [MA DEPT]
+    [MA DEPT]
+    [MA DEPT]
+    [MA DEPT]
     [MA DEPT]
     [MA DEPT]
     [MA DEPT]
@@ -164,21 +114,21 @@ Real Analysis
 
 Related Courses
 ----------------------------
-    [BUS 3020]
-    [OIE 2081]
+    [Business School (any)]
+    [Business School (any)]
 
 Transition Courses
 ----------------------------
-    [MA 1033]
-    [MA 2631]
-    [MA 3631]
-    [Math Transition Course]
+    [Transition Courses]
+    [Transition Courses]
+    [Transition Courses]
+    [Transition Courses]
 
 Upper Level Math
 ----------------------------
     [MA 3000+]
-    [OIE MATH]
-    [OIE MATH]
+    [MA 3000+]
+    [MA 3000+]
 
 
  
