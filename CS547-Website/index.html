@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CS547: WPI Course Recommender System
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-block">
+        <h1>WPI Course Recommender System</h1>
+        <h4>CS547 Group Project</h4>
+        <h4>
+          Dante Amicarella, Adina Palayoor, Alisha Peeriz, Emre Sabaz, Arturo
+          Lemos
+        </h4>
+      </div>
+
+      <h2>Introduction</h2>
+      <p>
+        Our team set out to build a course planning tool for WPI students that
+        will aid in their selection of classes to fulfill degree requirements.
+        It differs from the available WPI planner tool in that it also includes
+        the course ratings and student rankings for the course. Our goal with
+        this project was to help students create a course schedule that will
+        both fulfill their major requirements as well as understand the
+        difficulty/ time needed for the courses available. Instead of having to
+        search the course on a different site to see the ratings, all the
+        information will be available to them in one place. We understand that
+        course planning can be stressful for students and we are looking to
+        create a way to make this process as simple as possible.
+      </p>
+
+      <h2>Data</h2>
+      <h3>OSCAR</h3>
+      <p>
+        Online Students Course Reports (OSCAR) is an interactive Tableau dashboard that aggregates student feedback on courses and professors to provide valuable insights for academic planning. The data includes metrics such as the average time students spend on courses, their predicted grades, and evaluations of professor quality. By visualizing these trends, OSCAR empowers students and faculty to make informed decisions about course selection and instructional improvement.
+      </p>
+
+      <h3>Workday WPI</h3>
+      <p>
+        Workday for universities is a cloud-based platform designed to streamline and integrate administrative and academic processes in higher education. It provides tools for managing student information, academic records, admissions, financial aid, payroll, human resources, and budgeting. By using Workday we would be able to extract
+        course information for all courses in the 2023-2024 academic year. 
+      </p>
+
+      <h3>RateMyProfessor</h3>
+      <p>
+        Rate My Professor (RMP) is an online platform that enables students to read and write reviews of professors from academic institutions in the United States, Canada, and the United Kingdom. Established as a peer-driven resource, RMP is designed to help students make informed decisions about their course selections and instructors.
+        The website features ratings and feedback on various aspects of a professor's teaching style and classroom environment, including clarity, engagement, workload, grading fairness, and overall helpfulness. Additionally, many reviews include written comments, which often provide context or personal experiences from past students, giving a deeper understanding of what to expect from a specific professor or course.
+      </p>
+
+      <h3>Link to Data</h3>
+      <p>
+        All data can be found
+        <a
+          href="https://github.com/amicarellade/WPI-Student-Course-Optimization-23-24"
+          >here</a
+        >.
+      </p>
+
+      <h2>Data Retrieval</h2>
+
+      <p>
+        For each data source, a new method was used to scrape and obtain the data necessary for our project to work.
+        In this section we will go into detail to how data from each source was retrieved. 
+      </p>
+
+      <h4>OSCAR</h4>
+      <p>
+        OSCAR exists as a Tableu dashboard, therefore, when using inspect element, the webpage does not consider dropdowns, text, bars, or numbers as elements on the page. With that being said, to retrieve the information
+        we had to use an amalgamation of computer vision and web scraping techniques to first click, scroll, and take a screenshot. Once the screenshot was taken, X library was used to analyze and investigate the ordered pixels and what they truly represented. 
+      </p>
+      <h4>Workday</h4>
+      <p>
+        This Python script uses Selenium to automate web scraping to extract course and professor information from a Workday page. After downloading and setting up the Chrome driver, the script navigates to the specified Workday URLs, prompting the user to manually log in and select certain filters within the page before continuing. Once logged in, the script extracts course names and professor names by locating HTML elements with specific XPATH values (promptOption for courses and compositeSubHeaderOne for professors). The text content of these elements is appended to respective lists. The script continuously scrolls down the page to load additional elements until no new elements are detected, indicating that all data has been loaded. Finally, the script saves the extracted data into separate CSV files for courses and professors and handles any exceptions, ensuring the browser is properly closed in all cases.
+      </p>
+      <h4>RateMyProfessor</h4>
+      <p>
+        We scraped professor ratings and information from RateMyProfessors to enhance our course dataset using Selenium. The names of the professors to be scraped were sourced from the Workday dataset. For each professor, a unique search URL was dynamically constructed by encoding their name and appending it to the website’s search base URL. Relevant details like ratings, “would take again” percentages, and difficulty levels were extracted directly from the search results. This additional information was then concatenated with the Workday dataset and saved to a CSV file, creating a more comprehensive resource for analysis.
+      </p>
+      <h2>Running the Code</h2>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/amicarellade/WPI-Student-Course-Optimization-23-24"
+            >Github for Project</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            >READ ME</a
+          >
+        </li>
+      </ul>
+
+      <h2>Results</h2>
+      <p>
+        We added multiple datasets and used computer vision to retrieve information online. With this we were able to
+        demonstrate to students the rating for the previous professor who taught the class. 
+      </p>
+      
+      <h2>Conclusions and Future Work</h2>
+      <p>
+        Yappa yappa yappa
+      </p>
+      <h2>References</h2>
+    </div>
+  </body>
+</html>
