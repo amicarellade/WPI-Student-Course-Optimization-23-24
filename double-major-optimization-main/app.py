@@ -129,6 +129,14 @@ def result(result_filename):
 
     #merge courses buckets to courses
     courses = mb.augment_courses_with_buckets(results_dict, program_ref)
+    print(courses)
+
+    #Merge json and courses data
+    
+
+
+    #open csv merged_courses.csv
+    courses_data = pd.read_csv("merged_courses.csv")
 
     # Pass the courses_dict and program_names to the HTML template
     return render_template(
@@ -136,6 +144,7 @@ def result(result_filename):
         'course_results.html',
         # courses=courses,    
         results=courses,
+        # courses_data = courses_data
     )
 
 def validate_major_selection(major, second_major, masters):
@@ -185,6 +194,7 @@ def run_model(major, second_major, masters, courses, program_names, isps=[]):
         return True
     except KeyError:
         return False
+
 
 
 if __name__ == '__main__':

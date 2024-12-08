@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-147 TOTAL
+147.0 TOTAL
 -------------------------------
-147 REMAINING 
-    132 Academic Courses 
+144.0 REMAINING 
+    129 Academic Courses 
     0.0 Free Electives 
     12.0 MQP 
     3.0 PE
  
-0.0 TAKEN
-    0 Applied
-    0 Excess
+3.0 TAKEN
+    3.0 Applied
+    0.0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.4398121999693103
+TOTAL RUN TIME: 0.546414199998253
 ----------------------------------------
-    Stage I solve: 0.09256696701049805
-    Stage II solve: 0.07653355598449707
+    Stage I solve: 0.1962742805480957
+    Stage II solve: 0.168046236038208
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -45,7 +45,7 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU 3900 or 3910]
+    [HU_3900 OR HU_3910]
     [Humanities]
     [Humanities]
     [Humanities]
@@ -54,11 +54,11 @@ Humanities
 
 IQP
 ----------------------------
-    [IQP off campus]
+    [IQP Off Campus]
 
 Social Science
 ----------------------------
-    [ID 2050]
+    [ID_2050]
     [Social Science]
 
 Free Electives
@@ -70,115 +70,114 @@ Not used
 
 
  
-Operations and Industrial Engineering
+Data Science
 ____________________________________
 
  
-OIE Core
+Algorithms
 ----------------------------
-    [BUS 3020]
-    [CS 2119, 2102, 2103]
-    [OIE 2081]
-    [OIE 2850]
-    [OIE 3405, 4430]
-    [OIE 3410]
-    [OIE 3420]
-    [OIE 3460]
-    [OIE 3510]
+    [CS 2223]
 
-Calculus Sequence
+Business Analysis 
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 1033]
-    [MA 2051]
+    [BUS_2080 OR OIE_2081]
 
-OIE Electives
+Core
 ----------------------------
-    [MA 3631]
-    [OIE MATH]
-    [OIE MATH]
+    [DS 1010]
+    [DS 2010]
+    [DS 3010]
 
-Technical Electives
+Computer Science
 ----------------------------
-    [CS DEPT]
-    [ES DEPT]
-    [Numerical Methods]
+    [CS_1101, CS_1102]
+    [CS_2102, CS_2103]
 
-Math and Science Electives
+Disciplinary Electives
 ----------------------------
-    [MA 3831]
-    [MA 3832]
+    [4000 Level Data Access & Management - CS_4432, CS_4433/DS_4433]
+    [4000 Level Math Disciplinary Electives]
+    [Business Modeling and Prediction - MIS_4084, OIE_4430]
+    [CS 4342]
+    [CS 4445]
+    [CS Grad Level Electives]
+    [CS Grad Level Electives]
+    [CS_3043]
+    [CS_3133]
+    [Design - CS_3041, CS_3733]
+    [Probability - MA_2621 OR MA_2631]
 
-Physics and Chemistry
+Entrepreneurship and Innovation
 ----------------------------
-    [CH DEPT]
-    [CH DEPT]
-    [PH DEPT]
+    [Entrepreneurship and Innovation - BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
 
-Statistics
+Linear Algebra
+----------------------------
+    [MA_2071 OR MA_2072]
+
+Mathematical Sciences
+----------------------------
+    MA 1021
+    [4000 Level Math Disciplinary Electives]
+
+Natural or Engineering Sciences
+----------------------------
+    [Biology]
+    [Biology]
+
+Applied Statistics
 ----------------------------
     [MA 2611]
-    [MA 2631]
+    [MA 2612]
 
 
  
-Mathematical Sciences
+Computer Science
 ____________________________________
 
  
-Abstract Algebra
+CS Core
 ----------------------------
-    [MA 3823, 3825]
+    [4000 Level Data Access & Management - CS_4432, CS_4433/DS_4433]
+    [CS 2223]
+    [CS 4342]
+    [CS 4445]
+    [CS Grad Level Electives]
+    [CS Grad Level Electives]
+    [CS_1101, CS_1102]
+    [CS_2102, CS_2103]
+    [CS_3043]
+    [CS_3133]
+    [Design - CS_3041, CS_3733]
+    [Grad CS]
+    [Grad Level Systems - CS_502, CS_533, CS_535]
 
-Computer and Data Science
+General Math
 ----------------------------
-    [CS 2119, 2102, 2103]
-    [CS DEPT]
+    MA 1021
+    [4000 Level Math Disciplinary Electives]
+    [4000 Level Math Disciplinary Electives]
+    [MA 2611]
+    [MA_2071 OR MA_2072]
 
 General Science
 ----------------------------
-    [CH DEPT]
-    [CH DEPT]
+    [Biology]
+    [Biology]
+    [Biology]
 
-Intro and Elective Math Courses
+Probability
 ----------------------------
-    [Calc IV]
-    [MA 1021]
-    [MA 1022]
-    [MA 2051]
-    [MA 2611]
-    [MA DEPT]
-    [MA DEPT]
-    [MA DEPT]
+    [Probability - MA_2621 OR MA_2631]
 
-Numerical Methods
+Science/Engineering Electives
 ----------------------------
-    [Numerical Methods]
+    [Natural and Engineering Sciences]
+    [Natural and Engineering Sciences]
 
-Real Analysis
+Statistics
 ----------------------------
-    [MA 3831]
-    [MA 3832]
-
-Related Courses
-----------------------------
-    [BUS 3020]
-    [OIE 2081]
-
-Transition Courses
-----------------------------
-    [MA 1033]
-    [MA 2631]
-    [MA 3631]
-    [Math Transition Course]
-
-Upper Level Math
-----------------------------
-    [MA 3000+]
-    [OIE MATH]
-    [OIE MATH]
+    [MA 2612]
 
 
  

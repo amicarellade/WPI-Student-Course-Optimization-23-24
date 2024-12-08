@@ -37,3 +37,5 @@ def augment_courses_with_buckets(course_dict, json_data):
 
 # # Output the result
 # print(json.dumps(augmented_course_dict, indent=4))
+
+
