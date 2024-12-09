@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course and Professor Info</title>
+</head>
+<body>
+
+<!-- File input for uploading JSON file -->
+<input type="file" id="jsonFile" accept=".json" />
+
+<!-- Dropdown for selecting courses -->
+<div id="demo"></div>
+
+<!-- Area to display professor details -->
+<div id="professors"></div>
+
+<script>
+// Function to handle the file input and load the JSON file
+document.getElementById('jsonFile').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  if (file && file.name.endsWith('.json')) {
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+      try {
+        const coursesData = JSON.parse(e.target.result);
+        loadCourses(coursesData);
+      } catch (error) {
+        alert('Error parsing JSON file');
+      }
+    };
+
+    reader.readAsText(file);
+  } else {
+    alert('Please upload a valid JSON file');
+  }
+});
+
+// Function to populate the dropdown with course data from JSON
+function loadCourses(coursesData) {
+  let courseSelect = "<select id='courseSelect'>";
+  courseSelect += "<option value='' disabled selected>Choose Course</option>"; // Default option
+  
+  for (let i = 0; i < coursesData.courses.length; i++) {
+    courseSelect += "<option value='" + i + "'>" + coursesData.courses[i]["Course Name"] + "</option>";
+  }
+  courseSelect += "</select>";
+
+  document.getElementById("demo").innerHTML = courseSelect;
+
+  // Event listener for when a course is selected
+  document.getElementById("courseSelect").addEventListener("change", function() {
+    const courseIndex = this.value;
+    if (courseIndex === "") return; // Ignore if no course is selected
+
+    const selectedCourse = coursesData.courses[courseIndex];
+    let professorInfo = "<h3>Professors for " + selectedCourse["Course Name"] + ":</h3><ul>";
+    
+    for (let i = 0; i < selectedCourse["Professors"].length; i++) {
+      professorInfo += "<li><b>" + selectedCourse["Professors"][i]["Professor Name"] + "</b><br>";
+      professorInfo += "Rating: " + selectedCourse["Professors"][i]["Rating"] + "<br>";
+      professorInfo += "Would Take Again: " + selectedCourse["Professors"][i]["Would Take Again"] + "<br>";
+      professorInfo += "Difficulty: " + selectedCourse["Professors"][i]["Difficulty"] + "</li><br>";
+    }
+    professorInfo += "</ul>";
+
+    document.getElementById("professors").innerHTML = professorInfo;
+  });
+}
+</script>
+
+</body>
+</html>

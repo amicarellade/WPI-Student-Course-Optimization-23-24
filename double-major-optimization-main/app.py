@@ -6,6 +6,7 @@ import process_workday
 import basic_data_funcs as bd
 import setup_model as sm
 import mapping_buckets as mb
+import json
 
 ui = Flask(__name__)
 ui.secret_key = 'your_secret_key_here'
@@ -116,13 +117,10 @@ def result(result_filename):
     # Extract the courses dictionary from the result data
     results_dict = pt.parse_template(result_content)
     print(results_dict)
-    # results, courses = pt.divide_dict(results_dict)
-    # print(courses)
 
     prog_name = session.get('prog_name', '')
     print(prog_name)
 
-    #how can I open program_ref.json for the corresponding prog_name
     programs_ref = bd.get_dict_from_json("Data/JSONs/programs_ref.json")
     program_ref = programs_ref[prog_name]
     print(program_ref)
@@ -131,8 +129,11 @@ def result(result_filename):
     courses = mb.augment_courses_with_buckets(results_dict, program_ref)
     print(courses)
 
-    #Merge json and courses data
-    
+
+    #read json file
+    with open("Data/Oscar+RP_Ddata/CS_courses.json", "r") as file:
+        OscarAndRP_data = json.load(file)
+
 
 
     #open csv merged_courses.csv
@@ -141,10 +142,9 @@ def result(result_filename):
     # Pass the courses_dict and program_names to the HTML template
     return render_template(
         # You can change the template file to 'result.html', 'table.html', or 'piechart.html' if you want
-        'course_results.html',
-        # courses=courses,    
+        'course_results.html',   
         results=courses,
-        # courses_data = courses_data
+        json_data=OscarAndRP_data,
     )
 
 def validate_major_selection(major, second_major, masters):

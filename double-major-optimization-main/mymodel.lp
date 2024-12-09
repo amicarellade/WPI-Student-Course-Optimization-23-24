@@ -1,81 +1,45 @@
 \* SchedulingCourses *\
 Minimize
-OBJ: 3 y(4000_CS) + 3 y(4000_DAM) + 3 y(4000_DE) + 3 y(4000_MATH_DE)
- + 3 y(4000_SYS) + 3 y(4000_THRY) + 3 y(ALGO) + 3 y(ART_CON) + 3 y(BCB_4004)
- + 3 y(BIO) + 3 y(BIO_CHEM) + 3 y(BMP) + 3 y(BUS_OIE) + 3 y(CALCI_I_II)
- + 3 y(CALC_III_IV) + 3 y(CHEM) + 3 y(CRYPT) + 3 y(CS_1004) + 3 y(CS_210X)
- + 3 y(CS_2119) + 3 y(CS_3013) + 3 y(CS_3043) + 3 y(CS_3133) + 3 y(CS_3431)
- + 3 y(CS_4000_2) + 3 y(CS_4120) + 3 y(CS_4233) + 3 y(CS_542) + 4.5 y(CS_561)
- + 3 y(CS_DESIGN) + 4.5 y(CS_GRAD_MORE) + 3 y(CS_NOT_DS) + 3 y(DE)
- + 3 y(DISCRETE) + 3 y(DMML) + 3 y(DPE_GOV) + 3 y(DPE_HU) + 3 y(DS_CORE)
- + 3 y(ETR) + 3 y(FL_CON) + 3 y(GEO) + 3 y(GOV_2313) + 4.5 y(GRAD_BMP)
- + 4.5 y(GRAD_CS) + 4.5 y(GRAD_DE) + 3 y(GRAD_DES) + 4.5 y(GRAD_MATH)
- + 4.5 y(GRAD_SYS) + 4.5 y(GRAD_THRY) + 4.5 y(G_DMML) + 3 y(HI_CON)
- + 3 y(HU_CAP) + 3 y(ID_2050) + 3 y(ID_2314) + 3 y(IMGD) + 3 y(INTRO_CS)
- + 9 y(IQP_OFF) + 9 y(IQP_ON) + 3 y(LIN_ALG) + 3 y(MATH_DE) + 3 y(MATH_ELECT)
- + 3 y(MIS_3720) + 3 y(NES_BOTH) + 3 y(NES_DS) + 3 y(NON_DE_MATH)
- + 3 y(NUM_M_1) + 3 y(NUM_M_2) + 3 y(OOP) + 3 y(PHY) + 3 y(PH_AE) + 3 y(PROB)
- + 3 y(PY_CON) + 3 y(RBE_3100) + 3 y(SOC_SCI) + 3 y(STATS) + 3 y(SYSTEMS)
- + 3 y(WR_CON) + 0.01 z(CS_CORE) + 0.01 z(CS_GEN_MATH) + 0.01 z(CS_GEN_SCI)
- + 0.01 z(CS_PROB) + 0.01 z(CS_SCI_ENG) + 0.01 z(CS_STATS) + 0.01 z(DS_ALGOS)
- + 0.01 z(DS_BA) + 0.01 z(DS_C) + 0.01 z(DS_CS) + 0.01 z(DS_DE)
- + 0.01 z(DS_EI) + 0.01 z(DS_LA) + 0.01 z(DS_MS) + 0.01 z(DS_NES)
- + 0.01 z(DS_STATS) + 0.01 z(HUA_CORE) + 0.01 z(HUA_PROJ) + 0.01 z(IQP)
+OBJ: 3 y(1000_MATH) + 3 y(ART_CON) + 3 y(BIO) + 3 y(BIO_CHEM_LAP) + 3 y(CHEM)
+ + 3 y(CS_4000) + 3 y(CS_4_DESIGN) + 3 y(CS_4_SYS) + 3 y(CS_4_THRY)
+ + 3 y(CS_CRYPT) + 3 y(CS_DESIGN) + 3 y(CS_DISC) + 3 y(CS_ELECT)
+ + 4.5 y(CS_G_DESIGN) + 4.5 y(CS_G_SYS) + 4.5 y(CS_G_THRY) + 3 y(CS_INTRO)
+ + 3 y(CS_NUM_MET) + 3 y(CS_OOP) + 3 y(CS_OS) + 3 y(CS_SOC_IMPS)
+ + 3 y(CS_SYS_PROG) + 3 y(CS_THRY) + 3 y(DPE_GOV) + 3 y(DPE_HU) + 3 y(FL_CON)
+ + 3 y(GEO) + 3 y(HI_CON) + 3 y(HU_CAP) + 3 y(ID_2050) + 3 y(IMGD)
+ + 9 y(IQP_OFF) + 9 y(IQP_ON) + 3 y(MATH_ELECT) + 3 y(OO_REST) + 3 y(PHY)
+ + 3 y(PROB) + 3 y(PY_CON) + 3 y(RBE_3100) + 3 y(SCI_ENG) + 3 y(SOC_SCI)
+ + 3 y(STATS) + 3 y(WR_CON) + 0.01 z(CS_CORE) + 0.01 z(CS_GEN_MATH)
+ + 0.01 z(CS_GEN_SCI) + 0.01 z(CS_PROB) + 0.01 z(CS_SCI_ENG)
+ + 0.01 z(CS_STATS) + 0.01 z(HUA_CORE) + 0.01 z(HUA_PROJ) + 0.01 z(IQP)
  + 0.01 z(SOC_SCI_REQ)
 Subject To
-SR(CS_1000_REST): - 3 x(INTRO_CS)(CS_CORE) >= -3
-SR(CS_DESIGN): 3 x(CS_3431)(CS_CORE) + 3 x(CS_4233)(CS_CORE)
- + 3 x(CS_542)(CS_CORE) + 4.5 x(CS_561)(CS_CORE) + 3 x(CS_DESIGN)(CS_CORE)
- + 3 x(GRAD_DES)(CS_CORE) >= 3
-SR(CS_MATH_1000L_REST): - 3 x(CALCI_I_II)(CS_GEN_MATH)
- - 3 x(CALC_III_IV)(CS_GEN_MATH) - 3 x(MATH_ELECT)(CS_GEN_MATH) >= -12
-SR(CS_OBJ_OR_REST): - 3 x(OOP)(CS_CORE) >= -3
-SR(CS_SOC_IMPS): 3 x(CS_3043)(CS_CORE) + 3 x(DPE_GOV)(SOC_SCI_REQ)
- + 3 x(ID_2314)(SOC_SCI_REQ) >= 3
-SR(CS_SYS): 3 x(4000_SYS)(CS_CORE) + 3 x(CS_3013)(CS_CORE)
- + 4.5 x(GRAD_SYS)(CS_CORE) >= 3
-SR(CS_SYS_REST): - 3 x(SYSTEMS)(CS_CORE) >= -3
-SR(CS_THRY): 3 x(4000_THRY)(CS_CORE) + 3 x(CS_3133)(CS_CORE)
- + 3 x(CS_4120)(CS_CORE) + 4.5 x(GRAD_THRY)(CS_CORE) >= 3
-SR(CS_UPLVL_MIN): 3 x(4000_CS)(CS_CORE) + 3 x(4000_DAM)(CS_CORE)
- + 3 x(4000_SYS)(CS_CORE) + 3 x(4000_THRY)(CS_CORE) + 3 x(CRYPT)(CS_CORE)
- + 3 x(CS_4000_2)(CS_CORE) + 3 x(CS_4120)(CS_CORE) + 3 x(CS_4233)(CS_CORE)
- + 3 x(CS_542)(CS_CORE) + 4.5 x(CS_561)(CS_CORE)
- + 4.5 x(CS_GRAD_MORE)(CS_CORE) + 3 x(DMML)(CS_CORE) + 4.5 x(GRAD_CS)(CS_CORE)
- + 3 x(GRAD_DES)(CS_CORE) + 4.5 x(GRAD_SYS)(CS_CORE)
- + 4.5 x(GRAD_THRY)(CS_CORE) + 4.5 x(G_DMML)(CS_CORE) + 3 x(NUM_M_1)(CS_CORE)
- + 3 x(NUM_M_2)(CS_CORE) >= 15
-SR(DS_4LDER): 3 x(4000_DAM)(DS_CS) + 3 x(4000_DAM)(DS_DE)
- + 3 x(4000_DE)(DS_DE) + 3 x(4000_MATH_DE)(DS_DE) + 3 x(4000_MATH_DE)(DS_MS)
- + 3 x(BCB_4004)(DS_DE) + 3 x(BMP)(DS_DE) + 3 x(CS_4000_2)(DS_CS)
- + 3 x(CS_4000_2)(DS_DE) + 3 x(CS_4120)(DS_CS) + 3 x(CS_4120)(DS_DE)
- + 3 x(CS_4233)(DS_CS) + 3 x(CS_4233)(DS_DE) + 3 x(CS_542)(DS_CS)
- + 3 x(CS_542)(DS_DE) + 4.5 x(CS_561)(DS_CS) + 4.5 x(CS_561)(DS_DE)
- + 4.5 x(CS_GRAD_MORE)(DS_CS) + 4.5 x(CS_GRAD_MORE)(DS_DE) + 3 x(DMML)(DS_CS)
- + 3 x(DMML)(DS_DE) + 4.5 x(GRAD_BMP)(DS_DE) + 4.5 x(GRAD_DE)(DS_DE)
- + 4.5 x(GRAD_MATH)(DS_DE) + 4.5 x(GRAD_MATH)(DS_MS) + 4.5 x(G_DMML)(DS_CS)
- + 4.5 x(G_DMML)(DS_DE) + 3 x(NUM_M_1)(DS_DE) + 3 x(NUM_M_1)(DS_MS) >= 12
-SR(DS_BMP): 3 x(BMP)(DS_DE) + 4.5 x(GRAD_BMP)(DS_DE) >= 3
-SR(DS_CS_1000_L): - 3 x(CS_1004)(DS_CS) - 3 x(INTRO_CS)(DS_CS) >= -3
-SR(DS_DAM): 3 x(4000_DAM)(DS_CS) + 3 x(4000_DAM)(DS_DE) + 3 x(CS_3431)(DS_CS)
- + 3 x(CS_3431)(DS_DE) + 3 x(CS_542)(DS_CS) + 3 x(CS_542)(DS_DE)
- + 3 x(MIS_3720)(DS_DE) >= 3
-SR(DS_DMML): 3 x(DMML)(DS_CS) + 3 x(DMML)(DS_DE) + 4.5 x(G_DMML)(DS_CS)
- + 4.5 x(G_DMML)(DS_DE) >= 3
-SR(DS_DPE): 3 x(CS_3043)(DS_DE) + 3 x(DPE_GOV)(SOC_SCI_REQ)
- + 3 x(DPE_HU)(HUA_CORE) + 3 x(GOV_2313)(SOC_SCI_REQ) >= 3
+SR(CS_1000_REST): - 3 x(CS_INTRO)(CS_CORE) >= -3
+SR(CS_DESIGN): 3 x(CS_4_DESIGN)(CS_CORE) + 3 x(CS_DESIGN)(CS_CORE)
+ + 4.5 x(CS_G_DESIGN)(CS_CORE) >= 3
+SR(CS_MATH_1000L_REST): - 3 x(1000_MATH)(CS_GEN_MATH) >= -12
+SR(CS_OBJ_OR_REST): - 3 x(CS_OOP)(CS_CORE) >= -3
+SR(CS_SOC_IMPS): 3 x(CS_SOC_IMPS)(CS_CORE) + 3 x(DPE_GOV)(SOC_SCI_REQ) >= 3
+SR(CS_SYS): 3 x(CS_4_SYS)(CS_CORE) + 4.5 x(CS_G_SYS)(CS_CORE)
+ + 3 x(CS_OS)(CS_CORE) >= 3
+SR(CS_SYS_REST): - 3 x(CS_SYS_PROG)(CS_CORE) >= -3
+SR(CS_THRY): 3 x(CS_4_THRY)(CS_CORE) + 4.5 x(CS_G_THRY)(CS_CORE)
+ + 3 x(CS_THRY)(CS_CORE) >= 3
+SR(CS_UPLVL_MIN): 3 x(CS_4000)(CS_CORE) + 3 x(CS_4_DESIGN)(CS_CORE)
+ + 3 x(CS_4_SYS)(CS_CORE) + 3 x(CS_4_THRY)(CS_CORE) + 3 x(CS_CRYPT)(CS_CORE)
+ + 4.5 x(CS_G_DESIGN)(CS_CORE) + 4.5 x(CS_G_SYS)(CS_CORE)
+ + 4.5 x(CS_G_THRY)(CS_CORE) + 3 x(CS_NUM_MET)(CS_CORE) >= 15
 SR(HUA_ART_MAX): - 3 x(ART_CON)(HUA_CORE) >= -12
 SR(HUA_HI_MAX): - 3 x(HI_CON)(HUA_CORE) >= -12
 SR(HUA_PY_MAX): - 3 x(PY_CON)(HUA_CORE) >= -12
 SR(HUA_WR_MAX): - 3 x(WR_CON)(HUA_CORE) >= -12
 SR(ON_OFF_CAMPUS): 3 x(ID_2050)(SOC_SCI_REQ) + 9 x(IQP_ON)(IQP) >= 3
 SR2(CS_SCI_DPTH)(C0): - 6 SR2(CS_SCI_DPTH_0) + 3 x(BIO)(CS_GEN_SCI)
- + 3 x(BIO_CHEM)(CS_GEN_SCI) >= -0.1
-SR2(CS_SCI_DPTH)(C1): - 6 SR2(CS_SCI_DPTH_1) + 3 x(BIO_CHEM)(CS_GEN_SCI)
+ + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI) >= -0.1
+SR2(CS_SCI_DPTH)(C1): - 6 SR2(CS_SCI_DPTH_1) + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI)
  + 3 x(CHEM)(CS_GEN_SCI) >= -0.1
 SR2(CS_SCI_DPTH)(C2): - 6 SR2(CS_SCI_DPTH_2) + 3 x(GEO)(CS_GEN_SCI) >= -0.1
-SR2(CS_SCI_DPTH)(C3): - 6 SR2(CS_SCI_DPTH_3) + 3 x(PHY)(CS_GEN_SCI)
- + 3 x(PH_AE)(CS_GEN_SCI) >= -0.1
+SR2(CS_SCI_DPTH)(C3): - 6 SR2(CS_SCI_DPTH_3) + 3 x(PHY)(CS_GEN_SCI) >= -0.1
 SR2(HUA_DEPTH)(C0): - 9 SR2(HUA_DEPTH_0) + 3 x(ART_CON)(HUA_CORE) >= -0.1
 SR2(HUA_DEPTH)(C1): - 9 SR2(HUA_DEPTH_1) + 3 x(FL_CON)(HUA_CORE) >= -0.1
 SR2(HUA_DEPTH)(C2): - 9 SR2(HUA_DEPTH_2) + 3 x(WR_CON)(HUA_CORE) >= -0.1
@@ -85,372 +49,154 @@ SR2_total(CS_SCI_DPTH): SR2(CS_SCI_DPTH_0) + SR2(CS_SCI_DPTH_1)
  + SR2(CS_SCI_DPTH_2) + SR2(CS_SCI_DPTH_3) >= 1
 SR2_total(HUA_DEPTH): SR2(HUA_DEPTH_0) + SR2(HUA_DEPTH_1) + SR2(HUA_DEPTH_2)
  + SR2(HUA_DEPTH_3) + SR2(HUA_DEPTH_4) >= 1
-reqMin(CS_CORE): 3 x(4000_CS)(CS_CORE) + 3 x(4000_DAM)(CS_CORE)
- + 3 x(4000_SYS)(CS_CORE) + 3 x(4000_THRY)(CS_CORE) + 3 x(ALGO)(CS_CORE)
- + 3 x(CRYPT)(CS_CORE) + 3 x(CS_3013)(CS_CORE) + 3 x(CS_3043)(CS_CORE)
- + 3 x(CS_3133)(CS_CORE) + 3 x(CS_3431)(CS_CORE) + 3 x(CS_4000_2)(CS_CORE)
- + 3 x(CS_4120)(CS_CORE) + 3 x(CS_4233)(CS_CORE) + 3 x(CS_542)(CS_CORE)
- + 4.5 x(CS_561)(CS_CORE) + 3 x(CS_DESIGN)(CS_CORE)
- + 4.5 x(CS_GRAD_MORE)(CS_CORE) + 3 x(CS_NOT_DS)(CS_CORE)
- + 3 x(DISCRETE)(CS_CORE) + 3 x(DMML)(CS_CORE) + 4.5 x(GRAD_CS)(CS_CORE)
- + 3 x(GRAD_DES)(CS_CORE) + 4.5 x(GRAD_SYS)(CS_CORE)
- + 4.5 x(GRAD_THRY)(CS_CORE) + 4.5 x(G_DMML)(CS_CORE) + 3 x(INTRO_CS)(CS_CORE)
- + 3 x(NUM_M_1)(CS_CORE) + 3 x(NUM_M_2)(CS_CORE) + 3 x(OOP)(CS_CORE)
- + 3 x(SYSTEMS)(CS_CORE) - z(CS_CORE) = 45
-reqMin(CS_GEN_MATH): 3 x(4000_MATH_DE)(CS_GEN_MATH)
- + 3 x(BCB_4004)(CS_GEN_MATH) + 3 x(CALCI_I_II)(CS_GEN_MATH)
- + 3 x(CALC_III_IV)(CS_GEN_MATH) + 3 x(DISCRETE)(CS_GEN_MATH)
- + 4.5 x(GRAD_MATH)(CS_GEN_MATH) + 3 x(LIN_ALG)(CS_GEN_MATH)
- + 3 x(MATH_DE)(CS_GEN_MATH) + 3 x(MATH_ELECT)(CS_GEN_MATH)
- + 3 x(NON_DE_MATH)(CS_GEN_MATH) + 3 x(NUM_M_1)(CS_GEN_MATH)
- + 3 x(NUM_M_2)(CS_GEN_MATH) + 3 x(PROB)(CS_GEN_MATH)
- + 3 x(STATS)(CS_GEN_MATH) - z(CS_GEN_MATH) = 15
-reqMin(CS_GEN_SCI): 3 x(BIO)(CS_GEN_SCI) + 3 x(BIO_CHEM)(CS_GEN_SCI)
+reqMin(CS_CORE): 3 x(CS_4000)(CS_CORE) + 3 x(CS_4_DESIGN)(CS_CORE)
+ + 3 x(CS_4_SYS)(CS_CORE) + 3 x(CS_4_THRY)(CS_CORE) + 3 x(CS_CRYPT)(CS_CORE)
+ + 3 x(CS_DESIGN)(CS_CORE) + 3 x(CS_DISC)(CS_CORE) + 3 x(CS_ELECT)(CS_CORE)
+ + 4.5 x(CS_G_DESIGN)(CS_CORE) + 4.5 x(CS_G_SYS)(CS_CORE)
+ + 4.5 x(CS_G_THRY)(CS_CORE) + 3 x(CS_INTRO)(CS_CORE)
+ + 3 x(CS_NUM_MET)(CS_CORE) + 3 x(CS_OOP)(CS_CORE) + 3 x(CS_OS)(CS_CORE)
+ + 3 x(CS_SOC_IMPS)(CS_CORE) + 3 x(CS_SYS_PROG)(CS_CORE)
+ + 3 x(CS_THRY)(CS_CORE) - z(CS_CORE) = 45
+reqMin(CS_GEN_MATH): 3 x(1000_MATH)(CS_GEN_MATH) + 3 x(CS_DISC)(CS_GEN_MATH)
+ + 3 x(CS_NUM_MET)(CS_GEN_MATH) + 3 x(MATH_ELECT)(CS_GEN_MATH)
+ + 3 x(PROB)(CS_GEN_MATH) + 3 x(STATS)(CS_GEN_MATH) - z(CS_GEN_MATH) = 15
+reqMin(CS_GEN_SCI): 3 x(BIO)(CS_GEN_SCI) + 3 x(BIO_CHEM_LAP)(CS_GEN_SCI)
  + 3 x(CHEM)(CS_GEN_SCI) + 3 x(GEO)(CS_GEN_SCI) + 3 x(PHY)(CS_GEN_SCI)
- + 3 x(PH_AE)(CS_GEN_SCI) - z(CS_GEN_SCI) = 9
+ - z(CS_GEN_SCI) = 9
 reqMin(CS_PROB): 3 x(PROB)(CS_PROB) - z(CS_PROB) = 3
-reqMin(CS_SCI_ENG): 3 x(BIO)(CS_SCI_ENG) + 3 x(BIO_CHEM)(CS_SCI_ENG)
- + 3 x(CHEM)(CS_SCI_ENG) + 3 x(CRYPT)(CS_SCI_ENG) + 3 x(GEO)(CS_SCI_ENG)
- + 3 x(NES_BOTH)(CS_SCI_ENG) + 3 x(PHY)(CS_SCI_ENG) + 3 x(PH_AE)(CS_SCI_ENG)
- + 3 x(RBE_3100)(CS_SCI_ENG) - z(CS_SCI_ENG) = 6
+reqMin(CS_SCI_ENG): 3 x(BIO)(CS_SCI_ENG) + 3 x(BIO_CHEM_LAP)(CS_SCI_ENG)
+ + 3 x(CHEM)(CS_SCI_ENG) + 3 x(CS_CRYPT)(CS_SCI_ENG) + 3 x(GEO)(CS_SCI_ENG)
+ + 3 x(PHY)(CS_SCI_ENG) + 3 x(RBE_3100)(CS_SCI_ENG) + 3 x(SCI_ENG)(CS_SCI_ENG)
+ - z(CS_SCI_ENG) = 6
 reqMin(CS_STATS): 3 x(STATS)(CS_STATS) - z(CS_STATS) = 3
-reqMin(DS_ALGOS): 3 x(ALGO)(DS_ALGOS) - z(DS_ALGOS) = 3
-reqMin(DS_BA): 3 x(BUS_OIE)(DS_BA) - z(DS_BA) = 3
-reqMin(DS_C): 3 x(DS_CORE)(DS_C) - z(DS_C) = 9
-reqMin(DS_CS): 3 x(4000_DAM)(DS_CS) + 3 x(CS_1004)(DS_CS)
- + 3 x(CS_2119)(DS_CS) + 3 x(CS_3133)(DS_CS) + 3 x(CS_3431)(DS_CS)
- + 3 x(CS_4000_2)(DS_CS) + 3 x(CS_4120)(DS_CS) + 3 x(CS_4233)(DS_CS)
- + 3 x(CS_542)(DS_CS) + 4.5 x(CS_561)(DS_CS) + 3 x(CS_DESIGN)(DS_CS)
- + 4.5 x(CS_GRAD_MORE)(DS_CS) + 3 x(DMML)(DS_CS) + 4.5 x(G_DMML)(DS_CS)
- + 3 x(INTRO_CS)(DS_CS) + 3 x(OOP)(DS_CS) + 3 x(SYSTEMS)(DS_CS) - z(DS_CS) = 6
-reqMin(DS_DE): 3 x(4000_DAM)(DS_DE) + 3 x(4000_DE)(DS_DE)
- + 3 x(4000_MATH_DE)(DS_DE) + 3 x(BCB_4004)(DS_DE) + 3 x(BMP)(DS_DE)
- + 3 x(CALC_III_IV)(DS_DE) + 3 x(CS_3043)(DS_DE) + 3 x(CS_3133)(DS_DE)
- + 3 x(CS_3431)(DS_DE) + 3 x(CS_4000_2)(DS_DE) + 3 x(CS_4120)(DS_DE)
- + 3 x(CS_4233)(DS_DE) + 3 x(CS_542)(DS_DE) + 4.5 x(CS_561)(DS_DE)
- + 3 x(CS_DESIGN)(DS_DE) + 4.5 x(CS_GRAD_MORE)(DS_DE) + 3 x(DE)(DS_DE)
- + 3 x(DISCRETE)(DS_DE) + 3 x(DMML)(DS_DE) + 4.5 x(GRAD_BMP)(DS_DE)
- + 4.5 x(GRAD_DE)(DS_DE) + 4.5 x(GRAD_MATH)(DS_DE) + 4.5 x(G_DMML)(DS_DE)
- + 3 x(MATH_DE)(DS_DE) + 3 x(MIS_3720)(DS_DE) + 3 x(NUM_M_1)(DS_DE)
- + 3 x(PROB)(DS_DE) + 3 x(SYSTEMS)(DS_DE) - z(DS_DE) = 36
-reqMin(DS_EI): 3 x(ETR)(DS_EI) - z(DS_EI) = 3
-reqMin(DS_LA): 3 x(LIN_ALG)(DS_LA) - z(DS_LA) = 3
-reqMin(DS_MS): 3 x(4000_MATH_DE)(DS_MS) + 3 x(CALCI_I_II)(DS_MS)
- + 3 x(CALC_III_IV)(DS_MS) + 3 x(DISCRETE)(DS_MS) + 4.5 x(GRAD_MATH)(DS_MS)
- + 3 x(MATH_DE)(DS_MS) + 3 x(NUM_M_1)(DS_MS) + 3 x(PROB)(DS_MS) - z(DS_MS) = 6
-reqMin(DS_NES): 3 x(BIO)(DS_NES) + 6 x(BIO_CHEM)(DS_NES) + 3 x(CHEM)(DS_NES)
- + 3 x(CRYPT)(DS_NES) + 3 x(GEO)(DS_NES) + 3 x(NES_BOTH)(DS_NES)
- + 3 x(NES_DS)(DS_NES) + 3 x(PHY)(DS_NES) + 6 x(PH_AE)(DS_NES)
- + 3 x(RBE_3100)(DS_NES) - z(DS_NES) = 6
-reqMin(DS_STATS): 3 x(STATS)(DS_STATS) - z(DS_STATS) = 6
 reqMin(HUA_CORE): 3 x(ART_CON)(HUA_CORE) + 3 x(DPE_HU)(HUA_CORE)
  + 3 x(FL_CON)(HUA_CORE) + 3 x(HI_CON)(HUA_CORE) + 3 x(PY_CON)(HUA_CORE)
  + 3 x(WR_CON)(HUA_CORE) - z(HUA_CORE) = 15
 reqMin(HUA_PROJ): 3 x(HU_CAP)(HUA_PROJ) - z(HUA_PROJ) = 3
 reqMin(IQP): 9 x(IQP_OFF)(IQP) + 9 x(IQP_ON)(IQP) - z(IQP) = 9
-reqMin(SOC_SCI_REQ): 3 x(DPE_GOV)(SOC_SCI_REQ) + 3 x(GOV_2313)(SOC_SCI_REQ)
- + 3 x(ID_2050)(SOC_SCI_REQ) + 3 x(ID_2314)(SOC_SCI_REQ)
+reqMin(SOC_SCI_REQ): 3 x(DPE_GOV)(SOC_SCI_REQ) + 3 x(ID_2050)(SOC_SCI_REQ)
  + 3 x(SOC_SCI)(SOC_SCI_REQ) - z(SOC_SCI_REQ) = 6
-setY1(4000_DAM): x(4000_DAM)(DS_CS) + x(4000_DAM)(DS_DE) - y(4000_DAM) <= 0
-setY1(4000_DE): x(4000_DE)(DS_DE) - y(4000_DE) <= 0
-setY1(4000_MATH_DE): x(4000_MATH_DE)(DS_DE) + x(4000_MATH_DE)(DS_MS)
- - y(4000_MATH_DE) <= 0
-setY1(ALGO): x(ALGO)(DS_ALGOS) - y(ALGO) <= 0
+setY1(1000_MATH): x(1000_MATH)(CS_GEN_MATH) - y(1000_MATH) <= 0
 setY1(ART_CON): x(ART_CON)(HUA_CORE) - y(ART_CON) <= 0
-setY1(BCB_4004): x(BCB_4004)(DS_DE) - y(BCB_4004) <= 0
-setY1(BIO): x(BIO)(DS_NES) - y(BIO) <= 0
-setY1(BIO_CHEM): 2 x(BIO_CHEM)(DS_NES) - y(BIO_CHEM) <= 0
-setY1(BMP): x(BMP)(DS_DE) - y(BMP) <= 0
-setY1(BUS_OIE): x(BUS_OIE)(DS_BA) - y(BUS_OIE) <= 0
-setY1(CALCI_I_II): x(CALCI_I_II)(DS_MS) - y(CALCI_I_II) <= 1
-setY1(CALC_III_IV): x(CALC_III_IV)(DS_DE) + x(CALC_III_IV)(DS_MS)
- - y(CALC_III_IV) <= 0
-setY1(CHEM): x(CHEM)(DS_NES) - y(CHEM) <= 0
-setY1(CRYPT): x(CRYPT)(DS_NES) - y(CRYPT) <= 0
-setY1(CS_1004): x(CS_1004)(DS_CS) - y(CS_1004) <= 0
-setY1(CS_2119): x(CS_2119)(DS_CS) - y(CS_2119) <= 0
-setY1(CS_3043): x(CS_3043)(DS_DE) - y(CS_3043) <= 0
-setY1(CS_3133): x(CS_3133)(DS_CS) + x(CS_3133)(DS_DE) - y(CS_3133) <= 0
-setY1(CS_3431): x(CS_3431)(DS_CS) + x(CS_3431)(DS_DE) - y(CS_3431) <= 0
-setY1(CS_4000_2): x(CS_4000_2)(DS_CS) + x(CS_4000_2)(DS_DE) - y(CS_4000_2)
+setY1(BIO): x(BIO)(CS_GEN_SCI) + x(BIO)(CS_SCI_ENG) - y(BIO) <= 0
+setY1(BIO_CHEM_LAP): x(BIO_CHEM_LAP)(CS_GEN_SCI) + x(BIO_CHEM_LAP)(CS_SCI_ENG)
+ - y(BIO_CHEM_LAP) <= 0
+setY1(CHEM): x(CHEM)(CS_GEN_SCI) + x(CHEM)(CS_SCI_ENG) - y(CHEM) <= 0
+setY1(CS_4000): x(CS_4000)(CS_CORE) - y(CS_4000) <= 0
+setY1(CS_4_DESIGN): x(CS_4_DESIGN)(CS_CORE) - y(CS_4_DESIGN) <= 0
+setY1(CS_4_SYS): x(CS_4_SYS)(CS_CORE) - y(CS_4_SYS) <= 0
+setY1(CS_4_THRY): x(CS_4_THRY)(CS_CORE) - y(CS_4_THRY) <= 0
+setY1(CS_CRYPT): x(CS_CRYPT)(CS_CORE) + x(CS_CRYPT)(CS_SCI_ENG) - y(CS_CRYPT)
  <= 0
-setY1(CS_4120): x(CS_4120)(DS_CS) + x(CS_4120)(DS_DE) - y(CS_4120) <= 0
-setY1(CS_4233): x(CS_4233)(DS_CS) + x(CS_4233)(DS_DE) - y(CS_4233) <= 0
-setY1(CS_542): x(CS_542)(DS_CS) + x(CS_542)(DS_DE) - y(CS_542) <= 0
-setY1(CS_561): x(CS_561)(DS_CS) + x(CS_561)(DS_DE) - y(CS_561) <= 0
-setY1(CS_DESIGN): x(CS_DESIGN)(DS_CS) + x(CS_DESIGN)(DS_DE) - y(CS_DESIGN)
+setY1(CS_DESIGN): x(CS_DESIGN)(CS_CORE) - y(CS_DESIGN) <= 0
+setY1(CS_DISC): x(CS_DISC)(CS_CORE) + x(CS_DISC)(CS_GEN_MATH) - y(CS_DISC)
  <= 0
-setY1(CS_GRAD_MORE): x(CS_GRAD_MORE)(DS_CS) + x(CS_GRAD_MORE)(DS_DE)
- - y(CS_GRAD_MORE) <= 0
-setY1(DE): x(DE)(DS_DE) - y(DE) <= 0
-setY1(DISCRETE): x(DISCRETE)(DS_DE) + x(DISCRETE)(DS_MS) - y(DISCRETE) <= 0
-setY1(DMML): x(DMML)(DS_CS) + x(DMML)(DS_DE) - y(DMML) <= 0
+setY1(CS_ELECT): x(CS_ELECT)(CS_CORE) - y(CS_ELECT) <= 0
+setY1(CS_G_DESIGN): x(CS_G_DESIGN)(CS_CORE) - y(CS_G_DESIGN) <= 0
+setY1(CS_G_SYS): x(CS_G_SYS)(CS_CORE) - y(CS_G_SYS) <= 0
+setY1(CS_G_THRY): x(CS_G_THRY)(CS_CORE) - y(CS_G_THRY) <= 0
+setY1(CS_INTRO): x(CS_INTRO)(CS_CORE) - y(CS_INTRO) <= 0
+setY1(CS_NUM_MET): x(CS_NUM_MET)(CS_CORE) + x(CS_NUM_MET)(CS_GEN_MATH)
+ - y(CS_NUM_MET) <= 0
+setY1(CS_OOP): x(CS_OOP)(CS_CORE) - y(CS_OOP) <= 0
+setY1(CS_OS): x(CS_OS)(CS_CORE) - y(CS_OS) <= 0
+setY1(CS_SOC_IMPS): x(CS_SOC_IMPS)(CS_CORE) - y(CS_SOC_IMPS) <= 0
+setY1(CS_SYS_PROG): x(CS_SYS_PROG)(CS_CORE) - y(CS_SYS_PROG) <= 0
+setY1(CS_THRY): x(CS_THRY)(CS_CORE) - y(CS_THRY) <= 0
 setY1(DPE_GOV): x(DPE_GOV)(SOC_SCI_REQ) - y(DPE_GOV) <= 0
 setY1(DPE_HU): x(DPE_HU)(HUA_CORE) - y(DPE_HU) <= 0
-setY1(DS_CORE): x(DS_CORE)(DS_C) - y(DS_CORE) <= 0
-setY1(ETR): x(ETR)(DS_EI) - y(ETR) <= 0
 setY1(FL_CON): x(FL_CON)(HUA_CORE) - y(FL_CON) <= 0
-setY1(GEO): x(GEO)(DS_NES) - y(GEO) <= 0
-setY1(GOV_2313): x(GOV_2313)(SOC_SCI_REQ) - y(GOV_2313) <= 0
-setY1(GRAD_BMP): x(GRAD_BMP)(DS_DE) - y(GRAD_BMP) <= 0
-setY1(GRAD_DE): x(GRAD_DE)(DS_DE) - y(GRAD_DE) <= 0
-setY1(GRAD_MATH): x(GRAD_MATH)(DS_DE) + x(GRAD_MATH)(DS_MS) - y(GRAD_MATH)
- <= 0
-setY1(G_DMML): x(G_DMML)(DS_CS) + x(G_DMML)(DS_DE) - y(G_DMML) <= 0
+setY1(GEO): x(GEO)(CS_GEN_SCI) + x(GEO)(CS_SCI_ENG) - y(GEO) <= 0
 setY1(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
 setY1(HU_CAP): x(HU_CAP)(HUA_PROJ) - y(HU_CAP) <= 0
 setY1(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
-setY1(ID_2314): x(ID_2314)(SOC_SCI_REQ) - y(ID_2314) <= 0
-setY1(INTRO_CS): x(INTRO_CS)(DS_CS) - y(INTRO_CS) <= 0
 setY1(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 0
 setY1(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 0
-setY1(LIN_ALG): x(LIN_ALG)(DS_LA) - y(LIN_ALG) <= 0
-setY1(MATH_DE): x(MATH_DE)(DS_DE) + x(MATH_DE)(DS_MS) - y(MATH_DE) <= 0
-setY1(MIS_3720): x(MIS_3720)(DS_DE) - y(MIS_3720) <= 0
-setY1(NES_BOTH): x(NES_BOTH)(DS_NES) - y(NES_BOTH) <= 0
-setY1(NES_DS): x(NES_DS)(DS_NES) - y(NES_DS) <= 0
-setY1(NUM_M_1): x(NUM_M_1)(DS_DE) + x(NUM_M_1)(DS_MS) - y(NUM_M_1) <= 0
-setY1(OOP): x(OOP)(DS_CS) - y(OOP) <= 0
-setY1(PHY): x(PHY)(DS_NES) - y(PHY) <= 0
-setY1(PH_AE): 2 x(PH_AE)(DS_NES) - y(PH_AE) <= 0
-setY1(PROB): x(PROB)(DS_DE) + x(PROB)(DS_MS) - y(PROB) <= 0
+setY1(MATH_ELECT): x(MATH_ELECT)(CS_GEN_MATH) - y(MATH_ELECT) <= 0
+setY1(PHY): x(PHY)(CS_GEN_SCI) + x(PHY)(CS_SCI_ENG) - y(PHY) <= 0
+setY1(PROB): x(PROB)(CS_GEN_MATH) + x(PROB)(CS_PROB) - y(PROB) <= 0
 setY1(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 0
-setY1(RBE_3100): x(RBE_3100)(DS_NES) - y(RBE_3100) <= 0
+setY1(RBE_3100): x(RBE_3100)(CS_SCI_ENG) - y(RBE_3100) <= 0
+setY1(SCI_ENG): x(SCI_ENG)(CS_SCI_ENG) - y(SCI_ENG) <= 0
 setY1(SOC_SCI): x(SOC_SCI)(SOC_SCI_REQ) - y(SOC_SCI) <= 0
-setY1(STATS): x(STATS)(DS_STATS) - y(STATS) <= 0
-setY1(SYSTEMS): x(SYSTEMS)(DS_CS) + x(SYSTEMS)(DS_DE) - y(SYSTEMS) <= 0
+setY1(STATS): x(STATS)(CS_GEN_MATH) + x(STATS)(CS_STATS) - y(STATS) <= 0
 setY1(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 0
-setY2(4000_CS): x(4000_CS)(CS_CORE) - y(4000_CS) <= 0
-setY2(4000_DAM): x(4000_DAM)(CS_CORE) - y(4000_DAM) <= 0
-setY2(4000_MATH_DE): x(4000_MATH_DE)(CS_GEN_MATH) - y(4000_MATH_DE) <= 0
-setY2(4000_SYS): x(4000_SYS)(CS_CORE) - y(4000_SYS) <= 0
-setY2(4000_THRY): x(4000_THRY)(CS_CORE) - y(4000_THRY) <= 0
-setY2(ALGO): x(ALGO)(CS_CORE) - y(ALGO) <= 0
-setY2(ART_CON): x(ART_CON)(HUA_CORE) - y(ART_CON) <= 0
-setY2(BCB_4004): x(BCB_4004)(CS_GEN_MATH) - y(BCB_4004) <= 0
-setY2(BIO): x(BIO)(CS_GEN_SCI) + x(BIO)(CS_SCI_ENG) - y(BIO) <= 0
-setY2(BIO_CHEM): x(BIO_CHEM)(CS_GEN_SCI) + x(BIO_CHEM)(CS_SCI_ENG)
- - y(BIO_CHEM) <= 0
-setY2(CALCI_I_II): x(CALCI_I_II)(CS_GEN_MATH) - y(CALCI_I_II) <= 1
-setY2(CALC_III_IV): x(CALC_III_IV)(CS_GEN_MATH) - y(CALC_III_IV) <= 0
-setY2(CHEM): x(CHEM)(CS_GEN_SCI) + x(CHEM)(CS_SCI_ENG) - y(CHEM) <= 0
-setY2(CRYPT): x(CRYPT)(CS_CORE) + x(CRYPT)(CS_SCI_ENG) - y(CRYPT) <= 0
-setY2(CS_3013): x(CS_3013)(CS_CORE) - y(CS_3013) <= 0
-setY2(CS_3043): x(CS_3043)(CS_CORE) - y(CS_3043) <= 0
-setY2(CS_3133): x(CS_3133)(CS_CORE) - y(CS_3133) <= 0
-setY2(CS_3431): x(CS_3431)(CS_CORE) - y(CS_3431) <= 0
-setY2(CS_4000_2): x(CS_4000_2)(CS_CORE) - y(CS_4000_2) <= 0
-setY2(CS_4120): x(CS_4120)(CS_CORE) - y(CS_4120) <= 0
-setY2(CS_4233): x(CS_4233)(CS_CORE) - y(CS_4233) <= 0
-setY2(CS_542): x(CS_542)(CS_CORE) - y(CS_542) <= 0
-setY2(CS_561): x(CS_561)(CS_CORE) - y(CS_561) <= 0
-setY2(CS_DESIGN): x(CS_DESIGN)(CS_CORE) - y(CS_DESIGN) <= 0
-setY2(CS_GRAD_MORE): x(CS_GRAD_MORE)(CS_CORE) - y(CS_GRAD_MORE) <= 0
-setY2(CS_NOT_DS): x(CS_NOT_DS)(CS_CORE) - y(CS_NOT_DS) <= 0
-setY2(DISCRETE): x(DISCRETE)(CS_CORE) + x(DISCRETE)(CS_GEN_MATH) - y(DISCRETE)
- <= 0
-setY2(DMML): x(DMML)(CS_CORE) - y(DMML) <= 0
-setY2(DPE_GOV): x(DPE_GOV)(SOC_SCI_REQ) - y(DPE_GOV) <= 0
-setY2(DPE_HU): x(DPE_HU)(HUA_CORE) - y(DPE_HU) <= 0
-setY2(FL_CON): x(FL_CON)(HUA_CORE) - y(FL_CON) <= 0
-setY2(GEO): x(GEO)(CS_GEN_SCI) + x(GEO)(CS_SCI_ENG) - y(GEO) <= 0
-setY2(GOV_2313): x(GOV_2313)(SOC_SCI_REQ) - y(GOV_2313) <= 0
-setY2(GRAD_CS): x(GRAD_CS)(CS_CORE) - y(GRAD_CS) <= 0
-setY2(GRAD_DES): x(GRAD_DES)(CS_CORE) - y(GRAD_DES) <= 0
-setY2(GRAD_MATH): x(GRAD_MATH)(CS_GEN_MATH) - y(GRAD_MATH) <= 0
-setY2(GRAD_SYS): x(GRAD_SYS)(CS_CORE) - y(GRAD_SYS) <= 0
-setY2(GRAD_THRY): x(GRAD_THRY)(CS_CORE) - y(GRAD_THRY) <= 0
-setY2(G_DMML): x(G_DMML)(CS_CORE) - y(G_DMML) <= 0
-setY2(HI_CON): x(HI_CON)(HUA_CORE) - y(HI_CON) <= 0
-setY2(HU_CAP): x(HU_CAP)(HUA_PROJ) - y(HU_CAP) <= 0
-setY2(ID_2050): x(ID_2050)(SOC_SCI_REQ) - y(ID_2050) <= 0
-setY2(ID_2314): x(ID_2314)(SOC_SCI_REQ) - y(ID_2314) <= 0
-setY2(INTRO_CS): x(INTRO_CS)(CS_CORE) - y(INTRO_CS) <= 0
-setY2(IQP_OFF): x(IQP_OFF)(IQP) - y(IQP_OFF) <= 0
-setY2(IQP_ON): x(IQP_ON)(IQP) - y(IQP_ON) <= 0
-setY2(LIN_ALG): x(LIN_ALG)(CS_GEN_MATH) - y(LIN_ALG) <= 0
-setY2(MATH_DE): x(MATH_DE)(CS_GEN_MATH) - y(MATH_DE) <= 0
-setY2(MATH_ELECT): x(MATH_ELECT)(CS_GEN_MATH) - y(MATH_ELECT) <= 0
-setY2(NES_BOTH): x(NES_BOTH)(CS_SCI_ENG) - y(NES_BOTH) <= 0
-setY2(NON_DE_MATH): x(NON_DE_MATH)(CS_GEN_MATH) - y(NON_DE_MATH) <= 0
-setY2(NUM_M_1): x(NUM_M_1)(CS_CORE) + x(NUM_M_1)(CS_GEN_MATH) - y(NUM_M_1)
- <= 0
-setY2(NUM_M_2): x(NUM_M_2)(CS_CORE) + x(NUM_M_2)(CS_GEN_MATH) - y(NUM_M_2)
- <= 0
-setY2(OOP): x(OOP)(CS_CORE) - y(OOP) <= 0
-setY2(PHY): x(PHY)(CS_GEN_SCI) + x(PHY)(CS_SCI_ENG) - y(PHY) <= 0
-setY2(PH_AE): x(PH_AE)(CS_GEN_SCI) + x(PH_AE)(CS_SCI_ENG) - y(PH_AE) <= 0
-setY2(PROB): x(PROB)(CS_GEN_MATH) + x(PROB)(CS_PROB) - y(PROB) <= 0
-setY2(PY_CON): x(PY_CON)(HUA_CORE) - y(PY_CON) <= 0
-setY2(RBE_3100): x(RBE_3100)(CS_SCI_ENG) - y(RBE_3100) <= 0
-setY2(SOC_SCI): x(SOC_SCI)(SOC_SCI_REQ) - y(SOC_SCI) <= 0
-setY2(STATS): x(STATS)(CS_GEN_MATH) + x(STATS)(CS_STATS) - y(STATS) <= 0
-setY2(SYSTEMS): x(SYSTEMS)(CS_CORE) - y(SYSTEMS) <= 0
-setY2(WR_CON): x(WR_CON)(HUA_CORE) - y(WR_CON) <= 0
 Bounds
- 0 <= x(4000_CS)(CS_CORE) <= 14
- 0 <= x(4000_DAM)(CS_CORE) <= 3
- 0 <= x(4000_DAM)(DS_CS) <= 3
- 0 <= x(4000_DAM)(DS_DE) <= 3
- 0 <= x(4000_DE)(DS_DE) <= 2
- 0 <= x(4000_MATH_DE)(CS_GEN_MATH) <= 10
- 0 <= x(4000_MATH_DE)(DS_DE) <= 10
- 0 <= x(4000_MATH_DE)(DS_MS) <= 10
- 0 <= x(4000_SYS)(CS_CORE) <= 3
- 0 <= x(4000_THRY)(CS_CORE) <= 3
+ 0 <= x(1000_MATH)(CS_GEN_MATH) <= 10
  0 <= x(ART_CON)(HUA_CORE) <= 20
  0 <= x(BIO)(CS_GEN_SCI) <= 47
  0 <= x(BIO)(CS_SCI_ENG) <= 47
- 0 <= x(BIO)(DS_NES) <= 47
- 0 <= x(BIO_CHEM)(CS_GEN_SCI) <= 4
- 0 <= x(BIO_CHEM)(CS_SCI_ENG) <= 4
- 0 <= x(BIO_CHEM)(DS_NES) <= 4
- 0 <= x(BMP)(DS_DE) <= 2
- 0 <= x(BUS_OIE)(DS_BA) <= 2
- 0 <= x(CALCI_I_II)(CS_GEN_MATH) <= 4
- 0 <= x(CALCI_I_II)(DS_MS) <= 4
- 0 <= x(CALC_III_IV)(CS_GEN_MATH) <= 4
- 0 <= x(CALC_III_IV)(DS_DE) <= 4
- 0 <= x(CALC_III_IV)(DS_MS) <= 4
+ 0 <= x(BIO_CHEM_LAP)(CS_GEN_SCI) <= 4
+ 0 <= x(BIO_CHEM_LAP)(CS_SCI_ENG) <= 4
  0 <= x(CHEM)(CS_GEN_SCI) <= 26
  0 <= x(CHEM)(CS_SCI_ENG) <= 26
- 0 <= x(CHEM)(DS_NES) <= 26
- 0 <= x(CRYPT)(CS_CORE) <= 2
- 0 <= x(CRYPT)(CS_SCI_ENG) <= 2
- 0 <= x(CRYPT)(DS_NES) <= 2
- 0 <= x(CS_4000_2)(CS_CORE) <= 3
- 0 <= x(CS_4000_2)(DS_CS) <= 3
- 0 <= x(CS_4000_2)(DS_DE) <= 3
- 0 <= x(CS_DESIGN)(CS_CORE) <= 2
- 0 <= x(CS_DESIGN)(DS_CS) <= 2
- 0 <= x(CS_DESIGN)(DS_DE) <= 2
- 0 <= x(CS_GRAD_MORE)(CS_CORE) <= 10
- 0 <= x(CS_GRAD_MORE)(DS_CS) <= 10
- 0 <= x(CS_GRAD_MORE)(DS_DE) <= 10
- 0 <= x(CS_NOT_DS)(CS_CORE) <= 2
- 0 <= x(DE)(DS_DE) <= 40
- 0 <= x(DISCRETE)(CS_CORE) <= 2
- 0 <= x(DISCRETE)(CS_GEN_MATH) <= 2
- 0 <= x(DISCRETE)(DS_DE) <= 2
- 0 <= x(DISCRETE)(DS_MS) <= 2
- 0 <= x(DMML)(CS_CORE) <= 2
- 0 <= x(DMML)(DS_CS) <= 2
- 0 <= x(DMML)(DS_DE) <= 2
+ 0 <= x(CS_4000)(CS_CORE) <= 79
+ 0 <= x(CS_4_SYS)(CS_CORE) <= 3
+ 0 <= x(CS_4_THRY)(CS_CORE) <= 4
+ 0 <= x(CS_CRYPT)(CS_CORE) <= 2
+ 0 <= x(CS_CRYPT)(CS_SCI_ENG) <= 2
+ 0 <= x(CS_DESIGN)(CS_CORE) <= 3
+ 0 <= x(CS_DISC)(CS_CORE) <= 2
+ 0 <= x(CS_DISC)(CS_GEN_MATH) <= 2
+ 0 <= x(CS_ELECT)(CS_CORE) <= 20
+ 0 <= x(CS_G_DESIGN)(CS_CORE) <= 5
+ 0 <= x(CS_G_SYS)(CS_CORE) <= 3
+ 0 <= x(CS_G_THRY)(CS_CORE) <= 6
+ 0 <= x(CS_INTRO)(CS_CORE) <= 2
+ 0 <= x(CS_NUM_MET)(CS_CORE) <= 4
+ 0 <= x(CS_NUM_MET)(CS_GEN_MATH) <= 4
+ 0 <= x(CS_OOP)(CS_CORE) <= 2
+ 0 <= x(CS_SYS_PROG)(CS_CORE) <= 2
  0 <= x(DPE_GOV)(SOC_SCI_REQ) <= 2
  0 <= x(DPE_HU)(HUA_CORE) <= 3
- 0 <= x(DS_CORE)(DS_C) <= 3
- 0 <= x(ETR)(DS_EI) <= 6
  0 <= x(FL_CON)(HUA_CORE) <= 20
- 0 <= x(GRAD_BMP)(DS_DE) <= 2
- 0 <= x(GRAD_CS)(CS_CORE) <= 45
- 0 <= x(GRAD_DE)(DS_DE) <= 3
- 0 <= x(GRAD_DES)(CS_CORE) <= 3
- 0 <= x(GRAD_MATH)(CS_GEN_MATH) <= 6
- 0 <= x(GRAD_MATH)(DS_DE) <= 6
- 0 <= x(GRAD_MATH)(DS_MS) <= 6
- 0 <= x(GRAD_SYS)(CS_CORE) <= 3
- 0 <= x(GRAD_THRY)(CS_CORE) <= 6
- 0 <= x(G_DMML)(CS_CORE) <= 2
- 0 <= x(G_DMML)(DS_CS) <= 2
- 0 <= x(G_DMML)(DS_DE) <= 2
  0 <= x(HI_CON)(HUA_CORE) <= 20
  0 <= x(HU_CAP)(HUA_PROJ) <= 2
- 0 <= x(INTRO_CS)(CS_CORE) <= 2
- 0 <= x(INTRO_CS)(DS_CS) <= 2
- 0 <= x(IQP_OFF)(IQP) <= 5
- 0 <= x(LIN_ALG)(CS_GEN_MATH) <= 2
- 0 <= x(LIN_ALG)(DS_LA) <= 2
- 0 <= x(MATH_DE)(CS_GEN_MATH) <= 8
- 0 <= x(MATH_DE)(DS_DE) <= 8
- 0 <= x(MATH_DE)(DS_MS) <= 8
- 0 <= x(MATH_ELECT)(CS_GEN_MATH) <= 2
- 0 <= x(NES_BOTH)(CS_SCI_ENG) <= 165
- 0 <= x(NES_BOTH)(DS_NES) <= 165
- 0 <= x(NES_DS)(DS_NES) <= 40
- 0 <= x(NON_DE_MATH)(CS_GEN_MATH) <= 22
- 0 <= x(NUM_M_1)(CS_CORE) <= 2
- 0 <= x(NUM_M_1)(CS_GEN_MATH) <= 2
- 0 <= x(NUM_M_1)(DS_DE) <= 2
- 0 <= x(NUM_M_1)(DS_MS) <= 2
- 0 <= x(NUM_M_2)(CS_CORE) <= 2
- 0 <= x(NUM_M_2)(CS_GEN_MATH) <= 2
- 0 <= x(OOP)(CS_CORE) <= 2
- 0 <= x(OOP)(DS_CS) <= 2
- 0 <= x(PHY)(CS_GEN_SCI) <= 27
- 0 <= x(PHY)(CS_SCI_ENG) <= 27
- 0 <= x(PHY)(DS_NES) <= 27
- 0 <= x(PH_AE)(CS_GEN_SCI) <= 2
- 0 <= x(PH_AE)(CS_SCI_ENG) <= 2
- 0 <= x(PH_AE)(DS_NES) <= 2
+ 0 <= x(IQP_OFF)(IQP) <= 100
+ 0 <= x(MATH_ELECT)(CS_GEN_MATH) <= 49
+ 0 <= x(PHY)(CS_GEN_SCI) <= 29
+ 0 <= x(PHY)(CS_SCI_ENG) <= 29
  0 <= x(PROB)(CS_GEN_MATH) <= 2
  0 <= x(PROB)(CS_PROB) <= 2
- 0 <= x(PROB)(DS_DE) <= 2
- 0 <= x(PROB)(DS_MS) <= 2
  0 <= x(PY_CON)(HUA_CORE) <= 20
- 0 <= x(SOC_SCI)(SOC_SCI_REQ) <= 30
+ 0 <= x(SCI_ENG)(CS_SCI_ENG) <= 165
+ 0 <= x(SOC_SCI)(SOC_SCI_REQ) <= 10
  0 <= x(STATS)(CS_GEN_MATH) <= 2
  0 <= x(STATS)(CS_STATS) <= 2
- 0 <= x(STATS)(DS_STATS) <= 2
- 0 <= x(SYSTEMS)(CS_CORE) <= 2
- 0 <= x(SYSTEMS)(DS_CS) <= 2
- 0 <= x(SYSTEMS)(DS_DE) <= 2
  0 <= x(WR_CON)(HUA_CORE) <= 20
- 0 <= y(4000_CS) <= 14
- 0 <= y(4000_DAM) <= 3
- 0 <= y(4000_DE) <= 2
- 0 <= y(4000_MATH_DE) <= 10
- 0 <= y(4000_SYS) <= 3
- 0 <= y(4000_THRY) <= 3
+ 0 <= y(1000_MATH) <= 10
  0 <= y(ART_CON) <= 20
  0 <= y(BIO) <= 47
- 0 <= y(BIO_CHEM) <= 4
- 0 <= y(BMP) <= 2
- 0 <= y(BUS_OIE) <= 2
- 0 <= y(CALCI_I_II) <= 3
- 0 <= y(CALC_III_IV) <= 4
+ 0 <= y(BIO_CHEM_LAP) <= 4
  0 <= y(CHEM) <= 26
- 0 <= y(CRYPT) <= 2
- 0 <= y(CS_4000_2) <= 3
- 0 <= y(CS_DESIGN) <= 2
- 0 <= y(CS_GRAD_MORE) <= 10
- 0 <= y(CS_NOT_DS) <= 2
- 0 <= y(DE) <= 40
- 0 <= y(DISCRETE) <= 2
- 0 <= y(DMML) <= 2
+ 0 <= y(CS_4000) <= 79
+ 0 <= y(CS_4_SYS) <= 3
+ 0 <= y(CS_4_THRY) <= 4
+ 0 <= y(CS_CRYPT) <= 2
+ 0 <= y(CS_DESIGN) <= 3
+ 0 <= y(CS_DISC) <= 2
+ 0 <= y(CS_ELECT) <= 20
+ 0 <= y(CS_G_DESIGN) <= 5
+ 0 <= y(CS_G_SYS) <= 3
+ 0 <= y(CS_G_THRY) <= 6
+ 0 <= y(CS_INTRO) <= 2
+ 0 <= y(CS_NUM_MET) <= 4
+ 0 <= y(CS_OOP) <= 2
+ 0 <= y(CS_SYS_PROG) <= 2
  0 <= y(DPE_GOV) <= 2
  0 <= y(DPE_HU) <= 3
- 0 <= y(DS_CORE) <= 3
- 0 <= y(ETR) <= 6
  0 <= y(FL_CON) <= 20
- 0 <= y(GRAD_BMP) <= 2
- 0 <= y(GRAD_CS) <= 45
- 0 <= y(GRAD_DE) <= 3
- 0 <= y(GRAD_DES) <= 3
- 0 <= y(GRAD_MATH) <= 6
- 0 <= y(GRAD_SYS) <= 3
- 0 <= y(GRAD_THRY) <= 6
- 0 <= y(G_DMML) <= 2
  0 <= y(HI_CON) <= 20
  0 <= y(HU_CAP) <= 2
  0 <= y(IMGD) <= 2
- 0 <= y(INTRO_CS) <= 2
- 0 <= y(IQP_OFF) <= 5
- 0 <= y(LIN_ALG) <= 2
- 0 <= y(MATH_DE) <= 8
- 0 <= y(MATH_ELECT) <= 2
- 0 <= y(NES_BOTH) <= 165
- 0 <= y(NES_DS) <= 40
- 0 <= y(NON_DE_MATH) <= 22
- 0 <= y(NUM_M_1) <= 2
- 0 <= y(NUM_M_2) <= 2
- 0 <= y(OOP) <= 2
- 0 <= y(PHY) <= 27
- 0 <= y(PH_AE) <= 2
+ 0 <= y(IQP_OFF) <= 100
+ 0 <= y(MATH_ELECT) <= 49
+ 0 <= y(PHY) <= 29
  0 <= y(PROB) <= 2
  0 <= y(PY_CON) <= 20
- 0 <= y(SOC_SCI) <= 30
+ 0 <= y(SCI_ENG) <= 165
+ 0 <= y(SOC_SCI) <= 10
  0 <= y(STATS) <= 2
- 0 <= y(SYSTEMS) <= 2
  0 <= y(WR_CON) <= 20
  0 <= z(CS_CORE)
  0 <= z(CS_GEN_MATH)
@@ -458,184 +204,86 @@ Bounds
  0 <= z(CS_PROB)
  0 <= z(CS_SCI_ENG)
  0 <= z(CS_STATS)
- 0 <= z(DS_ALGOS)
- 0 <= z(DS_BA)
- 0 <= z(DS_C)
- 0 <= z(DS_CS)
- 0 <= z(DS_DE)
- 0 <= z(DS_EI)
- 0 <= z(DS_LA)
- 0 <= z(DS_MS)
- 0 <= z(DS_NES)
- 0 <= z(DS_STATS)
  0 <= z(HUA_CORE)
  0 <= z(HUA_PROJ)
  0 <= z(IQP)
  0 <= z(SOC_SCI_REQ)
 Generals
-x(4000_CS)(CS_CORE)
-x(4000_DAM)(CS_CORE)
-x(4000_DAM)(DS_CS)
-x(4000_DAM)(DS_DE)
-x(4000_DE)(DS_DE)
-x(4000_MATH_DE)(CS_GEN_MATH)
-x(4000_MATH_DE)(DS_DE)
-x(4000_MATH_DE)(DS_MS)
-x(4000_SYS)(CS_CORE)
-x(4000_THRY)(CS_CORE)
+x(1000_MATH)(CS_GEN_MATH)
 x(ART_CON)(HUA_CORE)
 x(BIO)(CS_GEN_SCI)
 x(BIO)(CS_SCI_ENG)
-x(BIO)(DS_NES)
-x(BIO_CHEM)(CS_GEN_SCI)
-x(BIO_CHEM)(CS_SCI_ENG)
-x(BIO_CHEM)(DS_NES)
-x(BMP)(DS_DE)
-x(BUS_OIE)(DS_BA)
-x(CALCI_I_II)(CS_GEN_MATH)
-x(CALCI_I_II)(DS_MS)
-x(CALC_III_IV)(CS_GEN_MATH)
-x(CALC_III_IV)(DS_DE)
-x(CALC_III_IV)(DS_MS)
+x(BIO_CHEM_LAP)(CS_GEN_SCI)
+x(BIO_CHEM_LAP)(CS_SCI_ENG)
 x(CHEM)(CS_GEN_SCI)
 x(CHEM)(CS_SCI_ENG)
-x(CHEM)(DS_NES)
-x(CRYPT)(CS_CORE)
-x(CRYPT)(CS_SCI_ENG)
-x(CRYPT)(DS_NES)
-x(CS_4000_2)(CS_CORE)
-x(CS_4000_2)(DS_CS)
-x(CS_4000_2)(DS_DE)
+x(CS_4000)(CS_CORE)
+x(CS_4_SYS)(CS_CORE)
+x(CS_4_THRY)(CS_CORE)
+x(CS_CRYPT)(CS_CORE)
+x(CS_CRYPT)(CS_SCI_ENG)
 x(CS_DESIGN)(CS_CORE)
-x(CS_DESIGN)(DS_CS)
-x(CS_DESIGN)(DS_DE)
-x(CS_GRAD_MORE)(CS_CORE)
-x(CS_GRAD_MORE)(DS_CS)
-x(CS_GRAD_MORE)(DS_DE)
-x(CS_NOT_DS)(CS_CORE)
-x(DE)(DS_DE)
-x(DISCRETE)(CS_CORE)
-x(DISCRETE)(CS_GEN_MATH)
-x(DISCRETE)(DS_DE)
-x(DISCRETE)(DS_MS)
-x(DMML)(CS_CORE)
-x(DMML)(DS_CS)
-x(DMML)(DS_DE)
+x(CS_DISC)(CS_CORE)
+x(CS_DISC)(CS_GEN_MATH)
+x(CS_ELECT)(CS_CORE)
+x(CS_G_DESIGN)(CS_CORE)
+x(CS_G_SYS)(CS_CORE)
+x(CS_G_THRY)(CS_CORE)
+x(CS_INTRO)(CS_CORE)
+x(CS_NUM_MET)(CS_CORE)
+x(CS_NUM_MET)(CS_GEN_MATH)
+x(CS_OOP)(CS_CORE)
+x(CS_SYS_PROG)(CS_CORE)
 x(DPE_GOV)(SOC_SCI_REQ)
 x(DPE_HU)(HUA_CORE)
-x(DS_CORE)(DS_C)
-x(ETR)(DS_EI)
 x(FL_CON)(HUA_CORE)
-x(GRAD_BMP)(DS_DE)
-x(GRAD_CS)(CS_CORE)
-x(GRAD_DE)(DS_DE)
-x(GRAD_DES)(CS_CORE)
-x(GRAD_MATH)(CS_GEN_MATH)
-x(GRAD_MATH)(DS_DE)
-x(GRAD_MATH)(DS_MS)
-x(GRAD_SYS)(CS_CORE)
-x(GRAD_THRY)(CS_CORE)
-x(G_DMML)(CS_CORE)
-x(G_DMML)(DS_CS)
-x(G_DMML)(DS_DE)
 x(HI_CON)(HUA_CORE)
 x(HU_CAP)(HUA_PROJ)
-x(INTRO_CS)(CS_CORE)
-x(INTRO_CS)(DS_CS)
 x(IQP_OFF)(IQP)
-x(LIN_ALG)(CS_GEN_MATH)
-x(LIN_ALG)(DS_LA)
-x(MATH_DE)(CS_GEN_MATH)
-x(MATH_DE)(DS_DE)
-x(MATH_DE)(DS_MS)
 x(MATH_ELECT)(CS_GEN_MATH)
-x(NES_BOTH)(CS_SCI_ENG)
-x(NES_BOTH)(DS_NES)
-x(NES_DS)(DS_NES)
-x(NON_DE_MATH)(CS_GEN_MATH)
-x(NUM_M_1)(CS_CORE)
-x(NUM_M_1)(CS_GEN_MATH)
-x(NUM_M_1)(DS_DE)
-x(NUM_M_1)(DS_MS)
-x(NUM_M_2)(CS_CORE)
-x(NUM_M_2)(CS_GEN_MATH)
-x(OOP)(CS_CORE)
-x(OOP)(DS_CS)
 x(PHY)(CS_GEN_SCI)
 x(PHY)(CS_SCI_ENG)
-x(PHY)(DS_NES)
-x(PH_AE)(CS_GEN_SCI)
-x(PH_AE)(CS_SCI_ENG)
-x(PH_AE)(DS_NES)
 x(PROB)(CS_GEN_MATH)
 x(PROB)(CS_PROB)
-x(PROB)(DS_DE)
-x(PROB)(DS_MS)
 x(PY_CON)(HUA_CORE)
+x(SCI_ENG)(CS_SCI_ENG)
 x(SOC_SCI)(SOC_SCI_REQ)
 x(STATS)(CS_GEN_MATH)
 x(STATS)(CS_STATS)
-x(STATS)(DS_STATS)
-x(SYSTEMS)(CS_CORE)
-x(SYSTEMS)(DS_CS)
-x(SYSTEMS)(DS_DE)
 x(WR_CON)(HUA_CORE)
-y(4000_CS)
-y(4000_DAM)
-y(4000_DE)
-y(4000_MATH_DE)
-y(4000_SYS)
-y(4000_THRY)
+y(1000_MATH)
 y(ART_CON)
 y(BIO)
-y(BIO_CHEM)
-y(BMP)
-y(BUS_OIE)
-y(CALCI_I_II)
-y(CALC_III_IV)
+y(BIO_CHEM_LAP)
 y(CHEM)
-y(CRYPT)
-y(CS_4000_2)
+y(CS_4000)
+y(CS_4_SYS)
+y(CS_4_THRY)
+y(CS_CRYPT)
 y(CS_DESIGN)
-y(CS_GRAD_MORE)
-y(CS_NOT_DS)
-y(DE)
-y(DISCRETE)
-y(DMML)
+y(CS_DISC)
+y(CS_ELECT)
+y(CS_G_DESIGN)
+y(CS_G_SYS)
+y(CS_G_THRY)
+y(CS_INTRO)
+y(CS_NUM_MET)
+y(CS_OOP)
+y(CS_SYS_PROG)
 y(DPE_GOV)
 y(DPE_HU)
-y(DS_CORE)
-y(ETR)
 y(FL_CON)
-y(GRAD_BMP)
-y(GRAD_CS)
-y(GRAD_DE)
-y(GRAD_DES)
-y(GRAD_MATH)
-y(GRAD_SYS)
-y(GRAD_THRY)
-y(G_DMML)
 y(HI_CON)
 y(HU_CAP)
 y(IMGD)
-y(INTRO_CS)
 y(IQP_OFF)
-y(LIN_ALG)
-y(MATH_DE)
 y(MATH_ELECT)
-y(NES_BOTH)
-y(NES_DS)
-y(NON_DE_MATH)
-y(NUM_M_1)
-y(NUM_M_2)
-y(OOP)
 y(PHY)
-y(PH_AE)
 y(PROB)
 y(PY_CON)
+y(SCI_ENG)
 y(SOC_SCI)
 y(STATS)
-y(SYSTEMS)
 y(WR_CON)
 Binaries
 SR2(CS_SCI_DPTH_0)
@@ -647,61 +295,22 @@ SR2(HUA_DEPTH_1)
 SR2(HUA_DEPTH_2)
 SR2(HUA_DEPTH_3)
 SR2(HUA_DEPTH_4)
-x(ALGO)(CS_CORE)
-x(ALGO)(DS_ALGOS)
-x(BCB_4004)(CS_GEN_MATH)
-x(BCB_4004)(DS_DE)
-x(CS_1004)(DS_CS)
-x(CS_2119)(DS_CS)
-x(CS_3013)(CS_CORE)
-x(CS_3043)(CS_CORE)
-x(CS_3043)(DS_DE)
-x(CS_3133)(CS_CORE)
-x(CS_3133)(DS_CS)
-x(CS_3133)(DS_DE)
-x(CS_3431)(CS_CORE)
-x(CS_3431)(DS_CS)
-x(CS_3431)(DS_DE)
-x(CS_4120)(CS_CORE)
-x(CS_4120)(DS_CS)
-x(CS_4120)(DS_DE)
-x(CS_4233)(CS_CORE)
-x(CS_4233)(DS_CS)
-x(CS_4233)(DS_DE)
-x(CS_542)(CS_CORE)
-x(CS_542)(DS_CS)
-x(CS_542)(DS_DE)
-x(CS_561)(CS_CORE)
-x(CS_561)(DS_CS)
-x(CS_561)(DS_DE)
+x(CS_4_DESIGN)(CS_CORE)
+x(CS_OS)(CS_CORE)
+x(CS_SOC_IMPS)(CS_CORE)
+x(CS_THRY)(CS_CORE)
 x(GEO)(CS_GEN_SCI)
 x(GEO)(CS_SCI_ENG)
-x(GEO)(DS_NES)
-x(GOV_2313)(SOC_SCI_REQ)
 x(ID_2050)(SOC_SCI_REQ)
-x(ID_2314)(SOC_SCI_REQ)
 x(IQP_ON)(IQP)
-x(MIS_3720)(DS_DE)
 x(RBE_3100)(CS_SCI_ENG)
-x(RBE_3100)(DS_NES)
-y(ALGO)
-y(BCB_4004)
-y(CS_1004)
-y(CS_210X)
-y(CS_2119)
-y(CS_3013)
-y(CS_3043)
-y(CS_3133)
-y(CS_3431)
-y(CS_4120)
-y(CS_4233)
-y(CS_542)
-y(CS_561)
+y(CS_4_DESIGN)
+y(CS_OS)
+y(CS_SOC_IMPS)
+y(CS_THRY)
 y(GEO)
-y(GOV_2313)
 y(ID_2050)
-y(ID_2314)
 y(IQP_ON)
-y(MIS_3720)
+y(OO_REST)
 y(RBE_3100)
 End

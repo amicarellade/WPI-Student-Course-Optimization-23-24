@@ -1,25 +1,25 @@
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-147.0 TOTAL
+135 TOTAL
 -------------------------------
-144.0 REMAINING 
-    129 Academic Courses 
-    0.0 Free Electives 
-    12.0 MQP 
+135 REMAINING 
+    114 Academic Courses 
+    9.0 Free Electives 
+    9.0 MQP 
     3.0 PE
  
-3.0 TAKEN
-    3.0 Applied
-    0.0 Excess
+0.0 TAKEN
+    0 Applied
+    0 Excess
 
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.546414199998253
+TOTAL RUN TIME: 0.3796835999964969
 ----------------------------------------
-    Stage I solve: 0.1962742805480957
-    Stage II solve: 0.168046236038208
+    Stage I solve: 0.14971709251403809
+    Stage II solve: 0.09477853775024414
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -34,7 +34,6 @@ MQP
     [MQP]
     [MQP]
     [MQP]
-    [MQP]
 
 Physical Education
 ----------------------------
@@ -45,7 +44,7 @@ Physical Education
 
 Humanities
 ----------------------------
-    [HU_3900 OR HU_3910]
+    [Humanities Capstone]
     [Humanities]
     [Humanities]
     [Humanities]
@@ -63,72 +62,13 @@ Social Science
 
 Free Electives
 ----------------------------
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
+    [FREE ELECTIVE]
 
 Not used
 ----------------------------
     No Unused Courses
-
-
- 
-Data Science
-____________________________________
-
- 
-Algorithms
-----------------------------
-    [CS 2223]
-
-Business Analysis 
-----------------------------
-    [BUS_2080 OR OIE_2081]
-
-Core
-----------------------------
-    [DS 1010]
-    [DS 2010]
-    [DS 3010]
-
-Computer Science
-----------------------------
-    [CS_1101, CS_1102]
-    [CS_2102, CS_2103]
-
-Disciplinary Electives
-----------------------------
-    [4000 Level Data Access & Management - CS_4432, CS_4433/DS_4433]
-    [4000 Level Math Disciplinary Electives]
-    [Business Modeling and Prediction - MIS_4084, OIE_4430]
-    [CS 4342]
-    [CS 4445]
-    [CS Grad Level Electives]
-    [CS Grad Level Electives]
-    [CS_3043]
-    [CS_3133]
-    [Design - CS_3041, CS_3733]
-    [Probability - MA_2621 OR MA_2631]
-
-Entrepreneurship and Innovation
-----------------------------
-    [Entrepreneurship and Innovation - BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
-
-Linear Algebra
-----------------------------
-    [MA_2071 OR MA_2072]
-
-Mathematical Sciences
-----------------------------
-    MA 1021
-    [4000 Level Math Disciplinary Electives]
-
-Natural or Engineering Sciences
-----------------------------
-    [Biology]
-    [Biology]
-
-Applied Statistics
-----------------------------
-    [MA 2611]
-    [MA 2612]
 
 
  
@@ -138,27 +78,29 @@ ____________________________________
  
 CS Core
 ----------------------------
-    [4000 Level Data Access & Management - CS_4432, CS_4433/DS_4433]
-    [CS 2223]
-    [CS 4342]
-    [CS 4445]
-    [CS Grad Level Electives]
-    [CS Grad Level Electives]
-    [CS_1101, CS_1102]
-    [CS_2102, CS_2103]
-    [CS_3043]
-    [CS_3133]
-    [Design - CS_3041, CS_3733]
-    [Grad CS]
-    [Grad Level Systems - CS_502, CS_533, CS_535]
+    [CS 3043]
+    [CS 3133]
+    [CS 4000 Level Systems - CS_4513, CS_4515, CS_4516]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS 4000+ Level Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [CS Electives]
+    [Design - CS_3041, CS_3431, CS_3733, CS_4233]
+    [Intro CS - CS_1101 OR CS_1102]
+    [Object-Oriented Programming - CS_2102 OR CS_2103]
 
 General Math
 ----------------------------
-    MA 1021
-    [4000 Level Math Disciplinary Electives]
-    [4000 Level Math Disciplinary Electives]
-    [MA 2611]
-    [MA_2071 OR MA_2072]
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [1000 Level Math]
+    [Math Electives]
 
 General Science
 ----------------------------
@@ -172,12 +114,12 @@ Probability
 
 Science/Engineering Electives
 ----------------------------
-    [Natural and Engineering Sciences]
-    [Natural and Engineering Sciences]
+    [Science and Engineering Electives]
+    [Science and Engineering Electives]
 
 Statistics
 ----------------------------
-    [MA 2612]
+    [Statistics - MA_2611, MA_2612]
 
 
  
