@@ -76,63 +76,108 @@
                         </h2>
                         <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                {% for requirement_a, courses in requirement_areas.items() %}
-                                    <h4>{{ requirement_a }}</h4>
-                                    <ul>
-                                        {% for course in courses %}
-                                            <li>
-                                                <!-- Display the course name -->
-                                                {{ course[0] }}
-
-                                                {% if course[1] %}
-                                                    <!-- If course[1] is True, show 'Completed' -->
-                                                    <span>Completed</span>
-                                                {% elif course[2] %}
-                                                    <!-- If course[1] is False and course[2] exists, process associated courses -->
+                                <div class="accordion" id="nestedAccordion{{ loop.index }}">
+                                    {% for requirement_a, courses in requirement_areas.items() %}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="nestedHeading{{ loop.index }}-{{ loop.index0 }}">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse{{ loop.index }}-{{ loop.index0 }}" aria-expanded="false" aria-controls="nestedCollapse{{ loop.index }}-{{ loop.index0 }}">
+                                                    {{ requirement_a }}
+                                                </button>
+                                            </h2>
+                                            <div id="nestedCollapse{{ loop.index }}-{{ loop.index0 }}" class="accordion-collapse collapse" aria-labelledby="nestedHeading{{ loop.index }}-{{ loop.index0 }}" data-bs-parent="#nestedAccordion{{ loop.index }}">
+                                                <div class="accordion-body">
                                                     <ul>
-                                                        {% for course_number in course[2] %}
-                                                            <li class="course-item">
-                                                                {% set course_number = course_number.replace('_', ' ') %}
-                                                                <span>{{ course_number }}</span>
+                                                        {% for course in courses %}
+                                                            <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                                                <!-- Display the course name -->
+                                                                <span>{{ course[0] }}</span>
+                                                            
 
-                                                                {% for course in json_data['courses'] %}
-                                                                    {% if course['Course Number'] == course_number %}
-                                                                        <p>Course Name: {{ course['Course Name'] }}</p>
-                                                                        <p>Average Grade: {{ course['average_grade'] }}</p>
-                                                                        <p>Hours: {{ course['hours'] }}</p>
-
-                                                                        <select id="professor_{{ course['Course Number'] }}" onchange="showProfessorInfo('{{ course['Course Number'] }}', this.value)">
-                                                                            <option value="">Select Professor</option>
-                                                                            {% for professor in course['Professors'] %}
-                                                                                <option 
-                                                                                    value="{{ professor['Professor Name'] }}" 
-                                                                                    data-rating="{{ professor['Rating'] }}"
-                                                                                    data-would-take-again="{{ professor['Would Take Again'] }}"
-                                                                                    data-difficulty="{{ professor['Difficulty'] }}"
-                                                                                >
-                                                                                    {{ professor['Professor Name'] }}
-                                                                                </option>
-                                                                            {% endfor %}
-                                                                        </select>
-
-                                                                        <!-- Display professor details when selected -->
-                                                                        <div id="professor_info_{{ course['Course Number'] }}" style="display:none;">
-                                                                            <h3>Professor Information:</h3>
-                                                                            <p id="professor_name_{{ course['Course Number'] }}"></p>
-                                                                            <p id="professor_rating_{{ course['Course Number'] }}"></p>
-                                                                            <p id="professor_take_again_{{ course['Course Number'] }}"></p>
-                                                                            <p id="professor_difficulty_{{ course['Course Number'] }}"></p>
-                                                                        </div>
-                                                                    {% endif %}
-                                                                {% endfor %}
+                                                                {% if course[1] %}
+                                                                    <!-- If course[1] is True, show 'Completed' -->
+                                                                    <span>Completed</span>
+                                                                {% elif course[2] %}
+                                                                    <!-- Dropdown for associated courses -->
+                                                                    <select 
+                                                                        name="associated_courses" 
+                                                                        class="form-select form-select-sm" 
+                                                                        style="margin-left: 10px; max-width: 140px; height = 30px;" 
+                                                                        onchange="showCourseInfo(this, '{{ course[0] }}', {{ loop.index }})"
+                                                                    >
+                                                                        <option value="" disabled selected>Select a course</option>
+                                                                        {% for associated_course in course[2] %}
+                                                                            {% set associated_course = associated_course.replace('_', ' ') %}
+                                                                            <option value="{{ associated_course }}">{{ associated_course }}</option>
+                                                                        {% endfor %}
+                                                                    </select>
+                                                                {% endif %}
                                                             </li>
+                                                             <!-- Container for dynamic course information -->
+                                                             <div id="course_info_{{ course[0] }}_{{ loop.index }}" style="display: none; margin-bottom: 10px;">
+                                                            
+                                                                {% for course_number in course[2] %}
+                                                                    {% set course_number = course_number.replace('_', ' ') %}
+
+                                                                    {% for course in json_data['courses'] %}
+                                                                        {% if course['Course Number'] == course_number %}
+                                                                            <div id="course_info_{{ course_number }}" style="display: none; margin-top: 10px;">
+                                                                                <ul>
+                                                                                    <li style="display: flex; justify-content: space-between; align-items: center;">
+                                                                                        <span>Course Name:</span>
+                                                                                        <span>{{ course['Course Name'] }}</span>
+                                                                                    </li>
+                                                                                    <li style="display: flex; justify-content: space-between; align-items: center;">
+                                                                                        <span>Average Grade:</span>
+                                                                                        <span>{{ course['average_grade'] }}</span>
+                                                                                    </li>
+                                                                                    <li style="display: flex; justify-content: space-between; align-items: center;">
+                                                                                        <span>Hours:</span>
+                                                                                        <span>{{ course['hours'] }}</span>
+                                                                                    </li>
+                                                                                    <!-- New bullet point for Professor -->
+                                                                                    <li style="display: flex; justify-content: space-between; align-items: center;">
+                                                                                        <span>Professor:</span>
+                                                                                        <!-- Dropdown for professors -->
+                                                                                        <select 
+                                                                                            name="associated-professors" 
+                                                                                            class="form-select form-select-sm" 
+                                                                                            style="margin-left: 10px; max-width: 140px;"
+                                                                                            onchange="showProfessorInfo('{{ course['Course Number'] }}', this.value)">
+                                                                                            <option value="" disabled selected>Select a Prof.</option>
+                                                                                            {% for professor in course['Professors'] %}
+                                                                                                <option 
+                                                                                                    value="{{ professor['Professor Name'] }}" 
+                                                                                                    data-rating="{{ professor['Rating'] }}"
+                                                                                                    data-would-take-again="{{ professor['Would Take Again'] }}"
+                                                                                                    data-difficulty="{{ professor['Difficulty'] }}">
+                                                                                                    {{ professor['Professor Name'] }}
+                                                                                                </option>
+                                                                                            {% endfor %}
+                                                                                        </select>
+                                                                                    </li>
+                                                                                    <!-- Display professor details when selected -->
+                                                                                    <div id="professor_info_{{ course_number }}" style="display:none;">                                                                                        
+                                                                                        <ul>
+                                                                                            <li id="professor_rating_{{ course['Course Number'] }}"></li>
+                                                                                            <li id="professor_take_again_{{ course['Course Number'] }}"></li>
+                                                                                            <li id="professor_difficulty_{{ course['Course Number'] }}"></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                        {% endif %}
+                                                                    {% endfor %}
+                                                                    
+                                                                {% endfor %}
+                                                            
+                                                            </div> 
                                                         {% endfor %}
                                                     </ul>
-                                                {% endif %}
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,36 +191,78 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     
     <script>
-        function showProfessorInfo(courseNumber, professorName) {
-            // Hide all professor info divs initially
-            document.querySelectorAll('[id^="professor_info_' + courseNumber + '"]').forEach(function(div) {
-                div.style.display = 'none';
-            });
+        function showCourseInfo(selectElement, courseName, loopIndex) {
+        const selectedCourse = selectElement.value;
+        const courseContainer = document.getElementById(`course_info_${selectedCourse}`);
+        console.log(`course_info_${courseName}_${selectedCourse}`);
+        const infoContainer = document.getElementById(`course_info_${courseName}_${loopIndex}`);
 
-            // Find the professor info div for the selected professor
-            var professorInfoDiv = document.getElementById("professor_info_" + courseNumber);
-            if (professorName === "") {
-                professorInfoDiv.style.display = 'none';
+        if (selectedCourse) {
+            // infoContainer.style.display = "block";
+            if (courseContainer) {
+                infoContainer.innerHTML = courseContainer.innerHTML; // Copy the content from the selected course
+                infoContainer.style.display = "block";
             } else {
-                professorInfoDiv.style.display = 'block';
+                infoContainer.innerHTML = "<p>No data available</p>";
+                infoContainer.style.display = "block";
+            }
+        } else {
+            infoContainer.style.display = "none";
+        }
+    }   
+    function showProfessorInfo(courseNumber, professorName) {
+        // Hide all professor info divs initially
+        document.querySelectorAll('[id^="professor_info_' + courseNumber + '"]').forEach(function(div) {
+            div.style.display = 'none';
+        });
 
-                // Find the selected professor option
-                var selectedOption = document.querySelector('#professor_' + CSS.escape(courseNumber) + ' option[value="' + CSS.escape(professorName) + '"]');
+        // Find the professor info div for the selected professor
+        var professorInfoDiv = document.getElementById("professor_info_" + courseNumber);
+        if (professorName === "") {
+            professorInfoDiv.style.display = 'none';
+        } else {
+            
+            
+            console.log("Professor info displayed for course: " + courseNumber + ", professor: " + professorName);
+            // Find the selected professor option
+            const selectedOption = document.querySelector(
+                `option[value="${professorName}"]`
+            );
 
-                if (selectedOption) {
-                    // Extract professor information from data attributes
-                    var rating = selectedOption.getAttribute('data-rating');
-                    var wouldTakeAgain = selectedOption.getAttribute('data-would-take-again');
-                    var difficulty = selectedOption.getAttribute('data-difficulty');
+            if (selectedOption) {
+                console.log("workin");
+                // Extract professor information from data attributes
+                var rating = selectedOption.getAttribute('data-rating');
+                console.log(rating);
+                var wouldTakeAgain = selectedOption.getAttribute('data-would-take-again');
+                console.log(wouldTakeAgain);
+                var difficulty = selectedOption.getAttribute('data-difficulty');
+                console.log(difficulty);
 
-                    // Set the professor information dynamically
-                    document.getElementById("professor_name_" + courseNumber).textContent = "Professor Name: " + professorName;
-                    document.getElementById("professor_rating_" + courseNumber).textContent = "Rating: " + rating;
-                    document.getElementById("professor_take_again_" + courseNumber).textContent = "Would Take Again: " + wouldTakeAgain;
-                    document.getElementById("professor_difficulty_" + courseNumber).textContent = "Difficulty: " + difficulty;
+                // Check if elements exist before setting text content
+                var nameElement = document.getElementById("professor_name_" + courseNumber);
+                if (nameElement) {
+                    nameElement.textContent = "Professor Name: " + professorName;
                 }
+
+                var ratingElement = document.getElementById("professor_rating_" + courseNumber);
+                if (ratingElement) {
+                    ratingElement.textContent = "Rating: " + rating;
+                }
+
+                var takeAgainElement = document.getElementById("professor_take_again_" + courseNumber);
+                if (takeAgainElement) {
+                    takeAgainElement.textContent = "Would Take Again: " + wouldTakeAgain;
+                }
+
+                var difficultyElement = document.getElementById("professor_difficulty_" + courseNumber);
+                if (difficultyElement) {
+                    difficultyElement.textContent = "Difficulty: " + difficulty;
+                }
+                professorInfoDiv.style.display = 'block';
             }
         }
+    }
     </script>
 </body>
 </html>
