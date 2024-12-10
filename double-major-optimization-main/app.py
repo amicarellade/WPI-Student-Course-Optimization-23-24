@@ -31,9 +31,16 @@ def index():
         if not validate_major_selection(major, second_major, masters):
             return render_template('index.html', result=result)
 
-        # Load program references and determine the program name
+        # Load program references
         programs_ref = bd.get_dict_from_json("Data/JSONs/programs_ref.json")
-        program_names, base_dict, prog_name = determine_program(programs_ref, major, second_major, masters)
+        
+        try:
+            # Determine the program name
+            program_names, base_dict, prog_name = determine_program(programs_ref, major, second_major, masters)
+        except ValueError as e:
+            result = str(e)  # Error message for invalid combinations
+            return render_template('index.html', result=result)
+
         session['program_names'] = program_names
         session['base_dict'] = base_dict
         session['prog_name'] = prog_name
@@ -71,6 +78,7 @@ def index():
         return redirect(url_for('result', result_filename='test.txt'))
 
     return render_template('index.html', result=result)
+
 
 
 @ui.route('/independent_study_form', methods=['GET', 'POST'])
@@ -170,6 +178,11 @@ def determine_program(programs_ref, major, second_major, masters):
         program_names = [f"{major}_{masters}_BSMS"]
 
     prog_name = sm.get_program_run_name(program_names)
+
+    # Check if the program exists in the JSON reference
+    if prog_name not in programs_ref:
+        raise ValueError(f"Program combination '{prog_name}' does not exist.")
+
     base_dict = programs_ref[prog_name].copy()
     base_dict.pop("ALL_MAJORS", None)
     base_dict.pop("Buckets", None)
