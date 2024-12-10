@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Pie Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Set a larger size for the canvas */
+        #myPieChart {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myPieChart"></canvas>
+    <script>
+        const data = {
+            labels: [
+                'Humanities',
+                'IQP',
+                'Social Science',
+                'Free Electives',
+                'Not used',
+                'Algorithms',
+                'Business Analysis',
+                'Core',
+                'Computer Science',
+                'Disciplinary Electives',
+                'Entrepreneurship and Innovation',
+                'Linear Algebra',
+                'Mathematical Sciences',
+                'Natural or Engineering Sciences',
+                'Applied Statistics'
+            ],
+            datasets: [{
+                label: 'Credits',
+                data: [
+                    18, 3, 6, 9, 0, 3, 3, 9, 6, 36, 6, 3, 6, 6, 6
+                ],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(199, 199, 199, 0.2)',
+                    'rgba(83, 102, 255, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(199, 199, 199, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(199, 199, 199, 1)',
+                    'rgba(83, 102, 255, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(199, 199, 199, 1)'
+                ],
+                borderWidth: 1,
+                hoverOffset: 4
+            }]
+        };
+
+        const totalCredits = data.datasets[0].data.reduce((sum, currentValue) => sum + currentValue, 0);
+
+        // Define the plugin to display the total number of credits in the center
+        const plugin = {
+            id: 'text',
+            beforeDraw: function(chart) {
+                var width = chart.width,
+                    height = chart.height,
+                    ctx = chart.ctx;
+
+                ctx.restore();
+                var fontSize = (height / 10).toFixed(2); // Calculate the font size based on the height of the chart
+                ctx.font = fontSize + "px sans-serif";
+                ctx.textBaseline = "middle";
+                ctx.textAlign = "center";
+
+                var text = `Total: ${totalCredits}`,
+                    textX = width / 2,
+                    textY = height / 2;
+
+                // Center the text inside the donut hole
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            }
+        };
+
+        const config = {
+            type: 'doughnut', // Doughnut chart to make it hollow
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Allows chart to use the canvas size
+                cutout: '80%', // Adjusts the hollow portion (increase to make the center more hollow)
+                plugins: {
+                    legend: {
+                        position: 'right',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Course Credits Distribution'
+                    }
+                }
+            },
+            plugins: [plugin] // Register the plugin
+        };
+
+        const myPieChart = new Chart(
+            document.getElementById('myPieChart'),
+            config
+        );
+    </script>
+</body>
+</html>

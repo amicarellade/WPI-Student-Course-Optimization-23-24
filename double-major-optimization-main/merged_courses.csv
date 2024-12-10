@@ -1,0 +1,78 @@
+Course Number,Course Name,Professor,Rating,Would Take Again,Difficulty,average_grade,hours
+CS 1004,Introduction To Programming For Non-Majors   ,   Gillian Smith,4.3,84%,1.7,A-,6-10 hr/week
+CS 1101,Introduction To Program Design   ,   Matthew Ahrens,4.9,100%,2.3,A+,6-10 hr/week
+CS 2011,Introduction To Machine Organization And Assembly Language   ,   Taylor Andrews,2.5,34%,2.9,A+,6-10 hr/week
+CS 2022,Discrete Mathematics   ,   Herman Servatius,2.5,32%,3.9,A-,1-5 hr/week
+CS 2102,Object-Oriented Design Concepts   ,   Matthew Ahrens,4.9,100%,2.3,A+,6-10 hr/week
+CS 2119,Application Building With Object-Oriented Concepts   ,   Shubbhi Taneja,3.4,62%,3.7,A+,6-10 hr/week
+CS 2301,Systems Programming For Non-Majors   ,   Jennifer Mortensen,3.7,60%,3.0,A,6-10 hr/week
+CS 3013,Operating Systems   ,   Taylor Andrews,2.5,34%,2.9,A-,11-15 hr/week
+CS 3013,Operating Systems   ,   Shubbhi Taneja,3.4,62%,3.7,A-,11-15 hr/week
+CS 3013,Operating Systems   ,   Mark Sheahan,4.7,86%,3.0,A-,11-15 hr/week
+CS 3041,Human-Computer Interaction   ,   Erin Solovey,4.5,100%,2.0,A+,1-5 hr/week
+CS 3041,Human-Computer Interaction   ,   Lane Harrison,4.7,84%,3.3,A+,1-5 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Paul Delvy,0.0,,0.0,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Micha Hofri,1.3,0%,4.6,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Keith Pray,2.9,25%,2.9,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Joshua Cuneo,2.7,40%,3.6,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Michael Engling,4.7,95%,2.7,A+,6-10 hr/week
+CS 3133,Foundations Of Computer Science   ,   Michael Engling,4.7,95%,2.7,A,1-5 hr/week
+CS 3133,Foundations Of Computer Science   ,   Rose Bohrer,5.0,100%,2.0,A,1-5 hr/week
+CS 3431,Database Systems I   ,   Rodica Neamtu,2.1,25%,3.8,A,6-10 hr/week
+CS 3431,Database Systems I   ,   Sakire Arslan Ay,5.0,100%,2.0,A,6-10 hr/week
+CS 3516,Computer Networks   ,   Xiaoyan Sun,5.0,100%,2.0,A+,6-10 hr/week
+CS 3516,Computer Networks   ,   Shubbhi Taneja,3.4,62%,3.7,A+,6-10 hr/week
+CS 3733,Software Engineering   ,   Wilson Wong,4.1,87%,4.1,A+,11-15 hr/week
+CS 3733,Software Engineering   ,   Sakire Arslan Ay,5.0,100%,2.0,A+,11-15 hr/week
+CS 4123,Theory Of Computation   ,   Hanmeng Zhan,3.0,31%,2.8,A-,1-5 hr/week
+CS 4233,Object-Oriented Analysis And Design   ,   Gary Pollice,3.7,23%,3.1,A-,6-10 hr/week
+CS 4241,Webware: Computational Technology For Network Information Systems   ,   Joshua Cuneo,2.7,40%,3.6,A+,6-10 hr/week
+CS 4341,Introduction To Artificial Intelligence   ,   Xiaozhong Liu,0.0,,0.0,A-,6-10 hr/week
+CS 4342,Machine Learning   ,   Xiangnan Kong,2.9,50%,1.5,A+,6-10 hr/week
+CS 4401,Software Security Engineering   ,   Jun Dai,1.5,0%,2.8,A-,11-15 hr/week
+CS 4432,Database Systems II   ,   Fabricio Murai,4.3,,3.0,A,6-10 hr/week
+CS 4433,Big Data Management and Analytics   ,   Elke Rundensteiner,3.1,20%,2.8,A,11-15 hr/week
+CS 4513,Distributed Computing Systems   ,   Craig Wills,4.5,100%,3.3,A+,6-10 hr/week
+CS 4516,Advanced Computer Networks   ,   Xiaoyan Sun,5.0,100%,2.0,A+,1-5 hr/week
+CS 4731,Computer Graphics   ,   Joshua Cuneo,2.7,40%,3.6,A+,6-10 hr/week
+CS 4801,Introduction To Cryptography And Communication Security   ,   Koksal Mus,2.8,50%,3.0,A+,6-10 hr/week
+CS 4804,Data Visualization   ,   Lane Harrison,4.7,84%,3.3,A+,6-10 hr/week
+CS 1004,Introduction To Programming For Non-Majors   ,   Taylor Andrews,2.5,34%,2.9,A-,6-10 hr/week
+CS 1101,Introduction To Program Design   ,   Matthew Ahrens,4.9,100%,2.3,A+,6-10 hr/week
+CS 1101,Introduction To Program Design   ,   Michael Engling,4.7,95%,2.7,A+,6-10 hr/week
+CS 1101,Introduction To Program Design   ,   Joshua Cuneo,2.7,40%,3.6,A+,6-10 hr/week
+CS 1102,Accelerated Introduction To Program Design   ,   Joseph Beck,3.3,58%,2.9,A,6-10 hr/week
+CS 2011,Introduction To Machine Organization And Assembly Language   ,   Taylor Andrews,2.5,34%,2.9,A+,6-10 hr/week
+CS 2022,Discrete Mathematics   ,   Gabor Sarkozy,4.0,74%,2.8,A-,1-5 hr/week
+CS 2022,Discrete Mathematics   ,   Herman Servatius,2.5,32%,3.9,A-,1-5 hr/week
+CS 2102,Object-Oriented Design Concepts   ,   Matthew Ahrens,4.9,100%,2.3,A+,6-10 hr/week
+CS 2102,Object-Oriented Design Concepts   ,   Yu-Shan Sun,5.0,100%,2.0,A+,6-10 hr/week
+CS 2103,Accelerated Object-Oriented Design Concepts   ,   Joshua Cuneo,2.7,40%,3.6,A+,6-10 hr/week
+CS 2301,Systems Programming For Non-Majors   ,   Jennifer Mortensen,3.7,60%,3.0,A,6-10 hr/week
+CS 3013,Operating Systems   ,   Craig Wills,4.5,100%,3.3,A-,11-15 hr/week
+CS 3013,Operating Systems   ,   Craig Shue,4.5,100%,3.3,A-,11-15 hr/week
+CS 3041,Human-Computer Interaction   ,   Matthew Ahrens,4.9,100%,2.3,A+,1-5 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Keith Pray,2.9,25%,2.9,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Matthew Ahrens,4.9,100%,2.3,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Joshua Cuneo,2.7,40%,3.6,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Marcel LaFlamme,4.7,97%,2.9,A+,6-10 hr/week
+CS 3043,Social Implications Of Information Processing   ,   Joseph Beck,3.3,58%,2.9,A+,6-10 hr/week
+CS 3133,Foundations Of Computer Science   ,   Daniel Reichman,2.0,0%,4.0,A,1-5 hr/week
+CS 3133,Foundations Of Computer Science   ,   Gabor Sarkozy,4.0,74%,2.8,A,1-5 hr/week
+CS 3431,Database Systems I   ,   Wilson Wong,4.1,87%,4.1,A,6-10 hr/week
+CS 3431,Database Systems I   ,   Shubbhi Taneja,3.4,62%,3.7,A,6-10 hr/week
+CS 3431,Database Systems I   ,   Rodica Neamtu,2.1,25%,3.8,A,6-10 hr/week
+CS 3516,Computer Networks   ,   Yanhua Li,4.9,100%,3.3,A+,6-10 hr/week
+CS 3733,Software Engineering   ,   George Heineman,4.5,100%,3.4,A+,11-15 hr/week
+CS 4033,Numerical Methods For Calculus And Differential Equations   ,   Marcus Sarkis-Martins,2.1,14%,3.3,A,11-15 hr/week
+CS 4100,Artificial Intelligence For Interactive Media And Games   ,   Gillian Smith,4.3,84%,1.7,A+,11-15 hr/week
+CS 4120,Analysis Of Algorithms   ,   Daniel Reichman,2.0,0%,4.0,A+,1-5 hr/week
+CS 4233,Object-Oriented Analysis And Design   ,   Gary Pollice,3.7,23%,3.1,A-,6-10 hr/week
+CS 4241,Webware: Computational Technology For Network Information Systems   ,   Charles Roberts,2.4,,2.5,A+,6-10 hr/week
+CS 4341,Introduction To Artificial Intelligence   ,   Carolina Ruiz,2.4,29%,4.5,A-,6-10 hr/week
+CS 4341,Introduction To Artificial Intelligence   ,   Chun-Kit Ngan,2.2,20%,3.4,A-,6-10 hr/week
+CS 4341,Introduction To Artificial Intelligence   ,   Dmitry Korkin,3.8,,3.6,A-,6-10 hr/week
+CS 4342,Machine Learning   ,   Ali Yousefi,3.7,72%,4.4,A+,6-10 hr/week
+CS 4445,Data Mining And Knowledge Discovery In Databases   ,   Xiangnan Kong,2.9,50%,1.5,A,1-5 hr/week
+CS 4536,Programming Languages   ,   Rose Bohrer,5.0,100%,2.0,A+,6-10 hr/week
+

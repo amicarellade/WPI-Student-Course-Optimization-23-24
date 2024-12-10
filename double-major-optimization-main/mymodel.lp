@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 \* SchedulingCourses *\
 Minimize
 OBJ: 3 y(1000_CS) + 3 y(4000_BI) + 3 y(4000_MA_DE_NOT_DC) + 3 y(4000_PA)
@@ -807,3 +809,4 @@ y(UG_MOB_UB)
 y(UG_PROB_STATS_I)
 y(UG_PROB_STATS_II)
 End
+>>>>>>> 159a2e6de181a6fe34671fc1e50410436010e165
