@@ -1,0 +1,1992 @@
+[
+    {
+        "Course Number": "CS 1004",
+        "Course Name": "Introduction To Programming For Non-Majors",
+        "Professor": "Gillian Smith",
+        "Rating": "4.3",
+        "Would Take Again": "84%",
+        "Difficulty": "1.7",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 1101",
+        "Course Name": "Introduction To Program Design",
+        "Professor": "Matthew Ahrens",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2011",
+        "Course Name": "Introduction To Machine Organization And Assembly Language",
+        "Professor": "Taylor Andrews",
+        "Rating": "2.5",
+        "Would Take Again": "34%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2022",
+        "Course Name": "Discrete Mathematics",
+        "Professor": "Herman Servatius",
+        "Rating": "2.5",
+        "Would Take Again": "32%",
+        "Difficulty": "3.9",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 2102",
+        "Course Name": "Object-Oriented Design Concepts",
+        "Professor": "Matthew Ahrens",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2119",
+        "Course Name": "Application Building With Object-Oriented Concepts",
+        "Professor": "Shubbhi Taneja",
+        "Rating": "3.4",
+        "Would Take Again": "62%",
+        "Difficulty": "3.7",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2301",
+        "Course Name": "Systems Programming For Non-Majors",
+        "Professor": "Jennifer Mortensen",
+        "Rating": "3.7",
+        "Would Take Again": "60%",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3013",
+        "Course Name": "Operating Systems",
+        "Professor": "Taylor Andrews",
+        "Rating": "2.5",
+        "Would Take Again": "34%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 3013",
+        "Course Name": "Operating Systems",
+        "Professor": "Shubbhi Taneja",
+        "Rating": "3.4",
+        "Would Take Again": "62%",
+        "Difficulty": "3.7",
+        "average_grade": "A-",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 3013",
+        "Course Name": "Operating Systems",
+        "Professor": "Mark Sheahan",
+        "Rating": "4.7",
+        "Would Take Again": "86%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 3041",
+        "Course Name": "Human-Computer Interaction",
+        "Professor": "Erin Solovey",
+        "Rating": "4.5",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3041",
+        "Course Name": "Human-Computer Interaction",
+        "Professor": "Lane Harrison",
+        "Rating": "4.7",
+        "Would Take Again": "84%",
+        "Difficulty": "3.3",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Paul Delvy",
+        "Rating": "0.0",
+        "Would Take Again": "",
+        "Difficulty": "0.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Micha Hofri",
+        "Rating": "1.3",
+        "Would Take Again": "0%",
+        "Difficulty": "4.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Keith Pray",
+        "Rating": "2.9",
+        "Would Take Again": "25%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Joshua Cuneo",
+        "Rating": "2.7",
+        "Would Take Again": "40%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Michael Engling",
+        "Rating": "4.7",
+        "Would Take Again": "95%",
+        "Difficulty": "2.7",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3133",
+        "Course Name": "Foundations Of Computer Science",
+        "Professor": "Michael Engling",
+        "Rating": "4.7",
+        "Would Take Again": "95%",
+        "Difficulty": "2.7",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3133",
+        "Course Name": "Foundations Of Computer Science",
+        "Professor": "Rose Bohrer",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3431",
+        "Course Name": "Database Systems I",
+        "Professor": "Rodica Neamtu",
+        "Rating": "2.1",
+        "Would Take Again": "25%",
+        "Difficulty": "3.8",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3431",
+        "Course Name": "Database Systems I",
+        "Professor": "Sakire Arslan Ay",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3516",
+        "Course Name": "Computer Networks",
+        "Professor": "Xiaoyan Sun",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3516",
+        "Course Name": "Computer Networks",
+        "Professor": "Shubbhi Taneja",
+        "Rating": "3.4",
+        "Would Take Again": "62%",
+        "Difficulty": "3.7",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3733",
+        "Course Name": "Software Engineering",
+        "Professor": "Wilson Wong",
+        "Rating": "4.1",
+        "Would Take Again": "87%",
+        "Difficulty": "4.1",
+        "average_grade": "A+",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 3733",
+        "Course Name": "Software Engineering",
+        "Professor": "Sakire Arslan Ay",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 4123",
+        "Course Name": "Theory Of Computation",
+        "Professor": "Hanmeng Zhan",
+        "Rating": "3.0",
+        "Would Take Again": "31%",
+        "Difficulty": "2.8",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 4233",
+        "Course Name": "Object-Oriented Analysis And Design",
+        "Professor": "Gary Pollice",
+        "Rating": "3.7",
+        "Would Take Again": "23%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4241",
+        "Course Name": "Webware: Computational Technology For Network Information Systems",
+        "Professor": "Joshua Cuneo",
+        "Rating": "2.7",
+        "Would Take Again": "40%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4341",
+        "Course Name": "Introduction To Artificial Intelligence",
+        "Professor": "Xiaozhong Liu",
+        "Rating": "0.0",
+        "Would Take Again": "",
+        "Difficulty": "0.0",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4342",
+        "Course Name": "Machine Learning",
+        "Professor": "Xiangnan Kong",
+        "Rating": "2.9",
+        "Would Take Again": "50%",
+        "Difficulty": "1.5",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4401",
+        "Course Name": "Software Security Engineering",
+        "Professor": "Jun Dai",
+        "Rating": "1.5",
+        "Would Take Again": "0%",
+        "Difficulty": "2.8",
+        "average_grade": "A-",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 4432",
+        "Course Name": "Database Systems II",
+        "Professor": "Fabricio Murai",
+        "Rating": "4.3",
+        "Would Take Again": "",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4433",
+        "Course Name": "Big Data Management and Analytics",
+        "Professor": "Elke Rundensteiner",
+        "Rating": "3.1",
+        "Would Take Again": "20%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 4513",
+        "Course Name": "Distributed Computing Systems",
+        "Professor": "Craig Wills",
+        "Rating": "4.5",
+        "Would Take Again": "100%",
+        "Difficulty": "3.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4516",
+        "Course Name": "Advanced Computer Networks",
+        "Professor": "Xiaoyan Sun",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 4731",
+        "Course Name": "Computer Graphics",
+        "Professor": "Joshua Cuneo",
+        "Rating": "2.7",
+        "Would Take Again": "40%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4801",
+        "Course Name": "Introduction To Cryptography And Communication Security",
+        "Professor": "Koksal Mus",
+        "Rating": "2.8",
+        "Would Take Again": "50%",
+        "Difficulty": "3.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4804",
+        "Course Name": "Data Visualization",
+        "Professor": "Lane Harrison",
+        "Rating": "4.7",
+        "Would Take Again": "84%",
+        "Difficulty": "3.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "DS 1010",
+        "Course Name": "Data Science I: Introduction To Data Science",
+        "Professor": "Torumoy Ghoshal",
+        "Rating": "4.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "DS 2010",
+        "Course Name": "Data Science II: Modeling And Data Analysis",
+        "Professor": "Fatemeh Emdad",
+        "Rating": "3.3",
+        "Would Take Again": "63%",
+        "Difficulty": "2.8",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "DS 2010",
+        "Course Name": "Data Science II: Modeling And Data Analysis",
+        "Professor": "Oren Mangoubi",
+        "Rating": "4.0",
+        "Would Take Again": "100%",
+        "Difficulty": "4.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "DS 3010",
+        "Course Name": "Data Science III: Computational Data Intelligence",
+        "Professor": "Kyumin Lee",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "DS 3010",
+        "Course Name": "Data Science III: Computational Data Intelligence",
+        "Professor": "Xiaozhong Liu",
+        "Rating": "0.0",
+        "Would Take Again": "",
+        "Difficulty": "0.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "DS 4635",
+        "Course Name": "Data Analytics And Statistical Learning",
+        "Professor": "Randy Paffenroth",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Jon Abraham",
+        "Rating": "4.7",
+        "Would Take Again": "89%",
+        "Difficulty": "2.6",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Yonatan Ashenafi",
+        "Rating": "1.0",
+        "Would Take Again": "0%",
+        "Difficulty": "3.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Michael Johnson",
+        "Rating": "4.2",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Nicole Buczkowski",
+        "Rating": "1.3",
+        "Would Take Again": "25%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III (group 1)",
+        "Professor": "Ralihe Raul Villagran Olivas",
+        "Rating": "3.0",
+        "Would Take Again": "50%",
+        "Difficulty": "3.5",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III (group 4)",
+        "Professor": "Qiao Zhuang",
+        "Rating": "3.6",
+        "Would Take Again": "70%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III (group 3)",
+        "Professor": "Marcel Blais",
+        "Rating": "4.7",
+        "Would Take Again": "97%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III (group 6)",
+        "Professor": "Michael Smith",
+        "Rating": "3.2",
+        "Would Take Again": "58%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 2)",
+        "Professor": "William Sanguinet",
+        "Rating": "3.8",
+        "Would Take Again": "73%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 1)",
+        "Professor": "John Goulet",
+        "Rating": "4.8",
+        "Would Take Again": "93%",
+        "Difficulty": "2.5",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Dana Ferranti",
+        "Rating": "0.0",
+        "Would Take Again": "",
+        "Difficulty": "0.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 1)",
+        "Professor": "Qiao Zhuang",
+        "Rating": "3.6",
+        "Would Take Again": "70%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 6)",
+        "Professor": "Dalin Tang",
+        "Rating": "2.8",
+        "Would Take Again": "47%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 7)",
+        "Professor": "Vadim Yakovlev",
+        "Rating": "3.1",
+        "Would Take Again": "47%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 10)",
+        "Professor": "Binan Gu",
+        "Rating": "3.8",
+        "Would Take Again": "75%",
+        "Difficulty": "3.7",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV (group 5)",
+        "Professor": "Joseph Fehribach",
+        "Rating": "4.4",
+        "Would Take Again": "92%",
+        "Difficulty": "2.7",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1120",
+        "Course Name": "Calculus II W/ Prelim Topics",
+        "Professor": "Tatiana Doytchinova",
+        "Rating": "4.1",
+        "Would Take Again": "72%",
+        "Difficulty": "3.0",
+        "average_grade": "B+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1801",
+        "Course Name": "Denksport",
+        "Professor": "Andrea Arnold",
+        "Rating": "4.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.5",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1971",
+        "Course Name": "Bridge To Higher Mathematics",
+        "Professor": "Wagner Zsolt Adam",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations (group 1)",
+        "Professor": "Mayer Humi",
+        "Rating": "3.4",
+        "Would Take Again": "40%",
+        "Difficulty": "3.3",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations (group 2)",
+        "Professor": "Vadim Yakovlev",
+        "Rating": "3.1",
+        "Would Take Again": "47%",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations (group 3)",
+        "Professor": "Nathan Uricchio",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations (group 2)",
+        "Professor": "Burt Tilley",
+        "Rating": "2.8",
+        "Would Take Again": "29%",
+        "Difficulty": "4.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations (group 3)",
+        "Professor": "Francesca Bernardi",
+        "Rating": "4.5",
+        "Would Take Again": "88%",
+        "Difficulty": "3.1",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I (group 1)",
+        "Professor": "Dina Rassias",
+        "Rating": "4.1",
+        "Would Take Again": "78%",
+        "Difficulty": "3.1",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I (group 1)",
+        "Professor": "Tatiana Doytchinova",
+        "Rating": "4.1",
+        "Would Take Again": "72%",
+        "Difficulty": "3.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I (group 2)",
+        "Professor": "Andre Nachbin",
+        "Rating": "1.8",
+        "Would Take Again": "25%",
+        "Difficulty": "3.3",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I (group 3)",
+        "Professor": "Samuel Tripp",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "3.1",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2072",
+        "Course Name": "Accelerated Matrices And Linear Algebra I (group 1)",
+        "Professor": "William Martin",
+        "Rating": "3.4",
+        "Would Take Again": "25%",
+        "Difficulty": "3.8",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 2073",
+        "Course Name": "Matrices And Linear Algebra II",
+        "Professor": "Qingshuo Song",
+        "Rating": "3.4",
+        "Would Take Again": "65%",
+        "Difficulty": "3.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 2251",
+        "Course Name": "Vector And Tensor Calculus",
+        "Professor": "Guanying Peng",
+        "Rating": "3.0",
+        "Would Take Again": "50%",
+        "Difficulty": "4.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2273",
+        "Course Name": "Combinatorics",
+        "Professor": "Brigitte Servatius",
+        "Rating": "1.8",
+        "Would Take Again": "32%",
+        "Difficulty": "3.6",
+        "average_grade": "B+",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I (group 1)",
+        "Professor": "Tharindu De Alwis",
+        "Rating": "4.7",
+        "Would Take Again": "100%",
+        "Difficulty": "2.1",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I (group 2)",
+        "Professor": "Adam Sales",
+        "Rating": "4.7",
+        "Would Take Again": "67%",
+        "Difficulty": "2.7",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I (group 1)",
+        "Professor": "Carly Thorp",
+        "Rating": "3.7",
+        "Would Take Again": "67%",
+        "Difficulty": "2.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I (group 2)",
+        "Professor": "Zheyang Wu",
+        "Rating": "2.3",
+        "Would Take Again": "34%",
+        "Difficulty": "2.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2612",
+        "Course Name": "Applied Statistics II (group 1)",
+        "Professor": "Fangfang Wang",
+        "Rating": "2.2",
+        "Would Take Again": "34%",
+        "Difficulty": "3.7",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications (group 1)",
+        "Professor": "Buddika Peiris",
+        "Rating": "2.7",
+        "Would Take Again": "44%",
+        "Difficulty": "3.7",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications (group 2)",
+        "Professor": "Nadeesha Jayaweera",
+        "Rating": "4.7",
+        "Would Take Again": "100%",
+        "Difficulty": "1.2",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications",
+        "Professor": "Stephan Sturm",
+        "Rating": "3.9",
+        "Would Take Again": "77%",
+        "Difficulty": "4.1",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications",
+        "Professor": "Tharindu De Alwis",
+        "Rating": "4.7",
+        "Would Take Again": "100%",
+        "Difficulty": "2.1",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 3212",
+        "Course Name": "Actuarial Mathematics I",
+        "Professor": "Jon Abraham",
+        "Rating": "4.7",
+        "Would Take Again": "89%",
+        "Difficulty": "2.6",
+        "average_grade": "B",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 322X",
+        "Course Name": "Actuarial Estimation  of Unpaid Claims",
+        "Professor": "Barry Posterro",
+        "Rating": "3.6",
+        "Would Take Again": "37%",
+        "Difficulty": "2.4",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 322X",
+        "Course Name": "Actuarial Estimation  of Unpaid Claims",
+        "Professor": "Barry Posterro",
+        "Rating": "3.6",
+        "Would Take Again": "37%",
+        "Difficulty": "2.4",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 3471",
+        "Course Name": "Advanced Ordinary Differential Equations",
+        "Professor": "Sam Walcott",
+        "Rating": "2.2",
+        "Would Take Again": "30%",
+        "Difficulty": "4.5",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 3627",
+        "Course Name": "Introduction To The Design And Analysis Of Experiments",
+        "Professor": "Carly Thorp",
+        "Rating": "3.7",
+        "Would Take Again": "67%",
+        "Difficulty": "2.5",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 3825",
+        "Course Name": "Rings And Fields",
+        "Professor": "William Martin",
+        "Rating": "3.4",
+        "Would Take Again": "25%",
+        "Difficulty": "3.8",
+        "average_grade": "D",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "MA 3832",
+        "Course Name": "Principles Of Real Analysis II",
+        "Professor": "Christopher Larsen",
+        "Rating": "2.8",
+        "Would Take Again": "40%",
+        "Difficulty": "3.7",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 4235",
+        "Course Name": "Mathematical Optimization",
+        "Professor": "Gu Wang",
+        "Rating": "4.0",
+        "Would Take Again": "72%",
+        "Difficulty": "3.6",
+        "average_grade": "B+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 4291",
+        "Course Name": "Applied Complex Variables",
+        "Professor": "Burt Tilley",
+        "Rating": "2.8",
+        "Would Take Again": "29%",
+        "Difficulty": "4.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 4891",
+        "Course Name": "ST: Topology",
+        "Professor": "Herman Servatius",
+        "Rating": "2.5",
+        "Would Take Again": "32%",
+        "Difficulty": "3.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 1004",
+        "Course Name": "Introduction To Programming For Non-Majors",
+        "Professor": "Taylor Andrews",
+        "Rating": "2.5",
+        "Would Take Again": "34%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 1101",
+        "Course Name": "Introduction To Program Design",
+        "Professor": "Matthew Ahrens",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 1101",
+        "Course Name": "Introduction To Program Design",
+        "Professor": "Michael Engling",
+        "Rating": "4.7",
+        "Would Take Again": "95%",
+        "Difficulty": "2.7",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 1101",
+        "Course Name": "Introduction To Program Design",
+        "Professor": "Joshua Cuneo",
+        "Rating": "2.7",
+        "Would Take Again": "40%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 1102",
+        "Course Name": "Accelerated Introduction To Program Design",
+        "Professor": "Joseph Beck",
+        "Rating": "3.3",
+        "Would Take Again": "58%",
+        "Difficulty": "2.9",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2011",
+        "Course Name": "Introduction To Machine Organization And Assembly Language",
+        "Professor": "Taylor Andrews",
+        "Rating": "2.5",
+        "Would Take Again": "34%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2022",
+        "Course Name": "Discrete Mathematics",
+        "Professor": "Gabor Sarkozy",
+        "Rating": "4.0",
+        "Would Take Again": "74%",
+        "Difficulty": "2.8",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 2022",
+        "Course Name": "Discrete Mathematics",
+        "Professor": "Herman Servatius",
+        "Rating": "2.5",
+        "Would Take Again": "32%",
+        "Difficulty": "3.9",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 2102",
+        "Course Name": "Object-Oriented Design Concepts",
+        "Professor": "Matthew Ahrens",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2102",
+        "Course Name": "Object-Oriented Design Concepts",
+        "Professor": "Yu-Shan Sun",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2103",
+        "Course Name": "Accelerated Object-Oriented Design Concepts",
+        "Professor": "Joshua Cuneo",
+        "Rating": "2.7",
+        "Would Take Again": "40%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 2301",
+        "Course Name": "Systems Programming For Non-Majors",
+        "Professor": "Jennifer Mortensen",
+        "Rating": "3.7",
+        "Would Take Again": "60%",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3013",
+        "Course Name": "Operating Systems",
+        "Professor": "Craig Wills",
+        "Rating": "4.5",
+        "Would Take Again": "100%",
+        "Difficulty": "3.3",
+        "average_grade": "A-",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 3013",
+        "Course Name": "Operating Systems",
+        "Professor": "Craig Shue",
+        "Rating": "4.5",
+        "Would Take Again": "100%",
+        "Difficulty": "3.3",
+        "average_grade": "A-",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 3041",
+        "Course Name": "Human-Computer Interaction",
+        "Professor": "Matthew Ahrens",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Keith Pray",
+        "Rating": "2.9",
+        "Would Take Again": "25%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Matthew Ahrens",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Joshua Cuneo",
+        "Rating": "2.7",
+        "Would Take Again": "40%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Marcel LaFlamme",
+        "Rating": "4.7",
+        "Would Take Again": "97%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3043",
+        "Course Name": "Social Implications Of Information Processing",
+        "Professor": "Joseph Beck",
+        "Rating": "3.3",
+        "Would Take Again": "58%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3133",
+        "Course Name": "Foundations Of Computer Science",
+        "Professor": "Daniel Reichman",
+        "Rating": "2.0",
+        "Would Take Again": "0%",
+        "Difficulty": "4.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3133",
+        "Course Name": "Foundations Of Computer Science",
+        "Professor": "Gabor Sarkozy",
+        "Rating": "4.0",
+        "Would Take Again": "74%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 3431",
+        "Course Name": "Database Systems I",
+        "Professor": "Wilson Wong",
+        "Rating": "4.1",
+        "Would Take Again": "87%",
+        "Difficulty": "4.1",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3431",
+        "Course Name": "Database Systems I",
+        "Professor": "Shubbhi Taneja",
+        "Rating": "3.4",
+        "Would Take Again": "62%",
+        "Difficulty": "3.7",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3431",
+        "Course Name": "Database Systems I",
+        "Professor": "Rodica Neamtu",
+        "Rating": "2.1",
+        "Would Take Again": "25%",
+        "Difficulty": "3.8",
+        "average_grade": "A",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3516",
+        "Course Name": "Computer Networks",
+        "Professor": "Yanhua Li",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "3.3",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 3733",
+        "Course Name": "Software Engineering",
+        "Professor": "George Heineman",
+        "Rating": "4.5",
+        "Would Take Again": "100%",
+        "Difficulty": "3.4",
+        "average_grade": "A+",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 4033",
+        "Course Name": "Numerical Methods For Calculus And Differential Equations",
+        "Professor": "Marcus Sarkis-Martins",
+        "Rating": "2.1",
+        "Would Take Again": "14%",
+        "Difficulty": "3.3",
+        "average_grade": "A",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 4100",
+        "Course Name": "Artificial Intelligence For Interactive Media And Games",
+        "Professor": "Gillian Smith",
+        "Rating": "4.3",
+        "Would Take Again": "84%",
+        "Difficulty": "1.7",
+        "average_grade": "A+",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "CS 4120",
+        "Course Name": "Analysis Of Algorithms",
+        "Professor": "Daniel Reichman",
+        "Rating": "2.0",
+        "Would Take Again": "0%",
+        "Difficulty": "4.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 4233",
+        "Course Name": "Object-Oriented Analysis And Design",
+        "Professor": "Gary Pollice",
+        "Rating": "3.7",
+        "Would Take Again": "23%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4241",
+        "Course Name": "Webware: Computational Technology For Network Information Systems",
+        "Professor": "Charles Roberts",
+        "Rating": "2.4",
+        "Would Take Again": "",
+        "Difficulty": "2.5",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4341",
+        "Course Name": "Introduction To Artificial Intelligence",
+        "Professor": "Carolina Ruiz",
+        "Rating": "2.4",
+        "Would Take Again": "29%",
+        "Difficulty": "4.5",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4341",
+        "Course Name": "Introduction To Artificial Intelligence",
+        "Professor": "Chun-Kit Ngan",
+        "Rating": "2.2",
+        "Would Take Again": "20%",
+        "Difficulty": "3.4",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4341",
+        "Course Name": "Introduction To Artificial Intelligence",
+        "Professor": "Dmitry Korkin",
+        "Rating": "3.8",
+        "Would Take Again": "",
+        "Difficulty": "3.6",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4342",
+        "Course Name": "Machine Learning",
+        "Professor": "Ali Yousefi",
+        "Rating": "3.7",
+        "Would Take Again": "72%",
+        "Difficulty": "4.4",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "CS 4445",
+        "Course Name": "Data Mining And Knowledge Discovery In Databases",
+        "Professor": "Xiangnan Kong",
+        "Rating": "2.9",
+        "Would Take Again": "50%",
+        "Difficulty": "1.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "CS 4536",
+        "Course Name": "Programming Languages",
+        "Professor": "Rose Bohrer",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "DS 1010",
+        "Course Name": "Data Science I: Introduction To Data Science",
+        "Professor": "Daniel Treku",
+        "Rating": "2.7",
+        "Would Take Again": "67%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "DS 2010",
+        "Course Name": "Data Science II: Modeling And Data Analysis",
+        "Professor": "Torumoy Ghoshal",
+        "Rating": "4.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "DS 3010",
+        "Course Name": "Data Science III: Computational Data Intelligence",
+        "Professor": "Randy Paffenroth",
+        "Rating": "5.0",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1020",
+        "Course Name": "Calculus I With Preliminary Topics",
+        "Professor": "Tatiana Doytchinova",
+        "Rating": "4.1",
+        "Would Take Again": "72%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Jon Abraham",
+        "Rating": "4.7",
+        "Would Take Again": "89%",
+        "Difficulty": "2.6",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Burt Tilley",
+        "Rating": "2.8",
+        "Would Take Again": "29%",
+        "Difficulty": "4.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Michael Smith",
+        "Rating": "3.2",
+        "Would Take Again": "58%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Ernesto C\u00e1ceres",
+        "Rating": "0.0",
+        "Would Take Again": "",
+        "Difficulty": "0.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Tharindu De Alwis",
+        "Rating": "4.7",
+        "Would Take Again": "100%",
+        "Difficulty": "2.1",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "Tatiana Doytchinova",
+        "Rating": "4.1",
+        "Would Take Again": "72%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1021",
+        "Course Name": "Calculus I",
+        "Professor": "William Sanguinet",
+        "Rating": "3.8",
+        "Would Take Again": "73%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Qiao Zhuang",
+        "Rating": "3.6",
+        "Would Take Again": "70%",
+        "Difficulty": "2.9",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Marcus Sarkis-Martins",
+        "Rating": "2.1",
+        "Would Take Again": "14%",
+        "Difficulty": "3.3",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Ralihe Raul Villagran Olivas",
+        "Rating": "3.0",
+        "Would Take Again": "50%",
+        "Difficulty": "3.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Michael Smith",
+        "Rating": "3.2",
+        "Would Take Again": "58%",
+        "Difficulty": "3.1",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Nicole Buczkowski",
+        "Rating": "1.3",
+        "Would Take Again": "25%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Michael Johnson",
+        "Rating": "4.2",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Guanying Peng",
+        "Rating": "3.0",
+        "Would Take Again": "50%",
+        "Difficulty": "4.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Jon Abraham",
+        "Rating": "4.7",
+        "Would Take Again": "89%",
+        "Difficulty": "2.6",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Vadim Yakovlev",
+        "Rating": "3.1",
+        "Would Take Again": "47%",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1022",
+        "Course Name": "Calculus II",
+        "Professor": "Burt Tilley",
+        "Rating": "2.8",
+        "Would Take Again": "29%",
+        "Difficulty": "4.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Dina Rassias",
+        "Rating": "4.1",
+        "Would Take Again": "78%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "John Goulet",
+        "Rating": "4.8",
+        "Would Take Again": "93%",
+        "Difficulty": "2.5",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Binan Gu",
+        "Rating": "3.8",
+        "Would Take Again": "75%",
+        "Difficulty": "3.7",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Samuel Tripp",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Marcel Blais",
+        "Rating": "4.7",
+        "Would Take Again": "97%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Qiao Zhuang",
+        "Rating": "3.6",
+        "Would Take Again": "70%",
+        "Difficulty": "2.9",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Michael Smith",
+        "Rating": "3.2",
+        "Would Take Again": "58%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1023",
+        "Course Name": "Calculus III",
+        "Professor": "Nicole Buczkowski",
+        "Rating": "1.3",
+        "Would Take Again": "25%",
+        "Difficulty": "2.8",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "William Sanguinet",
+        "Rating": "3.8",
+        "Would Take Again": "73%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Yonatan Ashenafi",
+        "Rating": "1.0",
+        "Would Take Again": "0%",
+        "Difficulty": "3.5",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Joseph Fehribach",
+        "Rating": "4.4",
+        "Would Take Again": "92%",
+        "Difficulty": "2.7",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Marcus Sarkis-Martins",
+        "Rating": "2.1",
+        "Would Take Again": "14%",
+        "Difficulty": "3.3",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Min Wu",
+        "Rating": "2.8",
+        "Would Take Again": "46%",
+        "Difficulty": "3.5",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Nathan Uricchio",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Zhongqiang Zhang",
+        "Rating": "3.0",
+        "Would Take Again": "31%",
+        "Difficulty": "2.8",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "John Goulet",
+        "Rating": "4.8",
+        "Would Take Again": "93%",
+        "Difficulty": "2.5",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Dina Rassias",
+        "Rating": "4.1",
+        "Would Take Again": "78%",
+        "Difficulty": "3.1",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1024",
+        "Course Name": "Calculus IV",
+        "Professor": "Qingshuo Song",
+        "Rating": "3.4",
+        "Would Take Again": "65%",
+        "Difficulty": "3.0",
+        "average_grade": "A-",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1033",
+        "Course Name": "Theoretical Calculus III",
+        "Professor": "Joseph Fehribach",
+        "Rating": "4.4",
+        "Would Take Again": "92%",
+        "Difficulty": "2.7",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1034",
+        "Course Name": "Theoretical Calculus IV",
+        "Professor": "Joseph Fehribach",
+        "Rating": "4.4",
+        "Would Take Again": "92%",
+        "Difficulty": "2.7",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1801",
+        "Course Name": "Denksport",
+        "Professor": "Francesca Bernardi",
+        "Rating": "4.5",
+        "Would Take Again": "88%",
+        "Difficulty": "3.1",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 1801",
+        "Course Name": "Denksport",
+        "Professor": "Guanying Peng",
+        "Rating": "3.0",
+        "Would Take Again": "50%",
+        "Difficulty": "4.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations",
+        "Professor": "Dalin Tang",
+        "Rating": "2.8",
+        "Would Take Again": "47%",
+        "Difficulty": "3.0",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations",
+        "Professor": "Nathan Uricchio",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "2.8",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2051",
+        "Course Name": "Ordinary Differential Equations",
+        "Professor": "Mayer Humi",
+        "Rating": "3.4",
+        "Would Take Again": "40%",
+        "Difficulty": "3.3",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I",
+        "Professor": "Barry Posterro",
+        "Rating": "3.6",
+        "Would Take Again": "37%",
+        "Difficulty": "2.4",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I",
+        "Professor": "Samuel Tripp",
+        "Rating": "4.9",
+        "Would Take Again": "100%",
+        "Difficulty": "3.1",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2071",
+        "Course Name": "Matrices And Linear Algebra I",
+        "Professor": "Tatiana Doytchinova",
+        "Rating": "4.1",
+        "Would Take Again": "72%",
+        "Difficulty": "3.0",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2211",
+        "Course Name": "Theory Of Interest I",
+        "Professor": "Jon Abraham",
+        "Rating": "4.7",
+        "Would Take Again": "89%",
+        "Difficulty": "2.6",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2212",
+        "Course Name": "Theory Of Interest II",
+        "Professor": "Barry Posterro",
+        "Rating": "3.6",
+        "Would Take Again": "37%",
+        "Difficulty": "2.4",
+        "average_grade": "A+",
+        "hours": "11-15 hr/week"
+    },
+    {
+        "Course Number": "MA 2431",
+        "Course Name": "Mathematical Modeling With Ordinary Differential Equations",
+        "Professor": "Sam Walcott",
+        "Rating": "2.2",
+        "Would Take Again": "30%",
+        "Difficulty": "4.5",
+        "average_grade": "B+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2610",
+        "Course Name": "Applied Statistics For The Life Sciences",
+        "Professor": "Nadeesha Jayaweera",
+        "Rating": "4.7",
+        "Would Take Again": "100%",
+        "Difficulty": "1.2",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I",
+        "Professor": "Carly Thorp",
+        "Rating": "3.7",
+        "Would Take Again": "67%",
+        "Difficulty": "2.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I",
+        "Professor": "Zheyang Wu",
+        "Rating": "2.3",
+        "Would Take Again": "34%",
+        "Difficulty": "2.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2611",
+        "Course Name": "Applied Statistics I",
+        "Professor": "Frank Zou",
+        "Rating": "3.3",
+        "Would Take Again": "74%",
+        "Difficulty": "3.5",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2612",
+        "Course Name": "Applied Statistics II",
+        "Professor": "Carly Thorp",
+        "Rating": "3.7",
+        "Would Take Again": "67%",
+        "Difficulty": "2.5",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications",
+        "Professor": "Buddika Peiris",
+        "Rating": "2.7",
+        "Would Take Again": "44%",
+        "Difficulty": "3.7",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications",
+        "Professor": "Nadeesha Jayaweera",
+        "Rating": "4.7",
+        "Would Take Again": "100%",
+        "Difficulty": "1.2",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 2621",
+        "Course Name": "Probability For Applications",
+        "Professor": "Gu Wang",
+        "Rating": "4.0",
+        "Would Take Again": "72%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 3231",
+        "Course Name": "Linear Programming",
+        "Professor": "Marcel Blais",
+        "Rating": "4.7",
+        "Would Take Again": "97%",
+        "Difficulty": "2.9",
+        "average_grade": "A+",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 3631",
+        "Course Name": "Mathematical Statistics",
+        "Professor": "Buddika Peiris",
+        "Rating": "2.7",
+        "Would Take Again": "44%",
+        "Difficulty": "3.7",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 3823",
+        "Course Name": "Group Theory",
+        "Professor": "Brigitte Servatius",
+        "Rating": "1.8",
+        "Would Take Again": "32%",
+        "Difficulty": "3.6",
+        "average_grade": "A+",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 3832",
+        "Course Name": "Principles Of Real Analysis II",
+        "Professor": "Darko Volkov",
+        "Rating": "3.6",
+        "Would Take Again": "70%",
+        "Difficulty": "3.2",
+        "average_grade": "A-",
+        "hours": "6-10 hr/week"
+    },
+    {
+        "Course Number": "MA 4213",
+        "Course Name": "Loss Models I - Risk Theory",
+        "Professor": "Barry Posterro",
+        "Rating": "3.6",
+        "Would Take Again": "37%",
+        "Difficulty": "2.4",
+        "average_grade": "A",
+        "hours": "1-5 hr/week"
+    },
+    {
+        "Course Number": "MA 4451",
+        "Course Name": "Boundary Value Problems",
+        "Professor": "Mayer Humi",
+        "Rating": "3.4",
+        "Would Take Again": "40%",
+        "Difficulty": "3.3",
+        "average_grade": "B+",
+        "hours": "1-5 hr/week"
+    }
+]
