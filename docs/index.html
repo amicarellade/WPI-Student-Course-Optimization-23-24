@@ -70,8 +70,17 @@
 
       <h4>OSCAR</h4>
       <p>
-        OSCAR exists as a Tableu dashboard, therefore, when using inspect element, the webpage does not consider dropdowns, text, bars, or numbers as elements on the page. With that being said, to retrieve the information
-        we had to use an amalgamation of computer vision and web scraping techniques to first click, scroll, and take a screenshot. Once the screenshot was taken, X library was used to analyze and investigate the ordered pixels and what they truly represented. 
+        OSCAR exists as a Tableau dashboard, which poses unique challenges for data extraction since dropdowns, text, bars, and numbers are not recognized as elements in the webpage's DOM when using inspect element. To address this, we utilized both web scraping and computer vision techniques.
+      </p>
+
+      <h5>Web Scraping</h5>
+      <p>
+        Our web scraping approach involved automating interactions with the Tableau dashboard using tools like Selenium. This allowed us to click through dropdown menus, scroll through the dashboard, and capture screenshots of the relevant sections dynamically. These automated steps ensured that all data points could be visually accessed for further processing.
+      </p>
+
+      <h5>Computer Vision</h5>
+      <p>
+        Once screenshots were captured, computer vision techniques were applied to extract meaningful data. Using Python libraries like <code>Pillow</code>, <code>OpenCV</code>, and <code>pytesseract</code>, the screenshots were preprocessed through cropping, thresholding, and noise reduction. Optical Character Recognition (OCR) was then employed to convert visual data into structured text. These processes enabled the extraction of specific data points, such as course names, grades, and hours, which were subsequently refined and saved in a structured format.
       </p>
       <h4>Workday</h4>
       <p>
