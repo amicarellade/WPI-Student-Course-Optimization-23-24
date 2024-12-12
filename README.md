@@ -72,15 +72,17 @@ Similar techniques to OSCAR were employed:
 
 ---
 
-## Results
+## Conclusions
 
-The system consolidates course information and provides recommendations tailored to student needs. **(Note: This section needs further detail on findings.)**
+- Able to build upon a previous MQP that creates student schedules based on degree requirements
+- Learned how to Webscrape workday, WPI Oscar and RateMyProfessor
+- Reconfigured the HTML file to be able to improve the functionality of the output
+- Was successful in outputting the course sections and professor ratings
 
----
-
-## Conclusions and Future Work
-
-**(Note: This section needs to be expanded.)**
+## Future Work
+- Add recommendation system to determine which specific sections students should take based off of the classes they need to take and the reviews
+- Improving the design of the course recommendation tool
+- Add more courses and professors past the CS, DS and MA courses at WPI
 
 ---
 
