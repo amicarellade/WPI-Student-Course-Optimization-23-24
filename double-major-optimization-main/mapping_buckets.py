@@ -56,14 +56,28 @@ def csv_to_custom_json(file_path):
     return json.dumps(result, indent=4)
 
 # # Example usage:
-# file_path = "merged_courses.csv"  # Replace with your file path
+# file_path = "Oscar Data/merged_courses.csv"  # Replace with your file path
 # json_result = csv_to_custom_json(file_path)
 
 
 # # Save the JSON result to a file
-# result_filename = "Data/Oscar+RP_Ddata/CS_courses.json"
+# result_filename = "Data/Oscar+RP_Ddata/Merged_courses.json"
 # with open(result_filename, 'w') as result_file:
 #     result_file.write(json_result)
+
+# Merge CSV files
+import os
+import pandas as pd
+
+def merge_csv_files(input_folder, output_file):
+    csv_files = [f for f in os.listdir(input_folder) if f.endswith('.csv')]
+    combined_csv = pd.concat([pd.read_csv(os.path.join(input_folder, f)) for f in csv_files])
+    combined_csv.to_csv(output_file, index=False)
+
+# # Example usage:
+# input_folder = "Oscar Data"
+# output_file = "Oscar Data/merged_courses.csv"
+# merge_csv_files(input_folder, output_file)
 
 
 
@@ -107,6 +121,53 @@ def print_dict_values(dict, json_file):
 # print_dict_values(dict, courses_data)
 
 # json_print(courses_data)
+
+
+
+import json
+from collections import defaultdict
+
+def transform_data(input_file, output_file):
+    # Read the input JSON file
+    with open(input_file, "r") as f:
+        data = json.load(f)
+
+    # Dictionary to hold the transformed data
+    transformed_data = {"courses": []}
+    courses_dict = defaultdict(lambda: {
+        "Course Number": None,
+        "Course Name": None,
+        "average_grade": None,
+        "hours": None,
+        "Professors": []
+    })
+
+    # Process each course
+    for entry in data:
+        course_number = entry["Course Number"]
+        if not courses_dict[course_number]["Course Number"]:
+            courses_dict[course_number]["Course Number"] = entry["Course Number"]
+            courses_dict[course_number]["Course Name"] = entry["Course Name"]
+            courses_dict[course_number]["average_grade"] = entry["average_grade"]
+            courses_dict[course_number]["hours"] = entry["hours"]
+
+        courses_dict[course_number]["Professors"].append({
+            "Professor Name": entry["Professor"],
+            "Rating": entry["Rating"],
+            "Would Take Again": entry["Would Take Again"],
+            "Difficulty": entry["Difficulty"]
+        })
+
+    # Add the processed courses to the final structure
+    transformed_data["courses"] = list(courses_dict.values())
+
+    # Write the transformed data to the output JSON file
+    with open(output_file, "w") as f:
+        json.dump(transformed_data, f, indent=4)
+
+# Example usage
+transform_data("courses.json", "final_courses.json")
+
 
 
 

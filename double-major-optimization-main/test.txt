@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-=======
 
 <<<<<<<<<<<<< Credits >>>>>>>>>>>>>
  
-198 TOTAL
+135 TOTAL
 -------------------------------
-198 REMAINING 
-    177 Academic Courses 
+135 REMAINING 
+    114 Academic Courses 
     9.0 Free Electives 
     9.0 MQP 
     3.0 PE
@@ -18,10 +16,10 @@
 
 <<<<<<<<<<<<< Run Time >>>>>>>>>>>>>
 
-TOTAL RUN TIME: 0.39055625098990276
+TOTAL RUN TIME: 0.43482029999995575
 ----------------------------------------
-    Stage I solve: 0.1834571361541748
-    Stage II solve: 0.08637619018554688
+    Stage I solve: 0.14763116836547852
+    Stage II solve: 0.06317830085754395
 
 
 <<<<<<<<<<<<< Tracking Sheet >>>>>>>>>>>>>
@@ -46,21 +44,21 @@ Physical Education
 
 Humanities
 ----------------------------
-    [AR DEPT, TH DEPT, MUS_DEPT]
-    [AR DEPT, TH DEPT, MUS_DEPT]
-    [AR DEPT, TH DEPT, MUS_DEPT]
-    [AR DEPT, TH DEPT, MUS_DEPT]
-    [HU_3900 OR HU_3910]
+    [HU 3900 or 3910]
+    [Humanities]
+    [Humanities]
+    [Humanities]
+    [Humanities]
     [PY_2731, PY_2713, RE_2731]
 
 IQP
 ----------------------------
-    [IQP OFF CAMPUS]
+    [IQP off campus]
 
 Social Science
 ----------------------------
-    [ECON_DEPT, ENV_DEPT, GOV_DEPT, PSY_DEPT, SD_DEPT, SOC_DEPT, SS_DEPT, STS_DEPT, DEV_DEPT]
-    [ID 2050]
+    [ID_2050]
+    [Social Science]
 
 Free Electives
 ----------------------------
@@ -74,7 +72,7 @@ Not used
 
 
  
-Data Science Major with Data Science BSMS
+Data Science
 ____________________________________
 
  
@@ -94,34 +92,27 @@ Core
 
 Computer Science
 ----------------------------
-    [CS_1004 OR CS_1101 OR CS_1102]
-    [CS_2102 OR CS_2103 OR CS_2119]
+    [CS_1004, CS_1101, CS_1102]
+    [CS_2102, CS_2103, CS_2119]
 
 Disciplinary Electives
 ----------------------------
-    [CS 4120]
-    [CS 4341]
-    [CS 4432]
-    [CS_4802 OR BCB_4002]
-    [MA 4235]
-    [MA 4632]
-    [MA 542]
-    [MA 554]
-    [MIS 571]
-    [OIE 559]
-
-Double Counting 
-----------------------------
-    [BCB_4004 OR MA_4603]
-    [CS 4342]
-    [CS 4445]
-    [CS 4518]
-    [CS_4803 OR BCB_4003]
-    [MA 4631]
+    [4000-Level Disciplinary Electives]
+    [4000-Level Disciplinary Electives]
+    [Business Modeling and Prediction - MIS_4084, OIE_4430]
+    [Data Access and Management - CS_3431, MIS_3720, CS_4432, CS_4433/DS_4433]
+    [Data Mining and Machine Learning - CS_4342, CS_4445]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
 
 Entrepreneurship and Innovation
 ----------------------------
-    [BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
+    [Entrepreneurship and Innovation - BUS_1010, ETR_1100, BUS_3010, ETR_3633, OBC_1010, MIS_3010]
 
 Linear Algebra
 ----------------------------
@@ -129,26 +120,13 @@ Linear Algebra
 
 Mathematical Sciences
 ----------------------------
-    [DS 4635]
-    [MA 4635]
-
-Total MS Credits Req
-----------------------------
-    [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
-    [BUS_500, FIN_500, FIN_503, MIS_500, MIS_573, MIS_576, MIS_581, MIS_583, MIS_585, OBC_505, OBC_506, OIE_501, OIE_542, OIE_544, OIE_552, CS_5007, CS_504, CS_509, CS_525, CS_536, CS_545, CS_546, CS_549, CS_573, MA_511, MA_529, MA_546, MA_547, MA_549, MA_550, MA_552, MA_556, PSY_505, BCB_501, BME_595, ECE_502, ECE_503, ECE_504, ECE_630, ECE_5311, DS_501]
-    [CS 561]
-    [CS_585 OR DS_503]
-    [CS_586 OR DS_504]
-    [DS_541 OR CS_541]
-    [MA_543 OR DS_502]
-    [MIS 584]
-    [MIS 587]
-    [MKT 568]
+    [Disciplinary Electives]
+    [Disciplinary Electives]
 
 Natural or Engineering Sciences
 ----------------------------
-    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
-    [AE_DEPT, AREN_DEPT, BB_DEPT, BME_DEPT, CHE_DEPT, CE_DEPT, CH_DEPT, ECE_DEPT, GE_DEPT, ME_DEPT, PH_DEPT, RBE_DEPT]
+    [Natural and Engineering Sciences]
+    [Natural and Engineering Sciences]
 
 Applied Statistics
 ----------------------------
@@ -157,4 +135,3 @@ Applied Statistics
 
 
  
->>>>>>> 159a2e6de181a6fe34671fc1e50410436010e165

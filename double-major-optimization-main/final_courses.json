@@ -1,0 +1,732 @@
+{
+    "courses": [
+        {
+            "Course Number": "CS 1004",
+            "Course Name": "Introduction To Programming For Non-Majors",
+            "average_grade": "A-",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Gillian Smith",
+                    "Rating": "4.3",
+                    "Would Take Again": "84%",
+                    "Difficulty": "1.7"
+                },
+                {
+                    "Professor Name": "Taylor Andrews",
+                    "Rating": "2.5",
+                    "Would Take Again": "34%",
+                    "Difficulty": "2.9"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 1101",
+            "Course Name": "Introduction To Program Design",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Matthew Ahrens",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.3"
+                },
+                {
+                    "Professor Name": "Matthew Ahrens",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.3"
+                },
+                {
+                    "Professor Name": "Michael Engling",
+                    "Rating": "4.7",
+                    "Would Take Again": "95%",
+                    "Difficulty": "2.7"
+                },
+                {
+                    "Professor Name": "Joshua Cuneo",
+                    "Rating": "2.7",
+                    "Would Take Again": "40%",
+                    "Difficulty": "3.6"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 2011",
+            "Course Name": "Introduction To Machine Organization And Assembly Language",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Taylor Andrews",
+                    "Rating": "2.5",
+                    "Would Take Again": "34%",
+                    "Difficulty": "2.9"
+                },
+                {
+                    "Professor Name": "Taylor Andrews",
+                    "Rating": "2.5",
+                    "Would Take Again": "34%",
+                    "Difficulty": "2.9"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 2022",
+            "Course Name": "Discrete Mathematics",
+            "average_grade": "A-",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Herman Servatius",
+                    "Rating": "2.5",
+                    "Would Take Again": "32%",
+                    "Difficulty": "3.9"
+                },
+                {
+                    "Professor Name": "Gabor Sarkozy",
+                    "Rating": "4.0",
+                    "Would Take Again": "74%",
+                    "Difficulty": "2.8"
+                },
+                {
+                    "Professor Name": "Herman Servatius",
+                    "Rating": "2.5",
+                    "Would Take Again": "32%",
+                    "Difficulty": "3.9"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 2102",
+            "Course Name": "Object-Oriented Design Concepts",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Matthew Ahrens",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.3"
+                },
+                {
+                    "Professor Name": "Matthew Ahrens",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.3"
+                },
+                {
+                    "Professor Name": "Yu-Shan Sun",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 2119",
+            "Course Name": "Application Building With Object-Oriented Concepts",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Shubbhi Taneja",
+                    "Rating": "3.4",
+                    "Would Take Again": "62%",
+                    "Difficulty": "3.7"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 2301",
+            "Course Name": "Systems Programming For Non-Majors",
+            "average_grade": "A",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Jennifer Mortensen",
+                    "Rating": "3.7",
+                    "Would Take Again": "60%",
+                    "Difficulty": "3.0"
+                },
+                {
+                    "Professor Name": "Jennifer Mortensen",
+                    "Rating": "3.7",
+                    "Would Take Again": "60%",
+                    "Difficulty": "3.0"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3013",
+            "Course Name": "Operating Systems",
+            "average_grade": "A-",
+            "hours": "11-15 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Taylor Andrews",
+                    "Rating": "2.5",
+                    "Would Take Again": "34%",
+                    "Difficulty": "2.9"
+                },
+                {
+                    "Professor Name": "Shubbhi Taneja",
+                    "Rating": "3.4",
+                    "Would Take Again": "62%",
+                    "Difficulty": "3.7"
+                },
+                {
+                    "Professor Name": "Mark Sheahan",
+                    "Rating": "4.7",
+                    "Would Take Again": "86%",
+                    "Difficulty": "3.0"
+                },
+                {
+                    "Professor Name": "Craig Wills",
+                    "Rating": "4.5",
+                    "Would Take Again": "100%",
+                    "Difficulty": "3.3"
+                },
+                {
+                    "Professor Name": "Craig Shue",
+                    "Rating": "4.5",
+                    "Would Take Again": "100%",
+                    "Difficulty": "3.3"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3041",
+            "Course Name": "Human-Computer Interaction",
+            "average_grade": "A+",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Erin Solovey",
+                    "Rating": "4.5",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                },
+                {
+                    "Professor Name": "Lane Harrison",
+                    "Rating": "4.7",
+                    "Would Take Again": "84%",
+                    "Difficulty": "3.3"
+                },
+                {
+                    "Professor Name": "Matthew Ahrens",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.3"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3043",
+            "Course Name": "Social Implications Of Information Processing",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Paul Delvy",
+                    "Rating": "0.0",
+                    "Would Take Again": "",
+                    "Difficulty": "0.0"
+                },
+                {
+                    "Professor Name": "Micha Hofri",
+                    "Rating": "1.3",
+                    "Would Take Again": "0%",
+                    "Difficulty": "4.6"
+                },
+                {
+                    "Professor Name": "Keith Pray",
+                    "Rating": "2.9",
+                    "Would Take Again": "25%",
+                    "Difficulty": "2.9"
+                },
+                {
+                    "Professor Name": "Joshua Cuneo",
+                    "Rating": "2.7",
+                    "Would Take Again": "40%",
+                    "Difficulty": "3.6"
+                },
+                {
+                    "Professor Name": "Michael Engling",
+                    "Rating": "4.7",
+                    "Would Take Again": "95%",
+                    "Difficulty": "2.7"
+                },
+                {
+                    "Professor Name": "Keith Pray",
+                    "Rating": "2.9",
+                    "Would Take Again": "25%",
+                    "Difficulty": "2.9"
+                },
+                {
+                    "Professor Name": "Matthew Ahrens",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.3"
+                },
+                {
+                    "Professor Name": "Joshua Cuneo",
+                    "Rating": "2.7",
+                    "Would Take Again": "40%",
+                    "Difficulty": "3.6"
+                },
+                {
+                    "Professor Name": "Marcel LaFlamme",
+                    "Rating": "4.7",
+                    "Would Take Again": "97%",
+                    "Difficulty": "2.9"
+                },
+                {
+                    "Professor Name": "Joseph Beck",
+                    "Rating": "3.3",
+                    "Would Take Again": "58%",
+                    "Difficulty": "2.9"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3133",
+            "Course Name": "Foundations Of Computer Science",
+            "average_grade": "A",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Michael Engling",
+                    "Rating": "4.7",
+                    "Would Take Again": "95%",
+                    "Difficulty": "2.7"
+                },
+                {
+                    "Professor Name": "Rose Bohrer",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                },
+                {
+                    "Professor Name": "Daniel Reichman",
+                    "Rating": "2.0",
+                    "Would Take Again": "0%",
+                    "Difficulty": "4.0"
+                },
+                {
+                    "Professor Name": "Gabor Sarkozy",
+                    "Rating": "4.0",
+                    "Would Take Again": "74%",
+                    "Difficulty": "2.8"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3431",
+            "Course Name": "Database Systems I",
+            "average_grade": "A",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Rodica Neamtu",
+                    "Rating": "2.1",
+                    "Would Take Again": "25%",
+                    "Difficulty": "3.8"
+                },
+                {
+                    "Professor Name": "Sakire Arslan Ay",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                },
+                {
+                    "Professor Name": "Wilson Wong",
+                    "Rating": "4.1",
+                    "Would Take Again": "87%",
+                    "Difficulty": "4.1"
+                },
+                {
+                    "Professor Name": "Shubbhi Taneja",
+                    "Rating": "3.4",
+                    "Would Take Again": "62%",
+                    "Difficulty": "3.7"
+                },
+                {
+                    "Professor Name": "Rodica Neamtu",
+                    "Rating": "2.1",
+                    "Would Take Again": "25%",
+                    "Difficulty": "3.8"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3516",
+            "Course Name": "Computer Networks",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Xiaoyan Sun",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                },
+                {
+                    "Professor Name": "Shubbhi Taneja",
+                    "Rating": "3.4",
+                    "Would Take Again": "62%",
+                    "Difficulty": "3.7"
+                },
+                {
+                    "Professor Name": "Yanhua Li",
+                    "Rating": "4.9",
+                    "Would Take Again": "100%",
+                    "Difficulty": "3.3"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 3733",
+            "Course Name": "Software Engineering",
+            "average_grade": "A+",
+            "hours": "11-15 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Wilson Wong",
+                    "Rating": "4.1",
+                    "Would Take Again": "87%",
+                    "Difficulty": "4.1"
+                },
+                {
+                    "Professor Name": "Sakire Arslan Ay",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                },
+                {
+                    "Professor Name": "George Heineman",
+                    "Rating": "4.5",
+                    "Would Take Again": "100%",
+                    "Difficulty": "3.4"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4123",
+            "Course Name": "Theory Of Computation",
+            "average_grade": "A-",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Hanmeng Zhan",
+                    "Rating": "3.0",
+                    "Would Take Again": "31%",
+                    "Difficulty": "2.8"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4233",
+            "Course Name": "Object-Oriented Analysis And Design",
+            "average_grade": "A-",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Gary Pollice",
+                    "Rating": "3.7",
+                    "Would Take Again": "23%",
+                    "Difficulty": "3.1"
+                },
+                {
+                    "Professor Name": "Gary Pollice",
+                    "Rating": "3.7",
+                    "Would Take Again": "23%",
+                    "Difficulty": "3.1"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4241",
+            "Course Name": "Webware: Computational Technology For Network Information Systems",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Joshua Cuneo",
+                    "Rating": "2.7",
+                    "Would Take Again": "40%",
+                    "Difficulty": "3.6"
+                },
+                {
+                    "Professor Name": "Charles Roberts",
+                    "Rating": "2.4",
+                    "Would Take Again": "",
+                    "Difficulty": "2.5"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4341",
+            "Course Name": "Introduction To Artificial Intelligence",
+            "average_grade": "A-",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Xiaozhong Liu",
+                    "Rating": "0.0",
+                    "Would Take Again": "",
+                    "Difficulty": "0.0"
+                },
+                {
+                    "Professor Name": "Carolina Ruiz",
+                    "Rating": "2.4",
+                    "Would Take Again": "29%",
+                    "Difficulty": "4.5"
+                },
+                {
+                    "Professor Name": "Chun-Kit Ngan",
+                    "Rating": "2.2",
+                    "Would Take Again": "20%",
+                    "Difficulty": "3.4"
+                },
+                {
+                    "Professor Name": "Dmitry Korkin",
+                    "Rating": "3.8",
+                    "Would Take Again": "",
+                    "Difficulty": "3.6"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4342",
+            "Course Name": "Machine Learning",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Xiangnan Kong",
+                    "Rating": "2.9",
+                    "Would Take Again": "50%",
+                    "Difficulty": "1.5"
+                },
+                {
+                    "Professor Name": "Ali Yousefi",
+                    "Rating": "3.7",
+                    "Would Take Again": "72%",
+                    "Difficulty": "4.4"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4401",
+            "Course Name": "Software Security Engineering",
+            "average_grade": "A-",
+            "hours": "11-15 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Jun Dai",
+                    "Rating": "1.5",
+                    "Would Take Again": "0%",
+                    "Difficulty": "2.8"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4432",
+            "Course Name": "Database Systems II",
+            "average_grade": "A",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Fabricio Murai",
+                    "Rating": "4.3",
+                    "Would Take Again": "",
+                    "Difficulty": "3.0"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4433",
+            "Course Name": "Big Data Management and Analytics",
+            "average_grade": "A",
+            "hours": "11-15 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Elke Rundensteiner",
+                    "Rating": "3.1",
+                    "Would Take Again": "20%",
+                    "Difficulty": "2.8"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4513",
+            "Course Name": "Distributed Computing Systems",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Craig Wills",
+                    "Rating": "4.5",
+                    "Would Take Again": "100%",
+                    "Difficulty": "3.3"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4516",
+            "Course Name": "Advanced Computer Networks",
+            "average_grade": "A+",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Xiaoyan Sun",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4731",
+            "Course Name": "Computer Graphics",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Joshua Cuneo",
+                    "Rating": "2.7",
+                    "Would Take Again": "40%",
+                    "Difficulty": "3.6"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4801",
+            "Course Name": "Introduction To Cryptography And Communication Security",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Koksal Mus",
+                    "Rating": "2.8",
+                    "Would Take Again": "50%",
+                    "Difficulty": "3.0"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4804",
+            "Course Name": "Data Visualization",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Lane Harrison",
+                    "Rating": "4.7",
+                    "Would Take Again": "84%",
+                    "Difficulty": "3.3"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 1102",
+            "Course Name": "Accelerated Introduction To Program Design",
+            "average_grade": "A",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Joseph Beck",
+                    "Rating": "3.3",
+                    "Would Take Again": "58%",
+                    "Difficulty": "2.9"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 2103",
+            "Course Name": "Accelerated Object-Oriented Design Concepts",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Joshua Cuneo",
+                    "Rating": "2.7",
+                    "Would Take Again": "40%",
+                    "Difficulty": "3.6"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4033",
+            "Course Name": "Numerical Methods For Calculus And Differential Equations",
+            "average_grade": "A",
+            "hours": "11-15 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Marcus Sarkis-Martins",
+                    "Rating": "2.1",
+                    "Would Take Again": "14%",
+                    "Difficulty": "3.3"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4100",
+            "Course Name": "Artificial Intelligence For Interactive Media And Games",
+            "average_grade": "A+",
+            "hours": "11-15 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Gillian Smith",
+                    "Rating": "4.3",
+                    "Would Take Again": "84%",
+                    "Difficulty": "1.7"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4120",
+            "Course Name": "Analysis Of Algorithms",
+            "average_grade": "A+",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Daniel Reichman",
+                    "Rating": "2.0",
+                    "Would Take Again": "0%",
+                    "Difficulty": "4.0"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4445",
+            "Course Name": "Data Mining And Knowledge Discovery In Databases",
+            "average_grade": "A",
+            "hours": "1-5 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Xiangnan Kong",
+                    "Rating": "2.9",
+                    "Would Take Again": "50%",
+                    "Difficulty": "1.5"
+                }
+            ]
+        },
+        {
+            "Course Number": "CS 4536",
+            "Course Name": "Programming Languages",
+            "average_grade": "A+",
+            "hours": "6-10 hr/week",
+            "Professors": [
+                {
+                    "Professor Name": "Rose Bohrer",
+                    "Rating": "5.0",
+                    "Would Take Again": "100%",
+                    "Difficulty": "2.0"
+                }
+            ]
+        }
+    ]
+}

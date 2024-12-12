@@ -139,7 +139,7 @@ def result(result_filename):
 
 
     #read json file
-    with open("Data/Oscar+RP_Ddata/CS_courses.json", "r") as file:
+    with open("Data/Oscar+RP_Ddata/final_courses.json", "r") as file:
         OscarAndRP_data = json.load(file)
 
 
